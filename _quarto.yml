@@ -5,8 +5,6 @@ website:
   page-navigation: true
   title: "Our onboarding guide" 
   site-url: "https://openscapes.github.io/series" # change
-
- 
   repo-url: https://github.com/openscapes/series # change
   repo-actions: [edit, issue]
   
@@ -15,7 +13,7 @@ website:
     left: "&copy; CC-By Our team, 2022"
     
   sidebar:
-    logo: "images/openscapes_hex.png"
+    logo: "openscapes_hex.png"
     pinned: true
     align: center
 
