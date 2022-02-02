@@ -3,22 +3,18 @@ project:
   
 website: 
   page-navigation: true
-  title: "Openscapes Champions Series"
-  site-url: "https://openscapes.github.io/series"
+  title: "Our onboarding guide" 
+  site-url: "https://openscapes.github.io/series" # change
 
  
-  repo-url: https://github.com/openscapes/series
+  repo-url: https://github.com/openscapes/series # change
   repo-actions: [edit, issue]
-  
-  # sharing: [twitter] come back to https://github.com/sta210-s22/website/blob/main/_quarto.yml#L13
   
   page-footer:
     right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
-    left: "&copy; CC-By Openscapes, 2022"
-    background: "#D9E3E4"
+    left: "&copy; CC-By Our team, 2022"
     
   sidebar:
-    background: "#D9E3E4"
     logo: "images/openscapes_hex.png"
     pinned: true
     align: center
@@ -27,38 +23,13 @@ website:
     search: true
     collapse-level: 1
     contents:
-      - section: "Lesson Series"
-        contents:        
-         - href: "index.qmd"
-           text: Welcome
-         - href: "overview.qmd"
-           text: Overview
-         - href: "mindset.qmd"
-           text: Mindset
-         - href: "bsilt.qmd"
-           text: Better science in less time
-         - href: "team-culture.qmd"
-           text: Team culture
-         - href: "code-of-conduct.qmd"
-           text: Code of conduct
-         - href: "data-strategies.qmd"
-           text: Data stategies
-         - href: "coding-strategies.qmd"
-           text: Coding strategies
-         - href: "communities.qmd"
-           text: Open communities
-         - href: "github-pub.qmd"
-           text: GitHub for publishing
-         - href: "github-issues.qmd"
-           text: GitHub for project management
-  #"case-studies.qmd", CREATE AND LINK
-  #"code-tour.qmd", 
-  #"study-groups.qmd",
-         - href: "r-for-scicomm.qmd"
-           text: R for scicomm
-         - href: "resources-that-influence.qmd"
-           text: Resources
-  
+      - index.md
+      - culture-philosophy.md
+      - code-of-conduct.md
+      - onboarding.md
+      - expectations.md
+      - computing.md
+      - offboarding.md
 
 format:
   html:
