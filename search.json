@@ -1,31 +1,10 @@
 [
   {
-    "objectID": "expectations.html#introduction",
-    "href": "expectations.html#introduction",
-    "title": "Expectations",
-    "section": "Introduction",
-    "text": "Introduction\nText here."
-  },
-  {
-    "objectID": "expectations.html#another-header",
-    "href": "expectations.html#another-header",
-    "title": "Expectations",
-    "section": "Another header",
-    "text": "Another header\nMore text here."
-  },
-  {
-    "objectID": "code-of-conduct.html#introduction",
-    "href": "code-of-conduct.html#introduction",
-    "title": "Code of Conduct",
-    "section": "Introduction",
-    "text": "Introduction\nText here."
-  },
-  {
-    "objectID": "code-of-conduct.html#another-header",
-    "href": "code-of-conduct.html#another-header",
-    "title": "Code of Conduct",
-    "section": "Another header",
-    "text": "Another header\nMore text here."
+    "objectID": "index.html#about",
+    "href": "index.html#about",
+    "title": "Our Onboarding Process",
+    "section": "About",
+    "text": "About\nAbout us."
   },
   {
     "objectID": "computing.html#introduction",
@@ -38,20 +17,6 @@
     "objectID": "computing.html#another-header",
     "href": "computing.html#another-header",
     "title": "Computing",
-    "section": "Another header",
-    "text": "Another header\nMore text here."
-  },
-  {
-    "objectID": "culture-philosophy.html#introduction",
-    "href": "culture-philosophy.html#introduction",
-    "title": "Culture and philosophy",
-    "section": "Introduction",
-    "text": "Introduction\nText here."
-  },
-  {
-    "objectID": "culture-philosophy.html#another-header",
-    "href": "culture-philosophy.html#another-header",
-    "title": "Culture and philosophy",
     "section": "Another header",
     "text": "Another header\nMore text here."
   },
@@ -70,10 +35,45 @@
     "text": "Another header\nMore text here."
   },
   {
-    "objectID": "index.html#about",
-    "href": "index.html#about",
-    "title": "Our Onboarding Process",
-    "section": "About",
-    "text": "About\nAbout us."
+    "objectID": "code-of-conduct.html#introduction",
+    "href": "code-of-conduct.html#introduction",
+    "title": "Code of Conduct",
+    "section": "Introduction",
+    "text": "Introduction\nText here."
+  },
+  {
+    "objectID": "code-of-conduct.html#another-header",
+    "href": "code-of-conduct.html#another-header",
+    "title": "Code of Conduct",
+    "section": "Another header",
+    "text": "Another header\nMore text here."
+  },
+  {
+    "objectID": "expectations.html#introduction",
+    "href": "expectations.html#introduction",
+    "title": "Expectations",
+    "section": "Introduction",
+    "text": "Introduction\nText here."
+  },
+  {
+    "objectID": "expectations.html#another-header",
+    "href": "expectations.html#another-header",
+    "title": "Expectations",
+    "section": "Another header",
+    "text": "Another header\nMore text here."
+  },
+  {
+    "objectID": "culture-philosophy.html#introduction",
+    "href": "culture-philosophy.html#introduction",
+    "title": "Culture and philosophy",
+    "section": "Introduction",
+    "text": "Introduction\nText here."
+  },
+  {
+    "objectID": "culture-philosophy.html#another-header",
+    "href": "culture-philosophy.html#another-header",
+    "title": "Culture and philosophy",
+    "section": "Another header",
+    "text": "Another header\nMore text here."
   }
 ]
