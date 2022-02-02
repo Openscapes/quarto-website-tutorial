@@ -1,0 +1,200 @@
+# Openscapes Mindset {#mindset}
+
+The Openscapes mindset is about moving away from lonely, individual science and towards science that is more efficient, open, collaborative, inclusive and kind. 
+
+**Slides** that have been presented during Champions Program Cohort Calls: 
+
+- [Openscapes mindset](https://docs.google.com/presentation/d/1giEW0EIYVnxneGpOBSJnEqg-1CVBUGrbH8Z5gawdeBc/edit?usp=sharing)
+
+---
+
+*Please also see the above slides as this chapter is developed more*.
+
+Open data science tools, practices, & communities exist and are powerful and empowering, and game-changing for science. They enable us to do better science in less time. They are like the Force from Star Wars:
+
+- More powerful than you ever imagined
+- Enable you to broaden the scope of the questions you can ask
+- You can be a Jedi to others: pass forward what you’ve learned
+- You can join & build diverse communities of allies (not all allies are Jedis)
+
+
+We can harness this power for science more broadly. We can create the culture that we want to be a part of – towards [kinder science](https://blogs.scientificamerican.com/observations/open-software-means-kinder-science/). We can do this with the Openscapes mindset: 
+
+- Be efficient, open, collaborative, inclusive, and kind 
+- Reframe data analysis as a collaborative effort rather than an individual burden or personal craft
+- Redefine collaborators & community: Future You, Future Us
+  - Think like a team: share imperfect work and learn together
+  - Beyond your own discipline, and online
+- Reimagine challenges: Expect there is a better way
+  - Iterate with confidence, agency, & community
+  - You're not alone, it's not too late
+
+Our approach to help develop this mindset is by focusing on the following:
+
+- Data science as a discipline
+- Open as a way to work
+- Group members as a team
+- Collaborators and community (redefined) as a way to learn
+- The Internet as an underleveraged tool for science
+
+---
+
+## Data science as a discipline
+*Alternative title: "Data science is a thing".* 
+
+No matter what your study system or your question, to Do Your Science you will need to get your data
+into analytical software, wrangle it (tidy and transform), and make sense of it visually and with models. Very important here: tidy your data first, don't build your whole analysis around whatever weird format your data may have come in. We'll talk about tidy data in more detail another day. 
+
+![](img/r4ds_data-science.png)
+[R for Data Science]()
+
+### There are concepts, theory, and tools for thinking about and working with data
+Just like a field chemistry has concepts for things like moleculte, theory for how they work, and tools for studying them, so does data science — for data.
+
+### Emphasis on communication
+It is incredible what is possible on the communication front. Watch this one-minute video called [What is RMarkdown?](https://vimeo.com/178485416) to blow your mind. 
+
+
+### Not just for “big data” or AI or machine learning
+
+You can use data science theory and tools no matter the size or context of your data.
+
+### Your study system is not unique when it comes to data
+
+Think about your data separately from your study system. Don't confound them or it will be really hard to ask for help.  
+
+Expect there is a way to do what you want to do.  
+
+
+<!---
+> When I was doing my PhD, I confounded my science questions with my data questions. I was studying squid, asking questions that no one had ever asked before. But I also treated my date-formatting issue as something that no one had ever asked before. I couldn't step back to think "someone has had to reformat dates before". I was thinking "these are squid data, no one has 
+
+--->
+
+This will help you find commonalities and unite you with other lab members and beyond.
+
+### Distinguish data questions from research questions, learn how to ask for help
+
+## Open data science tools exist
+
+### Tools to match data science theory
+
+![](img/tidyverse_wickham_pres.jpg)
+
+[Wickham 2017]()
+
+### They exist to streamline working with data
+### And they are developed by actual people – nice people!
+
+### My advice
+
+#### Expect there is a better way
+If you’re making the same plot 10 times, stop.
+
+Don't confound data science with your science. Expect that someone has had your problem before or done what you want to do. 
+
+
+#### Divorce your science question from the data science question
+Focus on the operations for the data, not your hypothesis
+
+#### Google your question (ask for help)
+Articulate it, and identify useful solutions
+Trusted urls, recent dates
+
+
+
+## Open as a way to work
+
+### Open science as a way to be more efficient and streamlined
+Not an added ask at publication to share your data 
+
+It's not only about sharing data. It's about how you work, who you include, and the tools that you use.
+
+### External memory (personal and collective)
+Easier on/offboarding
+
+### Find solutions faster – learn to talk about your data
+### Build confidence – skills are transferable beyond your science
+### Be empathic and inclusive – grow a network of allies
+
+## Lab members as a team
+
+Science is collaborative. Not heads down elbows out.
+
+### Focus on what unites lab members, not what sets them apart
+### Think of the lab horizontally as skillsets & needs instead of vertically as science bins
+
+Instead of the skills you have when you come to the lab determining how you will be able to Do Science, have shared practices in the lab and paths to onboard new people to work that way as well. 
+
+## Learn with collaborators and community (redefined)
+
+Communities for learning, teaching, and mentorship.
+
+### Helps overcome isolation, self-taught bad practices, apprehension 
+Stevens et al. 2018
+### Your most important collaborator is Future You
+
+Cannot emphasize this enough. Work now so that you can succeed later (whether that's this afternoon or 4 years from now)
+
+### Communities beyond the colleagues in your field
+### Learn from, with, & for others
+
+
+
+## The internet as an underleveraged tool for science
+
+### Twitter for learning 
+Follow selectively, listen & learn (e.g. #rstats)
+
+## Additional reading 
+
+- [Biased by default: exploring discrimination in research code](https://docs.google.com/presentation/d/1INTsli9obj3BiV8xDwJc4IovPnt2EUFNyLYyF_GK7bE/present#slide=id.g8dabbda190_0_898) - Abby Cabunoc Mayes Bioinformatics Community Confference Keynote 2020
+
+<!---
+## Slides
+
+## Open software begets open culture
+
+Slides for this chapter are available [here]()
+--->
+
+<!---
+Science is collaborative. In the big picture, you're contributing to how we understand and interact with the natural world. In a narrower sense, 
+
+Collaborating efficiently has historically been really hard to do. It's only been the last 20 years or so that we've moved beyond mailing things with the postal service. Being able to email and get feedback on files through track changes was a huge step forward, but it comes with a lot of bookkeeping and reproduciblity issues (did I do my analyses with `thesis_final_final.xls` or `thesis_final_usethisone.xls`?). But now, open tools make it much easier to collaborate. 
+
+Working with collaborators in mind is critical for reproducibility. And, your most important collaborator is Future You. This training will introduce best practices using open tools, so that collaboration will become second nature to you!
+
+- record of your analyses. 
+- rerun them!
+- modify them, maybe change a threshold, try a different coefficient, etc, maybe today
+- modify them, make a new figure, in 6 months! 
+
+--->
+
+<!---
+- how to THINK about data 
+    - how to think about data separately from your research questions
+    - how and why to tidy data and analyze tidy data, rather than making your analyses accommodate messy data
+    - how there is a lot of decision-making involved with data analysis, and a lot of creativity
+- how to increase efficiency in your science
+    - and increase reproducibility
+    - and facilitate collaboration with others — especially Future You!
+- how open science is a great benefit
+    - find solutions faster
+    - broaden the impact of your work
+- how to learn with intention and community
+    - think ahead instead of only to get a single job done now
+    - the #rstats online community is fantastic. The tools we're using are developed by real people. Real, nice people. They are building powerful and empowering tools and are welcoming to all skill-levels
+--->
+
+
+
+
+<!---
+
+http://r-bio.github.io/intro-git-rstudio/
+
+
+--->
+

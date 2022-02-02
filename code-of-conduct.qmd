@@ -1,0 +1,111 @@
+# Code of Conduct {#code-of-conduct} 
+
+*Please see accompanying [slides](https://docs.google.com/presentation/d/1eydm6NcrR_T2NwoMWYBWM682OW-qr755iYemVWL8cJg/edit?usp=sharing) until this chapter is built out more.*
+
+Please also refer to Openscapes' Code of Conduct: <https://openscapes.org/code-of-conduct>
+
+<!--- other resources
+https://mozilla.github.io/open-leadership-training-series/articles/building-communities-of-contributors/write-a-code-of-conduct/
+https://internethealthreport.org/2019/codes-of-conduct-in-open-source-communities/
+
+--->
+
+Important for: 
+
+- Conferences & workshops  
+- Online communities  
+- Labs & departments  
+
+## Code of Conduct also known as
+
+Community Participation Guidelines  
+Code of Practice
+
+Similar ideas:   
+Lab philosophy, mission statement, participation agreements
+
+## Requirements
+
+- Clear explicit statements 
+- Seen and heard – that all participants know about 
+  - Accessible and discoverable online
+  - Mentioned aloud in meetings/interviews/onboarding
+- Avenues for action, identified committees, recusals
+
+## Case study: rOpenSci
+
+[CoC itself](https://ropensci.org/code-of-conduct/)  
+[Blog post about the CoC](https://ropensci.org/blog/2019/01/14/conduct/)  
+[Blog post about creating the CoC](https://ropensci.org/blog/2016/12/21/commcallv12-review-coc/) — following a community call on the topic. Interesting points: 
+
+- Drafting – make it good and revisit; but not a living doc
+- Adopting and sharing – so people know it exists & where to find it
+- Reporting and enforcing – standardized form can help
+
+## Examples to build from
+
+- [rOpenSci CoC](https://ropensci.org/code-of-conduct/)  
+- [Buffer's CoC & Why It’s Important For Diversity And Inclusion](https://open.buffer.com/code-of-conduct/)
+- [Mozilla Community Participation Guidelines](https://www.mozilla.org/en-US/about/governance/policies/participation/)
+- [Template CoC for labs](https://github.com/dasaderi/Lab_CoC_templates/blob/master/CODE_OF_CONDUCT.md)
+
+## Further Reading
+
+- [How Codes of Conduct Are Combatting Open Source’s Diversity Problem](https://eyeondesign.aiga.org/are-codes-of-conduct-changing-the-diversity-stats-in-open-source/) — Margaret Rhodes, AIGA Eye on Design
+
+<!---
+
+Radical gradualism RBG
+
+seaside chats a great thing to help onboard.  
+
+Onboarding:::: they won't know what questions to ask. Provide structure. And be deliberate about the culture. Have you tried to instill culture, or hoping it will be organic? Have to build trust and be intentional - Angela Bassa 
+
+- Chaos monkeys -- resilience in teams like Netflix. Still give a product. Like teams: maternity leave, confs--- enable them but don't have your system fail without them
+
+Also, offboarding.
+
+Examples: 
+
+- our lab codes, in these preferred languages. 
+- we have shared practices for where we store data, etc, and we help each other learn 
+
+ADC coc:
+https://docs.google.com/document/d/1g5VKoKkxAcP-hm_25KJnpG3pZSkqfdOU1iFPyTjCT2s/edit
+
+"hackathon" "documentation party". We are smart people, we have good logic. Document so that you remember, and others as well.
+
+Folder structure: think forward and organize things in a way that would make them easier to share
+
+
+
+
+First off, I love "Fishbowl" chats! That is awesome.
+
+You can see what feels right to you but I would suggest keeping the separate. It might make sense to have the coding club less frequently; we started off as 1x/month but our Seaside Chats are each week. Here are some reasons I think it's good to have them separate – and I'll think more about this too and we can discuss more as a group (I was planning to introduce this in Cohort Calls in a few weeks but I can bump it forward too).
+
+Fishbowl is a place to discuss things that are more lab-specific
+Purpose: create deliberate lab culture and have shared organization and approaches to more fluidly as a lab (despite studying different things) and make onboarding easier for everyone
+Process: discussion built off of a specific topic that someone may have spent time preparing
+Examples:
+
+        where we keep data
+        how we share code with Malin and each other
+        how we onboard new team members
+        skill-share lab-specific techniques (genomics packages, etc)
+        I have some code on X technique/stats/model I'd love to walk through
+        I'm making a figure and would love feedback
+
+
+Coding club is a place to skill-share to learn new coding/data science skills hands-on through tutorials. Not lab-specific; it can start with you but great if you can draw interest from others on campus and grow (which you will!). Great to include others outside your lab because 1) people outside your lab will have different skills to share so you'll have bigger pool from which to learn 2) the more people on campus with these skills the more people you have to ask for help 3) distributes time involved leading outside of your lab if others are able to teach sessions
+Purpose: learn new skills not unique to your lab. Note: you don't need to create tutorials on your own; re-use other people's from online. I can help you find what you need.
+Examples:
+
+        learn R/Python/etc
+        learn package X, Y, Z (there are always awesome packages coming out: text analysis, reading data directly from google sheets, scraping data from urls or PDFs, spatial analysis, tidying model output so you can plot it easily, etc)
+        learn GitHub
+        set up GitHub with R, practice collaborating
+
+I hope this helps! Let me know if you want me to talk more about this. Our coding club called Eco-Data-Science actually is teaching text analysis in R on Feb 5 and you can Zoom in to see what it's like, or to code along if you'd like!
+
+--->

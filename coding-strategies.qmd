@@ -1,0 +1,283 @@
+# Coding strategies for future us {#coding-strategies} 
+
+Coding strategies can blend with workflow strategies, and the idea is working in a way that is not just for you in this moment. Here we will discuss good coding practices for beginning and seasoned coders alike that make it easier to work with other people, times, and computers. 
+
+**Slides** that have been presented during Champions Program Cohort Calls (with guest teachers indicated): 
+
+- [Coding strategies for future us](https://docs.google.com/presentation/d/1nTLJ782dpZqp3MEhQU9zNaFInrTaFUVQbj9OqsmxUYo/edit?usp=sharing)
+  - See previous iterations: [Filepaths](https://docs.google.com/presentation/d/1HbxQ9Lg-ySEhmvH01PnMX0BDuquQezru73GI3PV-Ibo/edit?usp=sharing) and [Project-oriented workflows](https://docs.google.com/presentation/d/1hiSjMjTFhdDO5lLCM4uiU3D8nLFPt8eOEdDPVoaG5UQ/edit?usp=sharing)
+- [Expanding ouR community!](https://docs.google.com/presentation/d/1a620vM5OkOgcUi0I-mQPV5ZTQglRfwSnAb6O41g8tv0/edit#slide=id.p1), contributed by [Dr. Chanté Davis](https://twitter.com/DrFintastic)
+- [State of the Ecosystem Product Development Workflow](https://noaa-edab.github.io/presentations/20211015_Openscapes_Bastille.html), contributed by Kim Bastille
+
+---
+
+## Software considerations for coding
+
+The following advice is from Tiffany Timbers, UBC Data Science, [Intro to Reticulate](https://github.com/ttimbers/intro-to-reticulate/blob/main/slides/reticulate-intro.pdf):
+
+**You will need these software tools:** 
+
+- Programming language (R, python)
+- Code editor (RStudio IDE, Jupyter)
+- Version control software (git, GitHub/bitbucket) 
+
+**How to choose the “best” tool for the job:**
+
+- Reproducible and auditable
+- Accurate
+- Collaborative (and portable)
+
+If you're choosing between R, Python, and other modern languages, they will aready be reproducible, auditable, and accurate. That leaves collaboration -- what do your collaborators use? What do folks in your lab, or field use? What is mentioned in the papers you read? There is increasing interoperability between languages (e.g. see [reticulate](https://rstudio.github.io/reticulate/) to run python code from R) so when you have some idea it's best to get started!
+
+See also: [Opinionated analysis development (Parker 2017)](https://peerj.com/preprints/3210). Tools like RStudio are already doing this to help you. Reserve your mental energy for the fun part of the analysis!
+
+
+## WTF: What They Forgot to teach you
+
+Most of this advice comes directly from Jenny Bryan & Jim Hester’s awesome course [What they Forgot to Teach You About R](https://whattheyforgot.org). I highly recommend reading Chapters 1-4 that go into much better detail than the notes here. The advice here is solid coding practices for any language, with examples from R. 
+
+### Workflow versus product
+
+Distinction between things you do because of personal taste & habits (“workflow”) versus the logic and output that is the essence of your project (“product”). 
+
+**Workflow:**
+
+- Editor you use to write code.
+- Name of your home directory.
+- R code you ran before lunch.
+
+**Clearly product:**
+- Raw data.
+- R code someone needs to run on your raw data to get your results, including the explicit library() calls to load necessary packages. (script, notebook)
+
+**Ideally, you don’t hardwire anything about your workflow into your product.**
+
+## Source files 
+
+What are they and why?
+
+Code that creates objects is "source code". Source code is essentially text files you edit in a text editor that is then executed in the console. 
+
+Examples:
+
+- .R, .Rmd
+- .py
+- .m
+
+### Save the source, not the workspace
+
+Save the source code; do not save the R object itself.
+
+Save your commands as "scripts" (`.R`, `.py`) or “notebooks” (`.Rmd`, `ipynb`).  It doesn't have to be polished. Just save it!
+
+Everything that really matters should be achieved through code that you save – including objects and figures
+The contrast is storing them implicitly or explicitly, as part of an entire workspace, or clicking via the mouse.  
+
+Load libraries/packages at the top. Just like a recipe: tell us the ingredients need before we get going!
+
+### Always start R with a blank slate
+
+Saving code is an absolute requirement for reproducibility.
+
+When you quit, do not save the workspace to an .Rdata file. When you launch, do not reload the workspace from an .Rdata file.
+
+In RStudio, set this via *Tools > Global Options.*
+
+### Restart R often during development
+
+>“Have you tried turning it off and then on again?”
+> -- timeless troubleshooting wisdom, applies to everything
+
+If you use RStudio, use the menu item Session > Restart R 
+
+Additional ways to restart development where you left off, i.e. "re-run all the code up to HERE"
+
+### Avoid `rm(list = ls())`
+
+It's common to see scripts begin with this object-nuking command: `rm(list = ls())`
+
+This is highly suggestive of a non-reproducible workflow.
+
+**The problem with `rm(list = ls())` is that, given the intent, it does not go far enough.**
+
+It only deletes user-created objects from the global workspace.
+
+Instead, Restart R with a clean slate OFTEN (e.g. many times/day), and write every script assuming it will be run in a fresh R process
+
+
+## Filepaths
+
+Every saved thing gets a unique path. 
+
+Your code needs to run from somewhere specific. And when it interacts with other things (data or other code), you need to tell your code where things are.
+
+The more deliberate you are about where things live,
+
+- The easier it will be for you and future you
+- The easier it will be for other people
+- The easier it will be on another computer
+
+### setwd("path/that/only/works/on/my/machine")
+
+The chance of `setwd()` having the desired effect -- making the file paths work -- for anyone besides its author is 0%.
+
+It's also unlikely to work for the author one or two years or computers from now.
+
+Hard-wired, absolute paths, especially when sprinkled throughout the code, make a project brittle. Such code does not travel well across time or space.
+
+
+### setwd()
+
+BUT, if you still decide to use `setwd()` in your scripts, you should at least be very disciplined about it:
+
+Only use `setwd()` at the very start of a file, i.e. in an obvious and predictable place.  
+
+Always set working directory to the same thing, namely to the top-level of the project. Always build subsequent paths relative to that.
+
+### R users: use the `here` package
+
+`here()` identifies your project's files, based on the current working directory at the time when the package is loaded.
+
+```
+library(here)
+here()
+```
+
+## Project oriented workflows
+
+### Dilemma and Solution
+
+**Problem statement:**
+
+We want to work on project A with the working directory set to path/to/projectA (my data analysis) and on project B with the working directory set to path/to/projectB (my teaching material).
+ 
+But we also want to keep code like setwd("path/to/projectA") out of our scripts.
+
+**Solution:**
+
+Solution: use an IDE that supports a project-based workflow.
+
+An [integrated development environment](https://en.wikipedia.org/wiki/Integrated_development_environment) (IDE) offers:
+
+- a powerful, R-aware code editor
+- many ways to send your code to a running R process
+- other modern conveniences
+
+And it eliminates:
+
+- temptation to develop code directly in the Console. (instead:.R!)
+- tension between development convenience and portability of the code.
+
+### Organize your work into projects
+
+Here's what I mean by "work in a project":
+
+- File system discipline: put all files related to a project in a designated folder.
+  - This applies to data, code, figures, notes, etc.
+  - Depending on project complexity, you might enforce further organization into subfolders.
+- Working directory intentionality: when working on project A, make sure working directory is set to project A's folder.
+  - Ideally, this is achieved via the development workflow and tooling, not by baking absolute paths into the code.
+- File path discipline: all paths are relative — relative to the project's folder.
+
+Synergistic habits: you'll get the biggest payoff if you practice all of them together.
+
+Portability: the project can be moved around on your computer or onto other computers and will still "just work".  is the only practical convention that creates reliable, polite behavior across different computers/users/time. This convention is neither new, nor unique to R.
+
+It's like agreeing that we will all drive on the left or the right. A hallmark of civilization is following conventions that constrain your behavior a little, in the name of public safety.
+
+### RStudio Projects
+
+The RStudio IDE has a notion of a (capital "P") Project, which is a very effective implementation of (small "p") projects.
+
+Project have an.Rproj file in the folder, which is used to store settings specific to that project. Use File > New Project ... to get started.
+
+Allows for multiple projects
+
+no danger of crosstalk: each has own R process, global workspace & working directory
+
+Same “unit” as a GitHub repo!
+
+### Tips for RStudio Projects
+
+One suggestion for organizing: 
+
+Have a dedicated folder for your Projects. 
+- If you have One Main Place for Projects, then go there in Finder/File Explorer to launch any specific project with .Rproj. 
+- Mine is called “~/github/”. 
+
+Switching Projects: RStudio knows about recent Projects.
+
+### Name files deliberately
+
+Jenny Bryan’s 3 rules for Naming Things:
+
+- machine readable
+- human readable
+- plays well with default ordering
+
+Available from [Speakerdeck](https://speakerdeck.com/jennybc/how-to-name-files) 
+
+## Further reading
+
+- [Tidyverse Skills for Data Science](https://jhudatascience.org/tidyversecourse/) - Wright, Ellis, Hicks, & Peng
+- [Principles for data analysis workflows](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008770) - Stoudt, Vasquez, and Martinez 2021, PLOS Computational Biology
+- [R Cookbook](https://rc2e.com/) — JD Long
+
+
+<!--- TODO: update this text after NWFSC cohort run through as Coding strategies
+
+
+Code: your packages are like ingredients in a recipe. They need to be up at the top. Also for RLadies. Dry ingredients and wet. Preheat the oven oven. Think of it as a recipe: not only it is telling the steps to follow to do the thing, there whole reason for writing it down at all is so you and others can figure out what's going on/what to do 
+
+README files are a convention for coders. They are found in a folder and give a "lay of the land" of the neighboring files in the folder. They are such a convention that GitHub displays markdown files named README. 
+
+Use GitHub search and breadcrumbs in your commits. Eg: search "redirects"
+https://github.com/Openscapes/website/commit/93b68e9c9091b0c30ecf3278f2e9e0666adb1153
+
+--->
+
+
+<!---
+
+Opinionated analysis development. RStudio is already doing this. Reserve your mental energy for the fun part of the analysis
+
+PCFB
+
+--R community practices, packages efficiency tour
+
+Coding not just for statistics. For data wrangling, streamlining, organizing
+Open source languages
+RStudio
+Embrace existing practices & tools
+Shared culture for “code review”
+rOpenSci packages & community
+
+Hypertidy sumner, `cartilage` miles McBain (discuss with Nick)
+
+Use spelling from ropensci, and see Arnold's slides. Also check for broken links
+
+Separate_rows amazing
+
+-- Jenny Bryan Wizardry
+
+Naming things
+
+https://speakerdeck.com/jennybc/how-to-name-files?slide=8
+
+And about the naming. I think the dates in the files represent the dates of the samples or the dates of the processing; they are not dates for versioning. So they are statics dates that are actual data that can be parsed, not bookkeeping that git will take care of for you. You may not need to have dates of any kind in the name, depending on what the files are and the information important to that data that you want to include in the name. 
+
+
+-- Happy Git with R
+
+https://happygitwithr.com/
+
+-- What They Forgot
+
+whattheyforgot.org
+
+
+Additional Reading
+
+[Lai et al 2019. Evaluating the popularity of R in ecology](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/ecs2.2567)
+
+--->
