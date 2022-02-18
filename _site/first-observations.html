@@ -109,7 +109,7 @@
     <ul id="quarto-sidebar-section-basic-workflows" class="collapse list-unstyled sidebar-section depth1 ">  
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./basic-workflows/index.html" class="sidebar-item-text sidebar-link">Overview</a>
+  <a href="./basic-workflows/index.html" class="sidebar-item-text sidebar-link">Quarto Overview</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -119,7 +119,12 @@
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./basic-workflows/rstudio.html" class="sidebar-item-text sidebar-link">From the RStudio IDE</a>
+  <a href="./basic-workflows/rstudio.html" class="sidebar-item-text sidebar-link">From RStudio</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./basic-workflows/jupyterhub.html" class="sidebar-item-text sidebar-link">From JupyterHub</a>
   </div>
 </li>
     </ul>
@@ -183,7 +188,12 @@
 <p>Let’s go to <strong><a href="https://github.com/openscapes/quarto-website-tutorial" class="uri">https://github.com/openscapes/quarto-website-tutorial</a></strong>.</p>
 <p>[screenshot of github repo]</p>
 <p><strong>Now let’s look at the filenames.</strong> We can recognize the names of the webpages we’ve seen, and there is also a <code>_quarto.yml</code> file, which is the website’s configuration file.</p>
-<p>[screenshot of annotated filenames]</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/quarto-yml-site-side-by-side.png" class="img-fluid figure-img"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption"><code>_quarto.yml</code> and website side-by-side</figcaption><p></p>
+</figure>
+</div>
 <p><code>_quarto.yml</code> is a directory of the order that the pages/chapters will be in. This is where you update the organization of your website, while you update the content of those pages in the specific file.</p>
 <p>Committing will trigger the GitHub Action to rebuild and republish the book. Note that the GitHub Action for this book does not include R or Python so those will need to be added if your website relies on code.</p>
 </section>
@@ -391,7 +401,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
   <div class="nav-page nav-page-next">
       <a href="./basic-workflows/index.html" class="pagination-link">
-        <span class="nav-page-text">Overview</span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text">Quarto Overview</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

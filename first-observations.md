@@ -30,7 +30,7 @@ Let's go to **<https://github.com/openscapes/quarto-website-tutorial>**.
 
 **Now let’s look at the filenames.** We can recognize the names of the webpages we’ve seen, and there is also a `_quarto.yml` file, which is the website’s configuration file. 
 
-![screenshot of annotated filenames]
+![`_quarto.yml` and website side-by-side](images/quarto-yml-site-side-by-side.png)
 
 `_quarto.yml` is a directory of the order that the pages/chapters will be in. This is where you update the organization of your website, while you update the content of those pages in the specific file. 
 

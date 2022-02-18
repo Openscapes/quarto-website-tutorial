@@ -1,5 +1,5 @@
 ---
-title: From the RStudio IDE
+title: From RStudio
 ---
 
 ## Setup RStudio and GitHub

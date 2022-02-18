@@ -1,10 +1,14 @@
 ---
-title: JupyterHub
+title: From JupyterHub
 ---
+
+TODO!
 
 Note: Revisit - maybe this should be "JupyterLab" rather than Hub.
 
 ## Setup
+
+![screenshot of setup]
 
 ## Install Quarto
 
