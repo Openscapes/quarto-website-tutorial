@@ -3,9 +3,9 @@ project:
   
 website: 
   page-navigation: true
-  title: "Our onboarding guide" 
-  site-url: "https://openscapes.github.io/series" # change
-  repo-url: https://github.com/openscapes/series # change
+  title: "Making open-source documents with Quarto" 
+  site-url: "https://openscapes.github.io/series" 
+  repo-url: https://github.com/openscapes/series 
   repo-actions: [edit, issue]
   
   page-footer:
@@ -16,25 +16,32 @@ website:
     logo: "openscapes_hex.png"
     pinned: true
     align: center
+    tools: 
+      - icon: globe
+        href: https://openscapes.org
+        text: "Openscapes.org"
+      - icon: github
+        href: https://github.com/openscapes/quarto-website-tutorial
+        text: "Quarto website tutorial"
+      - icon: twitter
+        href: https://twitter.com/openscapes
+        text: "Openscapes Twitter"         
 
     style: "docked"
     search: true
     collapse-level: 1
     contents:
-      - index.md
-      - culture-philosophy.md
-      - code-of-conduct.md
-      - onboarding.md
-      - expectations.md
-      - computing.md
-      - offboarding.md
+      - href: index.md
+        text: Welcome
+      - first-observations.md
+      - basic-workflow.md
+      - tools-to-help-you.md
 
 format:
   html:
     theme:
       light: [cosmo, theme.scss] # from https://github.com/sta210-s22/website/blob/main/_quarto.yml
       dark: [cosmo, theme-dark.scss]
-    mainfont: "Atkinson Hyperlegible"
     code-copy: true
     code-overflow: wrap
     toc: true
