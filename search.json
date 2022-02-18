@@ -7,6 +7,13 @@
     "text": "Examples\nWe have been using Quarto for documentation without any code, as well as for Python (and R code upcoming):\n\nChampions Lessons Series. A collection of .md files.\nApproach Guide. A collection of .md and .qmd files.\n2021 NASA Cloud Hackathon. A collection of .ipynb and .md files.\n\n\nInspiration\nAre you making onboarding documentation? Check out The Fay Lab Manual for inspiration on structure - you could also start there and make it your own."
   },
   {
+    "objectID": "index.html#about",
+    "href": "index.html#about",
+    "title": "Making open-source documents with Quarto",
+    "section": "About",
+    "text": "About\nWe’re developing this tutorial to help folks of different technical skills use quarto for documentation and tutorial building. The structure follows a previous tutorial Making free websites with RStudio’s RMarkdown."
+  },
+  {
     "objectID": "render-vs-preview.html#rendering-vs-servingpreview",
     "href": "render-vs-preview.html#rendering-vs-servingpreview",
     "title": "Render vs. Preview",
