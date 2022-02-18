@@ -12,7 +12,7 @@ slug: index
 
 It's possible to create beautiful documentation for free using [Quarto](https://quarto.org) and making updates automatically republish on [Github](http://github.com). This is very new and incredibly cool. It is a really powerful way to create and share tutorials, onboarding documentation, and much more. You can communicate about science and help colleagues using the same reproducible workflow you and or your colleagues use for analyses.
 
-Creating websites with quarto can be done without knowing R, Python or HTML, CSS, etc, and that's where we'll start. However, Quarto integrates with these tools - it can combine RMarkdown and Jupyter notebooks in the same place - so the more you know the more complex and beautiful your website can be. This tutorial borrows heavily from a lot of great tutorials and resources you should check out too -- there are links throughout. 
+This tutorial was created for several specific audiences: Deputy and Communications Directors at organizations that promote open science, and technical support engineers that support researchers who code. This tutorial is for both those audiences and for everyone in between: Creating websites with quarto can be done without knowing R, Python or HTML, CSS, etc, and that's where we'll start. However, Quarto integrates with these tools - it can combine RMarkdown and Jupyter notebooks in the same place - so the more you know the more complex and beautiful your website can be. This tutorial borrows heavily from a lot of great tutorials and resources you should check out too -- there are links throughout. 
 
 ## Examples
 

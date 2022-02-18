@@ -4,14 +4,21 @@ title: Render vs. Preview
 
 Making quarto websites involves terminology that might not be unfamiliar. This is a light explainer to help you get going. 
 
-## Rendering vs Serving/Preview
+As you work locally, you will save your files as you normally do. Saving writes your work to disk. 
 
-Rendering is 
+Sometimes files get big and complicated with code, so Quarto will not run files by default. It will never run .ipynb files unless you tell it to.
 
+## Render
+
+Rendering is when...
+
+It's like saying "show me".
+
+## Preview/Serve
 Preview is
 
 - this has been called "Serve" in the past
-
+- you don't ever need to serve if you're working in RStudio
 
 When do I want one or the other?
 

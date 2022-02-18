@@ -20,7 +20,7 @@
   <script src="site_libs/quarto-search/fuse.min.js"></script>
   <script src="site_libs/quarto-search/quarto-search.js"></script>
   <link href="./getting-sophisticated.html" rel="next">
-  <link href="./rstudio.html" rel="prev">
+  <link href="./basic-workflows/rstudio.html" rel="prev">
   <script src="site_libs/quarto-html/quarto.js"></script>
   <script src="site_libs/quarto-html/popper.min.js"></script>
   <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -114,7 +114,12 @@
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./rstudio.html" class="sidebar-item-text sidebar-link">rstudio.html</a>
+  <a href="./basic-workflows/browser.html" class="sidebar-item-text sidebar-link">From the Browser</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./basic-workflows/rstudio.html" class="sidebar-item-text sidebar-link">From the RStudio IDE</a>
   </div>
 </li>
     </ul>
@@ -137,7 +142,8 @@
         <nav id="TOC" role="doc-toc">
 <h2 id="toc-title">On this page</h2>
 <ul>
-<li><a href="#rendering-vs-servingpreview" class="nav-link active" data-scroll-target="#rendering-vs-servingpreview">Rendering vs Serving/Preview</a></li>
+<li><a href="#render" class="nav-link active" data-scroll-target="#render">Render</a></li>
+<li><a href="#previewserve" class="nav-link" data-scroll-target="#previewserve">Preview/Serve</a></li>
 <li><a href="#if-im-in-jupyter-labhub" class="nav-link" data-scroll-target="#if-im-in-jupyter-labhub">If I’m in Jupyter Lab/Hub</a>
 <ul class="collapse">
 <li><a href="#troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a></li>
@@ -156,12 +162,19 @@
 </header>
 
 <p>Making quarto websites involves terminology that might not be unfamiliar. This is a light explainer to help you get going.</p>
-<section id="rendering-vs-servingpreview" class="level2">
-<h2 class="anchored" data-anchor-id="rendering-vs-servingpreview">Rendering vs Serving/Preview</h2>
-<p>Rendering is</p>
+<p>As you work locally, you will save your files as you normally do. Saving writes your work to disk.</p>
+<p>Sometimes files get big and complicated with code, so Quarto will not run files by default. It will never run .ipynb files unless you tell it to.</p>
+<section id="render" class="level2">
+<h2 class="anchored" data-anchor-id="render">Render</h2>
+<p>Rendering is when…</p>
+<p>It’s like saying “show me”.</p>
+</section>
+<section id="previewserve" class="level2">
+<h2 class="anchored" data-anchor-id="previewserve">Preview/Serve</h2>
 <p>Preview is</p>
 <ul>
 <li>this has been called “Serve” in the past</li>
+<li>you don’t ever need to serve if you’re working in RStudio</li>
 </ul>
 <p>When do I want one or the other?</p>
 <p>Comparison to knitting in RMarkdown</p>
@@ -364,8 +377,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./rstudio.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">rstudio.html</span>
+      <a href="./basic-workflows/rstudio.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">From the RStudio IDE</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
