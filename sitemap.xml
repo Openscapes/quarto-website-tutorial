@@ -1,19 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://openscapes.github.io/series/tools-to-help-you.html</loc>
-    <lastmod>2022-02-18T01:03:18.314Z</lastmod>
-  </url>
-  <url>
     <loc>https://openscapes.github.io/series/index.html</loc>
-    <lastmod>2022-02-18T01:03:19.246Z</lastmod>
+    <lastmod>2022-02-18T15:20:26.168Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/series/basic-workflow.html</loc>
-    <lastmod>2022-02-18T01:03:19.446Z</lastmod>
+    <loc>https://openscapes.github.io/series/render-vs-preview.html</loc>
+    <lastmod>2022-02-18T15:20:28.500Z</lastmod>
+  </url>
+  <url>
+    <loc>https://openscapes.github.io/series/basic-workflows/rstudio.html</loc>
+    <lastmod>2022-02-18T15:20:28.784Z</lastmod>
+  </url>
+  <url>
+    <loc>https://openscapes.github.io/series/basic-workflows/index.html</loc>
+    <lastmod>2022-02-18T15:20:29.036Z</lastmod>
+  </url>
+  <url>
+    <loc>https://openscapes.github.io/series/basic-workflows/browser.html</loc>
+    <lastmod>2022-02-18T15:20:29.276Z</lastmod>
+  </url>
+  <url>
+    <loc>https://openscapes.github.io/series/basic-workflows/jupyterhub.html</loc>
+    <lastmod>2022-02-18T15:20:29.552Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/series/first-observations.html</loc>
-    <lastmod>2022-02-18T01:03:19.654Z</lastmod>
+    <lastmod>2022-02-18T15:20:29.864Z</lastmod>
+  </url>
+  <url>
+    <loc>https://openscapes.github.io/series/getting-sophisticated.html</loc>
+    <lastmod>2022-02-18T15:20:30.120Z</lastmod>
   </url>
 </urlset>

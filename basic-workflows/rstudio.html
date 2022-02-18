@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""><head>
   <meta charset="utf-8">
-  <meta name="generator" content="quarto-0.9.17">
+  <meta name="generator" content="quarto-0.2.339">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>Making open-source documents with Quarto - Onboarding</title>
+  <title>Making open-source documents with Quarto - From the RStudio IDE</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -13,23 +13,26 @@
     ul.task-list{list-style: none;}
   </style>
 
-  <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-  <script src="site_libs/clipboard/clipboard.min.js"></script>
-  <meta name="quarto:offset" content="./">
-  <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-  <script src="site_libs/quarto-search/fuse.min.js"></script>
-  <script src="site_libs/quarto-search/quarto-search.js"></script>
-  <script src="site_libs/quarto-html/quarto.js"></script>
-  <script src="site_libs/quarto-html/popper.min.js"></script>
-  <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-  <script src="site_libs/quarto-html/anchor.min.js"></script>
-  <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-  <link class="quarto-color-scheme" href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
-  <link class="quarto-color-scheme quarto-color-alternate" rel="prefetch" href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css">
-  <script src="site_libs/bootstrap/bootstrap.min.js"></script>
-  <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-  <link class="quarto-color-scheme" href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
-  <link class="quarto-color-scheme quarto-color-alternate" rel="prefetch" href="site_libs/bootstrap/bootstrap-dark.min.css">
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+  <script src="../site_libs/clipboard/clipboard.min.js"></script>
+  <meta name="quarto:offset" content="../">
+  <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+  <script src="../site_libs/quarto-search/fuse.min.js"></script>
+  <script src="../site_libs/quarto-search/quarto-search.js"></script>
+  <script src="../site_libs/quarto-html/quarto.js"></script>
+  <script src="../site_libs/quarto-html/popper.min.js"></script>
+  <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+  <script src="../site_libs/quarto-html/anchor.min.js"></script>
+  <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+  <link class="quarto-color-scheme" href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
+  <link class="quarto-color-scheme quarto-color-alternate" rel="prefetch" href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css">
+  <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+  <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+  <link class="quarto-color-scheme" href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link class="quarto-color-scheme quarto-color-alternate" rel="prefetch" href="../site_libs/bootstrap/bootstrap-dark.min.css">
   <script id="quarto-search-options" type="application/json">{
     "location": "sidebar",
     "copy-button": false,
@@ -49,16 +52,13 @@
       "search-submit-button-title": "Submit"
     }
   }</script>
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
 </head>
 <body class="docked">
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Onboarding</h1>
+      <h1 class="quarto-secondary-nav-title">From the RStudio IDE</h1>
       <button type="button" class="quarto-btn-toggle btn">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -69,71 +69,104 @@
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-center sidebar-header">
-      <a href="./">
-      <img src="./openscapes_hex.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
-      </a>
-      <div class="sidebar-tools-main tools-wide">
+  <div class="pt-lg-2 mt-2 text-center sidebar-header">
+    <img src="../openscapes_hex.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <div class="sidebar-tools-main">
     <a href="https://openscapes.org" title="Openscapes.org" class="sidebar-tool px-1"><i class="bi bi-globe"></i></a>
     <a href="https://github.com/openscapes/quarto-website-tutorial" title="Quarto website tutorial" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
     <a href="https://twitter.com/openscapes" title="Openscapes Twitter" class="sidebar-tool px-1"><i class="bi bi-twitter"></i></a>
   <a href="" class="quarto-color-scheme-toggle sidebar-tool" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
+  </div>
+    <div class="px-3 mt-2 flex-shrink-0 align-items-center">
+      <div class="sidebar-search">
+      <div id="quarto-search" class="" title="Search"></div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-      </div>
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Welcome</a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./first-observations.html" class="sidebar-item-text sidebar-link">First observations</a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./basic-workflow.html" class="sidebar-item-text sidebar-link">Basic workflow</a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./tools-to-help-you.html" class="sidebar-item-text sidebar-link">Tools to help you</a>
-  </div>
-</li>
-    </ul>
     </div>
+  <div class="sidebar-menu-container"> 
+  <ul class="list-unstyled mt-1">
+      <li class="sidebar-item">
+  <a href="../index.html" class="">Welcome</a>
+</li>
+      <li class="sidebar-item">
+  <a href="../first-observations.html" class="">First Observations</a>
+</li>
+      <ul class="list-unstyled sidebar-section depth1">
+    <li class="">
+        <div class="me-auto">
+            <a class="sidebar-section-item d-inline-flex text-start w-100 " data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-basic-workflows" aria-expanded="true">
+              <div class="me-auto sidebar-section-item">Basic Workflows</div>
+            <div><i class="bi bi-chevron-right ms-2"></i></div>
+            </a>
+        </div>
+      <div class="collapse  show" id="quarto-sidebar-section-basic-workflows">
+        <ul class="list-unstyled sidebar-item-contents">
+          <li class="sidebar-item">
+  <a href="../basic-workflows/index.html" class="">Overview</a>
+</li>
+          <li class="sidebar-item">
+  <a href="../basic-workflows/browser.html" class="">From the Browser</a>
+</li>
+          <li class="sidebar-item">
+  <a href="../basic-workflows/rstudio.html" class="active">From the RStudio IDE</a>
+</li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+      <li class="sidebar-item">
+  <a href="../render-vs-preview.html" class="">Render vs.&nbsp;Preview</a>
+</li>
+      <li class="sidebar-item">
+  <a href="../getting-sophisticated.html" class="">Getting Sophisticated</a>
+</li>
+  </ul>
+  </div>
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc">
+      <nav id="TOC" role="doc-toc">
 <h2 id="toc-title">On this page</h2>
 <ul>
-<li><a href="#introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-<li><a href="#another-header" class="nav-link" data-scroll-target="#another-header">Another header</a></li>
+<li><a href="#setup-rstudio-and-github" class="nav-link active" data-scroll-target="#setup-rstudio-and-github">Setup RStudio and GitHub</a></li>
+<li><a href="#install-quarto" class="nav-link" data-scroll-target="#install-quarto">Install Quarto</a></li>
+<li><a href="#rstudio-landscape" class="nav-link" data-scroll-target="#rstudio-landscape">RStudio Landscape</a></li>
+<li><a href="#visual-editor" class="nav-link" data-scroll-target="#visual-editor">Visual Editor</a></li>
+<li><a href="#render-on-save" class="nav-link" data-scroll-target="#render-on-save">Render on Save</a></li>
 </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/series/edit/main/offboarding.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/series/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/series/edit/main/basic-workflows/rstudio.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/series/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content">
 <header id="title-block-header">
-<h1 class="title d-none d-lg-block display-7">Onboarding</h1>
+<h1 class="title d-none d-lg-block display-7">From the RStudio IDE</h1>
 </header>
 
-<p>Here are onboarding procedures.</p>
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>Text here.</p>
+<section id="setup-rstudio-and-github" class="level2">
+<h2 class="anchored" data-anchor-id="setup-rstudio-and-github">Setup RStudio and GitHub</h2>
+<p>For a workflow with RStudio and GitHub on your local computer, you will need four things:</p>
+<ol type="1">
+<li>R</li>
+<li>RStudio</li>
+<li>Git</li>
+<li>GitHub</li>
+</ol>
+<p>Follow the <a href="https://ucsb-meds.github.io/meds-install-guide.html">UCSB MEDS Installation Guide</a> for detailed instructions on how to create accounts, download, install, and configure on Mac and Windows. (For an even more detailed walk-through, see <a href="https://docs.google.com/document/d/1zx2upJJqFZe94O3BQSMI56Z76s3haLXC0otKSpcZaJQ/edit">Allison Horst’s ESM 206 Google Doc</a>). Thanks for sharing Allison!</p>
+<p>If you’d like to practice the workflow with RStudio and GitHub, follow <a href="https://rstudio-conf-2020.github.io/r-for-excel/github.html">R for Excel Users’ GitHub Chapter</a>. This describes how to create a GitHub repository, clone it to RStudio, make edits, and practice syncing.</p>
 </section>
-<section id="another-header" class="level2">
-<h2 class="anchored" data-anchor-id="another-header">Another header</h2>
-<p>More text here.</p>
+<section id="install-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="install-quarto">Install Quarto</h2>
+<p>Download Quarto from <a href="https://quarto.org/docs/get-started/" class="uri">https://quarto.org/docs/get-started/</a>. Follow the installation wizard on your computer. When it is complete, you won’t see an application or any new software, but it is now available to RStudio.</p>
+</section>
+<section id="rstudio-landscape" class="level2">
+<h2 class="anchored" data-anchor-id="rstudio-landscape">RStudio Landscape</h2>
+<p>TODO: screenshots of IDE, orienting</p>
+</section>
+<section id="visual-editor" class="level2">
+<h2 class="anchored" data-anchor-id="visual-editor">Visual Editor</h2>
+</section>
+<section id="render-on-save" class="level2">
+<h2 class="anchored" data-anchor-id="render-on-save">Render on Save</h2>
 
 
 </section>
@@ -207,13 +240,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
   const getColorSchemeSentinel = () => {
     if (!isFileUrl()) {
-      const storageValue = window.localStorage.getItem("quarto-color-scheme");
-      return storageValue != null ? storageValue : localAlternateSentinel;
+      return window.localStorage.getItem("quarto-color-scheme");
     } else {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  let localAlternateSentinel = null;
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
@@ -224,8 +256,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
     const a = window.document.createElement('a');
+    a.id = "quarto-color-scheme-toggle";
     a.classList.add('top-right');
-    a.classList.add('quarto-color-scheme-toggle');
     a.href = "";
     a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
     const i = window.document.createElement("i");
@@ -311,10 +343,16 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">© CC-By Our team, 2022</div>   
+    <div class="nav-footer-left">© CC-By Openscapes, 2022</div>   
     <div class="nav-footer-right">This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</div>
   </div>
 </footer>

@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="quarto-0.2.339">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>Making open-source documents with Quarto - First Observations</title>
+  <title>Making open-source documents with Quarto - Render vs.&nbsp;Preview</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -58,7 +58,7 @@
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">First Observations</h1>
+      <h1 class="quarto-secondary-nav-title">Render vs.&nbsp;Preview</h1>
       <button type="button" class="quarto-btn-toggle btn">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -89,7 +89,7 @@
   <a href="./index.html" class="">Welcome</a>
 </li>
       <li class="sidebar-item">
-  <a href="./first-observations.html" class="active">First Observations</a>
+  <a href="./first-observations.html" class="">First Observations</a>
 </li>
       <ul class="list-unstyled sidebar-section depth1">
     <li class="">
@@ -115,7 +115,7 @@
     </li>
   </ul>
       <li class="sidebar-item">
-  <a href="./render-vs-preview.html" class="">Render vs.&nbsp;Preview</a>
+  <a href="./render-vs-preview.html" class="active">Render vs.&nbsp;Preview</a>
 </li>
       <li class="sidebar-item">
   <a href="./getting-sophisticated.html" class="">Getting Sophisticated</a>
@@ -128,69 +128,53 @@
       <nav id="TOC" role="doc-toc">
 <h2 id="toc-title">On this page</h2>
 <ul>
-<li><a href="#exploring-online" class="nav-link active" data-scroll-target="#exploring-online">Exploring online</a>
+<li><a href="#rendering-vs-servingpreview" class="nav-link active" data-scroll-target="#rendering-vs-servingpreview">Rendering vs Serving/Preview</a></li>
+<li><a href="#if-im-in-jupyter-labhub" class="nav-link" data-scroll-target="#if-im-in-jupyter-labhub">If I’m in Jupyter Lab/Hub</a>
 <ul class="collapse">
-<li><a href="#the-website-itself" class="nav-link" data-scroll-target="#the-website-itself">The website itself</a></li>
-<li><a href="#the-websites-repo" class="nav-link" data-scroll-target="#the-websites-repo">The website’s repo</a></li>
+<li><a href="#troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a></li>
 </ul></li>
-<li><a href="#your-turn" class="nav-link" data-scroll-target="#your-turn">Your turn</a>
+<li><a href="#if-im-in-rstudio-ide" class="nav-link" data-scroll-target="#if-im-in-rstudio-ide">If I’m in RStudio IDE</a>
 <ul class="collapse">
-<li><a href="#choose-an-existing-websitebook" class="nav-link" data-scroll-target="#choose-an-existing-websitebook">Choose an existing website/book</a></li>
-<li><a href="#fork-the-existing-repo" class="nav-link" data-scroll-target="#fork-the-existing-repo">Fork the existing repo</a></li>
+<li><a href="#troubleshooting-1" class="nav-link" data-scroll-target="#troubleshooting-1">Troubleshooting</a></li>
 </ul></li>
 </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/series/edit/main/first-observations.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/series/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/series/edit/main/render-vs-preview.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/series/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content">
 <header id="title-block-header">
-<h1 class="title d-none d-lg-block display-7">First Observations</h1>
+<h1 class="title d-none d-lg-block display-7">Render vs.&nbsp;Preview</h1>
 </header>
 
-<p>With this tutorial, we have a working example website that we will explore together. We’ll learn a few rules and look for patterns to get an understanding of what things do to help you start customizing and making it your own. And you can continue to use this website as a reference after the tutorial, along with <a href="https://quarto.org"><strong>Quarto</strong></a> documentation. (Sidenote: this is actually a Quarto website that looks like a book - books are better for cross-referencing chapters, figures, equations, and references so that might be an option for you to explore too.)</p>
-<p>We’ll start our exploration online looking at the website architecture, and discuss how you can make modifications from the browser with GitHub automatically publishing via GitHub Actions. Then we’ll clone the repo and explore further workflows with different tools.</p>
-<section id="exploring-online" class="level2">
-<h2 class="anchored" data-anchor-id="exploring-online">Exploring online</h2>
-<section id="the-website-itself" class="level3">
-<h3 class="anchored" data-anchor-id="the-website-itself">The website itself</h3>
-<p>This website has 5 things you can see on the left sidebar:</p>
+<p>Making quarto websites involves terminology that might not be unfamiliar. This is a light explainer to help you get going.</p>
+<section id="rendering-vs-servingpreview" class="level2">
+<h2 class="anchored" data-anchor-id="rendering-vs-servingpreview">Rendering vs Serving/Preview</h2>
+<p>Rendering is</p>
+<p>Preview is</p>
 <ul>
-<li>Welcome</li>
-<li>First Observations</li>
-<li>Basic Workflows</li>
-<li>Render vs.&nbsp;Preview</li>
-<li>Getting Sophisticated</li>
+<li>this has been called “Serve” in the past</li>
 </ul>
-<p>Most of these are pages, but you’ll see that “Basic Workflows” is a subfolder with additional pages inside.</p>
+<p>When do I want one or the other?</p>
+<p>Comparison to knitting in RMarkdown</p>
 </section>
-<section id="the-websites-repo" class="level3">
-<h3 class="anchored" data-anchor-id="the-websites-repo">The website’s repo</h3>
-<p>TODO develop</p>
-<p>Let’s go to <strong><a href="https://github.com/openscapes/quarto-website-tutorial" class="uri">https://github.com/openscapes/quarto-website-tutorial</a></strong>.</p>
-<p>[screenshot of github repo]</p>
-<p><strong>Now let’s look at the filenames.</strong> We can recognize the names of the webpages we’ve seen, and there is also a <code>_quarto.yml</code> file, which is the website’s configuration file.</p>
-<p>[screenshot of annotated filenames]</p>
-<p><code>_quarto.yml</code> is a directory of the order that the pages/chapters will be in. This is where you update the organization of your website, while you update the content of those pages in the specific file.</p>
-<p>Committing will trigger the GitHub Action to rebuild and republish the book. Note that the GitHub Action for this book does not include R or Python so those will need to be added if your website relies on code.</p>
+<section id="if-im-in-jupyter-labhub" class="level2">
+<h2 class="anchored" data-anchor-id="if-im-in-jupyter-labhub">If I’m in Jupyter Lab/Hub</h2>
+<p>In terminal, cd to repo…</p>
+<section id="troubleshooting" class="level3">
+<h3 class="anchored" data-anchor-id="troubleshooting">Troubleshooting</h3>
+<p>If it hangs/if I get errors:</p>
+<p>Check the specific notebook, are there <code>---</code>? Delete those. Is there too much in the first raw cell? Change that</p>
 </section>
 </section>
-<section id="your-turn" class="level2">
-<h2 class="anchored" data-anchor-id="your-turn">Your turn</h2>
-<p>These instructions are for starting with an existing Quarto site and copying it into your space to edit.</p>
-<section id="choose-an-existing-websitebook" class="level3">
-<h3 class="anchored" data-anchor-id="choose-an-existing-websitebook">Choose an existing website/book</h3>
-<p>A simple option is to start with this site: <a href="https://github.com/Openscapes/quarto-website-tutorial">quarto-website-tutorial</a>.</p>
-<p>Other options of potential interest:</p>
-<ul>
-<li><a href="https://github.com/NASA-Openscapes/2021-Cloud-Hackathon">2021-Cloud-Hackathon</a></li>
-<li><a href="https://github.com/podaac/2022-SWOT-Ocean-Cloud-Workshop">2022-SWOT-Ocean-Cloud-Workshop</a></li>
-<li><a href="https://openscapes.github.io/approach-guide">Approach-Guide</a></li>
-</ul>
-</section>
-<section id="fork-the-existing-repo" class="level3">
-<h3 class="anchored" data-anchor-id="fork-the-existing-repo">Fork the existing repo</h3>
-<p>Follow <a href="https://github.com/thefaylab/lab-manual/wiki/Quick-steps-to-making-a-copy-of-the-lab-manual-&amp;-publishing-it">these steps to fork and setup your repo</a> from Gavin Fay, using the repo you chose.</p>
-<p>Now you’re set up to edit from the GitHub browser and your book will be republished with our edits. A workflow from the browser if good for getting started/making small contributions but is definitely limited. Once you feel comfortable here, you can move to a different setup.</p>
+<section id="if-im-in-rstudio-ide" class="level2">
+<h2 class="anchored" data-anchor-id="if-im-in-rstudio-ide">If I’m in RStudio IDE</h2>
+<p>Build tab click buttons….</p>
+<p>Terminal…</p>
+<p>Or alternatively, R console…</p>
+<p>When does it preview automatically?</p>
+<section id="troubleshooting-1" class="level3">
+<h3 class="anchored" data-anchor-id="troubleshooting-1">Troubleshooting</h3>
+<p>If it hangs/if I get errors</p>
 
 
 </section>
