@@ -1,27 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://openscapes.github.io/series/expectations.html</loc>
-    <lastmod>2022-02-18T01:01:22.425Z</lastmod>
+    <loc>https://openscapes.github.io/series/first-observations.html</loc>
+    <lastmod>2022-02-18T15:14:37.027Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/series/first-observations.html</loc>
-    <lastmod>2022-02-18T01:01:22.841Z</lastmod>
+    <loc>https://openscapes.github.io/series/browser.html</loc>
+    <lastmod>2022-02-18T14:35:41.752Z</lastmod>
+  </url>
+  <url>
+    <loc>https://openscapes.github.io/series/rstudio.html</loc>
+    <lastmod>2022-02-18T14:35:42.048Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/series/tools-to-help-you.html</loc>
-    <lastmod>2022-02-18T01:01:23.619Z</lastmod>
+    <lastmod>2022-02-18T14:35:42.725Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/series/offboarding.html</loc>
-    <lastmod>2022-02-18T01:01:23.898Z</lastmod>
+    <loc>https://openscapes.github.io/series/getting-sophisticated.html</loc>
+    <lastmod>2022-02-18T14:35:43.058Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/series/index.html</loc>
-    <lastmod>2022-02-18T01:01:24.177Z</lastmod>
+    <lastmod>2022-02-18T14:35:43.341Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/series/basic-workflow.html</loc>
-    <lastmod>2022-02-18T01:01:24.442Z</lastmod>
+    <loc>https://openscapes.github.io/series/basic-workflows/index.html</loc>
+    <lastmod>2022-02-18T15:18:58.638Z</lastmod>
+  </url>
+  <url>
+    <loc>https://openscapes.github.io/series/render-vs-preview.html</loc>
+    <lastmod>2022-02-18T14:46:29.308Z</lastmod>
+  </url>
+  <url>
+    <loc>https://openscapes.github.io/series/basic-workflows/rstudio.html</loc>
+    <lastmod>2022-02-18T15:02:43.292Z</lastmod>
+  </url>
+  <url>
+    <loc>https://openscapes.github.io/series/basic-workflows/browser.html</loc>
+    <lastmod>2022-02-18T14:49:56.817Z</lastmod>
   </url>
 </urlset>

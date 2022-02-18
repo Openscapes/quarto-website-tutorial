@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="quarto-0.9.17">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>Making open-source documents with Quarto - Expectations</title>
+  <title>Making open-source documents with Quarto - Render vs.&nbsp;Preview</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,8 @@
   <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
   <script src="site_libs/quarto-search/fuse.min.js"></script>
   <script src="site_libs/quarto-search/quarto-search.js"></script>
+  <link href="./getting-sophisticated.html" rel="next">
+  <link href="./rstudio.html" rel="prev">
   <script src="site_libs/quarto-html/quarto.js"></script>
   <script src="site_libs/quarto-html/popper.min.js"></script>
   <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -58,7 +60,7 @@
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Expectations</h1>
+      <h1 class="quarto-secondary-nav-title">Render vs.&nbsp;Preview</h1>
       <button type="button" class="quarto-btn-toggle btn">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -94,17 +96,37 @@
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./first-observations.html" class="sidebar-item-text sidebar-link">First observations</a>
+  <a href="./first-observations.html" class="sidebar-item-text sidebar-link">First Observations</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+    <div class="sidebar-item-container"> 
+        <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-basic-workflows" aria-expanded="false">Basic Workflows</a>
+      <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-basic-workflows" aria-expanded="false">
+        <i class="bi bi-chevron-right ms-2"></i>
+      </a>
+    </div>
+    <ul id="quarto-sidebar-section-basic-workflows" class="collapse list-unstyled sidebar-section depth1 ">  
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./basic-workflows/index.html" class="sidebar-item-text sidebar-link">Overview</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./basic-workflow.html" class="sidebar-item-text sidebar-link">Basic workflow</a>
+  <a href="./rstudio.html" class="sidebar-item-text sidebar-link">rstudio.html</a>
+  </div>
+</li>
+    </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./render-vs-preview.html" class="sidebar-item-text sidebar-link active">Render vs.&nbsp;Preview</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tools-to-help-you.html" class="sidebar-item-text sidebar-link">Tools to help you</a>
+  <a href="./getting-sophisticated.html" class="sidebar-item-text sidebar-link">Getting Sophisticated</a>
   </div>
 </li>
     </ul>
@@ -115,27 +137,56 @@
         <nav id="TOC" role="doc-toc">
 <h2 id="toc-title">On this page</h2>
 <ul>
-<li><a href="#introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-<li><a href="#another-header" class="nav-link" data-scroll-target="#another-header">Another header</a></li>
+<li><a href="#rendering-vs-servingpreview" class="nav-link active" data-scroll-target="#rendering-vs-servingpreview">Rendering vs Serving/Preview</a></li>
+<li><a href="#if-im-in-jupyter-labhub" class="nav-link" data-scroll-target="#if-im-in-jupyter-labhub">If I’m in Jupyter Lab/Hub</a>
+<ul class="collapse">
+<li><a href="#troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a></li>
+</ul></li>
+<li><a href="#if-im-in-rstudio-ide" class="nav-link" data-scroll-target="#if-im-in-rstudio-ide">If I’m in RStudio IDE</a>
+<ul class="collapse">
+<li><a href="#troubleshooting-1" class="nav-link" data-scroll-target="#troubleshooting-1">Troubleshooting</a></li>
+</ul></li>
 </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/series/edit/main/expectations.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/series/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/series/edit/main/render-vs-preview.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/series/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 <header id="title-block-header">
-<h1 class="title d-none d-lg-block display-7">Expectations</h1>
+<h1 class="title d-none d-lg-block display-7">Render vs.&nbsp;Preview</h1>
 </header>
 
-<p>Here are expectations.</p>
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>Text here.</p>
+<p>Making quarto websites involves terminology that might not be unfamiliar. This is a light explainer to help you get going.</p>
+<section id="rendering-vs-servingpreview" class="level2">
+<h2 class="anchored" data-anchor-id="rendering-vs-servingpreview">Rendering vs Serving/Preview</h2>
+<p>Rendering is</p>
+<p>Preview is</p>
+<ul>
+<li>this has been called “Serve” in the past</li>
+</ul>
+<p>When do I want one or the other?</p>
+<p>Comparison to knitting in RMarkdown</p>
 </section>
-<section id="another-header" class="level2">
-<h2 class="anchored" data-anchor-id="another-header">Another header</h2>
-<p>More text here.</p>
+<section id="if-im-in-jupyter-labhub" class="level2">
+<h2 class="anchored" data-anchor-id="if-im-in-jupyter-labhub">If I’m in Jupyter Lab/Hub</h2>
+<p>In terminal, cd to repo…</p>
+<section id="troubleshooting" class="level3">
+<h3 class="anchored" data-anchor-id="troubleshooting">Troubleshooting</h3>
+<p>If it hangs/if I get errors:</p>
+<p>Check the specific notebook, are there <code>---</code>? Delete those. Is there too much in the first raw cell? Change that</p>
+</section>
+</section>
+<section id="if-im-in-rstudio-ide" class="level2">
+<h2 class="anchored" data-anchor-id="if-im-in-rstudio-ide">If I’m in RStudio IDE</h2>
+<p>Build tab click buttons….</p>
+<p>Terminal…</p>
+<p>Or alternatively, R console…</p>
+<p>When does it preview automatically?</p>
+<section id="troubleshooting-1" class="level3">
+<h3 class="anchored" data-anchor-id="troubleshooting-1">Troubleshooting</h3>
+<p>If it hangs/if I get errors</p>
 
 
+</section>
 </section>
 </main> <!-- /main -->
 <script type="application/javascript">
@@ -311,10 +362,22 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./rstudio.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">rstudio.html</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./getting-sophisticated.html" class="pagination-link">
+        <span class="nav-page-text">Getting Sophisticated</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">© CC-By Our team, 2022</div>   
+    <div class="nav-footer-left">© CC-By Openscapes, 2022</div>   
     <div class="nav-footer-right">This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</div>
   </div>
 </footer>
