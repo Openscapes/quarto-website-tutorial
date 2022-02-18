@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="quarto-0.2.339">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>Making open-source documents with Quarto - Overview</title>
+  <title>Making open-source documents with Quarto - Quarto Overview</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -58,7 +58,7 @@
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Overview</h1>
+      <h1 class="quarto-secondary-nav-title">Quarto Overview</h1>
       <button type="button" class="quarto-btn-toggle btn">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -102,13 +102,16 @@
       <div class="collapse  show" id="quarto-sidebar-section-basic-workflows">
         <ul class="list-unstyled sidebar-item-contents">
           <li class="sidebar-item">
-  <a href="../basic-workflows/index.html" class="active">Overview</a>
+  <a href="../basic-workflows/index.html" class="active">Quarto Overview</a>
 </li>
           <li class="sidebar-item">
   <a href="../basic-workflows/browser.html" class="">From the Browser</a>
 </li>
           <li class="sidebar-item">
-  <a href="../basic-workflows/rstudio.html" class="">From the RStudio IDE</a>
+  <a href="../basic-workflows/rstudio.html" class="">From RStudio</a>
+</li>
+          <li class="sidebar-item">
+  <a href="../basic-workflows/jupyterhub.html" class="">From JupyterHub</a>
 </li>
         </ul>
       </div>
@@ -125,28 +128,38 @@
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-      <div id="quarto-toc-target"></div>
+      <nav id="TOC" role="doc-toc">
+<h2 id="toc-title">On this page</h2>
+<ul>
+<li><a href="#editing-_quarto.yml" class="nav-link active" data-scroll-target="#editing-_quarto.yml">Editing <code>_quarto.yml</code></a></li>
+</ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/series/edit/main/basic-workflows/index.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/series/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content">
 <header id="title-block-header">
-<h1 class="title d-none d-lg-block display-7">Overview</h1>
+<h1 class="title d-none d-lg-block display-7">Quarto Overview</h1>
 </header>
+
 <p>Building websites can be done in limited way from the broswer, but better yet using the same reproducible workflow you can use for your analyses and collaborations. It is very iterative. You can do it all from the tools you already use, with a combination of clicking or typing commands as you feel comfortable.</p>
 <ol type="1">
 <li>Add content (text, code, images, etc) in a file - can be a .md, .Rmd, .qmd, .ipynb…</li>
-<li>TODO: Quarto Preview/Serve?</li>
+<li>TODO: Quarto Preview/Serve to see your updates as you go</li>
 <li>Update <code>_quarto.yml</code> (perhaps, if it is a new file)</li>
-<li>Quarto Render the website</li>
+<li>Quarto Render individual files and/or the whole website</li>
 <li>Repeat, repeat, repeat</li>
 <li>Commit and push your website to github, it’s live!</li>
-<li>If from the browser, no need to push and each commit will trigger the guild</li>
+<li>If from the browser, no need to push and each commit will trigger the build</li>
 <li>Repeat all of the above</li>
 </ol>
-<p>The following sections show how to do this with different tools on your local computer. <strong>If you don’t already have a local workflow to edit files and sync to GitHub, I recommend RStudio.</strong> You don’t need to know R to use RStudio, and it has powerful editor features that make for happy workflows.</p>
-<p>Let’s explore this basic workflow with some different tools. See all the tools that are supported at <a href="https://quarto.org/docs/get-started/" class="uri">https://quarto.org/docs/get-started/</a>.</p>
+<p>The following sections show how to do this with different tools on your local computer. <strong>If you don’t already have a local workflow to edit files and sync to GitHub, I recommend RStudio.</strong> You don’t need to know R to use RStudio, and it has powerful editor features that make for happy workflows. See all the tools that are supported at <a href="https://quarto.org/docs/get-started/" class="uri">https://quarto.org/docs/get-started/</a>.</p>
+<section id="editing-_quarto.yml" class="level2">
+<h2 class="anchored" data-anchor-id="editing-_quarto.yml">Editing <code>_quarto.yml</code></h2>
+<p>TODO.</p>
+<p>Spacing is super important.</p>
 
 
+</section>
 </main> <!-- /main -->
 <script type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {

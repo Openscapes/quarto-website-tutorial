@@ -44,56 +44,63 @@
   {
     "objectID": "basic-workflows/rstudio.html#setup-rstudio-and-github",
     "href": "basic-workflows/rstudio.html#setup-rstudio-and-github",
-    "title": "From the RStudio IDE",
+    "title": "From RStudio",
     "section": "Setup RStudio and GitHub",
     "text": "Setup RStudio and GitHub\nFor a workflow with RStudio and GitHub on your local computer, you will need four things:\n\nR\nRStudio\nGit\nGitHub\n\nFollow the UCSB MEDS Installation Guide for detailed instructions on how to create accounts, download, install, and configure on Mac and Windows. (For an even more detailed walk-through, see Allison Horst’s ESM 206 Google Doc). Thanks for sharing Allison!\nIf you’d like to practice the workflow with RStudio and GitHub, follow R for Excel Users’ GitHub Chapter. This describes how to create a GitHub repository, clone it to RStudio, make edits, and practice syncing."
   },
   {
     "objectID": "basic-workflows/rstudio.html#install-quarto",
     "href": "basic-workflows/rstudio.html#install-quarto",
-    "title": "From the RStudio IDE",
+    "title": "From RStudio",
     "section": "Install Quarto",
     "text": "Install Quarto\nDownload Quarto from https://quarto.org/docs/get-started/. Follow the installation wizard on your computer. When it is complete, you won’t see an application or any new software, but it is now available to RStudio."
   },
   {
     "objectID": "basic-workflows/rstudio.html#rstudio-landscape",
     "href": "basic-workflows/rstudio.html#rstudio-landscape",
-    "title": "From the RStudio IDE",
+    "title": "From RStudio",
     "section": "RStudio Landscape",
     "text": "RStudio Landscape\nTODO: screenshots of IDE, orienting"
   },
   {
     "objectID": "basic-workflows/rstudio.html#visual-editor",
     "href": "basic-workflows/rstudio.html#visual-editor",
-    "title": "From the RStudio IDE",
+    "title": "From RStudio",
     "section": "Visual Editor",
     "text": "Visual Editor"
   },
   {
     "objectID": "basic-workflows/rstudio.html#render-on-save",
     "href": "basic-workflows/rstudio.html#render-on-save",
-    "title": "From the RStudio IDE",
+    "title": "From RStudio",
     "section": "Render on Save",
     "text": "Render on Save"
   },
   {
-    "objectID": "basic-workflows/index.html",
-    "href": "basic-workflows/index.html",
-    "title": "Overview",
+    "objectID": "basic-workflows/index.html#editing-_quarto.yml",
+    "href": "basic-workflows/index.html#editing-_quarto.yml",
+    "title": "Quarto Overview",
+    "section": "Editing _quarto.yml",
+    "text": "Editing _quarto.yml\nTODO.\nSpacing is super important."
+  },
+  {
+    "objectID": "basic-workflows/browser.html",
+    "href": "basic-workflows/browser.html",
+    "title": "From the Browser",
     "section": "",
-    "text": "Building websites can be done in limited way from the broswer, but better yet using the same reproducible workflow you can use for your analyses and collaborations. It is very iterative. You can do it all from the tools you already use, with a combination of clicking or typing commands as you feel comfortable.\n\nAdd content (text, code, images, etc) in a file - can be a .md, .Rmd, .qmd, .ipynb…\nTODO: Quarto Preview/Serve?\nUpdate _quarto.yml (perhaps, if it is a new file)\nQuarto Render the website\nRepeat, repeat, repeat\nCommit and push your website to github, it’s live!\nIf from the browser, no need to push and each commit will trigger the guild\nRepeat all of the above\n\nThe following sections show how to do this with different tools on your local computer. If you don’t already have a local workflow to edit files and sync to GitHub, I recommend RStudio. You don’t need to know R to use RStudio, and it has powerful editor features that make for happy workflows.\nLet’s explore this basic workflow with some different tools. See all the tools that are supported at https://quarto.org/docs/get-started/."
+    "text": "Clicking the pencil to edit directly\nCan only work on one file at a time"
   },
   {
     "objectID": "basic-workflows/jupyterhub.html#setup",
     "href": "basic-workflows/jupyterhub.html#setup",
-    "title": "JupyterHub",
+    "title": "From JupyterHub",
     "section": "Setup",
-    "text": "Setup"
+    "text": "Setup\n[screenshot of setup]"
   },
   {
     "objectID": "basic-workflows/jupyterhub.html#install-quarto",
     "href": "basic-workflows/jupyterhub.html#install-quarto",
-    "title": "JupyterHub",
+    "title": "From JupyterHub",
     "section": "Install Quarto",
     "text": "Install Quarto\nDownload Quarto from https://quarto.org/docs/get-started/. Follow the installation wizard on your computer. When it is complete, you won’t see an application or any new software, but it is now available to RStudio."
   },
@@ -102,7 +109,7 @@
     "href": "first-observations.html#exploring-online",
     "title": "First Observations",
     "section": "Exploring online",
-    "text": "Exploring online\n\nThe website itself\nThis website has 5 things you can see on the left sidebar:\n\nWelcome\nFirst Observations\nBasic Workflows\nRender vs. Preview\nGetting Sophisticated\n\nMost of these are pages, but you’ll see that “Basic Workflows” is a subfolder with additional pages inside.\n\n\nThe website’s repo\nTODO develop\nLet’s go to https://github.com/openscapes/quarto-website-tutorial.\n[screenshot of github repo]\nNow let’s look at the filenames. We can recognize the names of the webpages we’ve seen, and there is also a _quarto.yml file, which is the website’s configuration file.\n[screenshot of annotated filenames]\n_quarto.yml is a directory of the order that the pages/chapters will be in. This is where you update the organization of your website, while you update the content of those pages in the specific file.\nCommitting will trigger the GitHub Action to rebuild and republish the book. Note that the GitHub Action for this book does not include R or Python so those will need to be added if your website relies on code."
+    "text": "Exploring online\n\nThe website itself\nThis website has 5 things you can see on the left sidebar:\n\nWelcome\nFirst Observations\nBasic Workflows\nRender vs. Preview\nGetting Sophisticated\n\nMost of these are pages, but you’ll see that “Basic Workflows” is a subfolder with additional pages inside.\n\n\nThe website’s repo\nTODO develop\nLet’s go to https://github.com/openscapes/quarto-website-tutorial.\n[screenshot of github repo]\nNow let’s look at the filenames. We can recognize the names of the webpages we’ve seen, and there is also a _quarto.yml file, which is the website’s configuration file.\n\n\n\n_quarto.yml and website side-by-side\n\n\n_quarto.yml is a directory of the order that the pages/chapters will be in. This is where you update the organization of your website, while you update the content of those pages in the specific file.\nCommitting will trigger the GitHub Action to rebuild and republish the book. Note that the GitHub Action for this book does not include R or Python so those will need to be added if your website relies on code."
   },
   {
     "objectID": "first-observations.html#your-turn",
