@@ -3,9 +3,9 @@
   <meta charset="utf-8">
   <meta name="generator" content="quarto-0.2.339">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <meta name="author" content="Our team">
-  <meta name="dcterms.date" content="2022-02-01">
-  <title>Our onboarding guide - Our Onboarding Process</title>
+  <meta name="author" content="Openscapes">
+  <meta name="dcterms.date" content="2022-02-17">
+  <title>Making open-source documents with Quarto</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -60,7 +60,7 @@
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Our Onboarding Process</h1>
+      <h1 class="quarto-secondary-nav-title">Making open-source documents with Quarto</h1>
       <button type="button" class="quarto-btn-toggle btn">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -72,8 +72,11 @@
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
   <div class="pt-lg-2 mt-2 text-center sidebar-header">
-    <img src="./images/openscapes_hex.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+    <img src="./openscapes_hex.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       <div class="sidebar-tools-main">
+    <a href="https://openscapes.org" title="Openscapes.org" class="sidebar-tool px-1"><i class="bi bi-globe"></i></a>
+    <a href="https://github.com/openscapes/quarto-website-tutorial" title="Quarto website tutorial" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+    <a href="https://twitter.com/openscapes" title="Openscapes Twitter" class="sidebar-tool px-1"><i class="bi bi-twitter"></i></a>
   <a href="" class="quarto-color-scheme-toggle sidebar-tool" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
   </div>
@@ -85,22 +88,16 @@
   <div class="sidebar-menu-container"> 
   <ul class="list-unstyled mt-1">
       <li class="sidebar-item">
-  <a href="./index.html" class="active">Our Onboarding Process</a>
+  <a href="./index.html" class="active">Welcome</a>
 </li>
       <li class="sidebar-item">
-  <a href="./culture-philosophy.html" class="">Culture and philosophy</a>
+  <a href="./first-observations.html" class="">First observations</a>
 </li>
       <li class="sidebar-item">
-  <a href="./code-of-conduct.html" class="">Code of Conduct</a>
+  <a href="./basic-workflow.html" class="">Basic workflow</a>
 </li>
       <li class="sidebar-item">
-  <a href="./expectations.html" class="">Expectations</a>
-</li>
-      <li class="sidebar-item">
-  <a href="./computing.html" class="">Computing</a>
-</li>
-      <li class="sidebar-item">
-  <a href="./offboarding.html" class="">Onboarding</a>
+  <a href="./tools-to-help-you.html" class="">Tools to help you</a>
 </li>
   </ul>
   </div>
@@ -112,7 +109,10 @@
 <ul>
 <li><a href="#welcome" class="nav-link active" data-scroll-target="#welcome">Welcome</a>
 <ul class="collapse">
-<li><a href="#about" class="nav-link" data-scroll-target="#about">About</a></li>
+<li><a href="#examples" class="nav-link" data-scroll-target="#examples">Examples</a>
+<ul class="collapse">
+<li><a href="#inspiration" class="nav-link" data-scroll-target="#inspiration">Inspiration</a></li>
+</ul></li>
 </ul></li>
 </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/series/edit/main/index.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/series/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
@@ -120,21 +120,31 @@
 <!-- main -->
 <main class="content">
 <header id="title-block-header">
-<h1 class="title d-none d-lg-block display-7">Our Onboarding Process</h1>
-<p class="subtitle lead">Our subtitle about onboarding</p>
-<p class="author">Our team</p>
-<p class="date">February 1, 2022</p>
+<h1 class="title d-none d-lg-block display-7">Making open-source documents with Quarto</h1>
+<p class="subtitle lead">Create &amp; publish tutorials, onboarding docs, and much more</p>
+<p class="author">Openscapes</p>
+<p class="date">February 17, 2022</p>
 </header>
 
 <section id="welcome" class="level1">
 <h1>Welcome</h1>
-<p>Hello, here is our onboarding information!</p>
-<p>This book has light structure following <a href="https://thefaylab.github.io/lab-manual/">The Fay Lab Onboarding Manual</a>.</p>
-<section id="about" class="level2">
-<h2 class="anchored" data-anchor-id="about">About</h2>
-<p>About us.</p>
+<p>It’s possible to create beautiful documentation for free using <a href="https://quarto.org">Quarto</a> and making updates automatically republish on <a href="http://github.com">Github</a>. This is very new and incredibly cool. It is a really powerful way to create and share tutorials, onboarding documentation, and much more. You can communicate about science and help colleagues using the same reproducible workflow you and or your colleagues use for analyses.</p>
+<p>Creating websites with quarto can be done without knowing R, Python or HTML, CSS, etc, and that’s where we’ll start. However, Quarto integrates with these tools - it can combine RMarkdown and Jupyter notebooks in the same place - so the more you know the more complex and beautiful your website can be. This tutorial borrows heavily from a lot of great tutorials and resources you should check out too – there are links throughout.</p>
+<p>This website is made with Quarto! This tutorial will help you customize and make it your own. (Sidenote: this is actually a Quarto website that looks like a book - books are better for cross-referencing chapters, figures, equations, and references so that might be an option for you to explore too!)</p>
+<section id="examples" class="level2">
+<h2 class="anchored" data-anchor-id="examples">Examples</h2>
+<p>We have been using Quarto for documentation without any code, as well as for Python (and R code upcoming):</p>
+<ul>
+<li><a href="https://openscapes.github.io/series">Openscapes Champions Lessons Series</a>. A collection of .md files.</li>
+<li><a href="https://openscapes.github.io/approach-guide/">Openscapes Approach Guide</a>. A collection of .md and .qmd files.</li>
+<li><a href="https://nasa-openscapes.github.io/2021-Cloud-Hackathon/">2021 NASA Cloud Hackathon</a>. A collection of .ipynb and .md files.</li>
+</ul>
+<section id="inspiration" class="level3">
+<h3 class="anchored" data-anchor-id="inspiration">Inspiration</h3>
+<p>Are you making onboarding documentation? Check out <a href="https://thefaylab.github.io/lab-manual/">The Fay Lab Manual</a> for inspiration on structure - you could also start there and make it your own.</p>
 
 
+</section>
 </section>
 </section>
 </main> <!-- /main -->

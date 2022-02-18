@@ -1,27 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://openscapes.github.io/series/tools-to-help-you.html</loc>
+    <lastmod>2022-02-18T01:03:18.314Z</lastmod>
+  </url>
+  <url>
     <loc>https://openscapes.github.io/series/index.html</loc>
-    <lastmod>2022-02-02T18:44:19.860Z</lastmod>
+    <lastmod>2022-02-18T01:03:19.246Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/series/computing.html</loc>
-    <lastmod>2022-02-02T18:44:22.732Z</lastmod>
+    <loc>https://openscapes.github.io/series/basic-workflow.html</loc>
+    <lastmod>2022-02-18T01:03:19.446Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/series/offboarding.html</loc>
-    <lastmod>2022-02-02T18:44:22.928Z</lastmod>
-  </url>
-  <url>
-    <loc>https://openscapes.github.io/series/code-of-conduct.html</loc>
-    <lastmod>2022-02-02T18:44:23.104Z</lastmod>
-  </url>
-  <url>
-    <loc>https://openscapes.github.io/series/expectations.html</loc>
-    <lastmod>2022-02-02T18:44:23.280Z</lastmod>
-  </url>
-  <url>
-    <loc>https://openscapes.github.io/series/culture-philosophy.html</loc>
-    <lastmod>2022-02-02T18:44:23.452Z</lastmod>
+    <loc>https://openscapes.github.io/series/first-observations.html</loc>
+    <lastmod>2022-02-18T01:03:19.654Z</lastmod>
   </url>
 </urlset>
