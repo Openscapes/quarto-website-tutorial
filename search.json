@@ -14,11 +14,18 @@
     "text": "About\nWe’re developing this tutorial to help folks of different technical skills use quarto for documentation and tutorial building. The structure follows a previous tutorial Making free websites with RStudio’s RMarkdown."
   },
   {
-    "objectID": "render-vs-preview.html#rendering-vs-servingpreview",
-    "href": "render-vs-preview.html#rendering-vs-servingpreview",
+    "objectID": "render-vs-preview.html#render",
+    "href": "render-vs-preview.html#render",
     "title": "Render vs. Preview",
-    "section": "Rendering vs Serving/Preview",
-    "text": "Rendering vs Serving/Preview\nRendering is\nPreview is\n\nthis has been called “Serve” in the past\n\nWhen do I want one or the other?\nComparison to knitting in RMarkdown"
+    "section": "Render",
+    "text": "Render\nRendering is when…\nIt’s like saying “show me”."
+  },
+  {
+    "objectID": "render-vs-preview.html#previewserve",
+    "href": "render-vs-preview.html#previewserve",
+    "title": "Render vs. Preview",
+    "section": "Preview/Serve",
+    "text": "Preview/Serve\nPreview is\n\nthis has been called “Serve” in the past\nyou don’t ever need to serve if you’re working in RStudio\n\nWhen do I want one or the other?\nComparison to knitting in RMarkdown"
   },
   {
     "objectID": "render-vs-preview.html#if-im-in-jupyter-labhub",
@@ -74,7 +81,7 @@
     "href": "basic-workflows/index.html",
     "title": "Overview",
     "section": "",
-    "text": "Building websites can be done in limited way from the broswer, but better yet using the same reproducible workflow you can use for your analyses and collaborations. It is very iterative. You can do it all from the tools you already use, with a combination of clicking or typing commands as you feel comfortable.\n\nAdd content (text, code, images, etc) in a file - can be a .md, .Rmd, .qmd, .ipynb…\nKnit the RMarkdown file to view << Preview?\nUpdate _quarto.yml (perhaps, if it is a new file)\nRender the website\nRepeat, repeat, repeat\nCommit and push your website to github, it’s live!\nIf from the browser, no need to push and each commit will trigger the guild\nRepeat all of the above\n\nThe following sections show how to do this with different tools on your local computer. If you don’t already have a local workflow to edit files and sync to GitHub, I recommend RStudio. You don’t need to code in R to use it, and it has powerful editor features that make for happy workflows.\nLet’s explore this basic workflow with some different tools. See all the tools that are supported at https://quarto.org/docs/get-started/."
+    "text": "Building websites can be done in limited way from the broswer, but better yet using the same reproducible workflow you can use for your analyses and collaborations. It is very iterative. You can do it all from the tools you already use, with a combination of clicking or typing commands as you feel comfortable.\n\nAdd content (text, code, images, etc) in a file - can be a .md, .Rmd, .qmd, .ipynb…\nTODO: Quarto Preview/Serve?\nUpdate _quarto.yml (perhaps, if it is a new file)\nQuarto Render the website\nRepeat, repeat, repeat\nCommit and push your website to github, it’s live!\nIf from the browser, no need to push and each commit will trigger the guild\nRepeat all of the above\n\nThe following sections show how to do this with different tools on your local computer. If you don’t already have a local workflow to edit files and sync to GitHub, I recommend RStudio. You don’t need to know R to use RStudio, and it has powerful editor features that make for happy workflows.\nLet’s explore this basic workflow with some different tools. See all the tools that are supported at https://quarto.org/docs/get-started/."
   },
   {
     "objectID": "basic-workflows/jupyterhub.html#setup",
