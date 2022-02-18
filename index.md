@@ -26,3 +26,7 @@ We have been using Quarto for documentation without any code, as well as for Pyt
 ### Inspiration
 
 Are you making onboarding documentation? Check out [The Fay Lab Manual](https://thefaylab.github.io/lab-manual/) for inspiration on structure - you could also start there and make it your own. 
+
+## About
+
+We're developing this tutorial to help folks of different technical skills use quarto for documentation and tutorial building. The structure follows a previous tutorial [Making free websites with RStudio's RMarkdown](https://jules32.github.io/rmarkdown-website-tutorial/index.html).
