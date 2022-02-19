@@ -1,31 +1,52 @@
 [
   {
-    "objectID": "index.html#examples",
-    "href": "index.html#examples",
+    "objectID": "index.html#example-quarto-sites",
+    "href": "index.html#example-quarto-sites",
     "title": "Making open-source documents with Quarto",
-    "section": "Examples",
-    "text": "Examples\nWe have been using Quarto for documentation without any code, as well as for Python (and R code upcoming):\n\nChampions Lessons Series. A collection of .md files.\nApproach Guide. A collection of .md and .qmd files.\n2021 NASA Cloud Hackathon. A collection of .ipynb and .md files.\n\n\nInspiration\nAre you making onboarding documentation? Check out The Fay Lab Manual for inspiration on structure - you could also start there and make it your own."
+    "section": "Example quarto sites",
+    "text": "Example quarto sites\nWe so far have been using Quarto for documentation using Markdown and Jupyter Notebooks.\n\nChampions Lessons Series\nOpenscapes Approach Guide\n\n2021 NASA Cloud Hackathon\n\nSee many more examples at the quarto gallery!\n\nInspiration\nAre you making onboarding documentation? Check out The Fay Lab Manual for inspiration on structure - you could also start there and make it your own."
   },
   {
     "objectID": "index.html#about",
     "href": "index.html#about",
     "title": "Making open-source documents with Quarto",
     "section": "About",
-    "text": "About\nWe’re developing this tutorial to help folks of different technical skills use quarto for documentation and tutorial building. The structure follows a previous tutorial Making free websites with RStudio’s RMarkdown."
+    "text": "About\nOpenscapes is about better science for future us. We help researchers reimagine data analysis, develop modern skills that are of immediate value to them, and cultivate collaborative and inclusive research teams as part of the broader global open movement.\nWe’re developing this tutorial to help folks of different technical skills use quarto for documentation and tutorial building. This tutorial was originally created for both NASA-Openscapes researcher support engineers and communications directors at organizations promoting open science. The structure follows a previous tutorial Making free websites with RStudio’s RMarkdown."
+  },
+  {
+    "objectID": "transition-from-rmarkdown.html#bookdown-to-quarto",
+    "href": "transition-from-rmarkdown.html#bookdown-to-quarto",
+    "title": "Transition from RMarkdown",
+    "section": "Bookdown to quarto",
+    "text": "Bookdown to quarto\ncreate _quarto.yml\nProject options > build tools > project build tools > none\nReload project\nDon’t need to delete anything immediately, but look at output.yml, purge afterbody.\n\nGitHub actions\nR"
+  },
+  {
+    "objectID": "transition-from-rmarkdown.html#distill-to-quarto",
+    "href": "transition-from-rmarkdown.html#distill-to-quarto",
+    "title": "Transition from RMarkdown",
+    "section": "Distill to quarto",
+    "text": "Distill to quarto\nUpcoming"
   },
   {
     "objectID": "render-vs-preview.html#render",
     "href": "render-vs-preview.html#render",
     "title": "Render vs. Preview",
     "section": "Render",
-    "text": "Render\nRendering is when…\nIt’s like saying “show me”."
+    "text": "Render\nRendering is when…\nIt’s like saying “show me”.\nSometimes files get big and complicated with code, so Quarto will not render files by default. It will never run .ipynb files unless you tell it to."
   },
   {
     "objectID": "render-vs-preview.html#previewserve",
     "href": "render-vs-preview.html#previewserve",
     "title": "Render vs. Preview",
     "section": "Preview/Serve",
-    "text": "Preview/Serve\nPreview is\n\nthis has been called “Serve” in the past\nyou don’t ever need to serve if you’re working in RStudio\n\nWhen do I want one or the other?\nComparison to knitting in RMarkdown"
+    "text": "Preview/Serve\nPreview is\n\nthis has been called “Serve” in the past\nyou don’t ever need to serve if you’re working in RStudio (?)"
+  },
+  {
+    "objectID": "render-vs-preview.html#when-do-i-want-preview-vs-serve",
+    "href": "render-vs-preview.html#when-do-i-want-preview-vs-serve",
+    "title": "Render vs. Preview",
+    "section": "When do I want Preview vs Serve?",
+    "text": "When do I want Preview vs Serve?\nComparison to knitting in RMarkdown (?)"
   },
   {
     "objectID": "render-vs-preview.html#if-im-in-jupyter-labhub",
@@ -39,7 +60,7 @@
     "href": "render-vs-preview.html#if-im-in-rstudio-ide",
     "title": "Render vs. Preview",
     "section": "If I’m in RStudio IDE",
-    "text": "If I’m in RStudio IDE\nBuild tab click buttons….\nTerminal…\nOr alternatively, R console…\nWhen does it preview automatically?\n\nTroubleshooting\nIf it hangs/if I get errors"
+    "text": "If I’m in RStudio IDE\nBuild tab click buttons….\nTerminal…\nOr alternatively, R console…\nWhen does it preview automatically?"
   },
   {
     "objectID": "basic-workflows/rstudio.html#setup-rstudio-and-github",
@@ -63,6 +84,13 @@
     "text": "RStudio Landscape\nTODO: screenshots of IDE, orienting"
   },
   {
+    "objectID": "basic-workflows/rstudio.html#lets-add-a-file",
+    "href": "basic-workflows/rstudio.html#lets-add-a-file",
+    "title": "From RStudio",
+    "section": "Let’s add a file",
+    "text": "Let’s add a file"
+  },
+  {
     "objectID": "basic-workflows/rstudio.html#visual-editor",
     "href": "basic-workflows/rstudio.html#visual-editor",
     "title": "From RStudio",
@@ -77,18 +105,18 @@
     "text": "Render on Save"
   },
   {
-    "objectID": "basic-workflows/index.html#editing-_quarto.yml",
-    "href": "basic-workflows/index.html#editing-_quarto.yml",
+    "objectID": "basic-workflows/index.html#quarto.yml-quick-primer",
+    "href": "basic-workflows/index.html#quarto.yml-quick-primer",
     "title": "Quarto Overview",
-    "section": "Editing _quarto.yml",
-    "text": "Editing _quarto.yml\nTODO.\nSpacing is super important."
+    "section": "_quarto.yml quick primer",
+    "text": "_quarto.yml quick primer\n_quarto.yml is your control panel\n[screenshot] and describe a few high-level things\nSpacing is super important."
   },
   {
-    "objectID": "basic-workflows/browser.html",
-    "href": "basic-workflows/browser.html",
+    "objectID": "basic-workflows/browser.html#develop-content",
+    "href": "basic-workflows/browser.html#develop-content",
     "title": "From the Browser",
-    "section": "",
-    "text": "Clicking the pencil to edit directly\nCan only work on one file at a time"
+    "section": "Develop content",
+    "text": "Develop content\nLet’s change the date on the home page of this website.\nClicking the pencil to edit directly\nCan only work on one file at a time"
   },
   {
     "objectID": "basic-workflows/jupyterhub.html#setup",
@@ -105,24 +133,31 @@
     "text": "Install Quarto\nDownload Quarto from https://quarto.org/docs/get-started/. Follow the installation wizard on your computer. When it is complete, you won’t see an application or any new software, but it is now available to RStudio."
   },
   {
+    "objectID": "basic-workflows/jupyterhub.html#lets-add-a-file",
+    "href": "basic-workflows/jupyterhub.html#lets-add-a-file",
+    "title": "From JupyterHub",
+    "section": "Let’s add a file",
+    "text": "Let’s add a file"
+  },
+  {
     "objectID": "first-observations.html#exploring-online",
     "href": "first-observations.html#exploring-online",
     "title": "First Observations",
     "section": "Exploring online",
-    "text": "Exploring online\n\nThe website itself\nThis website has 5 things you can see on the left sidebar:\n\nWelcome\nFirst Observations\nBasic Workflows\nRender vs. Preview\nGetting Sophisticated\n\nMost of these are pages, but you’ll see that “Basic Workflows” is a subfolder with additional pages inside.\n\n\nThe website’s repo\nTODO develop\nLet’s go to https://github.com/openscapes/quarto-website-tutorial.\n[screenshot of github repo]\nNow let’s look at the filenames. We can recognize the names of the webpages we’ve seen, and there is also a _quarto.yml file, which is the website’s configuration file.\n\n\n\n_quarto.yml and website side-by-side\n\n\n_quarto.yml is a directory of the order that the pages/chapters will be in. This is where you update the organization of your website, while you update the content of those pages in the specific file.\nCommitting will trigger the GitHub Action to rebuild and republish the book. Note that the GitHub Action for this book does not include R or Python so those will need to be added if your website relies on code."
+    "text": "Exploring online\n\nThe website itself\nThis website has 5 things you can see on the left sidebar:\n\nWelcome\nFirst Observations\nBasic Workflows\nRender vs. Preview\nGetting Sophisticated\n\nMost of these are pages, but you’ll see that “Basic Workflows” is a folder with additional pages inside.\n\n\nThe website’s repo\nLet’s go to this website’s GitHub repository, https://github.com/openscapes/quarto-website-tutorial. You can get there by clicking the GitHub octocat icon underneath the Openscapes logo.\n[screenshot of github repo]\nNow let’s look at the filenames. We can recognize the names of the webpages we’ve seen above. There is also a _quarto.yml file, which is the website’s configuration file, and you’ll see that the pages that appear on our website are listed there.\n\n\n\n_quarto.yml and website side-by-side\n\n\n_quarto.yml is a directory of the order that the pages/chapters will be in. This is where you update the organization of your website, while you update the content of those pages in the specific file."
   },
   {
-    "objectID": "first-observations.html#your-turn",
-    "href": "first-observations.html#your-turn",
+    "objectID": "first-observations.html#fork-to-your-account",
+    "href": "first-observations.html#fork-to-your-account",
     "title": "First Observations",
-    "section": "Your turn",
-    "text": "Your turn\nThese instructions are for starting with an existing Quarto site and copying it into your space to edit.\n\nChoose an existing website/book\nA simple option is to start with this site: quarto-website-tutorial.\nOther options of potential interest:\n\n2021-Cloud-Hackathon\n2022-SWOT-Ocean-Cloud-Workshop\nApproach-Guide\n\n\n\nFork the existing repo\nFollow these steps to fork and setup your repo from Gavin Fay, using the repo you chose.\nNow you’re set up to edit from the GitHub browser and your book will be republished with our edits. A workflow from the browser if good for getting started/making small contributions but is definitely limited. Once you feel comfortable here, you can move to a different setup."
+    "section": "Fork to your account",
+    "text": "Fork to your account\nThese instructions are for starting with an existing Quarto site and copying it into your space to edit.\n\nChoose an existing website/book to copy\nA simple option is to start with this site: quarto-website-tutorial.\nOther options of potential interest:\n\n2021-Cloud-Hackathon\n2022-SWOT-Ocean-Cloud-Workshop\nApproach-Guide\n\n\n\nFork and setup\nFollow these steps to fork and setup your repo from Gavin Fay, using the repo you chose.\nNow you’re set up to edit from the GitHub browser and your book will be republished with our edits: committing will trigger the GitHub Action to rebuild and republish the book. Note that the GitHub Action for this book does not include R or Python so those will need to be added if your website relies on code.\nA workflow from the browser if good for getting started/making small contributions but is definitely limited. Once you feel comfortable here, you can move to a different setup.\n\n\nDownload instead of fork\nForking might not always be the way to go - you can’t fork into the same GitHub user account or organization. If you’d like to download, follow these steps and set up the GitHub Action separately.\nTODO\n\n\nPlan what you want to do\nFrom this starting site, what do you want to do? You’ll likely want to delete and add chapters, reorder existing chapters, and edit content. We’ll show a few examples of the quarto workflow to get you started."
   },
   {
     "objectID": "getting-sophisticated.html",
     "href": "getting-sophisticated.html",
     "title": "Getting Sophisticated",
     "section": "",
-    "text": "There are a lot of ways to get sophisticated. Here are a few ways to help you get started. Note that Quarto builds from what RStudio learned in making RMarkdown, so while these notes discuss RMarkdown, they are relevant here too!\nhttps://jules32.github.io/rmarkdown-website-tutorial/getting_sophisticated.html"
+    "text": "There are a lot of ways to make you website design more sophisticated. Here are a few ways to help you get started. Note that Quarto builds from what RStudio learned in making RMarkdown, so while these notes discuss RMarkdown, they are relevant here too!\nhttps://jules32.github.io/rmarkdown-website-tutorial/getting_sophisticated.html"
   }
 ]

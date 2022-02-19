@@ -70,7 +70,7 @@
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
   <div class="pt-lg-2 mt-2 text-center sidebar-header">
-    <img src="./openscapes_hex.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+    <img src="./images/openscapes_hex.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       <div class="sidebar-tools-main">
     <a href="https://openscapes.org" title="Openscapes.org" class="sidebar-tool px-1"><i class="bi bi-globe"></i></a>
     <a href="https://github.com/openscapes/quarto-website-tutorial" title="Quarto website tutorial" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
@@ -133,14 +133,12 @@
 <ul>
 <li><a href="#render" class="nav-link active" data-scroll-target="#render">Render</a></li>
 <li><a href="#previewserve" class="nav-link" data-scroll-target="#previewserve">Preview/Serve</a></li>
+<li><a href="#when-do-i-want-preview-vs-serve" class="nav-link" data-scroll-target="#when-do-i-want-preview-vs-serve">When do I want Preview vs Serve?</a></li>
 <li><a href="#if-im-in-jupyter-labhub" class="nav-link" data-scroll-target="#if-im-in-jupyter-labhub">If I’m in Jupyter Lab/Hub</a>
 <ul class="collapse">
 <li><a href="#troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a></li>
 </ul></li>
-<li><a href="#if-im-in-rstudio-ide" class="nav-link" data-scroll-target="#if-im-in-rstudio-ide">If I’m in RStudio IDE</a>
-<ul class="collapse">
-<li><a href="#troubleshooting-1" class="nav-link" data-scroll-target="#troubleshooting-1">Troubleshooting</a></li>
-</ul></li>
+<li><a href="#if-im-in-rstudio-ide" class="nav-link" data-scroll-target="#if-im-in-rstudio-ide">If I’m in RStudio IDE</a></li>
 </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/series/edit/main/render-vs-preview.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/series/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -150,23 +148,25 @@
 <h1 class="title d-none d-lg-block display-7">Render vs.&nbsp;Preview</h1>
 </header>
 
-<p>Making quarto websites involves terminology that might not be unfamiliar. This is a light explainer to help you get going.</p>
+<p>Making quarto websites involves terminology that might be unfamiliar. This is a light explainer to help you get going.</p>
 <p>As you work locally, you will save your files as you normally do. Saving writes your work to disk.</p>
-<p>Sometimes files get big and complicated with code, so Quarto will not run files by default. It will never run .ipynb files unless you tell it to.</p>
 <section id="render" class="level2">
 <h2 class="anchored" data-anchor-id="render">Render</h2>
 <p>Rendering is when…</p>
 <p>It’s like saying “show me”.</p>
+<p>Sometimes files get big and complicated with code, so Quarto will not render files by default. It will never run .ipynb files unless you tell it to.</p>
 </section>
 <section id="previewserve" class="level2">
 <h2 class="anchored" data-anchor-id="previewserve">Preview/Serve</h2>
 <p>Preview is</p>
 <ul>
 <li>this has been called “Serve” in the past</li>
-<li>you don’t ever need to serve if you’re working in RStudio</li>
+<li>you don’t ever need to serve if you’re working in RStudio (?)</li>
 </ul>
-<p>When do I want one or the other?</p>
-<p>Comparison to knitting in RMarkdown</p>
+</section>
+<section id="when-do-i-want-preview-vs-serve" class="level2">
+<h2 class="anchored" data-anchor-id="when-do-i-want-preview-vs-serve">When do I want Preview vs Serve?</h2>
+<p>Comparison to knitting in RMarkdown (?)</p>
 </section>
 <section id="if-im-in-jupyter-labhub" class="level2">
 <h2 class="anchored" data-anchor-id="if-im-in-jupyter-labhub">If I’m in Jupyter Lab/Hub</h2>
@@ -183,12 +183,8 @@
 <p>Terminal…</p>
 <p>Or alternatively, R console…</p>
 <p>When does it preview automatically?</p>
-<section id="troubleshooting-1" class="level3">
-<h3 class="anchored" data-anchor-id="troubleshooting-1">Troubleshooting</h3>
-<p>If it hangs/if I get errors</p>
 
 
-</section>
 </section>
 </main> <!-- /main -->
 <script type="application/javascript">
