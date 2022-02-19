@@ -23,6 +23,8 @@ Download Quarto from <https://quarto.org/docs/get-started/>. Follow the installa
 
 TODO: screenshots of IDE, orienting 
 
+## Let's add a file
+
 ## Visual Editor
 
 ## Render on Save

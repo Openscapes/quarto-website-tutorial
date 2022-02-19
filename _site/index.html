@@ -74,7 +74,7 @@
   <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
       <a href="./">
-      <img src="./openscapes_hex.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <img src="./images/openscapes_hex.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main tools-wide">
     <a href="https://openscapes.org" title="Openscapes.org" class="sidebar-tool px-1"><i class="bi bi-globe"></i></a>
@@ -97,7 +97,7 @@
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./first-observations.html" class="sidebar-item-text sidebar-link">First observations</a>
+  <a href="./first-observations.html" class="sidebar-item-text sidebar-link">First Observations</a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -110,14 +110,29 @@
     <ul id="quarto-sidebar-section-basic-workflows" class="collapse list-unstyled sidebar-section depth1 ">  
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./basic-workflows/index.html" class="sidebar-item-text sidebar-link">Overview</a>
+  <a href="./basic-workflows/index.html" class="sidebar-item-text sidebar-link">Quarto Overview</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./basic-workflows/browser.html" class="sidebar-item-text sidebar-link">From the Browser</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./basic-workflows/rstudio.html" class="sidebar-item-text sidebar-link">From RStudio</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./basic-workflows/jupyterhub.html" class="sidebar-item-text sidebar-link">From JupyterHub</a>
   </div>
 </li>
     </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tools-to-help-you.html" class="sidebar-item-text sidebar-link">Tools to help you</a>
+  <a href="./render-vs-preview.html" class="sidebar-item-text sidebar-link">Render vs.&nbsp;Preview</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -135,10 +150,11 @@
 <ul>
 <li><a href="#welcome" class="nav-link active" data-scroll-target="#welcome">Welcome</a>
 <ul class="collapse">
-<li><a href="#examples" class="nav-link" data-scroll-target="#examples">Examples</a>
+<li><a href="#example-quarto-sites" class="nav-link" data-scroll-target="#example-quarto-sites">Example quarto sites</a>
 <ul class="collapse">
 <li><a href="#inspiration" class="nav-link" data-scroll-target="#inspiration">Inspiration</a></li>
 </ul></li>
+<li><a href="#about" class="nav-link" data-scroll-target="#about">About</a></li>
 </ul></li>
 </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/series/edit/main/index.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/series/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
@@ -154,22 +170,29 @@
 
 <section id="welcome" class="level1">
 <h1>Welcome</h1>
-<p>It’s possible to create beautiful documentation for free using <a href="https://quarto.org">Quarto</a> and making updates automatically republish on <a href="http://github.com">Github</a>. This is very new and incredibly cool. It is a really powerful way to create and share tutorials, onboarding documentation, and much more. You can communicate about science and help colleagues using the same reproducible workflow you and or your colleagues use for analyses.</p>
-<p>Creating websites with quarto can be done without knowing R, Python or HTML, CSS, etc, and that’s where we’ll start. However, Quarto integrates with these tools - it can combine RMarkdown and Jupyter notebooks in the same place - so the more you know the more complex and beautiful your website can be. This tutorial borrows heavily from a lot of great tutorials and resources you should check out too – there are links throughout.</p>
-<section id="examples" class="level2">
-<h2 class="anchored" data-anchor-id="examples">Examples</h2>
-<p>We have been using Quarto for documentation without any code, as well as for Python (and R code upcoming):</p>
+<p>It’s possible to create beautiful documentation to share online with <a href="https://quarto.org">Quarto</a> that auto-updates with <a href="http://github.com">Github</a>. This is very new and incredibly cool. It is a really powerful way to create and share tutorials, onboarding documentation, and so much more. You can communicate about science using the same reproducible workflow you and/or your colleagues use for analyses, whether or not you yourself write code.</p>
+<p>Creating websites with quarto can be done without knowing R, Python or HTML, CSS, etc, and that’s where we’ll start. However, Quarto integrates with these tools so you can make your websites as complex and beautiful as you like as you see examples and reuse and remix from others in the open movement. This tutorial borrows heavily from a lot of great tutorials and resources you should check out too – there are links throughout.</p>
+<section id="example-quarto-sites" class="level2">
+<h2 class="anchored" data-anchor-id="example-quarto-sites">Example quarto sites</h2>
+<p>We so far have been using Quarto for documentation using Markdown and Jupyter Notebooks.</p>
 <ul>
-<li><a href="https://openscapes.github.io/series">Champions Lessons Series</a>. A collection of .md files.</li>
-<li><a href="https://openscapes.github.io/approach-guide/">Approach Guide</a>. A collection of .md and .qmd files.</li>
-<li><a href="https://nasa-openscapes.github.io/2021-Cloud-Hackathon/">2021 NASA Cloud Hackathon</a>. A collection of .ipynb and .md files.</li>
+<li><a href="https://openscapes.github.io/series">Champions Lessons Series</a></li>
+<li><a href="https://openscapes.github.io/approach-guide/">Openscapes Approach Guide</a><br>
+</li>
+<li><a href="https://nasa-openscapes.github.io/2021-Cloud-Hackathon/">2021 NASA Cloud Hackathon</a></li>
 </ul>
+<p>See many more examples at the <a href="https://quarto.org/docs/gallery/">quarto gallery</a>!</p>
 <section id="inspiration" class="level3">
 <h3 class="anchored" data-anchor-id="inspiration">Inspiration</h3>
 <p>Are you making onboarding documentation? Check out <a href="https://thefaylab.github.io/lab-manual/">The Fay Lab Manual</a> for inspiration on structure - you could also start there and make it your own.</p>
-
-
 </section>
+</section>
+<section id="about" class="level2">
+<h2 class="anchored" data-anchor-id="about">About</h2>
+<p><a href="https://openscapes.org">Openscapes</a> is about better science for future us. We help researchers reimagine data analysis, develop modern skills that are of immediate value to them, and cultivate collaborative and inclusive research teams as part of the broader global open movement.</p>
+<p>We’re developing this tutorial to help folks of different technical skills use <a href="https://quarto.org">quarto</a> for documentation and tutorial building. This tutorial was originally created for both <a href="https://nasa-openscapes.github.io">NASA-Openscapes</a> researcher support engineers and communications directors at organizations promoting open science. The structure follows a previous tutorial <a href="https://jules32.github.io/rmarkdown-website-tutorial/index.html">Making free websites with RStudio’s RMarkdown</a>.</p>
+
+
 </section>
 </section>
 </main> <!-- /main -->
@@ -351,14 +374,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
   <div class="nav-page nav-page-next">
       <a href="./first-observations.html" class="pagination-link">
-        <span class="nav-page-text">First observations</span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text">First Observations</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">© CC-By Our team, 2022</div>   
+    <div class="nav-footer-left">© CC-By Openscapes, 2022</div>   
     <div class="nav-footer-right">This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</div>
   </div>
 </footer>

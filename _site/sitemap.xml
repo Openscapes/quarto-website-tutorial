@@ -2,46 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://openscapes.github.io/series/first-observations.html</loc>
-    <lastmod>2022-02-18T18:52:29.448Z</lastmod>
-  </url>
-  <url>
-    <loc>https://openscapes.github.io/series/browser.html</loc>
-    <lastmod>2022-02-18T14:35:41.752Z</lastmod>
-  </url>
-  <url>
-    <loc>https://openscapes.github.io/series/rstudio.html</loc>
-    <lastmod>2022-02-18T14:35:42.048Z</lastmod>
-  </url>
-  <url>
-    <loc>https://openscapes.github.io/series/tools-to-help-you.html</loc>
-    <lastmod>2022-02-18T14:35:42.725Z</lastmod>
-  </url>
-  <url>
-    <loc>https://openscapes.github.io/series/getting-sophisticated.html</loc>
-    <lastmod>2022-02-18T14:35:43.058Z</lastmod>
-  </url>
-  <url>
-    <loc>https://openscapes.github.io/series/index.html</loc>
-    <lastmod>2022-02-18T14:35:43.341Z</lastmod>
-  </url>
-  <url>
-    <loc>https://openscapes.github.io/series/basic-workflows/index.html</loc>
-    <lastmod>2022-02-18T18:41:25.963Z</lastmod>
+    <lastmod>2022-02-19T21:48:05.805Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/series/render-vs-preview.html</loc>
-    <lastmod>2022-02-18T17:34:28.612Z</lastmod>
+    <lastmod>2022-02-19T21:58:18.749Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/series/basic-workflows/rstudio.html</loc>
-    <lastmod>2022-02-18T17:49:30.554Z</lastmod>
+    <loc>https://openscapes.github.io/series/fork-vs-download.html</loc>
+    <lastmod>2022-02-18T19:38:49.429Z</lastmod>
+  </url>
+  <url>
+    <loc>https://openscapes.github.io/series/getting-sophisticated.html</loc>
+    <lastmod>2022-02-19T21:58:51.080Z</lastmod>
+  </url>
+  <url>
+    <loc>https://openscapes.github.io/series/index.html</loc>
+    <lastmod>2022-02-19T22:02:43.563Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/series/basic-workflows/browser.html</loc>
-    <lastmod>2022-02-18T17:50:40.614Z</lastmod>
+    <lastmod>2022-02-19T21:55:16.349Z</lastmod>
+  </url>
+  <url>
+    <loc>https://openscapes.github.io/series/basic-workflows/rstudio.html</loc>
+    <lastmod>2022-02-19T21:56:37.021Z</lastmod>
+  </url>
+  <url>
+    <loc>https://openscapes.github.io/series/basic-workflows/index.html</loc>
+    <lastmod>2022-02-19T21:53:55.352Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/series/basic-workflows/jupyterhub.html</loc>
-    <lastmod>2022-02-18T17:50:12.182Z</lastmod>
+    <lastmod>2022-02-18T19:38:51.786Z</lastmod>
+  </url>
+  <url>
+    <loc>https://openscapes.github.io/series/transition-from-rmarkdown.html</loc>
+    <lastmod>2022-02-19T21:19:50.424Z</lastmod>
   </url>
 </urlset>

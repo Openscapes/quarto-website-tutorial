@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="quarto-0.9.17">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>Making open-source documents with Quarto – rstudio</title>
+  <title>Making open-source documents with Quarto - Transition from RMarkdown</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,7 @@
   <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
   <script src="site_libs/quarto-search/fuse.min.js"></script>
   <script src="site_libs/quarto-search/quarto-search.js"></script>
+  <link href="./getting-sophisticated.html" rel="prev">
   <script src="site_libs/quarto-html/quarto.js"></script>
   <script src="site_libs/quarto-html/popper.min.js"></script>
   <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -53,12 +54,12 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
 </head>
-<body class="docked fullcontent">
+<body class="docked">
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">(Untitled)</h1>
+      <h1 class="quarto-secondary-nav-title">Transition from RMarkdown</h1>
       <button type="button" class="quarto-btn-toggle btn">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -94,7 +95,7 @@
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./first-observations.html" class="sidebar-item-text sidebar-link">First observations</a>
+  <a href="./first-observations.html" class="sidebar-item-text sidebar-link">First Observations</a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -107,14 +108,29 @@
     <ul id="quarto-sidebar-section-basic-workflows" class="collapse list-unstyled sidebar-section depth1 ">  
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./basic-workflows/index.html" class="sidebar-item-text sidebar-link">Overview</a>
+  <a href="./basic-workflows/index.html" class="sidebar-item-text sidebar-link">Quarto Overview</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./basic-workflows/browser.html" class="sidebar-item-text sidebar-link">From the Browser</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./basic-workflows/rstudio.html" class="sidebar-item-text sidebar-link">From RStudio</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./basic-workflows/jupyterhub.html" class="sidebar-item-text sidebar-link">From JupyterHub</a>
   </div>
 </li>
     </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tools-to-help-you.html" class="sidebar-item-text sidebar-link">Tools to help you</a>
+  <a href="./render-vs-preview.html" class="sidebar-item-text sidebar-link">Render vs.&nbsp;Preview</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -122,15 +138,55 @@
   <a href="./getting-sophisticated.html" class="sidebar-item-text sidebar-link">Getting Sophisticated</a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./transition-from-rmarkdown.html" class="sidebar-item-text sidebar-link active">Transition from RMarkdown</a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+<h2 id="toc-title">On this page</h2>
+<ul>
+<li><a href="#bookdown-to-quarto" class="nav-link active" data-scroll-target="#bookdown-to-quarto">Bookdown to quarto</a>
+<ul class="collapse">
+<li><a href="#github-actions" class="nav-link" data-scroll-target="#github-actions">GitHub actions</a></li>
+</ul></li>
+<li><a href="#distill-to-quarto" class="nav-link" data-scroll-target="#distill-to-quarto">Distill to quarto</a></li>
+</ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/series/edit/main/transition-from-rmarkdown.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/series/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
+<header id="title-block-header">
+<h1 class="title d-none d-lg-block display-7">Transition from RMarkdown</h1>
+</header>
+
+<p><em>TODO: develop with screenshots</em></p>
+<p>You may already have workflows in RMarkdown and are interested in transitioning to Quarto.</p>
+<ul>
+<li>translating R code chunks</li>
+</ul>
+<section id="bookdown-to-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="bookdown-to-quarto">Bookdown to quarto</h2>
+<p>create <code>_quarto.yml</code></p>
+<p>Project options &gt; build tools &gt; project build tools &gt; none</p>
+<p>Reload project</p>
+<p>Don’t need to delete anything immediately, but look at <code>output.yml</code>, purge afterbody.</p>
+<section id="github-actions" class="level3">
+<h3 class="anchored" data-anchor-id="github-actions">GitHub actions</h3>
+<p>R</p>
+</section>
+</section>
+<section id="distill-to-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="distill-to-quarto">Distill to quarto</h2>
+<p><em>Upcoming</em></p>
 
 
+</section>
 </main> <!-- /main -->
 <script type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -305,10 +361,19 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./getting-sophisticated.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Getting Sophisticated</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">© CC-By Our team, 2022</div>   
+    <div class="nav-footer-left">© CC-By Openscapes, 2022</div>   
     <div class="nav-footer-right">This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</div>
   </div>
 </footer>

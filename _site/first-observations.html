@@ -139,6 +139,11 @@
   <a href="./getting-sophisticated.html" class="sidebar-item-text sidebar-link">Getting Sophisticated</a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./transition-from-rmarkdown.html" class="sidebar-item-text sidebar-link">Transition from RMarkdown</a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -152,10 +157,12 @@
 <li><a href="#the-website-itself" class="nav-link" data-scroll-target="#the-website-itself">The website itself</a></li>
 <li><a href="#the-websites-repo" class="nav-link" data-scroll-target="#the-websites-repo">The website’s repo</a></li>
 </ul></li>
-<li><a href="#your-turn" class="nav-link" data-scroll-target="#your-turn">Your turn</a>
+<li><a href="#fork-to-your-account" class="nav-link" data-scroll-target="#fork-to-your-account">Fork to your account</a>
 <ul class="collapse">
-<li><a href="#choose-an-existing-websitebook" class="nav-link" data-scroll-target="#choose-an-existing-websitebook">Choose an existing website/book</a></li>
-<li><a href="#fork-the-existing-repo" class="nav-link" data-scroll-target="#fork-the-existing-repo">Fork the existing repo</a></li>
+<li><a href="#choose-an-existing-websitebook-to-copy" class="nav-link" data-scroll-target="#choose-an-existing-websitebook-to-copy">Choose an existing website/book to copy</a></li>
+<li><a href="#fork-and-setup" class="nav-link" data-scroll-target="#fork-and-setup">Fork and setup</a></li>
+<li><a href="#download-instead-of-fork" class="nav-link" data-scroll-target="#download-instead-of-fork">Download instead of fork</a></li>
+<li><a href="#plan-what-you-want-to-do" class="nav-link" data-scroll-target="#plan-what-you-want-to-do">Plan what you want to do</a></li>
 </ul></li>
 </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/series/edit/main/first-observations.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/series/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
@@ -172,7 +179,7 @@
 <h2 class="anchored" data-anchor-id="exploring-online">Exploring online</h2>
 <section id="the-website-itself" class="level3">
 <h3 class="anchored" data-anchor-id="the-website-itself">The website itself</h3>
-<p>This website has 5 things you can see on the left sidebar:</p>
+<p><a href="https://openscapes.github.io/quarto-website-tutorial/">This website</a> has 5 things you can see on the left sidebar:</p>
 <ul>
 <li>Welcome</li>
 <li>First Observations</li>
@@ -180,14 +187,13 @@
 <li>Render vs.&nbsp;Preview</li>
 <li>Getting Sophisticated</li>
 </ul>
-<p>Most of these are pages, but you’ll see that “Basic Workflows” is a subfolder with additional pages inside.</p>
+<p>Most of these are pages, but you’ll see that “Basic Workflows” is a folder with additional pages inside.</p>
 </section>
 <section id="the-websites-repo" class="level3">
 <h3 class="anchored" data-anchor-id="the-websites-repo">The website’s repo</h3>
-<p>TODO develop</p>
-<p>Let’s go to <strong><a href="https://github.com/openscapes/quarto-website-tutorial" class="uri">https://github.com/openscapes/quarto-website-tutorial</a></strong>.</p>
+<p>Let’s go to this website’s GitHub repository, <a href="https://github.com/openscapes/quarto-website-tutorial" class="uri"><strong>https://github.com/openscapes/quarto-website-tutorial</strong></a>. You can get there by clicking the GitHub octocat icon underneath the Openscapes logo.</p>
 <p>[screenshot of github repo]</p>
-<p><strong>Now let’s look at the filenames.</strong> We can recognize the names of the webpages we’ve seen, and there is also a <code>_quarto.yml</code> file, which is the website’s configuration file.</p>
+<p><strong>Now let’s look at the filenames.</strong> We can recognize the names of the webpages we’ve seen above. There is also a <code>_quarto.yml</code> file, which is the website’s configuration file, and you’ll see that the pages that appear on our website are listed there.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/quarto-yml-site-side-by-side.png" class="img-fluid figure-img"></p>
@@ -195,14 +201,13 @@
 </figure>
 </div>
 <p><code>_quarto.yml</code> is a directory of the order that the pages/chapters will be in. This is where you update the organization of your website, while you update the content of those pages in the specific file.</p>
-<p>Committing will trigger the GitHub Action to rebuild and republish the book. Note that the GitHub Action for this book does not include R or Python so those will need to be added if your website relies on code.</p>
 </section>
 </section>
-<section id="your-turn" class="level2">
-<h2 class="anchored" data-anchor-id="your-turn">Your turn</h2>
+<section id="fork-to-your-account" class="level2">
+<h2 class="anchored" data-anchor-id="fork-to-your-account">Fork to your account</h2>
 <p>These instructions are for starting with an existing Quarto site and copying it into your space to edit.</p>
-<section id="choose-an-existing-websitebook" class="level3">
-<h3 class="anchored" data-anchor-id="choose-an-existing-websitebook">Choose an existing website/book</h3>
+<section id="choose-an-existing-websitebook-to-copy" class="level3">
+<h3 class="anchored" data-anchor-id="choose-an-existing-websitebook-to-copy">Choose an existing website/book to copy</h3>
 <p>A simple option is to start with this site: <a href="https://github.com/Openscapes/quarto-website-tutorial">quarto-website-tutorial</a>.</p>
 <p>Other options of potential interest:</p>
 <ul>
@@ -211,10 +216,20 @@
 <li><a href="https://openscapes.github.io/approach-guide">Approach-Guide</a></li>
 </ul>
 </section>
-<section id="fork-the-existing-repo" class="level3">
-<h3 class="anchored" data-anchor-id="fork-the-existing-repo">Fork the existing repo</h3>
+<section id="fork-and-setup" class="level3">
+<h3 class="anchored" data-anchor-id="fork-and-setup">Fork and setup</h3>
 <p>Follow <a href="https://github.com/thefaylab/lab-manual/wiki/Quick-steps-to-making-a-copy-of-the-lab-manual-&amp;-publishing-it">these steps to fork and setup your repo</a> from Gavin Fay, using the repo you chose.</p>
-<p>Now you’re set up to edit from the GitHub browser and your book will be republished with our edits. A workflow from the browser if good for getting started/making small contributions but is definitely limited. Once you feel comfortable here, you can move to a different setup.</p>
+<p>Now you’re set up to edit from the GitHub browser and your book will be republished with our edits: committing will trigger the GitHub Action to rebuild and republish the book. Note that the GitHub Action for this book does not include R or Python so those will need to be added if your website relies on code.</p>
+<p>A workflow from the browser if good for getting started/making small contributions but is definitely limited. Once you feel comfortable here, you can move to a different setup.</p>
+</section>
+<section id="download-instead-of-fork" class="level3">
+<h3 class="anchored" data-anchor-id="download-instead-of-fork">Download instead of fork</h3>
+<p>Forking might not always be the way to go - you can’t fork into the same GitHub user account or organization. If you’d like to download, follow these steps and set up the GitHub Action separately.</p>
+<p>TODO</p>
+</section>
+<section id="plan-what-you-want-to-do" class="level3">
+<h3 class="anchored" data-anchor-id="plan-what-you-want-to-do">Plan what you want to do</h3>
+<p>From this starting site, what do you want to do? You’ll likely want to delete and add chapters, reorder existing chapters, and edit content. We’ll show a few examples of the quarto workflow to get you started.</p>
 
 
 </section>

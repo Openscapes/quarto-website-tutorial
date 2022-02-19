@@ -13,7 +13,7 @@ website:
     left: "&copy; CC-By Openscapes, 2022"
     
   sidebar:
-    logo: "openscapes_hex.png"
+    logo: "images/openscapes_hex.png"
     pinned: true
     align: center
     tools: 
@@ -39,9 +39,10 @@ website:
           - basic-workflows/index.md
           - basic-workflows/browser.md
           - basic-workflows/rstudio.md
-          - basic-workflows/jupyterhub.md
+          - basic-workflows/jupyterhub.md 
       - render-vs-preview.md
       - getting-sophisticated.md
+#      - transition-from-rmarkdown.md # develop this further before including
 
 format:
   html:

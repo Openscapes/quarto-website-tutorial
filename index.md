@@ -10,18 +10,19 @@ slug: index
 
 # Welcome {#welcome}
 
-It's possible to create beautiful documentation for free using [Quarto](https://quarto.org) and making updates automatically republish on [Github](http://github.com). This is very new and incredibly cool. It is a really powerful way to create and share tutorials, onboarding documentation, and much more. You can communicate about science and help colleagues using the same reproducible workflow you and or your colleagues use for analyses.
+It's possible to create beautiful documentation to share online with [Quarto](https://quarto.org) that auto-updates with [Github](http://github.com). This is very new and incredibly cool. It is a really powerful way to create and share tutorials, onboarding documentation, and so much more. You can communicate about science  using the same reproducible workflow you and/or your colleagues use for analyses, whether or not you yourself write code. 
 
-This tutorial was created for several specific audiences: Deputy and Communications Directors at organizations that promote open science, and technical support engineers that support researchers who code. This tutorial is for both those audiences and for everyone in between: Creating websites with quarto can be done without knowing R, Python or HTML, CSS, etc, and that's where we'll start. However, Quarto integrates with these tools - it can combine RMarkdown and Jupyter notebooks in the same place - so the more you know the more complex and beautiful your website can be. This tutorial borrows heavily from a lot of great tutorials and resources you should check out too -- there are links throughout. 
+Creating websites with quarto can be done without knowing R, Python or HTML, CSS, etc, and that's where we'll start. However, Quarto integrates with these tools so you can make your websites as complex and beautiful as you like as you see examples and reuse and remix from others in the open movement. This tutorial borrows heavily from a lot of great tutorials and resources you should check out too -- there are links throughout. 
 
-## Examples
+## Example quarto sites
 
-We have been using Quarto for documentation without any code, as well as for Python (and R code upcoming): 
+We so far have been using Quarto for documentation using Markdown and Jupyter Notebooks.
 
-- [Champions Lessons Series](https://openscapes.github.io/series). A collection of .md files.
-- [Approach Guide](https://openscapes.github.io/approach-guide/).  A collection of .md and .qmd files.
-- [2021 NASA Cloud Hackathon](https://nasa-openscapes.github.io/2021-Cloud-Hackathon/). A collection of .ipynb and .md files. 
+- [Champions Lessons Series](https://openscapes.github.io/series)
+- [Openscapes Approach Guide](https://openscapes.github.io/approach-guide/)  
+- [2021 NASA Cloud Hackathon](https://nasa-openscapes.github.io/2021-Cloud-Hackathon/)
 
+See many more examples at the [quarto gallery](https://quarto.org/docs/gallery/)!
 
 ### Inspiration
 
@@ -29,4 +30,6 @@ Are you making onboarding documentation? Check out [The Fay Lab Manual](https://
 
 ## About
 
-We're developing this tutorial to help folks of different technical skills use quarto for documentation and tutorial building. The structure follows a previous tutorial [Making free websites with RStudio's RMarkdown](https://jules32.github.io/rmarkdown-website-tutorial/index.html).
+[Openscapes](https://openscapes.org) is about better science for future us. We help researchers reimagine data analysis, develop modern skills that are of immediate value to them, and cultivate collaborative and inclusive research teams as part of the broader global open movement.
+
+We're developing this tutorial to help folks of different technical skills use [quarto](https://quarto.org) for documentation and tutorial building. This tutorial was originally created for both [NASA-Openscapes](https://nasa-openscapes.github.io) researcher support engineers and communications directors at organizations promoting open science. The structure follows a previous tutorial [Making free websites with RStudio's RMarkdown](https://jules32.github.io/rmarkdown-website-tutorial/index.html).
