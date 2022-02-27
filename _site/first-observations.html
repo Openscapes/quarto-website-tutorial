@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="quarto-0.9.17">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>Making open-source documents with Quarto - First Observations</title>
+  <title>Making open-source documents with Quarto - First Observations &amp; Setup</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -82,7 +82,7 @@
   <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
   <script src="site_libs/quarto-search/fuse.min.js"></script>
   <script src="site_libs/quarto-search/quarto-search.js"></script>
-  <link href="./basic-workflows/index.html" rel="next">
+  <link href="./quarto-overview.html" rel="next">
   <link href="./index.html" rel="prev">
   <script src="site_libs/quarto-html/quarto.js"></script>
   <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -123,7 +123,7 @@
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">First Observations</h1>
+      <h1 class="quarto-secondary-nav-title">First Observations &amp; Setup</h1>
       <button type="button" class="quarto-btn-toggle btn">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -162,6 +162,11 @@
   <a href="./first-observations.html" class="sidebar-item-text sidebar-link active">First Observations</a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./quarto-overview.html" class="sidebar-item-text sidebar-link">Quarto Overview</a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
     <div class="sidebar-item-container"> 
         <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-basic-workflows" aria-expanded="false">Basic Workflows</a>
@@ -170,11 +175,6 @@
       </a>
     </div>
     <ul id="quarto-sidebar-section-basic-workflows" class="collapse list-unstyled sidebar-section depth1 ">  
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./basic-workflows/index.html" class="sidebar-item-text sidebar-link">Quarto Overview</a>
-  </div>
-</li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./basic-workflows/browser.html" class="sidebar-item-text sidebar-link">From the Browser</a>
@@ -190,16 +190,21 @@
   <a href="./basic-workflows/jupyterhub.html" class="sidebar-item-text sidebar-link">From JupyterHub</a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./basic-workflows/getting-sophisticated.html" class="sidebar-item-text sidebar-link">Getting Sophisticated</a>
+  </div>
+</li>
     </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./render-vs-preview.html" class="sidebar-item-text sidebar-link">Render vs.&nbsp;Preview</a>
+  <a href="./render-vs-preview.html" class="sidebar-item-text sidebar-link">Render vs Preview</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./getting-sophisticated.html" class="sidebar-item-text sidebar-link">Getting Sophisticated</a>
+  <a href="./transition-from-rmarkdown.html" class="sidebar-item-text sidebar-link">Transition from Rmd</a>
   </div>
 </li>
     </ul>
@@ -214,7 +219,6 @@
 <ul class="collapse">
 <li><a href="#the-website-itself" class="nav-link" data-scroll-target="#the-website-itself">The website itself</a></li>
 <li><a href="#the-websites-repo" class="nav-link" data-scroll-target="#the-websites-repo">The website’s repo</a></li>
-<li><a href="#quarto.yml" class="nav-link" data-scroll-target="#quarto.yml"><code>_quarto.yml</code></a></li>
 </ul></li>
 <li><a href="#fork-to-your-account" class="nav-link" data-scroll-target="#fork-to-your-account">Fork to your account</a>
 <ul class="collapse">
@@ -228,7 +232,7 @@
 <!-- main -->
 <main class="content" id="quarto-document-content">
 <header id="title-block-header">
-<h1 class="title d-none d-lg-block display-7">First Observations</h1>
+<h1 class="title d-none d-lg-block display-7">First Observations &amp; Setup</h1>
 </header>
 
 <p>With this tutorial, we have a working example website that we will explore together. We’ll learn a few rules and look for patterns to get an understanding of what things do to help you start customizing and making it your own. And you can continue to use this website as a reference after the tutorial, along with <a href="https://quarto.org"><strong>Quarto</strong></a> documentation. (Sidenote: this is actually a Quarto website that looks like a book - books are better for cross-referencing chapters, figures, equations, and references so that might be an option for you to explore too.)</p>
@@ -241,9 +245,10 @@
 <ul>
 <li>Welcome</li>
 <li>First Observations</li>
+<li>Quarto Overview</li>
 <li>Basic Workflows</li>
 <li>Render vs.&nbsp;Preview</li>
-<li>Getting Sophisticated</li>
+<li>Transition from RMarkdown</li>
 </ul>
 <p>Most of these are pages, but you’ll see that “Basic Workflows” is a folder with additional pages inside.</p>
 </section>
@@ -257,17 +262,6 @@
 <p></p><figcaption aria-hidden="true" class="figure-caption">quarto-website-tutorial GitHub repository with files for webpages marked with red arrows</figcaption><p></p>
 </figure>
 </div>
-</section>
-<section id="quarto.yml" class="level3">
-<h3 class="anchored" data-anchor-id="quarto.yml"><code>_quarto.yml</code></h3>
-<p>There is also a <code>_quarto.yml</code> file, which is the website’s configuration file. It is a directory of the order that the pages/chapters will be in. This is where you update the organization of your website, while you update the content of those pages in the specific file. If we compare side-by-side, you’ll see that the pages that appear on our website are listed there.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/quarto-yml-site-side-by-side.png" class="img-fluid figure-img" style="width:95.0%"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption"><code>_quarto.yml</code> and website side-by-side</figcaption><p></p>
-</figure>
-</div>
-<p>This type of file (<code>.yml</code> or <code>.yaml</code>) is written in YAML (“Yet Another Markup Language”). You’ll be able to shift the arrangement of webpages by reordering/adding/deleting them in the <code>_quarto.yml</code> file following the patterns you see in this example. As you modify <code>_quarto.yml</code>, the most important thing to know is that <strong>spacing matters</strong>. Pay attention to whether text is indented by one, two, four, or other spaces, and make sure you follow it; if your site is not looking as expected it is likely a silent error in your YAML. Some text editors like RStudio provide debugging support for YAML and are highly recommended to save you hours of debugging time.</p>
 </section>
 </section>
 <section id="fork-to-your-account" class="level2">
@@ -545,7 +539,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./basic-workflows/index.html" class="pagination-link">
+      <a href="./quarto-overview.html" class="pagination-link">
         <span class="nav-page-text">Quarto Overview</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>

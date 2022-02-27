@@ -33,19 +33,20 @@ website:
     contents:
       - href: index.md
         text: Welcome
-      - href: "first-observations.md"
+      - href: first-observations.md
         text: First Observations        
-      - section: "Basic Workflows"
+      - href: quarto-overview.md
+        text: Quarto Overview
+      - section: Basic Workflows
         contents: 
-          - basic-workflows/index.md
           - basic-workflows/browser.md
           - basic-workflows/rstudio.md
           - basic-workflows/jupyterhub.md 
-      - href: "render-vs-preview.md"
+          - basic-workflows/getting-sophisticated.md
+      - href: render-vs-preview.md
         text: Render vs Preview
-      - href: "getting-sophisticated.md"
-        text: Getting Sophisticated
-#      - transition-from-rmarkdown.md # develop this further before including
+      - href: transition-from-rmarkdown.md
+        text: Transition from Rmd
 
 format:
   html:

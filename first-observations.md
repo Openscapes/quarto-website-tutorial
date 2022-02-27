@@ -1,5 +1,5 @@
 ---
-title: First Observations
+title: First Observations & Setup
 ---
 
 With this tutorial, we have a working example website that we will explore together. We'll learn a few rules and look for patterns to get an understanding of what things do to help you start customizing and making it your own. And you can continue to use this website as a reference after the tutorial, along with [**Quarto**](https://quarto.org) documentation. (Sidenote: this is actually a Quarto website that looks like a book - books are better for cross-referencing chapters, figures, equations, and references so that might be an option for you to explore too.)
@@ -14,9 +14,10 @@ We'll start our exploration online looking at the website architecture and GitHu
 
 -   Welcome
 -   First Observations
+-   Quarto Overview
 -   Basic Workflows
 -   Render vs. Preview
--   Getting Sophisticated
+-   Transition from RMarkdown
 
 Most of these are pages, but you'll see that "Basic Workflows" is a folder with additional pages inside.
 
@@ -27,14 +28,6 @@ Let's go to this website's GitHub repository (also called a "repo"), [**https://
 **Have a look at the filenames.** We can recognize the names of the webpages we've seen above, they have red arrows marking them. You'll see the "basic-workflows" folder and the rest in this site are `.md` files, which are plain Markdown files. `index.md` is the home page.
 
 ![quarto-website-tutorial GitHub repository with files for webpages marked with red arrows](images/quarto-files-github.png){fig-alt="Screenshot of files on GitHub with red arrows identifying the files that we saw in the left sidebar" fig-align="center" width="80%"}
-
-### `_quarto.yml`
-
-There is also a `_quarto.yml` file, which is the website's configuration file. It is a directory of the order that the pages/chapters will be in. This is where you update the organization of your website, while you update the content of those pages in the specific file. If we compare side-by-side, you'll see that the pages that appear on our website are listed there.
-
-![`_quarto.yml` and website side-by-side](images/quarto-yml-site-side-by-side.png){fig-align="center" width="95%"}
-
-This type of file (`.yml` or `.yaml`) is written in YAML ("Yet Another Markup Language"). You'll be able to shift the arrangement of webpages by reordering/adding/deleting them in the `_quarto.yml` file following the patterns you see in this example. As you modify `_quarto.yml`, the most important thing to know is that **spacing matters**. Pay attention to whether text is indented by one, two, four, or other spaces, and make sure you follow it; if your site is not looking as expected it is likely a silent error in your YAML. Some text editors like RStudio provide debugging support for YAML and are highly recommended to save you hours of debugging time.
 
 ## Fork to your account
 
@@ -113,7 +106,7 @@ Now click on the Settings tab in the top right of your repository. On the left s
 
 ![](images/github-source-gh-pages.png){fig-align="center" width="95%"}
 
-## Confirm your website is published  {#confirm}
+## Confirm your website is published {#confirm}
 
 To confirm this, go back to your main repository page. You'll now see an orange dot showing that the GitHub Action is beginning to publish the page.
 

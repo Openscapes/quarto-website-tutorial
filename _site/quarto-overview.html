@@ -3,9 +3,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="quarto-0.9.17">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <meta name="author" content="Openscapes">
-  <meta name="dcterms.date" content="2022-02-27">
-  <title>Making open-source documents with Quarto</title>
+  <title>Making open-source documents with Quarto - Quarto Overview</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -21,7 +19,8 @@
   <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
   <script src="site_libs/quarto-search/fuse.min.js"></script>
   <script src="site_libs/quarto-search/quarto-search.js"></script>
-  <link href="./first-observations.html" rel="next">
+  <link href="./basic-workflows/browser.html" rel="next">
+  <link href="./first-observations.html" rel="prev">
   <script src="site_libs/quarto-html/quarto.js"></script>
   <script src="site_libs/quarto-html/popper.min.js"></script>
   <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -61,7 +60,7 @@
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Making open-source documents with Quarto</h1>
+      <h1 class="quarto-secondary-nav-title">Quarto Overview</h1>
       <button type="button" class="quarto-btn-toggle btn">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -92,7 +91,7 @@
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">Welcome</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Welcome</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -102,7 +101,7 @@
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./quarto-overview.html" class="sidebar-item-text sidebar-link">Quarto Overview</a>
+  <a href="./quarto-overview.html" class="sidebar-item-text sidebar-link active">Quarto Overview</a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -153,52 +152,49 @@
         <nav id="TOC" role="doc-toc">
 <h2 id="toc-title">On this page</h2>
 <ul>
-<li><a href="#welcome" class="nav-link active" data-scroll-target="#welcome">Welcome</a>
-<ul class="collapse">
-<li><a href="#example-quarto-websites" class="nav-link" data-scroll-target="#example-quarto-websites">Example Quarto websites</a>
-<ul class="collapse">
-<li><a href="#inspiration" class="nav-link" data-scroll-target="#inspiration">Inspiration</a></li>
-</ul></li>
-<li><a href="#about" class="nav-link" data-scroll-target="#about">About</a></li>
-</ul></li>
+<li><a href="#quarto-basic-workflow" class="nav-link active" data-scroll-target="#quarto-basic-workflow">Quarto basic workflow</a></li>
+<li><a href="#quarto.yml" class="nav-link" data-scroll-target="#quarto.yml"><code>_quarto.yml</code></a></li>
+<li><a href="#next-up-workflows" class="nav-link" data-scroll-target="#next-up-workflows">Next up: workflows</a></li>
 </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/series/edit/main/index.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/series/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/series/edit/main/quarto-overview.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/series/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 <header id="title-block-header">
-<h1 class="title d-none d-lg-block display-7">Making open-source documents with Quarto</h1>
-<p class="subtitle lead">Create &amp; publish tutorials, onboarding docs, and much more</p>
-<p class="author">Openscapes</p>
-<p class="date">February 27, 2022</p>
+<h1 class="title d-none d-lg-block display-7">Quarto Overview</h1>
 </header>
 
-<section id="welcome" class="level1">
-<h1>Welcome</h1>
-<p>It’s possible to create beautiful documentation to share online with <a href="https://quarto.org">Quarto</a> that auto-updates with <a href="http://github.com">Github</a>. This is very new and incredibly cool. This tutorial is an example of a quarto website — it is a really powerful way to create and share tutorials, onboarding documentation, and so much more. You can communicate about science using the same reproducible workflow you and/or your colleagues use for analyses, whether or not you yourself write code.</p>
-<p>Creating websites with quarto can be done without knowing R, Python or HTML, CSS, etc, and that’s where we’ll start. However, Quarto integrates with these tools so you can make your websites as complex and beautiful as you like as you see examples and reuse and remix from others in the open movement. This tutorial borrows heavily from a lot of great tutorials and resources you should check out too – there are links throughout.</p>
-<section id="example-quarto-websites" class="level2">
-<h2 class="anchored" data-anchor-id="example-quarto-websites">Example Quarto websites</h2>
-<p>We so far have been using Quarto for documentation using Markdown and Jupyter Notebooks.</p>
-<ul>
-<li><a href="https://openscapes.github.io/series">Champions Lessons Series</a></li>
-<li><a href="https://openscapes.github.io/approach-guide/">Openscapes Approach Guide</a><br>
-</li>
-<li><a href="https://nasa-openscapes.github.io/2021-Cloud-Hackathon/">2021 NASA Cloud Hackathon</a></li>
-</ul>
-<p>See many more examples at the <a href="https://quarto.org/docs/gallery/">quarto gallery</a>!</p>
-<section id="inspiration" class="level3">
-<h3 class="anchored" data-anchor-id="inspiration">Inspiration</h3>
-<p>Are you making onboarding documentation? Check out <a href="https://thefaylab.github.io/lab-manual/">The Fay Lab Manual</a> for inspiration on structure - you could also start there and make it your own.</p>
+<p><a href="https://quarto.org">Quarto.org</a> has great documentation, including and <a href="https://quarto.org/docs/get-started/hello/jupyter.html">tutorials</a> that can help you get started using Jupyter, RStudio, VSCode and Editor. Here, we’ll introduce Quarto using our copy of this tutorial, and then show basic workflows using different tools: from the GitHub browser, RStudio, and Jupyter.</p>
+<section id="quarto-basic-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="quarto-basic-workflow">Quarto basic workflow</h2>
+<p>Developing your quarto site will have the same basic workflow, no matter which tool you use to edit. It is very iterative.</p>
+<ol type="1">
+<li>Create content (text, code, images, etc) in a file. Supported files include <code>.md</code>, <code>.Rmd</code>, <code>.qmd</code>, <code>.ipynb</code>…</li>
+<li>Update <code>_quarto.yml</code> as needed (for example, if you’ve created a new file you’d like included in your site)</li>
+<li>Quarto Render individual files and/or the whole website (if editing from the browser this step will not be separate but combined with Step 5)</li>
+<li>Repeat, repeat, repeat</li>
+<li>Commit and push your website to GitHub, your updates will publish automatically! (if editing from the brower, only commit - no need to push)</li>
+<li>Repeat all of the above</li>
+</ol>
 </section>
+<section id="quarto.yml" class="level2">
+<h2 class="anchored" data-anchor-id="quarto.yml"><code>_quarto.yml</code></h2>
+<p>There is also a <code>_quarto.yml</code> file, which is the website’s configuration file. It is a directory of the order that the pages/chapters will be in. This is where you update the organization of your website, while you update the content of those pages in the specific file. If we compare side-by-side, you’ll see that the pages that appear on our website are listed there.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/quarto-yml-site-side-by-side.png" class="img-fluid figure-img" alt="_quarto.yml and website side-by-side" style="width:95.0%"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption"><code>_quarto.yml</code> and website side-by-side</figcaption><p></p>
+</figure>
+</div>
+<p>This type of file (<code>.yml</code> or <code>.yaml</code>) is written in YAML (“Yet Another Markup Language”). You’ll be able to shift the arrangement of webpages by reordering/adding/deleting them in the <code>_quarto.yml</code> file following the patterns you see in this example. As you modify <code>_quarto.yml</code>, the most important thing to know is that <strong>spacing matters</strong>. Pay attention to whether text is indented by one, two, four, or other spaces, and make sure you follow it; if your site is not looking as expected it is likely a silent error in your YAML. Some text editors like RStudio provide debugging support for YAML and are highly recommended to save you hours of debugging time.</p>
+<p>Note that there are multiple ways in the <code>_quarto.yml</code> for you to include a file in your website.</p>
 </section>
-<section id="about" class="level2">
-<h2 class="anchored" data-anchor-id="about">About</h2>
-<p><a href="https://openscapes.org">Openscapes</a> is about better science for future us. We help researchers reimagine data analysis, develop modern skills that are of immediate value to them, and cultivate collaborative and inclusive research teams as part of the broader global open movement.</p>
-<p>We’re developing this tutorial to help folks of different technical skills use <a href="https://quarto.org">quarto</a> for documentation and tutorial building. This tutorial was originally created for two different audiences: <a href="https://nasa-openscapes.github.io">NASA-Openscapes</a> researcher support engineers and communications directors at organizations promoting open science.</p>
+<section id="next-up-workflows" class="level2">
+<h2 class="anchored" data-anchor-id="next-up-workflows">Next up: workflows</h2>
+<p>In the next sections we’ll see what this workflow looks like using different tools for editing your files. We’ll start off from the browser so you don’t need to install any additional software, however this approach is very limited and you will soon outgrow its capabilities. See all the tools that are supported at <a href="https://quarto.org/docs/get-started/" class="uri">https://quarto.org/docs/get-started/</a>.</p>
+<p><strong>If you don’t already have a workflow and to edit files and sync to GitHub from your computer, I recommend RStudio.</strong> You don’t need to know R to use RStudio, and it has powerful editor features that make for happy workflows.</p>
 
 
-</section>
 </section>
 </main> <!-- /main -->
 <script type="application/javascript">
@@ -376,10 +372,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./first-observations.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">First Observations</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./first-observations.html" class="pagination-link">
-        <span class="nav-page-text">First Observations</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./basic-workflows/browser.html" class="pagination-link">
+        <span class="nav-page-text">From the Browser</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
