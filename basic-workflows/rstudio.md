@@ -2,6 +2,8 @@
 title: From RStudio
 ---
 
+The RStudio software (called an IDE, integrated development environment) is an excellent way to edit files and interface with GitHub. Plus, as it is made by the same folks who make Quarto, it has many integrated features for streamlining your workflow with Quarto, including how it previews your edits and provides debugging support for yaml! Here is what you'll need to do to set up and use RStudio. 
+
 ## Setup RStudio and GitHub
 
 For a workflow with RStudio and GitHub on your local computer, you will need four things: 
@@ -17,13 +19,13 @@ If you'd like to practice the workflow with RStudio and GitHub, follow [R for Ex
 
 ## Install Quarto
 
-Download Quarto from <https://quarto.org/docs/get-started/>. Follow the installation wizard on your computer. When it is complete, you won't see an application or any new software, but it is now available to RStudio.
+Next, you'll install Quarto. Download Quarto from <https://quarto.org/docs/get-started/>. Follow the installation wizard on your computer. When it is complete, you won't see an application or any new software, but it is now available to RStudio (as well as other applications, including the command line).
 
 ## RStudio Landscape
 
 TODO: screenshots of IDE, orienting 
 
-## Let's add a file
+## Create a new page
 
 ## Visual Editor
 

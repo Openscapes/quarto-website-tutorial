@@ -113,6 +113,8 @@ Now click on the Settings tab in the top right of your repository. On the left s
 
 ![](images/github-source-gh-pages.png){fig-align="center" width="95%"}
 
+## Confirm your website is published  {#confirm}
+
 To confirm this, go back to your main repository page. You'll now see an orange dot showing that the GitHub Action is beginning to publish the page.
 
 ![](images/github-action-orange.png){fig-align="center" width="95%"}
