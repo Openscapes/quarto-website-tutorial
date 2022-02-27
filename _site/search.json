@@ -208,5 +208,12 @@
     "title": "Quarto Overview",
     "section": "Plan what you want to do",
     "text": "Plan what you want to do\nFrom this starting site, what do you want to do? You’ll likely want to delete and add chapters, reorder existing chapters, and edit content. We’ll show a few examples of the quarto workflow to get you started."
+  },
+  {
+    "objectID": "basic-workflows/index.html#quarto-basic-workflow",
+    "href": "basic-workflows/index.html#quarto-basic-workflow",
+    "title": "Quarto Overview",
+    "section": "Quarto basic workflow",
+    "text": "Quarto basic workflow\nDeveloping your quarto site will have the same basic workflow, no matter which tool you use to edit. It is very iterative.\n\nCreate content (text, code, images, etc) in a file. Supported files include .md, .Rmd, .qmd, .ipynb…\nUpdate _quarto.yml as needed (for example, if you’ve created a new file you’d like included in your site)\nQuarto Render individual files and/or the whole website (if editing from the browser this step will not be separate but combined with Step 5)\nRepeat, repeat, repeat\nCommit and push your website to GitHub, your updates will publish automatically! (if editing from the brower, only commit - no need to push)\nRepeat all of the above\n\n\nIn the next sections we’ll see what this workflow looks like using different tools for editing your files. We’ll start off from the browser so you don’t need to install any additional software, however this approach is very limited and you will soon outgrow its capabilities. See all the tools that are supported at https://quarto.org/docs/get-started/.\nIf you don’t already have a workflow and to edit files and sync to GitHub from your computer, I recommend RStudio. You don’t need to know R to use RStudio, and it has powerful editor features that make for happy workflows."
   }
 ]
