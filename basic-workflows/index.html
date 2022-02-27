@@ -131,8 +131,7 @@
       <nav id="TOC" role="doc-toc">
 <h2 id="toc-title">On this page</h2>
 <ul>
-<li><a href="#quarto.yml-quick-primer" class="nav-link active" data-scroll-target="#quarto.yml-quick-primer"><code>_quarto.yml</code> quick primer</a></li>
-<li><a href="#plan-what-you-want-to-do" class="nav-link" data-scroll-target="#plan-what-you-want-to-do">Plan what you want to do</a></li>
+<li><a href="#quarto-basic-workflow" class="nav-link active" data-scroll-target="#quarto-basic-workflow">Quarto basic workflow</a></li>
 </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/series/edit/main/basic-workflows/index.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/series/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -142,27 +141,20 @@
 <h1 class="title d-none d-lg-block display-7">Quarto Overview</h1>
 </header>
 
-<p>Editing your quarto site has the same basic workflow, no matter which tool you’re using to edit and interact with GitHub:</p>
+<section id="quarto-basic-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="quarto-basic-workflow">Quarto basic workflow</h2>
+<p>Developing your quarto site will have the same basic workflow, no matter which tool you use to edit. It is very iterative.</p>
 <ol type="1">
-<li>Create content (text, code, images, etc) in a file - can be a .md, .Rmd, .qmd, .ipynb…</li>
-<li><del>Quarto Preview/Serve to see your updates as you go</del></li>
-<li>Update <code>_quarto.yml</code> (perhaps, if you’ve created a new file)</li>
-<li>Quarto Render individual files and/or the whole website</li>
+<li>Create content (text, code, images, etc) in a file. Supported files include <code>.md</code>, <code>.Rmd</code>, <code>.qmd</code>, <code>.ipynb</code>…</li>
+<li>Update <code>_quarto.yml</code> as needed (for example, if you’ve created a new file you’d like included in your site)</li>
+<li>Quarto Render individual files and/or the whole website (if editing from the browser this step will not be separate but combined with Step 5)</li>
 <li>Repeat, repeat, repeat</li>
-<li>Commit and push your website to GitHub, your updates will publish automatically!</li>
-<li>If from the browser, no need to push and each commit will trigger the build</li>
+<li>Commit and push your website to GitHub, your updates will publish automatically! (if editing from the brower, only commit - no need to push)</li>
 <li>Repeat all of the above</li>
 </ol>
-<p>The following sections show how to do this with different tools on your local computer. <strong>If you don’t already have a local workflow to edit files and sync to GitHub, I recommend RStudio.</strong> You don’t need to know R to use RStudio, and it has powerful editor features that make for happy workflows. See all the tools that are supported at <a href="https://quarto.org/docs/get-started/" class="uri">https://quarto.org/docs/get-started/</a>.</p>
-<section id="quarto.yml-quick-primer" class="level2">
-<h2 class="anchored" data-anchor-id="quarto.yml-quick-primer"><code>_quarto.yml</code> quick primer</h2>
-<p><code>_quarto.yml</code> is your control panel</p>
-<p>[screenshot] and describe a few high-level things</p>
-<p>Spacing is super important.</p>
-</section>
-<section id="plan-what-you-want-to-do" class="level2">
-<h2 class="anchored" data-anchor-id="plan-what-you-want-to-do">Plan what you want to do</h2>
-<p>From this starting site, what do you want to do? You’ll likely want to delete and add chapters, reorder existing chapters, and edit content. We’ll show a few examples of the quarto workflow to get you started.</p>
+<hr>
+<p>In the next sections we’ll see what this workflow looks like using different tools for editing your files. We’ll start off from the browser so you don’t need to install any additional software, however this approach is very limited and you will soon outgrow its capabilities. See all the tools that are supported at <a href="https://quarto.org/docs/get-started/" class="uri">https://quarto.org/docs/get-started/</a>.</p>
+<p><strong>If you don’t already have a workflow and to edit files and sync to GitHub from your computer, I recommend RStudio.</strong> You don’t need to know R to use RStudio, and it has powerful editor features that make for happy workflows.</p>
 
 
 </section>
