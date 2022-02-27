@@ -22,3 +22,7 @@ The following sections show how to do this with different tools on your local co
 [screenshot] and describe a few high-level things
 
 Spacing is super important.
+
+## Plan what you want to do
+
+From this starting site, what do you want to do? You'll likely want to delete and add chapters, reorder existing chapters, and edit content. We'll show a few examples of the quarto workflow to get you started.

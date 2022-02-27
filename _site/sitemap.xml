@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://openscapes.github.io/series/first-observations.html</loc>
-    <lastmod>2022-02-19T21:48:05.805Z</lastmod>
+    <lastmod>2022-02-27T21:39:25.679Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/series/render-vs-preview.html</loc>
@@ -30,11 +30,11 @@
   </url>
   <url>
     <loc>https://openscapes.github.io/series/basic-workflows/index.html</loc>
-    <lastmod>2022-02-19T21:53:55.352Z</lastmod>
+    <lastmod>2022-02-27T21:39:38.996Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/series/basic-workflows/jupyterhub.html</loc>
-    <lastmod>2022-02-18T19:38:51.786Z</lastmod>
+    <lastmod>2022-02-25T23:13:50.653Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/series/transition-from-rmarkdown.html</loc>

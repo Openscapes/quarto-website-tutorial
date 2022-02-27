@@ -2,7 +2,9 @@
 title: From the Browser
 ---
 
-TODO, screenshots.
+A workflow from the browser if good for getting started/making small contributions but is definitely limited. Once you feel comfortable here, you can move to a different setup.
+
+
 
 ## Develop content
 
