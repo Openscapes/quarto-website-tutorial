@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://openscapes.github.io/series/quarto-overview.html</loc>
+    <lastmod>2022-02-27T23:59:03.396Z</lastmod>
+  </url>
+  <url>
     <loc>https://openscapes.github.io/series/index.html</loc>
-    <lastmod>2022-02-27T23:33:19.459Z</lastmod>
+    <lastmod>2022-02-27T23:59:04.488Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/series/transition-from-rmarkdown.html</loc>
-    <lastmod>2022-02-27T23:33:22.827Z</lastmod>
+    <lastmod>2022-02-27T23:59:04.748Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/series/render-vs-preview.html</loc>
-    <lastmod>2022-02-27T23:33:23.079Z</lastmod>
+    <lastmod>2022-02-27T23:59:05.004Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/series/basic-workflows/rstudio.html</loc>
-    <lastmod>2022-02-27T23:33:23.335Z</lastmod>
-  </url>
-  <url>
-    <loc>https://openscapes.github.io/series/basic-workflows/index.html</loc>
-    <lastmod>2022-02-27T23:33:23.563Z</lastmod>
+    <lastmod>2022-02-27T23:59:05.268Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/series/basic-workflows/browser.html</loc>
-    <lastmod>2022-02-27T23:33:23.807Z</lastmod>
+    <lastmod>2022-02-27T23:59:05.572Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/series/basic-workflows/jupyterhub.html</loc>
-    <lastmod>2022-02-27T23:33:24.043Z</lastmod>
+    <lastmod>2022-02-27T23:59:05.884Z</lastmod>
+  </url>
+  <url>
+    <loc>https://openscapes.github.io/series/basic-workflows/getting-sophisticated.html</loc>
+    <lastmod>2022-02-27T23:59:06.192Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/series/first-observations.html</loc>
-    <lastmod>2022-02-27T23:33:24.391Z</lastmod>
-  </url>
-  <url>
-    <loc>https://openscapes.github.io/series/getting-sophisticated.html</loc>
-    <lastmod>2022-02-27T23:33:24.603Z</lastmod>
+    <lastmod>2022-02-27T23:59:06.584Z</lastmod>
   </url>
 </urlset>

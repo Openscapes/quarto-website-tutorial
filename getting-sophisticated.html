@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
   <meta charset="utf-8">
-  <meta name="generator" content="quarto-0.2.339">
+  <meta name="generator" content="quarto-0.9.17">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <title>Making open-source documents with Quarto - Getting Sophisticated</title>
   <style>
@@ -13,15 +13,14 @@
     ul.task-list{list-style: none;}
   </style>
 
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
   <script src="site_libs/quarto-nav/quarto-nav.js"></script>
   <script src="site_libs/clipboard/clipboard.min.js"></script>
   <meta name="quarto:offset" content="./">
   <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
   <script src="site_libs/quarto-search/fuse.min.js"></script>
   <script src="site_libs/quarto-search/quarto-search.js"></script>
+  <link href="./transition-from-rmarkdown.html" rel="next">
+  <link href="./render-vs-preview.html" rel="prev">
   <script src="site_libs/quarto-html/quarto.js"></script>
   <script src="site_libs/quarto-html/popper.min.js"></script>
   <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -52,8 +51,11 @@
       "search-submit-button-title": "Submit"
     }
   }</script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
 </head>
-<body class="docked">
+<body class="docked fullcontent">
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -69,69 +71,86 @@
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
-  <div class="pt-lg-2 mt-2 text-center sidebar-header">
-    <img src="./images/openscapes_hex.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
-      <div class="sidebar-tools-main">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="./">
+      <img src="./openscapes_hex.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main tools-wide">
     <a href="https://openscapes.org" title="Openscapes.org" class="sidebar-tool px-1"><i class="bi bi-globe"></i></a>
     <a href="https://github.com/openscapes/quarto-website-tutorial" title="Quarto website tutorial" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
     <a href="https://twitter.com/openscapes" title="Openscapes Twitter" class="sidebar-tool px-1"><i class="bi bi-twitter"></i></a>
   <a href="" class="quarto-color-scheme-toggle sidebar-tool" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
-  </div>
-    <div class="px-3 mt-2 flex-shrink-0 align-items-center">
-      <div class="sidebar-search">
-      <div id="quarto-search" class="" title="Search"></div>
       </div>
-    </div>
-  <div class="sidebar-menu-container"> 
-  <ul class="list-unstyled mt-1">
-      <li class="sidebar-item">
-  <a href="./index.html" class="">Welcome</a>
-</li>
-      <li class="sidebar-item">
-  <a href="./first-observations.html" class="">First Observations</a>
-</li>
-      <ul class="list-unstyled sidebar-section depth1">
-    <li class="">
-        <div class="me-auto">
-            <a class="sidebar-section-item d-inline-flex text-start w-100 collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-basic-workflows" aria-expanded="false">
-              <div class="me-auto sidebar-section-item">Basic Workflows</div>
-            <div><i class="bi bi-chevron-right ms-2"></i></div>
-            </a>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
         </div>
-      <div class="collapse  " id="quarto-sidebar-section-basic-workflows">
-        <ul class="list-unstyled sidebar-item-contents">
-          <li class="sidebar-item">
-  <a href="./basic-workflows/index.html" class="">Quarto Overview</a>
-</li>
-          <li class="sidebar-item">
-  <a href="./basic-workflows/browser.html" class="">From the Browser</a>
-</li>
-          <li class="sidebar-item">
-  <a href="./basic-workflows/rstudio.html" class="">From RStudio</a>
-</li>
-          <li class="sidebar-item">
-  <a href="./basic-workflows/jupyterhub.html" class="">From JupyterHub</a>
-</li>
-        </ul>
       </div>
-    </li>
-  </ul>
-      <li class="sidebar-item">
-  <a href="./render-vs-preview.html" class="">Render vs Preview</a>
-</li>
-      <li class="sidebar-item">
-  <a href="./getting-sophisticated.html" class="active">Getting Sophisticated</a>
-</li>
-  </ul>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Welcome</a>
   </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./first-observations.html" class="sidebar-item-text sidebar-link">First Observations</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+    <div class="sidebar-item-container"> 
+        <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-basic-workflows" aria-expanded="false">Basic Workflows</a>
+      <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-basic-workflows" aria-expanded="false">
+        <i class="bi bi-chevron-right ms-2"></i>
+      </a>
+    </div>
+    <ul id="quarto-sidebar-section-basic-workflows" class="collapse list-unstyled sidebar-section depth1 ">  
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./basic-workflows/index.html" class="sidebar-item-text sidebar-link">Quarto Overview</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./basic-workflows/browser.html" class="sidebar-item-text sidebar-link">From the Browser</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./basic-workflows/rstudio.html" class="sidebar-item-text sidebar-link">From RStudio</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./basic-workflows/jupyterhub.html" class="sidebar-item-text sidebar-link">From JupyterHub</a>
+  </div>
+</li>
+    </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./render-vs-preview.html" class="sidebar-item-text sidebar-link">Render vs.&nbsp;Preview</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./getting-sophisticated.html" class="sidebar-item-text sidebar-link active">Getting Sophisticated</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./transition-from-rmarkdown.html" class="sidebar-item-text sidebar-link">Transition from RMarkdown</a>
+  </div>
+</li>
+    </ul>
+    </div>
 </nav>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-      <div id="quarto-toc-target"></div>
-    </div>
+    
 <!-- main -->
-<main class="content">
+<main class="content" id="quarto-document-content">
 <header id="title-block-header">
 <h1 class="title d-none d-lg-block display-7">Getting Sophisticated</h1>
 </header>
@@ -209,12 +228,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
   const getColorSchemeSentinel = () => {
     if (!isFileUrl()) {
-      return window.localStorage.getItem("quarto-color-scheme");
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
     } else {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = null;
+  let localAlternateSentinel = 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
@@ -225,8 +245,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
     const a = window.document.createElement('a');
-    a.id = "quarto-color-scheme-toggle";
     a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
     a.href = "";
     a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
     const i = window.document.createElement("i");
@@ -314,8 +334,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./render-vs-preview.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Render vs.&nbsp;Preview</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./transition-from-rmarkdown.html" class="pagination-link">
+        <span class="nav-page-text">Transition from RMarkdown</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->
