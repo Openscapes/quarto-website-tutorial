@@ -1,7 +1,7 @@
 ---
 title: "Making open-source documents with Quarto"
 subtitle: "Create & publish tutorials, onboarding docs, and much more" 
-date: "February 17, 2022"
+date: "February 27, 2022"
 author: "Openscapes"
 citation_url: https://openscapes.github.io/series
 slug: index
