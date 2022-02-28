@@ -14,7 +14,7 @@ In your repository, navigate to `index.md`. Then, click the pencil icon in the t
 
 ![](images/github-edit-index.png){fig-align="center" width="95%"}
 
-We are now in the "Edit file" tab of the editor, where we can make modifications. Click the "Preview" tab to see your changes. You can even check the "Show diff" box on the right side to see the changes you've made.
+We are now in the "Edit file" tab of the editor, where we can make modifications. Let's change the date to today's date. Click the "Preview" tab to see your changes. You can even check the "Show diff" box on the right side to see the changes you've made.
 
 ![](images/github-preview-show-diff.png){fig-align="center" width="95%"}
 
