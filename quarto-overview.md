@@ -17,13 +17,13 @@ Developing your quarto site will have the same basic workflow, no matter which t
 
 ## `_quarto.yml`
 
-There is also a `_quarto.yml` file, which is the website's configuration file. It is a directory of the order that the pages/chapters will be in. This is where you update the organization of your website, while you update the content of those pages in the specific file. If we compare side-by-side, you'll see that the pages that appear on our website are listed there.
+Let's have a closer look at the `_quarto.yml` file.
 
-![`_quarto.yml` and website side-by-side](images/quarto-yml-site-side-by-side.png){alt="_quarto.yml and website side-by-side" fig-align="center" width="95%"}
+This type of file (`.yml` or `.yaml`) is written in YAML ("Yet Another Markup Language"). You'll be able to shift the arrangement of webpages by reordering/adding/deleting them in the `_quarto.yml` file following the patterns you see in this example. As you modify `_quarto.yml`, the most important thing to know is that **spacing matters**. Pay attention to whether text is indented by one, two, four, or other spaces, and make sure you follow it; if your site is not looking as expected it is likely a silent error in your YAML. Some text editors like RStudio provide debugging support for YAML and are highly recommended to save you time and heartache.
 
-This type of file (`.yml` or `.yaml`) is written in YAML ("Yet Another Markup Language"). You'll be able to shift the arrangement of webpages by reordering/adding/deleting them in the `_quarto.yml` file following the patterns you see in this example. As you modify `_quarto.yml`, the most important thing to know is that **spacing matters**. Pay attention to whether text is indented by one, two, four, or other spaces, and make sure you follow it; if your site is not looking as expected it is likely a silent error in your YAML. Some text editors like RStudio provide debugging support for YAML and are highly recommended to save you hours of debugging time.
+![`_quarto.yml` and website side-by-side](images/quarto-yml-site-side-by-side3.png){alt="_quarto.yml and website side-by-side" fig-align="center" width="95%"}
 
-Note that there are multiple ways in the `_quarto.yml` for you to include a file in your website.
+Notice that there are multiple ways in the `_quarto.yml` for you to include a file in your website. For example, in the above image, the "First Observations" we see in the left sidebar of the published website (right image) is represented in `_quarto.yml` (left image) over two lines, with line 36 indicating the file reference and line 37 indicating the text to show up in the left sidebar. However, "From RStudio" is only represented in one line of `_quarto.yml`, on line 43. This represents two strategies for including a file in your website. By default, the title of a specified file will show up in the website's sidebar, which is what is happening with the "From RStudio" example. If you would like more control over what is written in the sidebar vs the title of your files, then the approach we took with "First Observations" is what you'll want to do. In this example, you'll see that only "First Observations" shows up in the sidebar as we specified in `_quarto.yml`, but the page's title says "First Observations & Setup" (which in our preference was too long for the sidebar).
 
 ## Next up: workflows
 

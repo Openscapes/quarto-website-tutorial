@@ -29,6 +29,14 @@ Let's go to this website's GitHub repository (also called a "repo"), [**https://
 
 ![quarto-website-tutorial GitHub repository with files for webpages marked with red arrows](images/quarto-files-github.png){fig-alt="Screenshot of files on GitHub with red arrows identifying the files that we saw in the left sidebar" fig-align="center" width="80%"}
 
+## `_quarto.yml` intro
+
+There is also a `_quarto.yml` file, which is the website's configuration file. It is a directory of the order that the pages/chapters will be in. This is where you update the organization of your website, while you update the content of those pages in the specific file. If we compare side-by-side, you'll see that the pages that appear on our website are listed there.
+
+![`_quarto.yml` and website side-by-side](images/quarto-yml-site-side-by-side2.png){alt="_quarto.yml and website side-by-side" fig-align="center"}
+
+We'll learn more about how to interact with `_quarto.yml` in the next page.
+
 ## Fork to your account
 
 Let's start with an existing Quarto site and copy it into your space to edit. First, choose an existing website/book to copy. The simplest option is to start with this site: [quarto-website-tutorial](https://github.com/Openscapes/quarto-website-tutorial).
