@@ -29,12 +29,6 @@ Comparison to knitting in RMarkdown (?)
 
 In terminal, cd to repo...
 
-### Troubleshooting
-
-If it hangs/if I get errors:
-
-Check the specific notebook, are there `---`? Delete those. Is there too much in the first raw cell? Change that
-
 ## If I'm in RStudio IDE
 
 Build tab click buttons....

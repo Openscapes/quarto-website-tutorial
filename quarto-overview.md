@@ -27,7 +27,7 @@ Notice that there are multiple ways in the `_quarto.yml` for you to include a fi
 
 ## Authoring
 
-As an author, you have a lot of options of how your text will look and relate to other text. Check out the Quarto documentation about authoring, starting out with [https://quarto.org/docs/authoring/markdown-basics](https://quarto.org/docs/authoring/markdown-basics.htmlhttps://quarto.org/docs/authoring/markdown-basics.html), to learn more.
+As an author, you have a lot of options of how your text will be formatted, arranged, and interlinked. Check out the Quarto documentation about authoring, starting out with [https://quarto.org/docs/authoring/markdown-basics](https://quarto.org/docs/authoring/markdown-basics.htmlhttps://quarto.org/docs/authoring/markdown-basics.html), to learn more.
 
 ## Next up: workflows
 

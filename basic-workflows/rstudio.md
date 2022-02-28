@@ -6,6 +6,8 @@ The RStudio software (called an IDE, integrated development environment) is an e
 
 ## Setup RStudio and GitHub
 
+### Installation 
+
 For a workflow with RStudio and GitHub on your local computer, you will need four things: 
 
 1. R
@@ -17,6 +19,8 @@ Follow the [UCSB MEDS Installation Guide](https://ucsb-meds.github.io/meds-insta
 
 If you'd like to practice the workflow with RStudio and GitHub, follow [R for Excel Users' GitHub Chapter](https://rstudio-conf-2020.github.io/r-for-excel/github.html). This describes how to create a GitHub repository, clone it to RStudio, make edits, and practice syncing. 
 
+### Clone our tutorial repo
+
 ## Install Quarto
 
 Next, you'll install Quarto. Download Quarto from <https://quarto.org/docs/get-started/>. Follow the installation wizard on your computer. When it is complete, you won't see an application or any new software, but it is now available to RStudio (as well as other applications, including the command line).
@@ -25,7 +29,9 @@ Next, you'll install Quarto. Download Quarto from <https://quarto.org/docs/get-s
 
 TODO: screenshots of IDE, orienting 
 
-## Create a new page
+## Quarto preview
+
+## Create a new `.Rmd` page
 
 ## Visual Editor
 
