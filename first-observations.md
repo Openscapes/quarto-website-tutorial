@@ -4,7 +4,7 @@ title: First Observations & Setup
 
 With this tutorial, we have a working example website that we will explore together. We'll learn a few rules and look for patterns to get an understanding of what things do to help you start customizing and making it your own. And you can continue to use this website as a reference after the tutorial, along with [**Quarto**](https://quarto.org) documentation. (Sidenote: this is actually a Quarto website that looks like a book - books are better for cross-referencing chapters, figures, equations, and references so that might be an option for you to explore too.)
 
-We'll start our exploration online looking at the website architecture and GitHub repository. Then we'll fork the repo and set it up so that any modifications (commits) will automatically be republished via GitHub Actions. Subsequent chapters will describe how to modify your forked repo using different tools (browser, RStudio, Jupyter).
+We'll start our exploration online looking at the website architecture and GitHub repository. Then we'll copy and set it up so that any modifications (commits) will automatically be republished via GitHub Actions. Subsequent chapters will describe how to modify your repo using different tools (browser, RStudio, Jupyter).
 
 ## Exploring online
 
@@ -19,27 +19,29 @@ We'll start our exploration online looking at the website architecture and GitHu
 -   Render vs. Preview
 -   Transition from RMarkdown
 
-Most of these are pages, but you'll see that "Basic Workflows" is a folder with additional pages inside.
+Most of these are pages, but you'll see that "Basic Workflows" has an arrow; it is a folder with additional pages inside.
 
 ### The website's repo
 
-Let's go to this website's GitHub repository (also called a "repo"), [**https://github.com/openscapes/quarto-website-tutorial**](https://github.com/openscapes/quarto-website-tutorial){.uri}. From this website, you can get there by clicking the GitHub octocat icon underneath the Openscapes logo (click it holding command on Mac, or control on a PC to open it in a different tab in your browser).
+Let's go to this website's GitHub repository (also called a "repo"), [**https://github.com/openscapes/quarto-website-tutorial**](https://github.com/openscapes/quarto-website-tutorial){.uri}. From this website, you can get to the repo by clicking the GitHub octocat icon underneath the Openscapes logo (click it holding command on Mac, or control on a PC to open it in a different tab in your browser).
 
-**Have a look at the filenames.** We can recognize the names of the webpages we've seen above, they have red arrows marking them. You'll see the "basic-workflows" folder and the rest in this site are `.md` files, which are plain Markdown files. `index.md` is the home page.
+**Have a look at the filenames.** We can recognize the names of the webpages we've seen above, and they have red arrows marking them in the image below. You'll see the "basic-workflows" folder and the rest in this site are `.md` files, which are plain Markdown files. `index.md` is the home page.
 
 ![quarto-website-tutorial GitHub repository with files for webpages marked with red arrows](images/quarto-files-github.png){fig-alt="Screenshot of files on GitHub with red arrows identifying the files that we saw in the left sidebar" fig-align="center" width="80%"}
 
 ## `_quarto.yml` intro
 
-There is also a `_quarto.yml` file, which is the website's configuration file. It is a directory of the order that the pages/chapters will be in. This is where you update the organization of your website, while you update the content of those pages in the specific file. If we compare side-by-side, you'll see that the pages that appear on our website are listed there.
+There is also a `_quarto.yml` file, which is the website's configuration file. It is a directory of the order that the pages/chapters will be in. This is where you update the organization of your website. If we compare side-by-side, you'll see that the pages that appear on our website are listed there.
 
 ![`_quarto.yml` and website side-by-side](images/quarto-yml-site-side-by-side2.png){alt="_quarto.yml and website side-by-side" fig-align="center"}
 
-We'll learn more about how to interact with `_quarto.yml` in the next page.
+We'll learn more about how to interact with `_quarto.yml` in the [Quarto Overview](quarto-overview.md).
 
 ## Fork to your account
 
-Let's start with an existing Quarto site and copy it into your space to edit. First, choose an existing website/book to copy. The simplest option is to start with this site: [quarto-website-tutorial](https://github.com/Openscapes/quarto-website-tutorial).
+Let's start with an existing Quarto site and copy it into your space to edit. You'll need a free GitHub account that you create at [github.com](https://github.com) (follow [this advice](https://happygitwithr.com/github-acct.html) about choosing your username).
+
+First, choose an existing website to copy. The simplest option is to start with this site: [quarto-website-tutorial](https://github.com/Openscapes/quarto-website-tutorial).
 
 Other options of potential interest:
 
@@ -55,7 +57,7 @@ Note that the GitHub Action for this book does not include R or Python so those 
 
 ### Download instead of fork
 
-Forking might not always be the way to go - you can't fork into the same GitHub user account or organization so if for example you want to make a copy of [2021-Cloud-Hackathon](https://github.com/nasa-openscapes/2021-Cloud-Hackathon) repo within the same NASA-Openscapes GitHub Organization, you'll need to do the following. In this case, follow these steps to download and copy into a new repository, and set up the GitHub Action separately.
+Forking might not always be the way to go - you can't fork into the same GitHub user account or organization so if for example you want to make a copy of [2021-Cloud-Hackathon](https://github.com/nasa-openscapes/2021-Cloud-Hackathon) repo within the same NASA-Openscapes GitHub Organization, you'll need to download instead of fork. In this case, follow these steps to download and copy into a new repository, and set up the GitHub Action separately.
 
 #### Download github repo files
 
@@ -63,11 +65,11 @@ Navigate to <https://github.com/openscapes/quarto-website-tutorial> (or any othe
 
 #### Create a new GitHub repo
 
-Navigate to your GitHub account or organization, and create a new repository, naming it what you'd like.
+Navigate to your GitHub account or organization, and create a new repository, naming it what you'd like. You'll need a free GitHub account that you create at [github.com](https://github.com) (follow [this advice](https://happygitwithr.com/github-acct.html) about choosing your username). When you're logged in, [github.com](https://github.com) will show a green button that says "New" which you'll also see as you navigate to your username's repository page.
 
 #### Add template site files
 
-To use the GitHub file uploader, click the button next to the green "Code" button that says "Add file". Add file \> Upload files. Then, on your computer, select all the files in unzipped folder (command-A or control-A, and drag them to the GitHub uploader page. Scroll down to write a commit message, which effectively saves your files when you're working in the browser.
+To use the GitHub file uploader, click the button next to the green "Code" button that says "Add file". Add file \> Upload files. Then, on your computer, select all the files in unzipped folder (command-A or control-A), and drag them to the GitHub uploader page. Scroll down to write a commit message, which effectively saves your files when you're working in the browser.
 
 Note: if you're comfortable cloning the new repository and copying files into it locally before committing and pushing back to GitHub, that can be preferable to the uploader, which does have limitations with complex repos (although the uploader works fine with this tutorial repo).
 
@@ -75,13 +77,13 @@ Note: if you're comfortable cloning the new repository and copying files into it
 
 If you've used the GitHub uploader, you are not quite set up for publishing. We'll do this in a few steps: we'll set up a GitHub Action within your repo, and create a `gh-pages` branch.
 
-First, the GitHub Action. Go back to your main view of your GitHub repository by clicking on the name of your repository in blue at the top-left (the url in your browser window should say https://github.com/username/repo-name.
+First, the GitHub Action. Go back to your main view of your GitHub repository by clicking on the name of your repository in blue at the top-left (the url in your browser window should say https://github.com/username/repo-name).
 
-Add file \> Create new file. Name it exactly this: `.github/workflows/quarto-render.yml`
+Next to the green code button, click Add file \> Create new file. Name it exactly this: `.github/workflows/quarto-render.yml`
 
-Start by typing the `.` with `github` and when you type the `/` it will give you a new text box to type `workflows` (plural!) and finally, `quarto-render.yml`.
+Start by typing the `.` with `github` and when you type the `/` it will give you a new text box to type `workflows` (plural!), then another `/`, and finally, `quarto-render.yml`.
 
-Then, you'll have an empty new file. Paste this inside - you can click on the top-right of this box to copy all the code inside this code box:
+Now you'll have an empty new file. Paste the following in this empty file - you can click on the top-right of this box to copy all the code inside this code box:
 
 ``` yaml
 name: Render and deploy quarto files
@@ -96,7 +98,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: "Install Quarto and render project"
-      uses: nasa-openscapes/quarto-render@v0.3.79 
+      uses: nasa-openscapes/quarto-render@v0.9.46 
 
     - name: "Deploy to gh-pages"
       uses: peaceiris/actions-gh-pages@v3
@@ -116,20 +118,22 @@ Now click on the Settings tab in the top right of your repository. On the left s
 
 ## Confirm your website is published {#confirm}
 
-To confirm this, go back to your main repository page. You'll now see an orange dot showing that the GitHub Action is beginning to publish the page.
+To confirm that your website is published, go back to your main repository page. You'll now see an orange dot showing that the GitHub Action is beginning to publish the page.
 
-![](images/github-action-orange.png){fig-align="center" width="95%"}
+![Our repo with orange dot indicating in-progress GitHub Action build](images/github-action-orange.png){fig-alt="Screenshot of repo with orange dot indicating in-progress GitHub Action build" fig-align="center" width="95%"}
 
-If you do not see this orange dot, you might need to make a small commit to trigger the GitHub Actions build. If this is the case, click the pencil on the top-right of the README.md file, add some small edit (like a space after a period), and scroll down to click commit. Now you should see the orange dot.
+If you do not see this orange dot, you might need to make a small commit to trigger the GitHub Actions build. If this is the case, click the pencil on the top-right of the README.md file as circled in the image below, add some small edit (like a space after a period), and scroll down to click commit. Now you should see the orange dot.
 
 ![](images/github-edit-readme.png){fig-align="center" width="95%"}
 
 When your orange do becomes a green check, you can go inspect your published site at "https://username.github.io/your-repo). For example: <https://openscapes.github.io/quarto-website-tutorial>.
 
-![](images/github-action-green.png){fig-align="center" width="95%"}
+![Our repo with green check indicating successful GitHub Action build](images/github-action-green.png){fig-alt="Screenshot of repo with green check indicating successful GitHub Action build" fig-align="center" width="95%"}
 
 ## Renaming your repo
 
 If you'd like to rename your repo, go to Settings and the option to rename is on the top of the main settings page.
 
-Now you can start editing. The next chapter describes how starting off from the browser, using Markdown.
+---
+
+Now you are ready to start editing and publishing! The next chapter describes how starting off from the browser, using Markdown.
