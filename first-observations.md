@@ -10,7 +10,7 @@ We'll start our exploration online looking at the website architecture and GitHu
 
 ### The website itself
 
-[This website](https://openscapes.github.io/quarto-website-tutorial/) has 5 things you can see on the left sidebar:
+[This website](https://openscapes.github.io/quarto-website-tutorial/) has 6 things you can see on the left sidebar:
 
 -   Welcome
 -   First Observations
