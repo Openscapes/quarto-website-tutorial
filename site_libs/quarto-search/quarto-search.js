@@ -317,6 +317,26 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
                 );
               }
             },
+            footer({ _items, createElement }) {
+              if (
+                quartoSearchOptions.algolia &&
+                quartoSearchOptions.algolia["show-logo"]
+              ) {
+                const libDir = quartoSearchOptions.algolia["libDir"];
+                const logo = createElement("img", {
+                  src: offsetURL(
+                    `${libDir}/quarto-search/search-by-algolia.svg`
+                  ),
+                  class: "algolia-search-logo",
+                });
+                return createElement(
+                  "a",
+                  { href: "http://www.algolia.com/" },
+                  logo
+                );
+              }
+            },
+
             item({ item, createElement }) {
               return renderItem(
                 item,
@@ -332,6 +352,17 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
       ];
     },
   });
+
+  // Remove the labeleledby attribute since it is pointing
+  // to a non-existent label
+  if (quartoSearchOptions.type === "overlay") {
+    const inputEl = window.document.querySelector(
+      "#quarto-search .aa-Autocomplete"
+    );
+    if (inputEl) {
+      inputEl.removeAttribute("aria-labelledby");
+    }
+  }
 
   // If the main document scrolls dismiss the search results
   // (otherwise, since they're floating in the document they can scroll with the document)
@@ -815,10 +846,11 @@ function positionPanel(pos) {
   const inputEl = window.document.querySelector(
     "#quarto-search .aa-Autocomplete"
   );
+
   if (panelEl && inputEl) {
     panelEl.style.top = `${Math.round(panelEl.offsetTop)}px`;
     if (pos === "start") {
-      panelEl.style.left = `${Math.round(inputEl.offsetLeft)}px`;
+      panelEl.style.left = `${Math.round(inputEl.left)}px`;
     } else {
       panelEl.style.right = `${Math.round(inputEl.offsetRight)}px`;
     }
