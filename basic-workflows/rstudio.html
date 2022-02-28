@@ -124,7 +124,7 @@
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../basic-workflows/jupyterhub.html" class="sidebar-item-text sidebar-link">From JupyterHub</a>
+  <a href="../basic-workflows/jupyterhub.html" class="sidebar-item-text sidebar-link">From Jupyter</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -152,10 +152,15 @@
         <nav id="TOC" role="doc-toc">
 <h2 id="toc-title">On this page</h2>
 <ul>
-<li><a href="#setup-rstudio-and-github" class="nav-link active" data-scroll-target="#setup-rstudio-and-github">Setup RStudio and GitHub</a></li>
+<li><a href="#setup-rstudio-and-github" class="nav-link active" data-scroll-target="#setup-rstudio-and-github">Setup RStudio and GitHub</a>
+<ul class="collapse">
+<li><a href="#installation" class="nav-link" data-scroll-target="#installation">Installation</a></li>
+<li><a href="#clone-our-tutorial-repo" class="nav-link" data-scroll-target="#clone-our-tutorial-repo">Clone our tutorial repo</a></li>
+</ul></li>
 <li><a href="#install-quarto" class="nav-link" data-scroll-target="#install-quarto">Install Quarto</a></li>
 <li><a href="#rstudio-landscape" class="nav-link" data-scroll-target="#rstudio-landscape">RStudio Landscape</a></li>
-<li><a href="#create-a-new-page" class="nav-link" data-scroll-target="#create-a-new-page">Create a new page</a></li>
+<li><a href="#quarto-preview" class="nav-link" data-scroll-target="#quarto-preview">Quarto preview</a></li>
+<li><a href="#create-a-new-.rmd-page" class="nav-link" data-scroll-target="#create-a-new-.rmd-page">Create a new <code>.Rmd</code> page</a></li>
 <li><a href="#visual-editor" class="nav-link" data-scroll-target="#visual-editor">Visual Editor</a></li>
 <li><a href="#render-on-save" class="nav-link" data-scroll-target="#render-on-save">Render on Save</a></li>
 </ul>
@@ -170,6 +175,8 @@
 <p>The RStudio software (called an IDE, integrated development environment) is an excellent way to edit files and interface with GitHub. Plus, as it is made by the same folks who make Quarto, it has many integrated features for streamlining your workflow with Quarto, including how it previews your edits and provides debugging support for yaml! Here is what you’ll need to do to set up and use RStudio.</p>
 <section id="setup-rstudio-and-github" class="level2">
 <h2 class="anchored" data-anchor-id="setup-rstudio-and-github">Setup RStudio and GitHub</h2>
+<section id="installation" class="level3">
+<h3 class="anchored" data-anchor-id="installation">Installation</h3>
 <p>For a workflow with RStudio and GitHub on your local computer, you will need four things:</p>
 <ol type="1">
 <li>R</li>
@@ -180,6 +187,10 @@
 <p>Follow the <a href="https://ucsb-meds.github.io/meds-install-guide.html">UCSB MEDS Installation Guide</a> for detailed instructions on how to create accounts, download, install, and configure on Mac and Windows. This takes about 20 minutes. (For an even more detailed walk-through, see <a href="https://docs.google.com/document/d/1zx2upJJqFZe94O3BQSMI56Z76s3haLXC0otKSpcZaJQ/edit">Allison Horst’s ESM 206 Google Doc</a>). Thanks for sharing Allison!</p>
 <p>If you’d like to practice the workflow with RStudio and GitHub, follow <a href="https://rstudio-conf-2020.github.io/r-for-excel/github.html">R for Excel Users’ GitHub Chapter</a>. This describes how to create a GitHub repository, clone it to RStudio, make edits, and practice syncing.</p>
 </section>
+<section id="clone-our-tutorial-repo" class="level3">
+<h3 class="anchored" data-anchor-id="clone-our-tutorial-repo">Clone our tutorial repo</h3>
+</section>
+</section>
 <section id="install-quarto" class="level2">
 <h2 class="anchored" data-anchor-id="install-quarto">Install Quarto</h2>
 <p>Next, you’ll install Quarto. Download Quarto from <a href="https://quarto.org/docs/get-started/" class="uri">https://quarto.org/docs/get-started/</a>. Follow the installation wizard on your computer. When it is complete, you won’t see an application or any new software, but it is now available to RStudio (as well as other applications, including the command line).</p>
@@ -188,8 +199,11 @@
 <h2 class="anchored" data-anchor-id="rstudio-landscape">RStudio Landscape</h2>
 <p>TODO: screenshots of IDE, orienting</p>
 </section>
-<section id="create-a-new-page" class="level2">
-<h2 class="anchored" data-anchor-id="create-a-new-page">Create a new page</h2>
+<section id="quarto-preview" class="level2">
+<h2 class="anchored" data-anchor-id="quarto-preview">Quarto preview</h2>
+</section>
+<section id="create-a-new-.rmd-page" class="level2">
+<h2 class="anchored" data-anchor-id="create-a-new-.rmd-page">Create a new <code>.Rmd</code> page</h2>
 </section>
 <section id="visual-editor" class="level2">
 <h2 class="anchored" data-anchor-id="visual-editor">Visual Editor</h2>
@@ -381,7 +395,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
   <div class="nav-page nav-page-next">
       <a href="../basic-workflows/jupyterhub.html" class="pagination-link">
-        <span class="nav-page-text">From JupyterHub</span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text">From Jupyter</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

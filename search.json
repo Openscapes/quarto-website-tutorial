@@ -18,7 +18,7 @@
     "href": "quarto-overview.html#authoring",
     "title": "Quarto Overview",
     "section": "Authoring",
-    "text": "Authoring\nAs an author, you have a lot of options of how your text will look and relate to other text. Check out the Quarto documentation about authoring, starting out with https://quarto.org/docs/authoring/markdown-basics, to learn more."
+    "text": "Authoring\nAs an author, you have a lot of options of how your text will be formatted, arranged, and interlinked. Check out the Quarto documentation about authoring, starting out with https://quarto.org/docs/authoring/markdown-basics, to learn more."
   },
   {
     "objectID": "quarto-overview.html#next-up-workflows",
@@ -81,7 +81,7 @@
     "href": "render-vs-preview.html#if-im-in-jupyter-labhub",
     "title": "Render vs. Preview",
     "section": "If I’m in Jupyter Lab/Hub",
-    "text": "If I’m in Jupyter Lab/Hub\nIn terminal, cd to repo…\n\nTroubleshooting\nIf it hangs/if I get errors:\nCheck the specific notebook, are there ---? Delete those. Is there too much in the first raw cell? Change that"
+    "text": "If I’m in Jupyter Lab/Hub\nIn terminal, cd to repo…"
   },
   {
     "objectID": "render-vs-preview.html#if-im-in-rstudio-ide",
@@ -95,7 +95,7 @@
     "href": "basic-workflows/rstudio.html#setup-rstudio-and-github",
     "title": "From RStudio",
     "section": "Setup RStudio and GitHub",
-    "text": "Setup RStudio and GitHub\nFor a workflow with RStudio and GitHub on your local computer, you will need four things:\n\nR\nRStudio\nGit\nGitHub\n\nFollow the UCSB MEDS Installation Guide for detailed instructions on how to create accounts, download, install, and configure on Mac and Windows. This takes about 20 minutes. (For an even more detailed walk-through, see Allison Horst’s ESM 206 Google Doc). Thanks for sharing Allison!\nIf you’d like to practice the workflow with RStudio and GitHub, follow R for Excel Users’ GitHub Chapter. This describes how to create a GitHub repository, clone it to RStudio, make edits, and practice syncing."
+    "text": "Setup RStudio and GitHub\n\nInstallation\nFor a workflow with RStudio and GitHub on your local computer, you will need four things:\n\nR\nRStudio\nGit\nGitHub\n\nFollow the UCSB MEDS Installation Guide for detailed instructions on how to create accounts, download, install, and configure on Mac and Windows. This takes about 20 minutes. (For an even more detailed walk-through, see Allison Horst’s ESM 206 Google Doc). Thanks for sharing Allison!\nIf you’d like to practice the workflow with RStudio and GitHub, follow R for Excel Users’ GitHub Chapter. This describes how to create a GitHub repository, clone it to RStudio, make edits, and practice syncing.\n\n\nClone our tutorial repo"
   },
   {
     "objectID": "basic-workflows/rstudio.html#install-quarto",
@@ -112,11 +112,18 @@
     "text": "RStudio Landscape\nTODO: screenshots of IDE, orienting"
   },
   {
-    "objectID": "basic-workflows/rstudio.html#create-a-new-page",
-    "href": "basic-workflows/rstudio.html#create-a-new-page",
+    "objectID": "basic-workflows/rstudio.html#quarto-preview",
+    "href": "basic-workflows/rstudio.html#quarto-preview",
     "title": "From RStudio",
-    "section": "Create a new page",
-    "text": "Create a new page"
+    "section": "Quarto preview",
+    "text": "Quarto preview"
+  },
+  {
+    "objectID": "basic-workflows/rstudio.html#create-a-new-.rmd-page",
+    "href": "basic-workflows/rstudio.html#create-a-new-.rmd-page",
+    "title": "From RStudio",
+    "section": "Create a new .Rmd page",
+    "text": "Create a new .Rmd page"
   },
   {
     "objectID": "basic-workflows/rstudio.html#visual-editor",
@@ -154,25 +161,39 @@
     "text": "Limitations\nWhile awesome that we can edit using GitHub directly from the browser, there are obvious limitations. One is that to see your edits show up in your book, you have to publish using the GitHub Action. This is slow. Another limitation is that we can only work on one file at a time and commit them each separately, which also is slow. Using additional software can make things much better, as we explore in subsequent chapters."
   },
   {
-    "objectID": "basic-workflows/jupyterhub.html#setup",
-    "href": "basic-workflows/jupyterhub.html#setup",
-    "title": "From JupyterHub",
-    "section": "Setup",
-    "text": "Setup\n[screenshot of setup]"
+    "objectID": "basic-workflows/jupyterhub.html#setup-jupyterhub",
+    "href": "basic-workflows/jupyterhub.html#setup-jupyterhub",
+    "title": "From Jupyter",
+    "section": "Setup JupyterHub",
+    "text": "Setup JupyterHub\nOur JupyterHub is already setup with python environments as well as Quarto (through nasa-openscapes/corn), so there is no further installation required.\n\nClone your repo\nYou’ll start by cloning your repository into JupyterHub. Do this by opening a terminal (File > New > Terminal). In the Terminal, git clone your repository and cd into it:\ngit clone https://github.com/openscapes/quarto-website-tutorial\ncd quarto-website-tutorial"
   },
   {
-    "objectID": "basic-workflows/jupyterhub.html#install-quarto",
-    "href": "basic-workflows/jupyterhub.html#install-quarto",
-    "title": "From JupyterHub",
-    "section": "Install Quarto",
-    "text": "Install Quarto\nDownload Quarto from https://quarto.org/docs/get-started/. Follow the installation wizard on your computer. When it is complete, you won’t see an application or any new software, but it is now available to RStudio."
+    "objectID": "basic-workflows/jupyterhub.html#quarto-preview",
+    "href": "basic-workflows/jupyterhub.html#quarto-preview",
+    "title": "From Jupyter",
+    "section": "Quarto preview",
+    "text": "Quarto preview\nLet’s start off by previewing our quarto site locally. In Terminal, type quarto preview, which will provide a URL with a preview of our site!\nquarto preview\n# Preparing to preview\n# Watching files for changes\n# Browse at https://openscapes.2i2c.cloud/user/jules32/proxy/4593/\nCopy this URL into another browser window; and arrange them so you can see them both (I make a bit more space by collapsing the file menu by clicking on the file icon in the top left)\n\n\n\n\n\nNow we’ll be able to see live changes in the preview as we edit in our .md files. Let’s try it: Change the date in index.md by opening it from the file directory. Change to today’s date, and save. Then refresh the previewed site and you’ll see your changes displayed!"
   },
   {
-    "objectID": "basic-workflows/jupyterhub.html#lets-add-a-file",
-    "href": "basic-workflows/jupyterhub.html#lets-add-a-file",
-    "title": "From JupyterHub",
-    "section": "Let’s add a file",
-    "text": "Let’s add a file"
+    "objectID": "basic-workflows/jupyterhub.html#create-a-new-.ipynb-page",
+    "href": "basic-workflows/jupyterhub.html#create-a-new-.ipynb-page",
+    "title": "From Jupyter",
+    "section": "Create a new .ipynb page",
+    "text": "Create a new .ipynb page\nLet’s add a new page to our site. Instead of an .md file like the others, let’s add a `.ipynb` file."
+  },
+  {
+    "objectID": "basic-workflows/jupyterhub.html#authoring",
+    "href": "basic-workflows/jupyterhub.html#authoring",
+    "title": "From Jupyter",
+    "section": "Authoring",
+    "text": "Authoring\nhttps://quarto.org/docs/reference/cells/cells-jupyter.html"
+  },
+  {
+    "objectID": "basic-workflows/jupyterhub.html#troubleshooting",
+    "href": "basic-workflows/jupyterhub.html#troubleshooting",
+    "title": "From Jupyter",
+    "section": "Troubleshooting",
+    "text": "Troubleshooting\nIf it hangs/if I get errors:\nCheck the specific notebook, are there `—`? Delete those. Is there too much in the first raw cell? Change that"
   },
   {
     "objectID": "basic-workflows/getting-sophisticated.html",
