@@ -18,7 +18,7 @@
     "href": "quarto-overview.html#authoring",
     "title": "Quarto Overview",
     "section": "Authoring",
-    "text": "Authoring\nAs an author, you have a lot of options of how your text will be formatted, arranged, and interlinked. Check out the Quarto documentation about authoring, starting out with https://quarto.org/docs/authoring/markdown-basics, to learn more."
+    "text": "Authoring\nAs an author, you have a lot of options of how your text will be formatted, arranged, and interlinked. Check out the Quarto documentation about authoring, starting out with https://quarto.org/docs/authoring/markdown-basics, to learn more.\nEach page of our site - currently all .md files - has a similar first couple of lines - this also YAML, and it is indicated by two sets of 3 dashes --- :\n---\ntitle: My title\n---\nYou’re able to add more features to individual pages by including it in the YAML, which for the most part here only includes a title. See Quarto excecution options for more information of what you can include in the YAML."
   },
   {
     "objectID": "quarto-overview.html#next-up-workflows",
@@ -95,7 +95,7 @@
     "href": "basic-workflows/rstudio.html#setup-rstudio-and-github",
     "title": "From RStudio",
     "section": "Setup RStudio and GitHub",
-    "text": "Setup RStudio and GitHub\n\nInstallation\nFor a workflow with RStudio and GitHub on your local computer, you will need four things:\n\nR\nRStudio\nGit\nGitHub\n\nFollow the UCSB MEDS Installation Guide for detailed instructions on how to create accounts, download, install, and configure on Mac and Windows. This takes about 20 minutes. (For an even more detailed walk-through, see Allison Horst’s ESM 206 Google Doc). Thanks for sharing Allison!\nIf you’d like to practice the workflow with RStudio and GitHub, follow R for Excel Users’ GitHub Chapter. This describes how to create a GitHub repository, clone it to RStudio, make edits, and practice syncing.\n\n\nClone our tutorial repo"
+    "text": "Setup RStudio and GitHub\n\nInstallation\nFor a workflow with RStudio and GitHub on your local computer, you will need four things:\n\nR\nRStudio\nGit\nGitHub\n\nFollow the UCSB MEDS Installation Guide for detailed instructions on how to create accounts, download, install, and configure on Mac and Windows. This takes about 20 minutes. (For an even more detailed walk-through, see Allison Horst’s ESM 206 Google Doc). Thanks for sharing Allison!\nIf you’d like to practice the workflow with RStudio and GitHub, follow R for Excel Users’ GitHub Chapter. This describes how to create a GitHub repository, clone it to RStudio, make edits, and practice syncing.\n\n\nClone our tutorial repo\nTODO!"
   },
   {
     "objectID": "basic-workflows/rstudio.html#install-quarto",
@@ -172,28 +172,35 @@
     "href": "basic-workflows/jupyterhub.html#quarto-preview",
     "title": "From Jupyter",
     "section": "Quarto preview",
-    "text": "Quarto preview\nLet’s start off by previewing our quarto site locally. In Terminal, type quarto preview, which will provide a URL with a preview of our site!\nquarto preview\n# Preparing to preview\n# Watching files for changes\n# Browse at https://openscapes.2i2c.cloud/user/jules32/proxy/4593/\nCopy this URL into another browser window; and arrange them so you can see them both (I make a bit more space by collapsing the file menu by clicking on the file icon in the top left)\n\n\n\n\n\nNow we’ll be able to see live changes in the preview as we edit in our .md files. Let’s try it: Change the date in index.md by opening it from the file directory. Change to today’s date, and save. Then refresh the previewed site and you’ll see your changes displayed!"
+    "text": "Quarto preview\nLet’s start off by previewing our quarto site locally. In Terminal, type quarto preview, which will provide a URL with a preview of our site!\nquarto preview\n# Preparing to preview\n# Watching files for changes\n# Browse at https://openscapes.2i2c.cloud/user/jules32/proxy/4593/\nCopy this URL into another browser window; and arrange them so you can see them both. I make a bit more space in Jupyter by collapsing the left file menu by clicking on the file icon at the top of the left sidebar.\n\n\n\n\n\nNow we’ll be able to see live changes in the preview as we edit in our .md files. Let’s try it: Change the date in index.md by opening it from the file directory. Change to today’s date, and save. Your preview window will refresh automatically! If it does not, you can also refresh the page manually. The refreshed previewed site will now display your changes!"
   },
   {
     "objectID": "basic-workflows/jupyterhub.html#create-a-new-.ipynb-page",
     "href": "basic-workflows/jupyterhub.html#create-a-new-.ipynb-page",
     "title": "From Jupyter",
     "section": "Create a new .ipynb page",
-    "text": "Create a new .ipynb page\nLet’s add a new page to our site. Instead of an .md file like the others, let’s add a `.ipynb` file."
+    "text": "Create a new .ipynb page\nLet’s add a new page to our site. Instead of an .md file like the others, let’s add a .ipynb file.\nFile > New > Notebook. Accept the default kernel by clicking Select.\n\nFirst chunk: raw yaml\nBy default, this Notebook will give us a first chunk that is code. Let’s change it to raw so that we can write our yaml at the top.\n\n\n\n\n\nIn our Raw code chunk, let’s write the title of this document. We need three dashes --- on separate lines preceding and following the title:, which you can name as you’d like.\n---\ntitle: Python Example\n---\n\n\nSecond chunk: Markdown\nLet’s add a new chunk that is Markdown so we can write some description of what this page will be.\nClick the + symbol at the top of the document, and this will add a new chunk, which by default again is a Code chunk. Change it to a Markdown Chunk following the steps we did above when switching to Raw.\nHere, write a little bit of text in Markdown. Since your title is effectively a level-1 header, avoid using level-1 headers in the rest of your document. Here is some example text I wrote:\n## Introduction\n\nThis example has some Python code that will be a part of our Quarto site.\n\n\nThird chunk: Code\nNow let’s create a new chunk with the default Code setting.\nPaste the following code (or write some of your own to test):\n#| label: fig-polar\n#| fig-cap: \"A line plot on a polar axis\"\nimport numpy as np\nimport matplotlib.pyplot as plt\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\nSave your file\nSave your document - I’ll call mine python-example.ipynb in the main repository."
+  },
+  {
+    "objectID": "basic-workflows/jupyterhub.html#update-_quarto.yml",
+    "href": "basic-workflows/jupyterhub.html#update-_quarto.yml",
+    "title": "From Jupyter",
+    "section": "Update _quarto.yml",
+    "text": "Update _quarto.yml\nNow we’ll add python-example.ipynb to our _quarto.yml file; this is where we register of all files to include in our site. Let’s add it after the section called “Basic Workflows”.\nOpen _quarto.yml by clicking on it from the file directory.\nScroll down to review the current contents in the sidebar: section. It’s there we see all the file arrangement that we see in the previewed site.\nAdd - python-example.ipynb to line 46, making sure that your indentation aligns with the other pages."
   },
   {
     "objectID": "basic-workflows/jupyterhub.html#authoring",
     "href": "basic-workflows/jupyterhub.html#authoring",
     "title": "From Jupyter",
     "section": "Authoring",
-    "text": "Authoring\nhttps://quarto.org/docs/reference/cells/cells-jupyter.html"
+    "text": "Authoring\nFor specific instructions about authoring in Quarto with Jupyter, see https://quarto.org/docs/reference/cells/cells-jupyter."
   },
   {
     "objectID": "basic-workflows/jupyterhub.html#troubleshooting",
     "href": "basic-workflows/jupyterhub.html#troubleshooting",
     "title": "From Jupyter",
     "section": "Troubleshooting",
-    "text": "Troubleshooting\nIf it hangs/if I get errors:\nCheck the specific notebook, are there `—`? Delete those. Is there too much in the first raw cell? Change that"
+    "text": "Troubleshooting\n\nMy changes don’t show up in preview\nMake sure you’ve saved your file! There might be a slight delay depending on your JupyterHub/Lab setup.\n\n\nQuarto render hangs / does not complete\nCheck the specific notebook, are there any `—` throughout to denote linebreaks rather than yaml? Delete those.\nAlso check how long the first raw cell is. Are there level-1 headers (#)? Try removing them."
   },
   {
     "objectID": "basic-workflows/getting-sophisticated.html",

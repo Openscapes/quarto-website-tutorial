@@ -220,9 +220,20 @@
 <li><a href="#clone-your-repo" class="nav-link" data-scroll-target="#clone-your-repo">Clone your repo</a></li>
 </ul></li>
 <li><a href="#quarto-preview" class="nav-link" data-scroll-target="#quarto-preview">Quarto preview</a></li>
-<li><a href="#create-a-new-.ipynb-page" class="nav-link" data-scroll-target="#create-a-new-.ipynb-page">Create a new <code>.ipynb</code> page</a></li>
+<li><a href="#create-a-new-.ipynb-page" class="nav-link" data-scroll-target="#create-a-new-.ipynb-page">Create a new <code>.ipynb</code> page</a>
+<ul class="collapse">
+<li><a href="#first-chunk-raw-yaml" class="nav-link" data-scroll-target="#first-chunk-raw-yaml">First chunk: raw yaml</a></li>
+<li><a href="#second-chunk-markdown" class="nav-link" data-scroll-target="#second-chunk-markdown">Second chunk: Markdown</a></li>
+<li><a href="#third-chunk-code" class="nav-link" data-scroll-target="#third-chunk-code">Third chunk: Code</a></li>
+<li><a href="#save-your-file" class="nav-link" data-scroll-target="#save-your-file">Save your file</a></li>
+</ul></li>
+<li><a href="#update-_quarto.yml" class="nav-link" data-scroll-target="#update-_quarto.yml">Update <code>_quarto.yml</code></a></li>
 <li><a href="#authoring" class="nav-link" data-scroll-target="#authoring">Authoring</a></li>
-<li><a href="#troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a></li>
+<li><a href="#troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a>
+<ul class="collapse">
+<li><a href="#my-changes-dont-show-up-in-preview" class="nav-link" data-scroll-target="#my-changes-dont-show-up-in-preview">My changes don’t show up in preview</a></li>
+<li><a href="#quarto-render-hangs-does-not-complete" class="nav-link" data-scroll-target="#quarto-render-hangs-does-not-complete">Quarto render hangs / does not complete</a></li>
+</ul></li>
 <li><a href="#section" class="nav-link" data-scroll-target="#section"></a></li>
 </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/series/edit/main/basic-workflows/jupyterhub.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/series/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
@@ -234,7 +245,7 @@
 </header>
 
 <p>Your Jupyter setup will involve <code>.ipynb</code> notebooks and the command line. You can interact with Quarto through JupyterLab or JupyterHub. <a href="https://quarto.org/docs/get-started/hello/jupyter.html">Quarto’s JupyterLab tutorials</a> has great instructions on getting started with JupyterLab, including computations and authoring.</p>
-<p>This example uses the NASA-Openscapes JupyterHub that already has all python environments as well as Quarto installed.</p>
+<p>Here we will demonstrate how to add a Jupyter Notebook (<code>.ipynb</code> file) to your tutorial site. This example uses the NASA-Openscapes JupyterHub that already has all python environments as well as Quarto installed.</p>
 <section id="setup-jupyterhub" class="level2">
 <h2 class="anchored" data-anchor-id="setup-jupyterhub">Setup JupyterHub</h2>
 <p>Our JupyterHub is already setup with python environments as well as Quarto (through <a href="https://github.com/nasa-openscapes/corn">nasa-openscapes/corn</a>), so there is no further installation required.</p>
@@ -252,26 +263,90 @@
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Preparing to preview</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Watching files for changes</span></span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Browse at https://openscapes.2i2c.cloud/user/jules32/proxy/4593/</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Copy this URL into another browser window; and arrange them so you can see them both (I make a bit more space by collapsing the file menu by clicking on the file icon in the top left)</p>
+<p>Copy this URL into another browser window; and arrange them so you can see them both. I make a bit more space in Jupyter by collapsing the left file menu by clicking on the file icon at the top of the left sidebar.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/jupyter-side-by-side.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
-<p>Now we’ll be able to see live changes in the preview as we edit in our <code>.md</code> files. Let’s try it: Change the date in <code>index.md</code> by opening it from the file directory. Change to today’s date, and save. Then refresh the previewed site and you’ll see your changes displayed!</p>
+<p>Now we’ll be able to see live changes in the preview as we edit in our <code>.md</code> files. Let’s try it: Change the date in <code>index.md</code> by opening it from the file directory. Change to today’s date, and save. Your preview window will refresh automatically! If it does not, you can also refresh the page manually. The refreshed previewed site will now display your changes!</p>
 </section>
 <section id="create-a-new-.ipynb-page" class="level2">
 <h2 class="anchored" data-anchor-id="create-a-new-.ipynb-page">Create a new <code>.ipynb</code> page</h2>
-<p>Let’s add a new page to our site. Instead of an <code>.md</code> file like the others, let’s add a `.ipynb` file.</p>
+<p>Let’s add a new page to our site. Instead of an <code>.md</code> file like the others, let’s add a <code>.ipynb</code> file.</p>
+<p>File &gt; New &gt; Notebook. Accept the default kernel by clicking Select.</p>
+<section id="first-chunk-raw-yaml" class="level3">
+<h3 class="anchored" data-anchor-id="first-chunk-raw-yaml">First chunk: raw yaml</h3>
+<p>By default, this Notebook will give us a first chunk that is code. Let’s change it to raw so that we can write our yaml at the top.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/jupyter-raw-chunk.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>In our Raw code chunk, let’s write the title of this document. We need three dashes <code>---</code> on separate lines preceding and following the <code>title:</code>, which you can name as you’d like.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">---</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">title:</span> Python Example</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ex">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="second-chunk-markdown" class="level3">
+<h3 class="anchored" data-anchor-id="second-chunk-markdown">Second chunk: Markdown</h3>
+<p>Let’s add a new chunk that is Markdown so we can write some description of what this page will be.</p>
+<p>Click the <code>+</code> symbol at the top of the document, and this will add a new chunk, which by default again is a Code chunk. Change it to a Markdown Chunk following the steps we did above when switching to Raw.</p>
+<p>Here, write a little bit of text in Markdown. Since your title is effectively a level-1 header, avoid using level-1 headers in the rest of your document. Here is some example text I wrote:</p>
+<pre><code>## Introduction
+
+This example has some Python code that will be a part of our Quarto site.</code></pre>
+</section>
+<section id="third-chunk-code" class="level3">
+<h3 class="anchored" data-anchor-id="third-chunk-code">Third chunk: Code</h3>
+<p>Now let’s create a new chunk with the default Code setting.</p>
+<p>Paste the following code (or write some of your own to test):</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-polar</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A line plot on a polar axis"</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> np.arange(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">0.01</span>)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>theta <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> r</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  subplot_kw <span class="op">=</span> {<span class="st">'projection'</span>: <span class="st">'polar'</span>} </span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>ax.plot(theta, r)</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>ax.set_rticks([<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">2</span>])</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>ax.grid(<span class="va">True</span>)</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="save-your-file" class="level3">
+<h3 class="anchored" data-anchor-id="save-your-file">Save your file</h3>
+<p>Save your document - I’ll call mine <code>python-example.ipynb</code> in the main repository.</p>
+</section>
+</section>
+<section id="update-_quarto.yml" class="level2">
+<h2 class="anchored" data-anchor-id="update-_quarto.yml">Update <code>_quarto.yml</code></h2>
+<p>Now we’ll add <code>python-example.ipynb</code> to our <code>_quarto.yml</code> file; this is where we register of all files to include in our site. Let’s add it after the section called “Basic Workflows”.</p>
+<p>Open <code>_quarto.yml</code> by clicking on it from the file directory.</p>
+<p>Scroll down to review the current contents in the <code>sidebar:</code> section. It’s there we see all the file arrangement that we see in the previewed site.</p>
+<p>Add <code>- python-example.ipynb</code> to line 46, making sure that your indentation aligns with the other pages.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/jupyter-python-example.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
 </section>
 <section id="authoring" class="level2">
 <h2 class="anchored" data-anchor-id="authoring">Authoring</h2>
-<p>https://quarto.org/docs/reference/cells/cells-jupyter.html</p>
+<p>For specific instructions about authoring in Quarto with Jupyter, see <a href="https://quarto.org/docs/reference/cells/cells-jupyter.html">https://quarto.org/docs/reference/cells/cells-jupyter</a>.</p>
 </section>
 <section id="troubleshooting" class="level2">
 <h2 class="anchored" data-anchor-id="troubleshooting">Troubleshooting</h2>
-<p>If it hangs/if I get errors:</p>
-<p>Check the specific notebook, are there `—`? Delete those. Is there too much in the first raw cell? Change that</p>
+<section id="my-changes-dont-show-up-in-preview" class="level3">
+<h3 class="anchored" data-anchor-id="my-changes-dont-show-up-in-preview">My changes don’t show up in preview</h3>
+<p>Make sure you’ve saved your file! There might be a slight delay depending on your JupyterHub/Lab setup.</p>
+</section>
+<section id="quarto-render-hangs-does-not-complete" class="level3">
+<h3 class="anchored" data-anchor-id="quarto-render-hangs-does-not-complete">Quarto render hangs / does not complete</h3>
+<p>Check the specific notebook, are there any `—` throughout to denote linebreaks rather than yaml? Delete those.</p>
+<p>Also check how long the first raw cell is. Are there level-1 headers (<code>#</code>)? Try removing them.</p>
+</section>
 </section>
 <section id="section" class="level2">
 <h2 class="anchored" data-anchor-id="section"></h2>
