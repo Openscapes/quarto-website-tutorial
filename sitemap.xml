@@ -2,38 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://openscapes.github.io/series/quarto-overview.html</loc>
-    <lastmod>2022-03-01T15:34:50.413Z</lastmod>
+    <lastmod>2022-03-01T22:07:17.109Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/series/index.html</loc>
-    <lastmod>2022-03-01T15:34:52.521Z</lastmod>
+    <lastmod>2022-03-01T22:07:20.149Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/series/transition-from-rmarkdown.html</loc>
-    <lastmod>2022-03-01T15:34:52.837Z</lastmod>
+    <lastmod>2022-03-01T22:07:20.473Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/series/render-vs-preview.html</loc>
-    <lastmod>2022-03-01T15:34:53.129Z</lastmod>
+    <lastmod>2022-03-01T22:07:20.769Z</lastmod>
+  </url>
+  <url>
+    <loc>https://openscapes.github.io/series/basic-workflows/jupyter.html</loc>
+    <lastmod>2022-03-01T22:07:21.185Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/series/basic-workflows/rstudio.html</loc>
-    <lastmod>2022-03-01T15:34:53.437Z</lastmod>
+    <lastmod>2022-03-01T22:07:21.525Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/series/basic-workflows/browser.html</loc>
-    <lastmod>2022-03-01T15:34:53.773Z</lastmod>
-  </url>
-  <url>
-    <loc>https://openscapes.github.io/series/basic-workflows/jupyterhub.html</loc>
-    <lastmod>2022-03-01T15:34:54.153Z</lastmod>
+    <lastmod>2022-03-01T22:07:21.853Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/series/basic-workflows/getting-sophisticated.html</loc>
-    <lastmod>2022-03-01T15:34:54.453Z</lastmod>
+    <lastmod>2022-03-01T22:07:22.153Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/series/first-observations.html</loc>
-    <lastmod>2022-03-01T15:34:54.853Z</lastmod>
+    <lastmod>2022-03-01T22:07:22.569Z</lastmod>
   </url>
 </urlset>

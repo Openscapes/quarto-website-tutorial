@@ -19,7 +19,7 @@
   <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
   <script src="../site_libs/quarto-search/fuse.min.js"></script>
   <script src="../site_libs/quarto-search/quarto-search.js"></script>
-  <link href="../basic-workflows/jupyterhub.html" rel="next">
+  <link href="../basic-workflows/jupyter.html" rel="next">
   <link href="../basic-workflows/browser.html" rel="prev">
   <script src="../site_libs/quarto-html/quarto.js"></script>
   <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -124,7 +124,7 @@
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../basic-workflows/jupyterhub.html" class="sidebar-item-text sidebar-link">From Jupyter</a>
+  <a href="../basic-workflows/jupyter.html" class="sidebar-item-text sidebar-link">From Jupyter</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -155,14 +155,19 @@
 <li><a href="#setup-rstudio-and-github" class="nav-link active" data-scroll-target="#setup-rstudio-and-github">Setup RStudio and GitHub</a>
 <ul class="collapse">
 <li><a href="#installation" class="nav-link" data-scroll-target="#installation">Installation</a></li>
-<li><a href="#clone-our-tutorial-repo" class="nav-link" data-scroll-target="#clone-our-tutorial-repo">Clone our tutorial repo</a></li>
+<li><a href="#clone-your-repo" class="nav-link" data-scroll-target="#clone-your-repo">Clone your repo</a></li>
 </ul></li>
 <li><a href="#install-quarto" class="nav-link" data-scroll-target="#install-quarto">Install Quarto</a></li>
-<li><a href="#rstudio-landscape" class="nav-link" data-scroll-target="#rstudio-landscape">RStudio Landscape</a></li>
-<li><a href="#quarto-preview" class="nav-link" data-scroll-target="#quarto-preview">Quarto preview</a></li>
-<li><a href="#create-a-new-.rmd-page" class="nav-link" data-scroll-target="#create-a-new-.rmd-page">Create a new <code>.Rmd</code> page</a></li>
+<li><a href="#rstudio-orientation" class="nav-link" data-scroll-target="#rstudio-orientation">RStudio orientation</a>
+<ul class="collapse">
 <li><a href="#visual-editor" class="nav-link" data-scroll-target="#visual-editor">Visual Editor</a></li>
+</ul></li>
+<li><a href="#quarto-preview" class="nav-link" data-scroll-target="#quarto-preview">Quarto preview (?)</a></li>
+<li><a href="#create-a-new-.rmd-page" class="nav-link" data-scroll-target="#create-a-new-.rmd-page">Create a new <code>.Rmd</code> page</a></li>
+<li><a href="#update-_quarto.yml" class="nav-link" data-scroll-target="#update-_quarto.yml">Update <code>_quarto.yml</code></a></li>
+<li><a href="#quarto-render" class="nav-link" data-scroll-target="#quarto-render">Quarto render</a></li>
 <li><a href="#render-on-save" class="nav-link" data-scroll-target="#render-on-save">Render on Save</a></li>
+<li><a href="#authoring" class="nav-link" data-scroll-target="#authoring">Authoring</a></li>
 </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/series/edit/main/basic-workflows/rstudio.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/series/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -185,32 +190,64 @@
 <li>GitHub</li>
 </ol>
 <p>Follow the <a href="https://ucsb-meds.github.io/meds-install-guide.html">UCSB MEDS Installation Guide</a> for detailed instructions on how to create accounts, download, install, and configure on Mac and Windows. This takes about 20 minutes. (For an even more detailed walk-through, see <a href="https://docs.google.com/document/d/1zx2upJJqFZe94O3BQSMI56Z76s3haLXC0otKSpcZaJQ/edit">Allison Horst’s ESM 206 Google Doc</a>). Thanks for sharing Allison!</p>
-<p>If you’d like to practice the workflow with RStudio and GitHub, follow <a href="https://rstudio-conf-2020.github.io/r-for-excel/github.html">R for Excel Users’ GitHub Chapter</a>. This describes how to create a GitHub repository, clone it to RStudio, make edits, and practice syncing.</p>
 </section>
-<section id="clone-our-tutorial-repo" class="level3">
-<h3 class="anchored" data-anchor-id="clone-our-tutorial-repo">Clone our tutorial repo</h3>
-<p>TODO!</p>
+<section id="clone-your-repo" class="level3">
+<h3 class="anchored" data-anchor-id="clone-your-repo">Clone your repo</h3>
+<p>You’ll start by cloning your repository into RStudio.</p>
+<p>File &gt; New Project &gt; Version Control &gt; Git &gt; paste your repository name.</p>
+<p><a href="https://rstudio-conf-2020.github.io/r-for-excel/github.html#clone-your-repository-using-rstudio">R for Excel Users: Clone your repository using RStudio</a> has detailed instructions and screenshots of these steps.</p>
 </section>
 </section>
 <section id="install-quarto" class="level2">
 <h2 class="anchored" data-anchor-id="install-quarto">Install Quarto</h2>
 <p>Next, you’ll install Quarto. Download Quarto from <a href="https://quarto.org/docs/get-started/" class="uri">https://quarto.org/docs/get-started/</a>. Follow the installation wizard on your computer. When it is complete, you won’t see an application or any new software, but it is now available to RStudio (as well as other applications, including the command line).</p>
 </section>
-<section id="rstudio-landscape" class="level2">
-<h2 class="anchored" data-anchor-id="rstudio-landscape">RStudio Landscape</h2>
-<p>TODO: screenshots of IDE, orienting</p>
+<section id="rstudio-orientation" class="level2">
+<h2 class="anchored" data-anchor-id="rstudio-orientation">RStudio orientation</h2>
+<p>Now let’s take a moment to get oriented. This is an RStudio project, which is indicated in the top-left. The bottom right pane shows all the files in your project; everything we’ve cloned from GitHub.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/rstudio-orientation.png" class="img-fluid figure-img" alt="Screenshot of the RStudio IDE highlighting the project name and files pane"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">RStudio IDE highlighting the project name and files pane</figcaption><p></p>
+</figure>
+</div>
+<p>Click on <code>index.md</code>. This will open in a fourth pane; the editor pane. In the upper left, click on the Build tab &gt; Preview Website, and we’ll see a preview of our website show up in the Viewer pane at the bottom right. (This is the default, you can also have it open as a separate html document).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/rstudio-preview.png" class="img-fluid figure-img" alt="Screenshot of RStudio IDE with a file open in the editor, and highlighting the Build and Viewer panes"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">RStudio IDE with a file open in the editor, and highlighting the Build and Viewer panes</figcaption><p></p>
+</figure>
+</div>
+<section id="visual-editor" class="level3">
+<h3 class="anchored" data-anchor-id="visual-editor">Visual Editor</h3>
+<ul>
+<li><p>Visual editor makes a familiar experience</p></li>
+<li><p>copy-paste formatting from Google Doc</p></li>
+</ul>
+</section>
 </section>
 <section id="quarto-preview" class="level2">
-<h2 class="anchored" data-anchor-id="quarto-preview">Quarto preview</h2>
+<h2 class="anchored" data-anchor-id="quarto-preview">Quarto preview (?)</h2>
 </section>
 <section id="create-a-new-.rmd-page" class="level2">
 <h2 class="anchored" data-anchor-id="create-a-new-.rmd-page">Create a new <code>.Rmd</code> page</h2>
+<p>Example:</p>
+<p>load packages and data</p>
+<p>explore</p>
+<p>tidy</p>
+<p>plot</p>
 </section>
-<section id="visual-editor" class="level2">
-<h2 class="anchored" data-anchor-id="visual-editor">Visual Editor</h2>
+<section id="update-_quarto.yml" class="level2">
+<h2 class="anchored" data-anchor-id="update-_quarto.yml">Update <code>_quarto.yml</code></h2>
+</section>
+<section id="quarto-render" class="level2">
+<h2 class="anchored" data-anchor-id="quarto-render">Quarto render</h2>
 </section>
 <section id="render-on-save" class="level2">
 <h2 class="anchored" data-anchor-id="render-on-save">Render on Save</h2>
+</section>
+<section id="authoring" class="level2">
+<h2 class="anchored" data-anchor-id="authoring">Authoring</h2>
 
 
 </section>
@@ -395,7 +432,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../basic-workflows/jupyterhub.html" class="pagination-link">
+      <a href="../basic-workflows/jupyter.html" class="pagination-link">
         <span class="nav-page-text">From Jupyter</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
