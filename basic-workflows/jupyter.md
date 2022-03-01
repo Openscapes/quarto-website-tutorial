@@ -106,11 +106,28 @@ Add `- python-example.ipynb` to line 46, making sure that your indentation align
 
 ![](images/jupyter-python-example.png){fig-align="center"}
 
-You'll see that our new page shows up in our Preview, but by default the code is not run. This is the Quarto default since your computations will likely become more complex and you will want to control when they are rerun. In order to execute the code here, we'll need to render it.
+You'll see that our new page shows up in our Preview, but by default the code is not executed. This is the Quarto default since your computations will likely become more complex and you will want to control when they are executed (or "run").
 
-## Quarto Render
+Let's run a cell in our notebook by clicking the cursor in a code block and clicking the sideways "play" triangle to run the selected cells (and advance to the next cell). This code produces a plot, and when the code is run, the plot shows up within my notebook. It will also display in our preview site.
 
-So far we have previewed changes to our site
+![](images/jupyter-execute-cell.png){fig-align="center"}
+
+Another way to run code in a notebook, is to render it with Quarto.
+
+## Quarto render
+
+So far we have used Quarto to preview changes to our site. By default, Quarto does not execute code automatically but displays it nicely formatted for our site. Quarto can also run all the code if we tell it to - that is called rendering.
+
+Our Terminal is still busy previewing our website, so let's open a new Terminal.
+
+File \> New \> Terminal. Then type:
+
+``` bash
+cd quarto-website-tutorial
+quarto render python-example.ipynb
+```
+
+TODO: more here about rendering v preview.
 
 ## Authoring
 

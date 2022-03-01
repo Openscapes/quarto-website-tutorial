@@ -29,6 +29,8 @@ Let's go to this website's GitHub repository (also called a "repo"), [**https://
 
 ![quarto-website-tutorial GitHub repository with files for webpages marked with red arrows](images/quarto-files-github.png){fig-alt="Screenshot of files on GitHub with red arrows identifying the files that we saw in the left sidebar" fig-align="center" width="80%"}
 
+**The `_site` folder** has html files with names that should be familiar: they match the `.md` files we were just exploring. ; this is where Quarto stores files to build the website and
+
 ## `_quarto.yml` intro
 
 There is also a `_quarto.yml` file, which is the website's configuration file. It is a directory of the order that the pages/chapters will be in. This is where you update the organization of your website. If we compare side-by-side, you'll see that the pages that appear on our website are listed there.
@@ -134,6 +136,6 @@ When your orange do becomes a green check, you can go inspect your published sit
 
 If you'd like to rename your repo, go to Settings and the option to rename is on the top of the main settings page.
 
----
+------------------------------------------------------------------------
 
 Now you are ready to start editing and publishing! The next chapter describes how starting off from the browser, using Markdown.

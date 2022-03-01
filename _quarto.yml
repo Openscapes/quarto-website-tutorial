@@ -41,7 +41,7 @@ website:
         contents: 
           - basic-workflows/browser.md
           - basic-workflows/rstudio.md
-          - basic-workflows/jupyterhub.md 
+          - basic-workflows/jupyter.md 
           - basic-workflows/getting-sophisticated.md
       - href: render-vs-preview.md
         text: Render vs Preview

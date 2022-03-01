@@ -7,26 +7,25 @@ citation_url: https://openscapes.github.io/series
 slug: index
 ---
 
+# Welcome {#welcome}
 
-# Welcome {#welcome} 
+It's possible to create beautiful documentation to share online with [Quarto](https://quarto.org) that auto-updates with [Github](http://github.com). This is very new and incredibly cool. This tutorial is an example of a quarto website --- it is a really powerful way to create and share tutorials, onboarding documentation, and so much more. You can communicate about science using the same reproducible workflow you and/or your colleagues use for analyses, whether or not you write code.
 
-It's possible to create beautiful documentation to share online with [Quarto](https://quarto.org) that auto-updates with [Github](http://github.com). This is very new and incredibly cool. This tutorial is an example of a quarto website — it is a really powerful way to create and share tutorials, onboarding documentation, and so much more. You can communicate about science  using the same reproducible workflow you and/or your colleagues use for analyses, whether or not you write code. 
-
-Creating websites with Quarto can be done without knowing R, Python or HTML, CSS, etc, and that's where we'll start. However, Quarto integrates with these tools so you can make your websites as complex and beautiful as you like as you see examples and reuse and remix from others in the open community. This tutorial borrows heavily from a lot of great tutorials and resources you should check out too -- there are links throughout. 
+Creating websites with Quarto can be done without knowing R, Python or HTML, CSS, etc, and that's where we'll start. However, Quarto integrates with these tools so you can make your websites as complex and beautiful as you like as you see examples and reuse and remix from others in the open community. This tutorial borrows heavily from a lot of great tutorials and resources you should check out too -- there are links throughout.
 
 ## Example Quarto websites
 
 We so far have been using Quarto for documentation using Markdown and Jupyter Notebooks.
 
-- [Champions Lessons Series](https://openscapes.github.io/series)
-- [Openscapes Approach Guide](https://openscapes.github.io/approach-guide/)  
-- [2021 NASA Cloud Hackathon](https://nasa-openscapes.github.io/2021-Cloud-Hackathon/)
+-   [Champions Lessons Series](https://openscapes.github.io/series)
+-   [Openscapes Approach Guide](https://openscapes.github.io/approach-guide/)\
+-   [2021 NASA Cloud Hackathon](https://nasa-openscapes.github.io/2021-Cloud-Hackathon/)
 
 See many more examples at the [quarto gallery](https://quarto.org/docs/gallery/)!
 
 ### Inspiration
 
-Are you making onboarding documentation? Check out [The Fay Lab Manual](https://thefaylab.github.io/lab-manual/) for inspiration on structure - you could also start there and make it your own. 
+Are you making onboarding documentation? Check out [The Fay Lab Manual](https://thefaylab.github.io/lab-manual/) for inspiration on structure - you could also start there and make it your own.
 
 ## About
 

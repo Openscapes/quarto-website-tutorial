@@ -187,7 +187,7 @@
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../basic-workflows/jupyterhub.html" class="sidebar-item-text sidebar-link active">From Jupyter</a>
+  <a href="../basic-workflows/jupyter.html" class="sidebar-item-text sidebar-link active">From Jupyter</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -228,7 +228,7 @@
 <li><a href="#save-your-file" class="nav-link" data-scroll-target="#save-your-file">Save your file</a></li>
 </ul></li>
 <li><a href="#update-_quarto.yml" class="nav-link" data-scroll-target="#update-_quarto.yml">Update <code>_quarto.yml</code></a></li>
-<li><a href="#quarto-render" class="nav-link" data-scroll-target="#quarto-render">Quarto Render</a></li>
+<li><a href="#quarto-render" class="nav-link" data-scroll-target="#quarto-render">Quarto render</a></li>
 <li><a href="#authoring" class="nav-link" data-scroll-target="#authoring">Authoring</a></li>
 <li><a href="#troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a>
 <ul class="collapse">
@@ -237,7 +237,7 @@
 </ul></li>
 <li><a href="#section" class="nav-link" data-scroll-target="#section"></a></li>
 </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/series/edit/main/basic-workflows/jupyterhub.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/series/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/series/edit/main/basic-workflows/jupyter.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/series/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -339,15 +339,16 @@ This example has some Python code that will be a part of our Quarto site.</code>
 <p><img src="images/jupyter-execute-cell.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
-<p>Another way to run code in a notebook, we’ll need to render it.</p>
+<p>Another way to run code in a notebook, is to render it with Quarto.</p>
 </section>
 <section id="quarto-render" class="level2">
-<h2 class="anchored" data-anchor-id="quarto-render">Quarto Render</h2>
-<p>So far we have previewed changes to our site, where Quarto does not execute code but displays it formatted within our site. If we want it to run the code, we’ll need to render it.</p>
+<h2 class="anchored" data-anchor-id="quarto-render">Quarto render</h2>
+<p>So far we have used Quarto to preview changes to our site. By default, Quarto does not execute code automatically but displays it nicely formatted for our site. Quarto can also run all the code if we tell it to - that is called rendering.</p>
 <p>Our Terminal is still busy previewing our website, so let’s open a new Terminal.</p>
 <p>File &gt; New &gt; Terminal. Then type:</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> quarto-website-tutorial</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render python-example.ipynb</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>TODO: more here about rendering v preview.</p>
 </section>
 <section id="authoring" class="level2">
 <h2 class="anchored" data-anchor-id="authoring">Authoring</h2>
