@@ -186,7 +186,14 @@
     "href": "basic-workflows/jupyterhub.html#update-_quarto.yml",
     "title": "From Jupyter",
     "section": "Update _quarto.yml",
-    "text": "Update _quarto.yml\nNow we’ll add python-example.ipynb to our _quarto.yml file; this is where we register of all files to include in our site. Let’s add it after the section called “Basic Workflows”.\nOpen _quarto.yml by clicking on it from the file directory.\nScroll down to review the current contents in the sidebar: section. It’s there we see all the file arrangement that we see in the previewed site.\nAdd - python-example.ipynb to line 46, making sure that your indentation aligns with the other pages."
+    "text": "Update _quarto.yml\nNow we’ll add python-example.ipynb to our _quarto.yml file; this is where we register of all files to include in our site. Let’s add it after the section called “Basic Workflows”.\nOpen _quarto.yml by clicking on it from the file directory.\nScroll down to review the current contents in the sidebar: section. It’s there we see all the file arrangement that we see in the previewed site.\nAdd - python-example.ipynb to line 46, making sure that your indentation aligns with the other pages.\n\n\n\n\n\nYou’ll see that our new page shows up in our Preview, but by default the code is not run. This is the Quarto default since your computations will likely become more complex and you will want to control when they are rerun. In order to execute the code here, we’ll need to render it."
+  },
+  {
+    "objectID": "basic-workflows/jupyterhub.html#quarto-render",
+    "href": "basic-workflows/jupyterhub.html#quarto-render",
+    "title": "From Jupyter",
+    "section": "Quarto Render",
+    "text": "Quarto Render\nSo far we have previewed changes to our site"
   },
   {
     "objectID": "basic-workflows/jupyterhub.html#authoring",
