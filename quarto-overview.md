@@ -29,6 +29,16 @@ Notice that there are multiple ways in the `_quarto.yml` for you to include a fi
 
 As an author, you have a lot of options of how your text will be formatted, arranged, and interlinked. Check out the Quarto documentation about authoring, starting out with [https://quarto.org/docs/authoring/markdown-basics](https://quarto.org/docs/authoring/markdown-basics.htmlhttps://quarto.org/docs/authoring/markdown-basics.html), to learn more.
 
+Each page of our site - currently all `.md` files - has a similar first couple of lines - this also YAML, and it is indicated by two sets of 3 dashes `---` :
+
+```{.bash}
+---
+title: My title
+---
+```
+
+You're able to add more features to individual pages by including it in the YAML, which for the most part here only includes a title. See [Quarto excecution options](https://quarto.org/docs/computations/execution-options.html) for more information of what you can include in the YAML.
+
 ## Next up: workflows
 
 In the next sections we'll see what this workflow looks like using different tools for editing your files. We'll start off from the browser so you don't need to install any additional software, however this approach is very limited and you will soon outgrow its capabilities. See all the tools that are supported at <https://quarto.org/docs/get-started/>.

@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="quarto-0.9.17">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>Making open-source documents with Quarto - From the Browser</title>
+  <title>Making open-source documents with Quarto - Getting Sophisticated</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -19,8 +19,8 @@
   <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
   <script src="../site_libs/quarto-search/fuse.min.js"></script>
   <script src="../site_libs/quarto-search/quarto-search.js"></script>
-  <link href="../basic-workflows/rstudio.html" rel="next">
-  <link href="../quarto-overview.html" rel="prev">
+  <link href="../render-vs-preview.html" rel="next">
+  <link href="../basic-workflows/jupyterhub.html" rel="prev">
   <script src="../site_libs/quarto-html/quarto.js"></script>
   <script src="../site_libs/quarto-html/popper.min.js"></script>
   <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -55,12 +55,12 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
 </head>
-<body class="docked">
+<body class="docked fullcontent">
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">From the Browser</h1>
+      <h1 class="quarto-secondary-nav-title">Getting Sophisticated</h1>
       <button type="button" class="quarto-btn-toggle btn">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -114,7 +114,7 @@
     <ul id="quarto-sidebar-section-basic-workflows" class="collapse list-unstyled sidebar-section depth1 show">  
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../basic-workflows/browser.html" class="sidebar-item-text sidebar-link active">From the Browser</a>
+  <a href="../basic-workflows/browser.html" class="sidebar-item-text sidebar-link">From the Browser</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -129,7 +129,7 @@
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../basic-workflows/getting-sophisticated.html" class="sidebar-item-text sidebar-link">Getting Sophisticated</a>
+  <a href="../basic-workflows/getting-sophisticated.html" class="sidebar-item-text sidebar-link active">Getting Sophisticated</a>
   </div>
 </li>
     </ul>
@@ -148,58 +148,16 @@
     </div>
 </nav>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc">
-<h2 id="toc-title">On this page</h2>
-<ul>
-<li><a href="#edit-content-on-an-existing-page" class="nav-link active" data-scroll-target="#edit-content-on-an-existing-page">Edit content on an existing page</a></li>
-<li><a href="#commit-and-publish" class="nav-link" data-scroll-target="#commit-and-publish">Commit and publish</a></li>
-<li><a href="#limitations" class="nav-link" data-scroll-target="#limitations">Limitations</a></li>
-</ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/series/edit/main/basic-workflows/browser.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/series/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 <header id="title-block-header">
-<h1 class="title d-none d-lg-block display-7">From the Browser</h1>
+<h1 class="title d-none d-lg-block display-7">Getting Sophisticated</h1>
 </header>
-
-<p>A workflow from the browser if good for getting started (since you do not need to install additional software) and for making small contributions, but is definitely limited. Once you feel comfortable here, you can move to a different setup.</p>
-<p>Here’s an example of editing content on an existing page.</p>
-<section id="edit-content-on-an-existing-page" class="level2">
-<h2 class="anchored" data-anchor-id="edit-content-on-an-existing-page">Edit content on an existing page</h2>
-<p>Let’s change the date on the home page of this website.</p>
-<p>In your repository, navigate to <code>index.md</code>. Then, click the pencil icon in the top left to edit directly.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/github-edit-index.png" class="img-fluid figure-img" style="width:95.0%"></p>
-</figure>
-</div>
-<p>We are now in the “Edit file” tab of the editor, where we can make modifications. Let’s change the date to today’s date. Click the “Preview” tab to see your changes. You can even check the “Show diff” box on the right side to see the changes you’ve made.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/github-preview-show-diff.png" class="img-fluid figure-img" style="width:95.0%"></p>
-</figure>
-</div>
-<p>While you’re here, see if there are additional changes to the text you’d like to make. Maybe changing the title or author at the top, or for the main text on the home page of the website.</p>
-<p>Our <code>index.md</code> file is written in Markdown, which enables you to make simple text formatting. As you go back and forth from “Edit file” to “Preview”, notice the patterns of how the Markdown text looks when it is as source (“Edit file”) and when it is formatted (“Preview”). For example, in Markdown, you can make text as a header with <code>#</code> symbols, bold or italic with <code>*</code> symbols, and hyperlinks with <code>[]()</code>. Notice that spacing is important: for example, there are carriage returns (when you hit the “return” key) before any bullet points. You can learn the short list of Markdown rules here: <a href="https://quarto.org/docs/authoring/markdown-basics.html">https://quarto.org/docs/authoring/markdown-basics</a>.</p>
-</section>
-<section id="commit-and-publish" class="level2">
-<h2 class="anchored" data-anchor-id="commit-and-publish">Commit and publish</h2>
-<p>Commit your changes by scrolling to the bottom of the page and writing a commit message - a note to yourself and others about what happened. Write your commit message and then click the green “Commit changes” button.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/github-commit.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-<p>Now, click back to the main page of your GitHub repository. You should see the orange dot <a href="first-observations.md#confirm">confirming your website is published</a>. You’ll have to wait for the GitHub Action to tell quarto to build your site for you to see the update, but it will be there!</p>
-</section>
-<section id="limitations" class="level2">
-<h2 class="anchored" data-anchor-id="limitations">Limitations</h2>
-<p>While awesome that we can edit using GitHub directly from the browser, there are obvious limitations. One is that to see your edits show up in your book, you have to publish using the GitHub Action. This is slow. Another limitation is that we can only work on one file at a time and commit them each separately, which also is slow. Using additional software can make things much better, as we explore in subsequent chapters.</p>
+<p>There are a lot of ways to make you website design more sophisticated. Here are a few ways to help you get started. Note that Quarto builds from what RStudio learned in making RMarkdown, so while these notes discuss RMarkdown, they are relevant here too!</p>
+<p><a href="https://jules32.github.io/rmarkdown-website-tutorial/getting_sophisticated.html" class="uri">https://jules32.github.io/rmarkdown-website-tutorial/getting_sophisticated.html</a></p>
 
 
-</section>
 </main> <!-- /main -->
 <script type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -376,13 +334,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../quarto-overview.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Quarto Overview</span>
+      <a href="../basic-workflows/jupyterhub.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">From Jupyter</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../basic-workflows/rstudio.html" class="pagination-link">
-        <span class="nav-page-text">From RStudio</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../render-vs-preview.html" class="pagination-link">
+        <span class="nav-page-text">Render vs Preview</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

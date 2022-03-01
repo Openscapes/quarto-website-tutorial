@@ -19,8 +19,8 @@
   <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
   <script src="site_libs/quarto-search/fuse.min.js"></script>
   <script src="site_libs/quarto-search/quarto-search.js"></script>
-  <link href="./getting-sophisticated.html" rel="next">
-  <link href="./basic-workflows/jupyterhub.html" rel="prev">
+  <link href="./transition-from-rmarkdown.html" rel="next">
+  <link href="./basic-workflows/getting-sophisticated.html" rel="prev">
   <script src="site_libs/quarto-html/quarto.js"></script>
   <script src="site_libs/quarto-html/popper.min.js"></script>
   <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -73,7 +73,7 @@
   <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
       <a href="./">
-      <img src="./openscapes_hex.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <img src="./images/openscapes_hex.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main tools-wide">
     <a href="https://openscapes.org" title="Openscapes.org" class="sidebar-tool px-1"><i class="bi bi-globe"></i></a>
@@ -99,6 +99,11 @@
   <a href="./first-observations.html" class="sidebar-item-text sidebar-link">First Observations</a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./quarto-overview.html" class="sidebar-item-text sidebar-link">Quarto Overview</a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
     <div class="sidebar-item-container"> 
         <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-basic-workflows" aria-expanded="false">Basic Workflows</a>
@@ -107,11 +112,6 @@
       </a>
     </div>
     <ul id="quarto-sidebar-section-basic-workflows" class="collapse list-unstyled sidebar-section depth1 ">  
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./basic-workflows/index.html" class="sidebar-item-text sidebar-link">Quarto Overview</a>
-  </div>
-</li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./basic-workflows/browser.html" class="sidebar-item-text sidebar-link">From the Browser</a>
@@ -124,24 +124,24 @@
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./basic-workflows/jupyterhub.html" class="sidebar-item-text sidebar-link">From JupyterHub</a>
+  <a href="./basic-workflows/jupyterhub.html" class="sidebar-item-text sidebar-link">From Jupyter</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./basic-workflows/getting-sophisticated.html" class="sidebar-item-text sidebar-link">Getting Sophisticated</a>
   </div>
 </li>
     </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./render-vs-preview.html" class="sidebar-item-text sidebar-link active">Render vs.&nbsp;Preview</a>
+  <a href="./render-vs-preview.html" class="sidebar-item-text sidebar-link active">Render vs Preview</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./getting-sophisticated.html" class="sidebar-item-text sidebar-link">Getting Sophisticated</a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./transition-from-rmarkdown.html" class="sidebar-item-text sidebar-link">Transition from RMarkdown</a>
+  <a href="./transition-from-rmarkdown.html" class="sidebar-item-text sidebar-link">Transition from Rmd</a>
   </div>
 </li>
     </ul>
@@ -155,10 +155,7 @@
 <li><a href="#render" class="nav-link active" data-scroll-target="#render">Render</a></li>
 <li><a href="#previewserve" class="nav-link" data-scroll-target="#previewserve">Preview/Serve</a></li>
 <li><a href="#when-do-i-want-preview-vs-serve" class="nav-link" data-scroll-target="#when-do-i-want-preview-vs-serve">When do I want Preview vs Serve?</a></li>
-<li><a href="#if-im-in-jupyter-labhub" class="nav-link" data-scroll-target="#if-im-in-jupyter-labhub">If I’m in Jupyter Lab/Hub</a>
-<ul class="collapse">
-<li><a href="#troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a></li>
-</ul></li>
+<li><a href="#if-im-in-jupyter-labhub" class="nav-link" data-scroll-target="#if-im-in-jupyter-labhub">If I’m in Jupyter Lab/Hub</a></li>
 <li><a href="#if-im-in-rstudio-ide" class="nav-link" data-scroll-target="#if-im-in-rstudio-ide">If I’m in RStudio IDE</a></li>
 </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/series/edit/main/render-vs-preview.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/series/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
@@ -192,11 +189,6 @@
 <section id="if-im-in-jupyter-labhub" class="level2">
 <h2 class="anchored" data-anchor-id="if-im-in-jupyter-labhub">If I’m in Jupyter Lab/Hub</h2>
 <p>In terminal, cd to repo…</p>
-<section id="troubleshooting" class="level3">
-<h3 class="anchored" data-anchor-id="troubleshooting">Troubleshooting</h3>
-<p>If it hangs/if I get errors:</p>
-<p>Check the specific notebook, are there <code>---</code>? Delete those. Is there too much in the first raw cell? Change that</p>
-</section>
 </section>
 <section id="if-im-in-rstudio-ide" class="level2">
 <h2 class="anchored" data-anchor-id="if-im-in-rstudio-ide">If I’m in RStudio IDE</h2>
@@ -383,13 +375,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./basic-workflows/jupyterhub.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">From JupyterHub</span>
+      <a href="./basic-workflows/getting-sophisticated.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Getting Sophisticated</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./getting-sophisticated.html" class="pagination-link">
-        <span class="nav-page-text">Getting Sophisticated</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./transition-from-rmarkdown.html" class="pagination-link">
+        <span class="nav-page-text">Transition from Rmd</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
