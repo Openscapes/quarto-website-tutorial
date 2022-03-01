@@ -106,6 +106,12 @@ Add `- python-example.ipynb` to line 46, making sure that your indentation align
 
 ![](images/jupyter-python-example.png){fig-align="center"}
 
+You'll see that our new page shows up in our Preview, but by default the code is not run. This is the Quarto default since your computations will likely become more complex and you will want to control when they are rerun. In order to execute the code here, we'll need to render it.
+
+## Quarto Render
+
+So far we have previewed changes to our site
+
 ## Authoring
 
 For specific instructions about authoring in Quarto with Jupyter, see [https://quarto.org/docs/reference/cells/cells-jupyter](https://quarto.org/docs/reference/cells/cells-jupyter.html).
