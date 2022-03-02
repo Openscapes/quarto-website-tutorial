@@ -39,3 +39,7 @@ Or alternatively, R console...
 
 When does it preview automatically?
 
+## If I'm in GitHub from the browser
+
+GitHub Action will only render (and publish), not preview
+

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
   <meta charset="utf-8">
-  <meta name="generator" content="quarto-0.9.17">
+  <meta name="generator" content="quarto-0.9.56">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <title>Making open-source documents with Quarto - From RStudio</title>
   <style>
@@ -114,7 +114,7 @@
     <ul id="quarto-sidebar-section-basic-workflows" class="collapse list-unstyled sidebar-section depth1 show">  
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../basic-workflows/browser.html" class="sidebar-item-text sidebar-link">From the Browser</a>
+  <a href="../basic-workflows/browser.html" class="sidebar-item-text sidebar-link">From GitHub.com</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -158,14 +158,16 @@
 <li><a href="#clone-your-repo" class="nav-link" data-scroll-target="#clone-your-repo">Clone your repo</a></li>
 </ul></li>
 <li><a href="#install-quarto" class="nav-link" data-scroll-target="#install-quarto">Install Quarto</a></li>
-<li><a href="#rstudio-landscape" class="nav-link" data-scroll-target="#rstudio-landscape">RStudio Landscape</a>
+<li><a href="#rstudio-orientation" class="nav-link" data-scroll-target="#rstudio-orientation">RStudio orientation</a>
 <ul class="collapse">
 <li><a href="#visual-editor" class="nav-link" data-scroll-target="#visual-editor">Visual Editor</a></li>
 </ul></li>
-<li><a href="#quarto-preview" class="nav-link" data-scroll-target="#quarto-preview">Quarto preview</a></li>
+<li><a href="#quarto-preview" class="nav-link" data-scroll-target="#quarto-preview">Quarto preview (?)</a></li>
 <li><a href="#create-a-new-.rmd-page" class="nav-link" data-scroll-target="#create-a-new-.rmd-page">Create a new <code>.Rmd</code> page</a></li>
-<li><a href="#visual-editor-1" class="nav-link" data-scroll-target="#visual-editor-1">Visual Editor</a></li>
+<li><a href="#update-_quarto.yml" class="nav-link" data-scroll-target="#update-_quarto.yml">Update <code>_quarto.yml</code></a></li>
+<li><a href="#quarto-render" class="nav-link" data-scroll-target="#quarto-render">Quarto render</a></li>
 <li><a href="#render-on-save" class="nav-link" data-scroll-target="#render-on-save">Render on Save</a></li>
+<li><a href="#authoring" class="nav-link" data-scroll-target="#authoring">Authoring</a></li>
 </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/series/edit/main/basic-workflows/rstudio.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/series/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -200,16 +202,32 @@
 <h2 class="anchored" data-anchor-id="install-quarto">Install Quarto</h2>
 <p>Next, you’ll install Quarto. Download Quarto from <a href="https://quarto.org/docs/get-started/" class="uri">https://quarto.org/docs/get-started/</a>. Follow the installation wizard on your computer. When it is complete, you won’t see an application or any new software, but it is now available to RStudio (as well as other applications, including the command line).</p>
 </section>
-<section id="rstudio-landscape" class="level2">
-<h2 class="anchored" data-anchor-id="rstudio-landscape">RStudio Landscape</h2>
-<p>Now let’s take a moment to get oriented. The RStudio IDE has</p>
-<p>TODO: screenshots of IDE, orienting</p>
+<section id="rstudio-orientation" class="level2">
+<h2 class="anchored" data-anchor-id="rstudio-orientation">RStudio orientation</h2>
+<p>Now let’s take a moment to get oriented. This is an RStudio project, which is indicated in the top-left. The bottom right pane shows all the files in your project; everything we’ve cloned from GitHub.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/rstudio-orientation.png" class="img-fluid figure-img" alt="Screenshot of the RStudio IDE highlighting the project name and files pane"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">RStudio IDE highlighting the project name and files pane</figcaption><p></p>
+</figure>
+</div>
+<p>Click on <code>index.md</code>. This will open in a fourth pane; the editor pane. In the upper left, click on the Build tab &gt; Preview Website, and we’ll see a preview of our website show up in the Viewer pane at the bottom right. (This is the default, you can also have it open as a separate html document).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/rstudio-preview.png" class="img-fluid figure-img" alt="Screenshot of RStudio IDE with a file open in the editor, and highlighting the Build and Viewer panes"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">RStudio IDE with a file open in the editor, and highlighting the Build and Viewer panes</figcaption><p></p>
+</figure>
+</div>
 <section id="visual-editor" class="level3">
 <h3 class="anchored" data-anchor-id="visual-editor">Visual Editor</h3>
+<ul>
+<li><p>Visual editor makes a familiar experience</p></li>
+<li><p>copy-paste formatting from Google Doc</p></li>
+</ul>
 </section>
 </section>
 <section id="quarto-preview" class="level2">
-<h2 class="anchored" data-anchor-id="quarto-preview">Quarto preview</h2>
+<h2 class="anchored" data-anchor-id="quarto-preview">Quarto preview (?)</h2>
 </section>
 <section id="create-a-new-.rmd-page" class="level2">
 <h2 class="anchored" data-anchor-id="create-a-new-.rmd-page">Create a new <code>.Rmd</code> page</h2>
@@ -219,11 +237,17 @@
 <p>tidy</p>
 <p>plot</p>
 </section>
-<section id="visual-editor-1" class="level2">
-<h2 class="anchored" data-anchor-id="visual-editor-1">Visual Editor</h2>
+<section id="update-_quarto.yml" class="level2">
+<h2 class="anchored" data-anchor-id="update-_quarto.yml">Update <code>_quarto.yml</code></h2>
+</section>
+<section id="quarto-render" class="level2">
+<h2 class="anchored" data-anchor-id="quarto-render">Quarto render</h2>
 </section>
 <section id="render-on-save" class="level2">
 <h2 class="anchored" data-anchor-id="render-on-save">Render on Save</h2>
+</section>
+<section id="authoring" class="level2">
+<h2 class="anchored" data-anchor-id="authoring">Authoring</h2>
 
 
 </section>
@@ -404,7 +428,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../basic-workflows/browser.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">From the Browser</span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">From GitHub.com</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
