@@ -2,44 +2,22 @@
 title: Render vs. Preview
 ---
 
-Making quarto websites involves terminology that might be unfamiliar. This is a light explainer to help you get going. 
+Making quarto websites involves terminology that might be unfamiliar. This is a light explainer to help you get going.
 
-As you work locally, you will save your files as you normally do. Saving writes your work to disk. 
+As you work locally, you will save your files as you normally do. Saving writes your work to disk.
 
 ## Render
 
-Rendering is when...
+Rendering is when Quarto formats your document into something different (e.g. .html or .docx).
 
-It's like saying "show me".
+## Preview
 
-Sometimes files get big and complicated with code, so Quarto will not render files by default. It will never run .ipynb files unless you tell it to.
+Preview is when Quarto displays the rendered files. It's like saying "show me".
 
-## Preview/Serve
-Preview is
+## When do I want Render vs Preview?
 
-- this has been called "Serve" in the past
-- you don't ever need to serve if you're working in RStudio (?)
+From the RStudio IDE, the "Render" button does both Render + Preview together.
 
-## When do I want Preview vs Serve?
+From Jupyter, you'll need to do these in two steps, render to make the formatted document, and preview to view it.
 
-Comparison to knitting in RMarkdown (?)
-
-
-## If I'm in Jupyter Lab/Hub
-
-In terminal, cd to repo...
-
-## If I'm in RStudio IDE
-
-Build tab click buttons....
-
-Terminal...
-
-Or alternatively, R console...
-
-When does it preview automatically?
-
-## If I'm in GitHub from the browser
-
-GitHub Action will only render (and publish), not preview
-
+From GitHub.com, Quarto will only be able to render when published (through a GitHub Action). This means you cannot preview before publishing online.

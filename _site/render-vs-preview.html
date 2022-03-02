@@ -153,11 +153,8 @@
 <h2 id="toc-title">On this page</h2>
 <ul>
 <li><a href="#render" class="nav-link active" data-scroll-target="#render">Render</a></li>
-<li><a href="#previewserve" class="nav-link" data-scroll-target="#previewserve">Preview/Serve</a></li>
-<li><a href="#when-do-i-want-preview-vs-serve" class="nav-link" data-scroll-target="#when-do-i-want-preview-vs-serve">When do I want Preview vs Serve?</a></li>
-<li><a href="#if-im-in-jupyter-labhub" class="nav-link" data-scroll-target="#if-im-in-jupyter-labhub">If I’m in Jupyter Lab/Hub</a></li>
-<li><a href="#if-im-in-rstudio-ide" class="nav-link" data-scroll-target="#if-im-in-rstudio-ide">If I’m in RStudio IDE</a></li>
-<li><a href="#if-im-in-github-from-the-browser" class="nav-link" data-scroll-target="#if-im-in-github-from-the-browser">If I’m in GitHub from the browser</a></li>
+<li><a href="#preview" class="nav-link" data-scroll-target="#preview">Preview</a></li>
+<li><a href="#when-do-i-want-render-vs-preview" class="nav-link" data-scroll-target="#when-do-i-want-render-vs-preview">When do I want Render vs Preview?</a></li>
 </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/series/edit/main/render-vs-preview.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/series/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -171,36 +168,17 @@
 <p>As you work locally, you will save your files as you normally do. Saving writes your work to disk.</p>
 <section id="render" class="level2">
 <h2 class="anchored" data-anchor-id="render">Render</h2>
-<p>Rendering is when…</p>
-<p>It’s like saying “show me”.</p>
-<p>Sometimes files get big and complicated with code, so Quarto will not render files by default. It will never run .ipynb files unless you tell it to.</p>
+<p>Rendering is when Quarto formats your document into something different (e.g.&nbsp;.html or .docx).</p>
 </section>
-<section id="previewserve" class="level2">
-<h2 class="anchored" data-anchor-id="previewserve">Preview/Serve</h2>
-<p>Preview is</p>
-<ul>
-<li>this has been called “Serve” in the past</li>
-<li>you don’t ever need to serve if you’re working in RStudio (?)</li>
-</ul>
+<section id="preview" class="level2">
+<h2 class="anchored" data-anchor-id="preview">Preview</h2>
+<p>Preview is when Quarto displays the rendered files. It’s like saying “show me”.</p>
 </section>
-<section id="when-do-i-want-preview-vs-serve" class="level2">
-<h2 class="anchored" data-anchor-id="when-do-i-want-preview-vs-serve">When do I want Preview vs Serve?</h2>
-<p>Comparison to knitting in RMarkdown (?)</p>
-</section>
-<section id="if-im-in-jupyter-labhub" class="level2">
-<h2 class="anchored" data-anchor-id="if-im-in-jupyter-labhub">If I’m in Jupyter Lab/Hub</h2>
-<p>In terminal, cd to repo…</p>
-</section>
-<section id="if-im-in-rstudio-ide" class="level2">
-<h2 class="anchored" data-anchor-id="if-im-in-rstudio-ide">If I’m in RStudio IDE</h2>
-<p>Build tab click buttons….</p>
-<p>Terminal…</p>
-<p>Or alternatively, R console…</p>
-<p>When does it preview automatically?</p>
-</section>
-<section id="if-im-in-github-from-the-browser" class="level2">
-<h2 class="anchored" data-anchor-id="if-im-in-github-from-the-browser">If I’m in GitHub from the browser</h2>
-<p>GitHub Action will only render (and publish), not preview</p>
+<section id="when-do-i-want-render-vs-preview" class="level2">
+<h2 class="anchored" data-anchor-id="when-do-i-want-render-vs-preview">When do I want Render vs Preview?</h2>
+<p>From the RStudio IDE, the “Render” button does both Render + Preview together.</p>
+<p>From Jupyter, you’ll need to do these in two steps, render to make the formatted document, and preview to view it.</p>
+<p>From GitHub.com, Quarto will only be able to render when published (through a GitHub Action). This means you cannot preview before publishing online.</p>
 
 
 </section>

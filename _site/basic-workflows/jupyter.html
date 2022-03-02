@@ -215,11 +215,16 @@
         <nav id="TOC" role="doc-toc">
 <h2 id="toc-title">On this page</h2>
 <ul>
-<li><a href="#setup-jupyterhub" class="nav-link active" data-scroll-target="#setup-jupyterhub">Setup JupyterHub</a>
+<li><a href="#setup" class="nav-link active" data-scroll-target="#setup">Setup</a>
 <ul class="collapse">
+<li><a href="#jupyterhub" class="nav-link" data-scroll-target="#jupyterhub">JupyterHub</a></li>
 <li><a href="#clone-your-repo" class="nav-link" data-scroll-target="#clone-your-repo">Clone your repo</a></li>
+<li><a href="#quarto" class="nav-link" data-scroll-target="#quarto">Quarto</a></li>
 </ul></li>
-<li><a href="#quarto-preview" class="nav-link" data-scroll-target="#quarto-preview">Quarto preview</a></li>
+<li><a href="#quarto-preview" class="nav-link" data-scroll-target="#quarto-preview">Quarto preview</a>
+<ul class="collapse">
+<li><a href="#make-a-small-change-and-preview-it" class="nav-link" data-scroll-target="#make-a-small-change-and-preview-it">Make a small change and preview it</a></li>
+</ul></li>
 <li><a href="#create-a-new-.ipynb-page" class="nav-link" data-scroll-target="#create-a-new-.ipynb-page">Create a new <code>.ipynb</code> page</a>
 <ul class="collapse">
 <li><a href="#first-chunk-raw-yaml" class="nav-link" data-scroll-target="#first-chunk-raw-yaml">First chunk: raw yaml</a></li>
@@ -229,6 +234,7 @@
 </ul></li>
 <li><a href="#update-_quarto.yml" class="nav-link" data-scroll-target="#update-_quarto.yml">Update <code>_quarto.yml</code></a></li>
 <li><a href="#quarto-render" class="nav-link" data-scroll-target="#quarto-render">Quarto render</a></li>
+<li><a href="#if-you-would-like-it-to-specifically-execute-code-in-a-jupyter-notebook-you-can-do-so-in-terminal." class="nav-link" data-scroll-target="#if-you-would-like-it-to-specifically-execute-code-in-a-jupyter-notebook-you-can-do-so-in-terminal.">If you would like it to specifically execute code in a Jupyter notebook, you can do so in Terminal.</a></li>
 <li><a href="#authoring" class="nav-link" data-scroll-target="#authoring">Authoring</a></li>
 <li><a href="#troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a>
 <ul class="collapse">
@@ -247,14 +253,21 @@
 
 <p>Your Jupyter setup will involve <code>.ipynb</code> notebooks and the command line. You can interact with Quarto through JupyterLab or JupyterHub. <a href="https://quarto.org/docs/get-started/hello/jupyter.html">Quarto’s JupyterLab tutorials</a> has great instructions on getting started with JupyterLab, including computations and authoring.</p>
 <p>Here we will demonstrate how to add a Jupyter Notebook (<code>.ipynb</code> file) to your tutorial site. This example uses the NASA-Openscapes JupyterHub that already has all python environments as well as Quarto installed.</p>
-<section id="setup-jupyterhub" class="level2">
-<h2 class="anchored" data-anchor-id="setup-jupyterhub">Setup JupyterHub</h2>
+<section id="setup" class="level2">
+<h2 class="anchored" data-anchor-id="setup">Setup</h2>
+<section id="jupyterhub" class="level3">
+<h3 class="anchored" data-anchor-id="jupyterhub">JupyterHub</h3>
 <p>Our JupyterHub is already setup with python environments as well as Quarto (through <a href="https://github.com/nasa-openscapes/corn">nasa-openscapes/corn</a>), so there is no further installation required.</p>
+</section>
 <section id="clone-your-repo" class="level3">
 <h3 class="anchored" data-anchor-id="clone-your-repo">Clone your repo</h3>
 <p>You’ll start by cloning your repository into JupyterHub. Do this by opening a terminal (File &gt; New &gt; Terminal). In the Terminal, <code>git clone</code> your repository and <code>cd</code> into it:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/openscapes/quarto-website-tutorial</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> quarto-website-tutorial</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="quarto" class="level3">
+<h3 class="anchored" data-anchor-id="quarto">Quarto</h3>
+<p>Quarto is already installed on the NASA-Openscapes JupyterHub!</p>
 </section>
 </section>
 <section id="quarto-preview" class="level2">
@@ -270,7 +283,10 @@
 <p><img src="images/jupyter-side-by-side.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
+<section id="make-a-small-change-and-preview-it" class="level3">
+<h3 class="anchored" data-anchor-id="make-a-small-change-and-preview-it">Make a small change and preview it</h3>
 <p>Now we’ll be able to see live changes in the preview as we edit in our <code>.md</code> files. Let’s try it: Change the date in <code>index.md</code> by opening it from the file directory. Change to today’s date, and save. Your preview window will refresh automatically! If it does not, you can also refresh the page manually. The refreshed previewed site will now display your changes!</p>
+</section>
 </section>
 <section id="create-a-new-.ipynb-page" class="level2">
 <h2 class="anchored" data-anchor-id="create-a-new-.ipynb-page">Create a new <code>.ipynb</code> page</h2>
@@ -333,26 +349,30 @@ This example has some Python code that will be a part of our Quarto site.</code>
 </figure>
 </div>
 <p>You’ll see that our new page shows up in our Preview, but by default the code is not executed. This is the Quarto default since your computations will likely become more complex and you will want to control when they are executed (or “run”).</p>
-<p>Let’s run a cell in our notebook by clicking the cursor in a code block and clicking the sideways “play” triangle to run the selected cells (and advance to the next cell). This code produces a plot, and when the code is run, the plot shows up within my notebook. It will also display in our preview site.</p>
+<p>Let’s run a cell in our notebook by clicking the cursor in a code block and clicking the sideways “play” triangle to run the selected cells (and advance to the next cell). This code produces a plot.</p>
+<p>Since Quarto is still previewing our website and the <code>python-example.ipynb</code>, the plot also displays in the notebook after the code is run and the file is saved, as shown below.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/jupyter-execute-cell.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
-<p>Another way to run code in a notebook, is to render it with Quarto.</p>
+<p>So, your normal workflow for creating and running code blocks in your Jupyter Notebook is the same one you’ll use as Quarto displays the preview.</p>
 </section>
 <section id="quarto-render" class="level2">
 <h2 class="anchored" data-anchor-id="quarto-render">Quarto render</h2>
-<p>So far we have used Quarto to preview changes to our site. By default, Quarto does not execute code automatically but displays it nicely formatted for our site. Quarto can also run all the code if we tell it to - that is called rendering.</p>
+<p>So far we have used <strong>Quarto preview</strong> view our website as we develop it. <strong>Quarto render</strong> will build the html elements of the website that we can see when we preview. Rendering will format the markdown text and code nicely as a website (or however is indicated in the <code>_quarto.yml</code>).</p>
+<p>By default, Quarto render does not execute code. Since files can get big and complicated with code, Quarto does not execute code by default. It will never run .ipynb files unless you tell it to.</p>
+</section>
+<section id="if-you-would-like-it-to-specifically-execute-code-in-a-jupyter-notebook-you-can-do-so-in-terminal." class="level2">
+<h2 class="anchored" data-anchor-id="if-you-would-like-it-to-specifically-execute-code-in-a-jupyter-notebook-you-can-do-so-in-terminal.">If you would like it to specifically execute code in a Jupyter notebook, you can do so in Terminal.</h2>
 <p>Our Terminal is still busy previewing our website, so let’s open a new Terminal.</p>
 <p>File &gt; New &gt; Terminal. Then type:</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> quarto-website-tutorial</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render python-example.ipynb</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>TODO: more here about rendering v preview.</p>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render python-example.ipynb <span class="at">--execute</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="authoring" class="level2">
 <h2 class="anchored" data-anchor-id="authoring">Authoring</h2>
-<p>For specific instructions about authoring in Quarto with Jupyter, see <a href="https://quarto.org/docs/reference/cells/cells-jupyter.html">https://quarto.org/docs/reference/cells/cells-jupyter</a>.</p>
+<p><a href="https://quarto.org">Quarto.org</a> has details about authoring, including specific instructions about authoring in Jupyter: <a href="https://quarto.org/docs/reference/cells/cells-jupyter.html">quarto.org/docs/reference/cells/cells-jupyter</a>.</p>
 </section>
 <section id="troubleshooting" class="level2">
 <h2 class="anchored" data-anchor-id="troubleshooting">Troubleshooting</h2>
@@ -362,7 +382,7 @@ This example has some Python code that will be a part of our Quarto site.</code>
 </section>
 <section id="quarto-render-hangs-does-not-complete" class="level3">
 <h3 class="anchored" data-anchor-id="quarto-render-hangs-does-not-complete">Quarto render hangs / does not complete</h3>
-<p>Check the specific notebook, are there any `—` throughout to denote linebreaks rather than yaml? Delete those.</p>
+<p>Check the specific notebook, are there any `—` throughout to denote line breaks rather than yaml? They might be causing the issue; consider deleting those.</p>
 <p>Also check how long the first raw cell is. Are there level-1 headers (<code>#</code>)? Try removing them.</p>
 </section>
 </section>

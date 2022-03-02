@@ -6,7 +6,9 @@ Your Jupyter setup will involve `.ipynb` notebooks and the command line. You can
 
 Here we will demonstrate how to add a Jupyter Notebook (`.ipynb` file) to your tutorial site. This example uses the NASA-Openscapes JupyterHub that already has all python environments as well as Quarto installed.
 
-## Setup JupyterHub
+## Setup 
+
+### JupyterHub
 
 Our JupyterHub is already setup with python environments as well as Quarto (through [nasa-openscapes/corn](https://github.com/nasa-openscapes/corn)), so there is no further installation required.
 
@@ -18,6 +20,10 @@ You'll start by cloning your repository into JupyterHub. Do this by opening a te
 git clone https://github.com/openscapes/quarto-website-tutorial
 cd quarto-website-tutorial
 ```
+
+### Quarto
+
+Quarto is already installed on the NASA-Openscapes JupyterHub!
 
 ## Quarto preview
 
@@ -33,6 +39,8 @@ quarto preview
 Copy this URL into another browser window; and arrange them so you can see them both. I make a bit more space in Jupyter by collapsing the left file menu by clicking on the file icon at the top of the left sidebar.
 
 ![](images/jupyter-side-by-side.png){fig-align="center"}
+
+### Make a small change and preview it
 
 Now we'll be able to see live changes in the preview as we edit in our `.md` files. Let's try it: Change the date in `index.md` by opening it from the file directory. Change to today's date, and save. Your preview window will refresh automatically! If it does not, you can also refresh the page manually. The refreshed previewed site will now display your changes!
 
@@ -108,15 +116,21 @@ Add `- python-example.ipynb` to line 46, making sure that your indentation align
 
 You'll see that our new page shows up in our Preview, but by default the code is not executed. This is the Quarto default since your computations will likely become more complex and you will want to control when they are executed (or "run").
 
-Let's run a cell in our notebook by clicking the cursor in a code block and clicking the sideways "play" triangle to run the selected cells (and advance to the next cell). This code produces a plot, and when the code is run, the plot shows up within my notebook. It will also display in our preview site.
+Let's run a cell in our notebook by clicking the cursor in a code block and clicking the sideways "play" triangle to run the selected cells (and advance to the next cell). This code produces a plot.
+
+Since Quarto is still previewing our website and the `python-example.ipynb`, the plot also displays in the notebook after the code is run and the file is saved, as shown below.
 
 ![](images/jupyter-execute-cell.png){fig-align="center"}
 
-Another way to run code in a notebook, is to render it with Quarto.
+So, your normal workflow for creating and running code blocks in your Jupyter Notebook is the same one you'll use as Quarto displays the preview.
 
 ## Quarto render
 
-So far we have used Quarto to preview changes to our site. By default, Quarto does not execute code automatically but displays it nicely formatted for our site. Quarto can also run all the code if we tell it to - that is called rendering.
+So far we have used **Quarto preview** view our website as we develop it. **Quarto render** will build the html elements of the website that we can see when we preview. Rendering will format the markdown text and code nicely as a website (or however is indicated in the `_quarto.yml`).
+
+By default, Quarto render does not execute code. Since files can get big and complicated with code, Quarto does not execute code by default. It will never run .ipynb files unless you tell it to.
+
+##  If you would like it to specifically execute code in a Jupyter notebook, you can do so in Terminal. 
 
 Our Terminal is still busy previewing our website, so let's open a new Terminal.
 
@@ -124,14 +138,12 @@ File \> New \> Terminal. Then type:
 
 ``` bash
 cd quarto-website-tutorial
-quarto render python-example.ipynb
+quarto render python-example.ipynb --execute
 ```
-
-TODO: more here about rendering v preview.
 
 ## Authoring
 
-For specific instructions about authoring in Quarto with Jupyter, see [https://quarto.org/docs/reference/cells/cells-jupyter](https://quarto.org/docs/reference/cells/cells-jupyter.html).
+[Quarto.org](https://quarto.org) has details about authoring, including specific instructions about authoring in Jupyter: [quarto.org/docs/reference/cells/cells-jupyter](https://quarto.org/docs/reference/cells/cells-jupyter.html).
 
 ## Troubleshooting
 
@@ -141,7 +153,7 @@ Make sure you've saved your file! There might be a slight delay depending on you
 
 ### Quarto render hangs / does not complete
 
-Check the specific notebook, are there any \`---\` throughout to denote linebreaks rather than yaml? Delete those.
+Check the specific notebook, are there any \`---\` throughout to denote line breaks rather than yaml? They might be causing the issue; consider deleting those.
 
 Also check how long the first raw cell is. Are there level-1 headers (`#`)? Try removing them.
 
