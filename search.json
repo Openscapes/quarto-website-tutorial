@@ -91,6 +91,13 @@
     "text": "If I’m in RStudio IDE\nBuild tab click buttons….\nTerminal…\nOr alternatively, R console…\nWhen does it preview automatically?"
   },
   {
+    "objectID": "render-vs-preview.html#if-im-in-github-from-the-browser",
+    "href": "render-vs-preview.html#if-im-in-github-from-the-browser",
+    "title": "Render vs. Preview",
+    "section": "If I’m in GitHub from the browser",
+    "text": "If I’m in GitHub from the browser\nGitHub Action will only render (and publish), not preview"
+  },
+  {
     "objectID": "basic-workflows/jupyter.html#setup-jupyterhub",
     "href": "basic-workflows/jupyter.html#setup-jupyterhub",
     "title": "From Jupyter",
@@ -205,21 +212,21 @@
   {
     "objectID": "basic-workflows/browser.html#edit-content-on-an-existing-page",
     "href": "basic-workflows/browser.html#edit-content-on-an-existing-page",
-    "title": "From the Browser",
+    "title": "From GitHub.com",
     "section": "Edit content on an existing page",
     "text": "Edit content on an existing page\nLet’s change the date on the home page of this website.\nIn your repository, navigate to index.md. Then, click the pencil icon in the top left to edit directly.\n\n\n\n\n\nWe are now in the “Edit file” tab of the editor, where we can make modifications. Let’s change the date to today’s date. Click the “Preview” tab to see your changes. You can even check the “Show diff” box on the right side to see the changes you’ve made.\n\n\n\n\n\nWhile you’re here, see if there are additional changes to the text you’d like to make. Maybe changing the title or author at the top, or for the main text on the home page of the website.\nOur index.md file is written in Markdown, which enables you to make simple text formatting. As you go back and forth from “Edit file” to “Preview”, notice the patterns of how the Markdown text looks when it is as source (“Edit file”) and when it is formatted (“Preview”). For example, in Markdown, you can make text as a header with # symbols, bold or italic with * symbols, and hyperlinks with [](). Notice that spacing is important: for example, there are carriage returns (when you hit the “return” key) before any bullet points. You can learn the short list of Markdown rules here: https://quarto.org/docs/authoring/markdown-basics."
   },
   {
     "objectID": "basic-workflows/browser.html#commit-and-publish",
     "href": "basic-workflows/browser.html#commit-and-publish",
-    "title": "From the Browser",
+    "title": "From GitHub.com",
     "section": "Commit and publish",
     "text": "Commit and publish\nCommit your changes by scrolling to the bottom of the page and writing a commit message - a note to yourself and others about what happened. Write your commit message and then click the green “Commit changes” button.\n\n\n\n\n\nNow, click back to the main page of your GitHub repository. You should see the orange dot confirming your website is published. You’ll have to wait for the GitHub Action to tell quarto to build your site for you to see the update, but it will be there!"
   },
   {
     "objectID": "basic-workflows/browser.html#limitations",
     "href": "basic-workflows/browser.html#limitations",
-    "title": "From the Browser",
+    "title": "From GitHub.com",
     "section": "Limitations",
     "text": "Limitations\nWhile awesome that we can edit using GitHub directly from the browser, there are obvious limitations. One is that to see your edits show up in your book, you have to publish using the GitHub Action. This is slow. Another limitation is that we can only work on one file at a time and commit them each separately, which also is slow. Using additional software can make things much better, as we explore in subsequent chapters."
   },
