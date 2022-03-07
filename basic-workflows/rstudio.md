@@ -4,7 +4,7 @@ title: From RStudio
 
 The RStudio software (called an IDE, integrated development environment) is an excellent way to edit files and interface with GitHub. Plus, as it is made by the same folks who make Quarto, it has many integrated features for streamlining your workflow with Quarto, including how it previews your edits and provides debugging support for yaml! Here is what you'll need to do to set up and use RStudio.
 
-## Setup 
+## Setup
 
 ### RStudio and GitHub
 

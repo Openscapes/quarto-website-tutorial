@@ -6,7 +6,7 @@ Your Jupyter setup will involve `.ipynb` notebooks and the command line. You can
 
 Here we will demonstrate how to add a Jupyter Notebook (`.ipynb` file) to your tutorial site. This example uses the NASA-Openscapes JupyterHub that already has all python environments as well as Quarto installed.
 
-## Setup 
+## Setup
 
 ### JupyterHub
 
@@ -130,7 +130,7 @@ So far we have used **Quarto preview** view our website as we develop it. **Quar
 
 By default, Quarto render does not execute code. Since files can get big and complicated with code, Quarto does not execute code by default. It will never run .ipynb files unless you tell it to.
 
-##  If you would like it to specifically execute code in a Jupyter notebook, you can do so in Terminal. 
+## If you would like it to specifically execute code in a Jupyter notebook, you can do so in Terminal.
 
 Our Terminal is still busy previewing our website, so let's open a new Terminal.
 

@@ -31,13 +31,19 @@ As an author, you have a lot of options of how your text will be formatted, arra
 
 Each page of our site - currently all `.md` files - has a similar first couple of lines - this also YAML, and it is indicated by two sets of 3 dashes `---` :
 
-```{.bash}
+``` bash
 ---
 title: My title
 ---
 ```
 
 You're able to add more features to individual pages by including it in the YAML, which for the most part here only includes a title. See [Quarto excecution options](https://quarto.org/docs/computations/execution-options.html) for more information of what you can include in the YAML.
+
+## Learn more about Quarto
+
+-   **Reproducible authoring with Quarto** - Mine Çetinkaya-Rundel, Feb 2022
+
+    -   [slides](https://mine-cetinkaya-rundel.github.io/2022-repro-toronto/#/title-slide), [youtube](https://www.youtube.com/watch?v=6p4vOKS6Xls)
 
 ## Next up: workflows
 
