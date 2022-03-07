@@ -21,6 +21,13 @@
     "text": "Authoring\nAs an author, you have a lot of options of how your text will be formatted, arranged, and interlinked. Check out the Quarto documentation about authoring, starting out with https://quarto.org/docs/authoring/markdown-basics, to learn more.\nEach page of our site - currently all .md files - has a similar first couple of lines - this also YAML, and it is indicated by two sets of 3 dashes --- :\n---\ntitle: My title\n---\nYou’re able to add more features to individual pages by including it in the YAML, which for the most part here only includes a title. See Quarto excecution options for more information of what you can include in the YAML."
   },
   {
+    "objectID": "quarto-overview.html#learn-more-about-quarto",
+    "href": "quarto-overview.html#learn-more-about-quarto",
+    "title": "Quarto Overview",
+    "section": "Learn more about Quarto",
+    "text": "Learn more about Quarto\n\nReproducible authoring with Quarto - Mine Çetinkaya-Rundel, Feb 2022\n\nslides, youtube"
+  },
+  {
     "objectID": "quarto-overview.html#next-up-workflows",
     "href": "quarto-overview.html#next-up-workflows",
     "title": "Quarto Overview",
