@@ -4,8 +4,8 @@ project:
 website: 
   page-navigation: true
   title: "Making open-source documents with Quarto" 
-  site-url: "https://openscapes.github.io/series" 
-  repo-url: https://github.com/openscapes/series 
+  site-url: "https://openscapes.github.io/quarto-website-tutorial" 
+  repo-url: https://github.com/openscapes/quarto-website-tutorial 
   repo-actions: [edit, issue]
   
   page-footer:
