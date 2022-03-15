@@ -7,7 +7,7 @@ citation_url: https://openscapes.github.io/series
 slug: index
 ---
 
-# Welcome {#welcome} mmjlk
+# Welcome {#welcome}
 
 It's possible to create beautiful documentation to share online with [Quarto](https://quarto.org) that auto-updates with [Github](http://github.com). This is very new and incredibly cool. This tutorial is an example of a quarto website --- it is a really powerful way to create and share tutorials, onboarding documentation, and so much more. You can communicate about science using the same reproducible workflow you and/or your colleagues use for analyses, whether or not you write code.
 
