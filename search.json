@@ -116,14 +116,7 @@
     "href": "basic-workflows/jupyter.html#quarto-render",
     "title": "From Jupyter",
     "section": "Quarto render",
-    "text": "Quarto render\nSo far we have used Quarto preview view our website as we develop it. Quarto render will build the html elements of the website that we can see when we preview. Rendering will format the markdown text and code nicely as a website (or however is indicated in the _quarto.yml).\nBy default, Quarto render does not execute code. Since files can get big and complicated with code, Quarto does not execute code by default. It will never run .ipynb files unless you tell it to."
-  },
-  {
-    "objectID": "basic-workflows/jupyter.html#if-you-would-like-it-to-specifically-execute-code-in-a-jupyter-notebook-you-can-do-so-in-terminal.",
-    "href": "basic-workflows/jupyter.html#if-you-would-like-it-to-specifically-execute-code-in-a-jupyter-notebook-you-can-do-so-in-terminal.",
-    "title": "From Jupyter",
-    "section": "If you would like it to specifically execute code in a Jupyter notebook, you can do so in Terminal.",
-    "text": "If you would like it to specifically execute code in a Jupyter notebook, you can do so in Terminal.\nOur Terminal is still busy previewing our website, so let’s open a new Terminal.\nFile > New > Terminal. Then type:\ncd quarto-website-tutorial\nquarto render python-example.ipynb --execute"
+    "text": "Quarto render\nSo far we have used Quarto preview view our website as we develop it. Quarto render will build the html elements of the website that we can see when we preview. Rendering will format the markdown text and code nicely as a website (or however is indicated in the _quarto.yml).\nBy default, Quarto render does not execute code. Since files can get big and complicated with code, Quarto does not execute code by default. It will never run .ipynb files unless you tell it to.\n\nRender whole notebook\nIf you would like it to specifically execute code in a Jupyter notebook, you can do so in Terminal.\nOur Terminal is still busy previewing our website, so let’s open a new Terminal.\nFile > New > Terminal. Then type:\ncd quarto-website-tutorial\nquarto render python-example.ipynb --execute"
   },
   {
     "objectID": "basic-workflows/jupyter.html#authoring",

@@ -233,8 +233,10 @@
 <li><a href="#save-your-file" class="nav-link" data-scroll-target="#save-your-file">Save your file</a></li>
 </ul></li>
 <li><a href="#update-_quarto.yml" class="nav-link" data-scroll-target="#update-_quarto.yml">Update <code>_quarto.yml</code></a></li>
-<li><a href="#quarto-render" class="nav-link" data-scroll-target="#quarto-render">Quarto render</a></li>
-<li><a href="#if-you-would-like-it-to-specifically-execute-code-in-a-jupyter-notebook-you-can-do-so-in-terminal." class="nav-link" data-scroll-target="#if-you-would-like-it-to-specifically-execute-code-in-a-jupyter-notebook-you-can-do-so-in-terminal.">If you would like it to specifically execute code in a Jupyter notebook, you can do so in Terminal.</a></li>
+<li><a href="#quarto-render" class="nav-link" data-scroll-target="#quarto-render">Quarto render</a>
+<ul class="collapse">
+<li><a href="#render-whole-notebook" class="nav-link" data-scroll-target="#render-whole-notebook">Render whole notebook</a></li>
+</ul></li>
 <li><a href="#authoring" class="nav-link" data-scroll-target="#authoring">Authoring</a></li>
 <li><a href="#troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a>
 <ul class="collapse">
@@ -362,13 +364,14 @@ This example has some Python code that will be a part of our Quarto site.</code>
 <h2 class="anchored" data-anchor-id="quarto-render">Quarto render</h2>
 <p>So far we have used <strong>Quarto preview</strong> view our website as we develop it. <strong>Quarto render</strong> will build the html elements of the website that we can see when we preview. Rendering will format the markdown text and code nicely as a website (or however is indicated in the <code>_quarto.yml</code>).</p>
 <p>By default, Quarto render does not execute code. Since files can get big and complicated with code, Quarto does not execute code by default. It will never run .ipynb files unless you tell it to.</p>
-</section>
-<section id="if-you-would-like-it-to-specifically-execute-code-in-a-jupyter-notebook-you-can-do-so-in-terminal." class="level2">
-<h2 class="anchored" data-anchor-id="if-you-would-like-it-to-specifically-execute-code-in-a-jupyter-notebook-you-can-do-so-in-terminal.">If you would like it to specifically execute code in a Jupyter notebook, you can do so in Terminal.</h2>
+<section id="render-whole-notebook" class="level3">
+<h3 class="anchored" data-anchor-id="render-whole-notebook">Render whole notebook</h3>
+<p>If you would like it to specifically execute code in a Jupyter notebook, you can do so in Terminal.</p>
 <p>Our Terminal is still busy previewing our website, so let’s open a new Terminal.</p>
 <p>File &gt; New &gt; Terminal. Then type:</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> quarto-website-tutorial</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render python-example.ipynb <span class="at">--execute</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
 </section>
 <section id="authoring" class="level2">
 <h2 class="anchored" data-anchor-id="authoring">Authoring</h2>
