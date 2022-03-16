@@ -172,7 +172,7 @@
     "href": "basic-workflows/jupyter.html#quarto-render",
     "title": "From Jupyter",
     "section": "Quarto render",
-    "text": "Quarto render\nSo far we have used Quarto preview view our website as we develop it. Quarto render will build the html elements of the website that we can see when we preview. Rendering will format the markdown text and code nicely as a website (or however is indicated in the _quarto.yml).\nBy default, Quarto render does not execute code. Since files can get big and complicated with code, Quarto does not execute code by default. It will never run .ipynb files unless you tell it to."
+    "text": "Quarto render\nSo far we have used Quarto preview view our website as we develop it. Quarto render will build the html elements of the website that we can see when we preview. Rendering will format the markdown text and code nicely as a website (or however is indicated in the _quarto.yml).\nBy default, Quarto render does not execute code. Since files can get big and complicated with code, Quarto does not execute code by default. It will never run .ipynb files unless you tell it to.\n\nRender whole notebook\nIf you would like it to specifically execute code in a Jupyter notebook, you can do so in Terminal.\nOur Terminal is still busy previewing our website, so let’s open a new Terminal.\nFile > New > Terminal. Then type:\ncd quarto-website-tutorial\nquarto render python-example.ipynb --execute"
   },
   {
     "objectID": "basic-workflows/jupyter.html#if-you-would-like-it-to-specifically-execute-code-in-a-jupyter-notebook-you-can-do-so-in-terminal.",
@@ -229,5 +229,12 @@
     "title": "Quarto Overview",
     "section": "Next up: workflows",
     "text": "Next up: workflows\nIn the next sections we’ll see what this workflow looks like using different tools for editing your files. We’ll start off from the browser so you don’t need to install any additional software, however this approach is very limited and you will soon outgrow its capabilities. See all the tools that are supported at https://quarto.org/docs/get-started/.\nIf you don’t already have a workflow and to edit files and sync to GitHub from your computer, I recommend RStudio. You don’t need to know R to use RStudio, and it has powerful editor features that make for happy workflows."
+  },
+  {
+    "objectID": "quarto-overview.html#learn-more-about-quarto",
+    "href": "quarto-overview.html#learn-more-about-quarto",
+    "title": "Quarto Overview",
+    "section": "Learn more about Quarto",
+    "text": "Learn more about Quarto\n\nReproducible authoring with Quarto - Mine Çetinkaya-Rundel, Feb 2022\n\nslides, youtube"
   }
 ]

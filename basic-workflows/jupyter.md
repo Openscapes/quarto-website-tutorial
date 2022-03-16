@@ -130,7 +130,9 @@ So far we have used **Quarto preview** view our website as we develop it. **Quar
 
 By default, Quarto render does not execute code. Since files can get big and complicated with code, Quarto does not execute code by default. It will never run .ipynb files unless you tell it to.
 
-## If you would like it to specifically execute code in a Jupyter notebook, you can do so in Terminal.
+### Render whole notebook
+
+If you would like it to specifically execute code in a Jupyter notebook, you can do so in Terminal.
 
 Our Terminal is still busy previewing our website, so let's open a new Terminal.
 
