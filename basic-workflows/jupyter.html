@@ -243,7 +243,6 @@
 <li><a href="#my-changes-dont-show-up-in-preview" class="nav-link" data-scroll-target="#my-changes-dont-show-up-in-preview">My changes don’t show up in preview</a></li>
 <li><a href="#quarto-render-hangs-does-not-complete" class="nav-link" data-scroll-target="#quarto-render-hangs-does-not-complete">Quarto render hangs / does not complete</a></li>
 </ul></li>
-<li><a href="#section" class="nav-link" data-scroll-target="#section"></a></li>
 </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/quarto-website-tutorial/edit/main/basic-workflows/jupyter.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/quarto-website-tutorial/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -253,8 +252,8 @@
 
 <div class="quarto-title"><h1 class="title d-none d-lg-block display-7">From Jupyter</h1></div></header>
 
-<p>Your Jupyter setup will involve <code>.ipynb</code> notebooks and the command line. You can interact with Quarto through JupyterLab or JupyterHub. <a href="https://quarto.org/docs/get-started/hello/jupyter.html">Quarto’s JupyterLab tutorials</a> has great instructions on getting started with JupyterLab, including computations and authoring.</p>
-<p>Here we will demonstrate how to add a Jupyter Notebook (<code>.ipynb</code> file) to your tutorial site. This example uses the NASA-Openscapes JupyterHub that already has all python environments as well as Quarto installed.</p>
+<p>You can interact with Quarto through JupyterLab or JupyterHub. Your Jupyter setup will involve <code>.ipynb</code> notebooks and the command line. <a href="https://quarto.org/docs/get-started/hello/jupyter.html">Quarto’s JupyterLab tutorials</a> has great instructions on getting started with JupyterLab, including computations and authoring.</p>
+<p>Here we will demonstrate how to work with this Quarto tutorial site in JupyterHub and add a Jupyter Notebook (<code>.ipynb</code> file). This example uses the NASA-Openscapes JupyterHub that already has all python environments as well as Quarto installed.</p>
 <section id="setup" class="level2">
 <h2 class="anchored" data-anchor-id="setup">Setup</h2>
 <section id="jupyterhub" class="level3">
@@ -312,9 +311,9 @@
 <p>Let’s add a new chunk that is Markdown so we can write some description of what this page will be.</p>
 <p>Click the <code>+</code> symbol at the top of the document, and this will add a new chunk, which by default again is a Code chunk. Change it to a Markdown Chunk following the steps we did above when switching to Raw.</p>
 <p>Here, write a little bit of text in Markdown. Since your title is effectively a level-1 header, avoid using level-1 headers in the rest of your document. Here is some example text I wrote:</p>
-<pre><code>## Introduction
-
-This example has some Python code that will be a part of our Quarto site.</code></pre>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">## Introduction</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="ex">This</span> example has some Python code that will be a part of our Quarto site.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="third-chunk-code" class="level3">
 <h3 class="anchored" data-anchor-id="third-chunk-code">Third chunk: Code</h3>
@@ -333,6 +332,8 @@ This example has some Python code that will be a part of our Quarto site.</code>
 <span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>ax.set_rticks([<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">2</span>])</span>
 <span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>ax.grid(<span class="va">True</span>)</span>
 <span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Now, go ahead and execute this code chunk like you normally would, by clicking the cursor in a code block and clicking the sideways “play” triangle to run the selected cells (and advance to the next cell). This code produces a plot.</p>
+<p>Note that the code runs as it normally would; the code options in the comments are just comments.</p>
 </section>
 <section id="save-your-file" class="level3">
 <h3 class="anchored" data-anchor-id="save-your-file">Save your file</h3>
@@ -350,8 +351,7 @@ This example has some Python code that will be a part of our Quarto site.</code>
 <p><img src="images/jupyter-python-example.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
-<p>You’ll see that our new page shows up in our Preview, but by default the code is not executed. This is the Quarto default since your computations will likely become more complex and you will want to control when they are executed (or “run”).</p>
-<p>Let’s run a cell in our notebook by clicking the cursor in a code block and clicking the sideways “play” triangle to run the selected cells (and advance to the next cell). This code produces a plot.</p>
+<p>You’ll see that our new page shows up in our Preview, and the code is executed since we did that in the Jupyter Notebook itself. By default, Quarto will not execute code chunks since your computations will likely become more complex and you will want to control when they are executed (or “run”).</p>
 <p>Since Quarto is still previewing our website and the <code>python-example.ipynb</code>, the plot also displays in the notebook after the code is run and the file is saved, as shown below.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -387,12 +387,9 @@ This example has some Python code that will be a part of our Quarto site.</code>
 <h3 class="anchored" data-anchor-id="quarto-render-hangs-does-not-complete">Quarto render hangs / does not complete</h3>
 <p>Check the specific notebook, are there any `—` throughout to denote line breaks rather than yaml? They might be causing the issue; consider deleting those.</p>
 <p>Also check how long the first raw cell is. Are there level-1 headers (<code>#</code>)? Try removing them.</p>
-</section>
-</section>
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section"></h2>
 
 
+</section>
 </section>
 </main> <!-- /main -->
 <script type="application/javascript">
