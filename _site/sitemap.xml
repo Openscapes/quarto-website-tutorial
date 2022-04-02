@@ -1,39 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://openscapes.github.io/series/first-observations.html</loc>
-    <lastmod>2022-03-07T02:00:03.817Z</lastmod>
+    <loc>https://openscapes.github.io/quarto-website-tutorial/first-observations.html</loc>
+    <lastmod>2022-04-02T19:06:37.926Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/series/render-vs-preview.html</loc>
-    <lastmod>2022-03-07T02:00:04.365Z</lastmod>
+    <loc>https://openscapes.github.io/quarto-website-tutorial/render-vs-preview.html</loc>
+    <lastmod>2022-04-02T19:06:38.342Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/series/transition-from-rmarkdown.html</loc>
-    <lastmod>2022-03-07T02:00:04.748Z</lastmod>
+    <loc>https://openscapes.github.io/quarto-website-tutorial/transition-from-rmarkdown.html</loc>
+    <lastmod>2022-04-02T19:06:38.708Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/series/index.html</loc>
-    <lastmod>2022-03-07T02:00:05.109Z</lastmod>
+    <loc>https://openscapes.github.io/quarto-website-tutorial/Untitled.html</loc>
+    <lastmod>2022-04-02T19:06:39.044Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/series/basic-workflows/browser.html</loc>
-    <lastmod>2022-03-07T02:00:05.428Z</lastmod>
+    <loc>https://openscapes.github.io/quarto-website-tutorial/index.html</loc>
+    <lastmod>2022-04-02T19:06:39.482Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/series/basic-workflows/rstudio.html</loc>
-    <lastmod>2022-03-07T02:00:05.807Z</lastmod>
+    <loc>https://openscapes.github.io/quarto-website-tutorial/basic-workflows/browser.html</loc>
+    <lastmod>2022-04-02T19:06:39.844Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/series/basic-workflows/jupyter.html</loc>
-    <lastmod>2022-03-16T15:37:50.153Z</lastmod>
+    <loc>https://openscapes.github.io/quarto-website-tutorial/basic-workflows/rstudio.html</loc>
+    <lastmod>2022-04-02T19:06:40.201Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/series/basic-workflows/getting-sophisticated.html</loc>
-    <lastmod>2022-03-07T02:00:06.504Z</lastmod>
+    <loc>https://openscapes.github.io/quarto-website-tutorial/basic-workflows/jupyter.html</loc>
+    <lastmod>2022-04-02T19:06:40.610Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/series/quarto-overview.html</loc>
-    <lastmod>2022-03-16T15:37:51.472Z</lastmod>
+    <loc>https://openscapes.github.io/quarto-website-tutorial/basic-workflows/getting-sophisticated.html</loc>
+    <lastmod>2022-04-02T19:06:40.943Z</lastmod>
+  </url>
+  <url>
+    <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-overview.html</loc>
+    <lastmod>2022-04-02T19:06:41.345Z</lastmod>
   </url>
 </urlset>

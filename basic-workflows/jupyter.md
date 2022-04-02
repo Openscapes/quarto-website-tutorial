@@ -2,9 +2,9 @@
 title: From Jupyter
 ---
 
-Your Jupyter setup will involve `.ipynb` notebooks and the command line. You can interact with Quarto through JupyterLab or JupyterHub. [Quarto's JupyterLab tutorials](https://quarto.org/docs/get-started/hello/jupyter.html) has great instructions on getting started with JupyterLab, including computations and authoring.
+You can interact with Quarto through JupyterLab or JupyterHub. Your Jupyter setup will involve `.ipynb` notebooks and the command line. [Quarto's JupyterLab tutorials](https://quarto.org/docs/get-started/hello/jupyter.html) has great instructions on getting started with JupyterLab, including computations and authoring.
 
-Here we will demonstrate how to add a Jupyter Notebook (`.ipynb` file) to your tutorial site. This example uses the NASA-Openscapes JupyterHub that already has all python environments as well as Quarto installed.
+Here we will demonstrate how to work with this Quarto tutorial site in JupyterHub and add a Jupyter Notebook (`.ipynb` file). This example uses the NASA-Openscapes JupyterHub that already has all python environments as well as Quarto installed.
 
 ## Setup
 
@@ -72,9 +72,11 @@ Click the `+` symbol at the top of the document, and this will add a new chunk, 
 
 Here, write a little bit of text in Markdown. Since your title is effectively a level-1 header, avoid using level-1 headers in the rest of your document. Here is some example text I wrote:
 
-    ## Introduction
+```bash
+## Introduction
 
-    This example has some Python code that will be a part of our Quarto site.
+This example has some Python code that will be a part of our Quarto site.
+```
 
 ### Third chunk: Code
 
@@ -98,6 +100,10 @@ ax.grid(True)
 plt.show()
 ```
 
+Now, go ahead and execute this code chunk like you normally would, by clicking the cursor in a code block and clicking the sideways "play" triangle to run the selected cells (and advance to the next cell). This code produces a plot.
+
+Note that the code runs as it normally would; the code options in the comments are just comments. 
+
 ### Save your file
 
 Save your document - I'll call mine `python-example.ipynb` in the main repository.
@@ -114,9 +120,8 @@ Add `- python-example.ipynb` to line 46, making sure that your indentation align
 
 ![](images/jupyter-python-example.png){fig-align="center"}
 
-You'll see that our new page shows up in our Preview, but by default the code is not executed. This is the Quarto default since your computations will likely become more complex and you will want to control when they are executed (or "run").
+You'll see that our new page shows up in our Preview, and the code is executed since we did that in the Jupyter Notebook itself. By default, Quarto will not execute code chunks since your computations will likely become more complex and you will want to control when they are executed (or "run").
 
-Let's run a cell in our notebook by clicking the cursor in a code block and clicking the sideways "play" triangle to run the selected cells (and advance to the next cell). This code produces a plot.
 
 Since Quarto is still previewing our website and the `python-example.ipynb`, the plot also displays in the notebook after the code is run and the file is saved, as shown below.
 
@@ -159,4 +164,4 @@ Check the specific notebook, are there any \`---\` throughout to denote line bre
 
 Also check how long the first raw cell is. Are there level-1 headers (`#`)? Try removing them.
 
-## 
+

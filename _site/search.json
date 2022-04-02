@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "first-observations.html",
+    "href": "first-observations.html",
+    "title": "First Observations & Setup",
+    "section": "",
+    "text": "With this tutorial, we have a working example website that we will explore together. We’ll learn a few rules and look for patterns to get an understanding of what things do to help you start customizing and making it your own. And you can continue to use this website as a reference after the tutorial, along with Quarto documentation. (Sidenote: this is actually a Quarto website that looks like a book - books are better for cross-referencing chapters, figures, equations, and references so that might be an option for you to explore too.)\nWe’ll start our exploration online looking at the website architecture and GitHub repository. Then we’ll copy and set it up so that any modifications (commits) will automatically be republished via GitHub Actions. Subsequent chapters will describe how to modify your repo using different tools (browser, RStudio, Jupyter)."
+  },
+  {
     "objectID": "first-observations.html#exploring-online",
     "href": "first-observations.html#exploring-online",
     "title": "First Observations & Setup",
@@ -35,6 +42,13 @@
     "text": "Renaming your repo\nIf you’d like to rename your repo, go to Settings and the option to rename is on the top of the main settings page.\n\nNow you are ready to start editing and publishing! The next chapter describes how starting off from the browser, using Markdown."
   },
   {
+    "objectID": "render-vs-preview.html",
+    "href": "render-vs-preview.html",
+    "title": "Render vs. Preview",
+    "section": "",
+    "text": "Making quarto websites involves terminology that might be unfamiliar. This is a light explainer to help you get going.\nAs you work locally, you will save your files as you normally do. Saving writes your work to disk."
+  },
+  {
     "objectID": "render-vs-preview.html#render",
     "href": "render-vs-preview.html#render",
     "title": "Render vs. Preview",
@@ -56,6 +70,13 @@
     "text": "When do I want Render vs Preview?\nFrom the RStudio IDE, the “Render” button does both Render + Preview together.\nFrom Jupyter, you’ll need to do these in two steps, render to make the formatted document, and preview to view it.\nFrom GitHub.com, Quarto will only be able to render when published (through a GitHub Action). This means you cannot preview before publishing online."
   },
   {
+    "objectID": "transition-from-rmarkdown.html",
+    "href": "transition-from-rmarkdown.html",
+    "title": "Transition from RMarkdown",
+    "section": "",
+    "text": "TODO: develop\nYou may already have workflows in RMarkdown and are interested in transitioning to Quarto.\nThere’s no hurry to migrate to Quarto. Keep using Rmarkdown and when you’re ready the migration will be fine."
+  },
+  {
     "objectID": "transition-from-rmarkdown.html#bookdown-to-quarto",
     "href": "transition-from-rmarkdown.html#bookdown-to-quarto",
     "title": "Transition from RMarkdown",
@@ -70,18 +91,25 @@
     "text": "Distill to quarto\nUpcoming"
   },
   {
-    "objectID": "index.html#example-quarto-websites",
-    "href": "index.html#example-quarto-websites",
-    "title": "Making open-source documents with Quarto",
-    "section": "Example Quarto websites",
-    "text": "Example Quarto websites\nWe so far have been using Quarto for documentation using Markdown and Jupyter Notebooks.\n\nChampions Lessons Series\nOpenscapes Approach Guide\n\n2021 NASA Cloud Hackathon\n\nSee many more examples at the quarto gallery!\n\nInspiration\nAre you making onboarding documentation? Check out The Fay Lab Manual for inspiration on structure - you could also start there and make it your own."
+    "objectID": "Untitled.html",
+    "href": "Untitled.html",
+    "title": "Untitled",
+    "section": "",
+    "text": "zjvlckzjx"
   },
   {
-    "objectID": "index.html#about",
-    "href": "index.html#about",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "Making open-source documents with Quarto",
-    "section": "About",
-    "text": "About\nOpenscapes is about better science for future us. We help researchers reimagine data analysis, develop modern skills that are of immediate value to them, and cultivate collaborative and inclusive research teams as part of the broader global open movement.\nWe’re developing this tutorial to help folks of different technical skills use Quarto for documentation and tutorial building. This tutorial was originally created for several different audiences: NASA-Openscapes researcher support engineers using Python, communications directors at organizations promoting open science who do not identify as coders, and fisheries scientists curious about transitioning from RMarkdown. We’re hoping it’s useful to folks with backgrounds as wide as these; if you find it useful or have suggestions for improvement, please let us know by clicking “Edit this page” or “Report an issue” at the upper right side of any page.\nThe structure of this tutorial follows a previous one: Making free websites with RStudio’s RMarkdown."
+    "section": "",
+    "text": "It’s possible to create beautiful documentation to share online with Quarto that auto-updates with Github. This is very new and incredibly cool. This tutorial is an example of a quarto website — it is a really powerful way to create and share tutorials, onboarding documentation, and so much more. You can communicate about science using the same reproducible workflow you and/or your colleagues use for analyses, whether or not you write code.\nQuarto is for people who love RMarkdown, and it’s for people who have never used RMarkdown. Creating websites with Quarto can be done without knowing R, Python or HTML, CSS, etc, and that’s where we’ll start. However, Quarto integrates with these tools so you can make your websites as complex and beautiful as you like as you see examples and reuse and remix from others in the open community.\nThis tutorial borrows heavily from a lot of great tutorials and resources you should check out too – there are links throughout.\n\n\nWe so far have been using Quarto for documentation using Markdown and Jupyter Notebooks.\n\nChampions Lessons Series\nOpenscapes Approach Guide\n\n2021 NASA Cloud Hackathon\n\nSee many more examples at the quarto gallery!\n\n\nAre you making onboarding documentation? Check out The Fay Lab Manual for inspiration on structure - you could also start there and make it your own.\n\n\n\n\nOpenscapes is about better science for future us. We help researchers reimagine data analysis, develop modern skills that are of immediate value to them, and cultivate collaborative and inclusive research teams as part of the broader global open movement.\nWe’re developing this tutorial to help folks of different technical skills use Quarto for documentation and tutorial building. This tutorial was originally created for several different audiences: NASA-Openscapes researcher support engineers using Python, communications directors at organizations promoting open science who do not identify as coders, and fisheries scientists curious about transitioning from RMarkdown. We’re hoping it’s useful to folks with backgrounds as wide as these; if you find it useful or have suggestions for improvement, please let us know by clicking “Edit this page” or “Report an issue” at the upper right side of any page.\nThe structure of this tutorial follows a previous one: Making free websites with RStudio’s RMarkdown."
+  },
+  {
+    "objectID": "basic-workflows/browser.html",
+    "href": "basic-workflows/browser.html",
+    "title": "From GitHub.com",
+    "section": "",
+    "text": "A workflow from the browser if good for getting started (since you do not need to install additional software) and for making small contributions, but is definitely limited. Once you feel comfortable here, you can move to a different setup.\nHere’s an example of editing content on an existing page."
   },
   {
     "objectID": "basic-workflows/browser.html#edit-content-on-an-existing-page",
@@ -103,6 +131,13 @@
     "title": "From GitHub.com",
     "section": "Limitations",
     "text": "Limitations\nWhile awesome that we can edit using GitHub directly from the browser, there are obvious limitations. One is that to see your edits show up in your book, you have to publish using the GitHub Action. This is slow. Another limitation is that we can only work on one file at a time and commit them each separately, which also is slow. Using additional software can make things much better, as we explore in subsequent chapters."
+  },
+  {
+    "objectID": "basic-workflows/rstudio.html",
+    "href": "basic-workflows/rstudio.html",
+    "title": "From RStudio",
+    "section": "",
+    "text": "The RStudio software (called an IDE, integrated development environment) is an excellent way to edit files and interface with GitHub. Plus, as it is made by the same folks who make Quarto, it has many integrated features for streamlining your workflow with Quarto, including how it previews your edits and provides debugging support for yaml! Here is what you’ll need to do to set up and use RStudio."
   },
   {
     "objectID": "basic-workflows/rstudio.html#setup",
@@ -140,6 +175,13 @@
     "text": "Authoring"
   },
   {
+    "objectID": "basic-workflows/jupyter.html",
+    "href": "basic-workflows/jupyter.html",
+    "title": "From Jupyter",
+    "section": "",
+    "text": "You can interact with Quarto through JupyterLab or JupyterHub. Your Jupyter setup will involve .ipynb notebooks and the command line. Quarto’s JupyterLab tutorials has great instructions on getting started with JupyterLab, including computations and authoring.\nHere we will demonstrate how to work with this Quarto tutorial site in JupyterHub and add a Jupyter Notebook (.ipynb file). This example uses the NASA-Openscapes JupyterHub that already has all python environments as well as Quarto installed."
+  },
+  {
     "objectID": "basic-workflows/jupyter.html#setup",
     "href": "basic-workflows/jupyter.html#setup",
     "title": "From Jupyter",
@@ -158,14 +200,14 @@
     "href": "basic-workflows/jupyter.html#create-a-new-.ipynb-page",
     "title": "From Jupyter",
     "section": "Create a new .ipynb page",
-    "text": "Create a new .ipynb page\nLet’s add a new page to our site. Instead of an .md file like the others, let’s add a .ipynb file.\nFile > New > Notebook. Accept the default kernel by clicking Select.\n\nFirst chunk: raw yaml\nBy default, this Notebook will give us a first chunk that is code. Let’s change it to raw so that we can write our yaml at the top.\n\n\n\n\n\nIn our Raw code chunk, let’s write the title of this document. We need three dashes --- on separate lines preceding and following the title:, which you can name as you’d like.\n---\ntitle: Python Example\n---\n\n\nSecond chunk: Markdown\nLet’s add a new chunk that is Markdown so we can write some description of what this page will be.\nClick the + symbol at the top of the document, and this will add a new chunk, which by default again is a Code chunk. Change it to a Markdown Chunk following the steps we did above when switching to Raw.\nHere, write a little bit of text in Markdown. Since your title is effectively a level-1 header, avoid using level-1 headers in the rest of your document. Here is some example text I wrote:\n## Introduction\n\nThis example has some Python code that will be a part of our Quarto site.\n\n\nThird chunk: Code\nNow let’s create a new chunk with the default Code setting.\nPaste the following code (or write some of your own to test):\n#| label: fig-polar\n#| fig-cap: \"A line plot on a polar axis\"\nimport numpy as np\nimport matplotlib.pyplot as plt\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\nSave your file\nSave your document - I’ll call mine python-example.ipynb in the main repository."
+    "text": "Create a new .ipynb page\nLet’s add a new page to our site. Instead of an .md file like the others, let’s add a .ipynb file.\nFile > New > Notebook. Accept the default kernel by clicking Select.\n\nFirst chunk: raw yaml\nBy default, this Notebook will give us a first chunk that is code. Let’s change it to raw so that we can write our yaml at the top.\n\n\n\n\n\nIn our Raw code chunk, let’s write the title of this document. We need three dashes --- on separate lines preceding and following the title:, which you can name as you’d like.\n---\ntitle: Python Example\n---\n\n\nSecond chunk: Markdown\nLet’s add a new chunk that is Markdown so we can write some description of what this page will be.\nClick the + symbol at the top of the document, and this will add a new chunk, which by default again is a Code chunk. Change it to a Markdown Chunk following the steps we did above when switching to Raw.\nHere, write a little bit of text in Markdown. Since your title is effectively a level-1 header, avoid using level-1 headers in the rest of your document. Here is some example text I wrote:\n## Introduction\n\nThis example has some Python code that will be a part of our Quarto site.\n\n\nThird chunk: Code\nNow let’s create a new chunk with the default Code setting.\nPaste the following code (or write some of your own to test):\n#| label: fig-polar\n#| fig-cap: \"A line plot on a polar axis\"\nimport numpy as np\nimport matplotlib.pyplot as plt\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\nNow, go ahead and execute this code chunk like you normally would, by clicking the cursor in a code block and clicking the sideways “play” triangle to run the selected cells (and advance to the next cell). This code produces a plot.\nNote that the code runs as it normally would; the code options in the comments are just comments.\n\n\nSave your file\nSave your document - I’ll call mine python-example.ipynb in the main repository."
   },
   {
     "objectID": "basic-workflows/jupyter.html#update-_quarto.yml",
     "href": "basic-workflows/jupyter.html#update-_quarto.yml",
     "title": "From Jupyter",
     "section": "Update _quarto.yml",
-    "text": "Update _quarto.yml\nNow we’ll add python-example.ipynb to our _quarto.yml file; this is where we register of all files to include in our site. Let’s add it after the section called “Basic Workflows”.\nOpen _quarto.yml by clicking on it from the file directory.\nScroll down to review the current contents in the sidebar: section. It’s there we see all the file arrangement that we see in the previewed site.\nAdd - python-example.ipynb to line 46, making sure that your indentation aligns with the other pages.\n\n\n\n\n\nYou’ll see that our new page shows up in our Preview, but by default the code is not executed. This is the Quarto default since your computations will likely become more complex and you will want to control when they are executed (or “run”).\nLet’s run a cell in our notebook by clicking the cursor in a code block and clicking the sideways “play” triangle to run the selected cells (and advance to the next cell). This code produces a plot.\nSince Quarto is still previewing our website and the python-example.ipynb, the plot also displays in the notebook after the code is run and the file is saved, as shown below.\n\n\n\n\n\nSo, your normal workflow for creating and running code blocks in your Jupyter Notebook is the same one you’ll use as Quarto displays the preview."
+    "text": "Update _quarto.yml\nNow we’ll add python-example.ipynb to our _quarto.yml file; this is where we register of all files to include in our site. Let’s add it after the section called “Basic Workflows”.\nOpen _quarto.yml by clicking on it from the file directory.\nScroll down to review the current contents in the sidebar: section. It’s there we see all the file arrangement that we see in the previewed site.\nAdd - python-example.ipynb to line 46, making sure that your indentation aligns with the other pages.\n\n\n\n\n\nYou’ll see that our new page shows up in our Preview, and the code is executed since we did that in the Jupyter Notebook itself. By default, Quarto will not execute code chunks since your computations will likely become more complex and you will want to control when they are executed (or “run”).\nSince Quarto is still previewing our website and the python-example.ipynb, the plot also displays in the notebook after the code is run and the file is saved, as shown below.\n\n\n\n\n\nSo, your normal workflow for creating and running code blocks in your Jupyter Notebook is the same one you’ll use as Quarto displays the preview."
   },
   {
     "objectID": "basic-workflows/jupyter.html#quarto-render",
@@ -173,13 +215,6 @@
     "title": "From Jupyter",
     "section": "Quarto render",
     "text": "Quarto render\nSo far we have used Quarto preview view our website as we develop it. Quarto render will build the html elements of the website that we can see when we preview. Rendering will format the markdown text and code nicely as a website (or however is indicated in the _quarto.yml).\nBy default, Quarto render does not execute code. Since files can get big and complicated with code, Quarto does not execute code by default. It will never run .ipynb files unless you tell it to.\n\nRender whole notebook\nIf you would like it to specifically execute code in a Jupyter notebook, you can do so in Terminal.\nOur Terminal is still busy previewing our website, so let’s open a new Terminal.\nFile > New > Terminal. Then type:\ncd quarto-website-tutorial\nquarto render python-example.ipynb --execute"
-  },
-  {
-    "objectID": "basic-workflows/jupyter.html#if-you-would-like-it-to-specifically-execute-code-in-a-jupyter-notebook-you-can-do-so-in-terminal.",
-    "href": "basic-workflows/jupyter.html#if-you-would-like-it-to-specifically-execute-code-in-a-jupyter-notebook-you-can-do-so-in-terminal.",
-    "title": "From Jupyter",
-    "section": "If you would like it to specifically execute code in a Jupyter notebook, you can do so in Terminal.",
-    "text": "If you would like it to specifically execute code in a Jupyter notebook, you can do so in Terminal.\nOur Terminal is still busy previewing our website, so let’s open a new Terminal.\nFile > New > Terminal. Then type:\ncd quarto-website-tutorial\nquarto render python-example.ipynb --execute"
   },
   {
     "objectID": "basic-workflows/jupyter.html#authoring",
@@ -200,7 +235,14 @@
     "href": "basic-workflows/getting-sophisticated.html",
     "title": "Getting Sophisticated",
     "section": "",
-    "text": "There are a lot of ways to make you website design more sophisticated. Here are a few ways to help you get started. Note that Quarto builds from what RStudio learned in making RMarkdown, so while these notes discuss RMarkdown, they are relevant here too!\nhttps://jules32.github.io/rmarkdown-website-tutorial/getting_sophisticated.html"
+    "text": "https://jules32.github.io/rmarkdown-website-tutorial/getting_sophisticated.html"
+  },
+  {
+    "objectID": "quarto-overview.html",
+    "href": "quarto-overview.html",
+    "title": "Quarto Overview",
+    "section": "",
+    "text": "Quarto.org has great documentation, including and tutorials that can help you get started using Jupyter, RStudio, VSCode and Editor. Here, we’ll introduce Quarto using our copy of this tutorial, and then show basic workflows using different tools: from the GitHub browser, RStudio, and Jupyter."
   },
   {
     "objectID": "quarto-overview.html#quarto-basic-workflow",
@@ -224,17 +266,17 @@
     "text": "Authoring\nAs an author, you have a lot of options of how your text will be formatted, arranged, and interlinked. Check out the Quarto documentation about authoring, starting out with https://quarto.org/docs/authoring/markdown-basics, to learn more.\nEach page of our site - currently all .md files - has a similar first couple of lines - this also YAML, and it is indicated by two sets of 3 dashes --- :\n---\ntitle: My title\n---\nYou’re able to add more features to individual pages by including it in the YAML, which for the most part here only includes a title. See Quarto excecution options for more information of what you can include in the YAML."
   },
   {
-    "objectID": "quarto-overview.html#next-up-workflows",
-    "href": "quarto-overview.html#next-up-workflows",
-    "title": "Quarto Overview",
-    "section": "Next up: workflows",
-    "text": "Next up: workflows\nIn the next sections we’ll see what this workflow looks like using different tools for editing your files. We’ll start off from the browser so you don’t need to install any additional software, however this approach is very limited and you will soon outgrow its capabilities. See all the tools that are supported at https://quarto.org/docs/get-started/.\nIf you don’t already have a workflow and to edit files and sync to GitHub from your computer, I recommend RStudio. You don’t need to know R to use RStudio, and it has powerful editor features that make for happy workflows."
-  },
-  {
     "objectID": "quarto-overview.html#learn-more-about-quarto",
     "href": "quarto-overview.html#learn-more-about-quarto",
     "title": "Quarto Overview",
     "section": "Learn more about Quarto",
     "text": "Learn more about Quarto\n\nReproducible authoring with Quarto - Mine Çetinkaya-Rundel, Feb 2022\n\nslides, youtube"
+  },
+  {
+    "objectID": "quarto-overview.html#next-up-workflows",
+    "href": "quarto-overview.html#next-up-workflows",
+    "title": "Quarto Overview",
+    "section": "Next up: workflows",
+    "text": "Next up: workflows\nIn the next sections we’ll see what this workflow looks like using different tools for editing your files. We’ll start off from the browser so you don’t need to install any additional software, however this approach is very limited and you will soon outgrow its capabilities. See all the tools that are supported at https://quarto.org/docs/get-started/.\nIf you don’t already have a workflow and to edit files and sync to GitHub from your computer, I recommend RStudio. You don’t need to know R to use RStudio, and it has powerful editor features that make for happy workflows."
   }
 ]

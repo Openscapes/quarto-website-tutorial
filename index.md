@@ -11,7 +11,9 @@ slug: index
 
 It's possible to create beautiful documentation to share online with [Quarto](https://quarto.org) that auto-updates with [Github](http://github.com). This is very new and incredibly cool. This tutorial is an example of a quarto website --- it is a really powerful way to create and share tutorials, onboarding documentation, and so much more. You can communicate about science using the same reproducible workflow you and/or your colleagues use for analyses, whether or not you write code.
 
-Creating websites with Quarto can be done without knowing R, Python or HTML, CSS, etc, and that's where we'll start. However, Quarto integrates with these tools so you can make your websites as complex and beautiful as you like as you see examples and reuse and remix from others in the open community. This tutorial borrows heavily from a lot of great tutorials and resources you should check out too -- there are links throughout.
+**Quarto is for people who love RMarkdown, and it's for people who have never used RMarkdown.** Creating websites with Quarto can be done without knowing R, Python or HTML, CSS, etc, and that's where we'll start. However, Quarto integrates with these tools so you can make your websites as complex and beautiful as you like as you see examples and reuse and remix from others in the open community.
+
+This tutorial borrows heavily from a lot of great tutorials and resources you should check out too -- there are links throughout.
 
 ## Example Quarto websites
 
