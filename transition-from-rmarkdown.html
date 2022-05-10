@@ -95,12 +95,12 @@
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./first-observations.html" class="sidebar-item-text sidebar-link">First Observations</a>
+  <a href="./quarto-overview.html" class="sidebar-item-text sidebar-link">Quarto Overview</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./quarto-overview.html" class="sidebar-item-text sidebar-link">Quarto Overview</a>
+  <a href="./first-observations.html" class="sidebar-item-text sidebar-link">Getting Started</a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -185,7 +185,11 @@
 </section>
 <section id="distill-to-quarto" class="level2">
 <h2 class="anchored" data-anchor-id="distill-to-quarto">Distill to quarto</h2>
-<p><em>Upcoming</em></p>
+<p>We transitioned our <a href="https://openscapes.org/events">events site</a> from distill to quarto in May 2022 (github view <a href="https://github.com/Openscapes/events/tree/13f95f507629eba5e6ed721d1902258dcbc421e6">before</a> and <a href="https://github.com/Openscapes/events/tree/237acd5144d810cb5465cc5616ee453f2e261fbc">after</a>). We followed excellent notes and examples from <a href="https://www.njtierney.com/post/2022/04/11/rmd-to-qmd/">Nick Tierney</a> and <a href="https://blog.djnavarro.net/posts/2022-04-20_porting-to-quarto/">Danielle Navarro</a>.</p>
+<p>A few notes:</p>
+<ul>
+<li>Our distill site was set up to output to a <code>docs</code> folder, and had GitHub Settings &gt; Pages set to look there rather <code>gh-pages</code> branch. (Julie note: this was a new-to-me capability when we set up the events distill site in Spring 2021 so I had forgotten that was an option). We’ve kept this same set-up for now with our events page in <code>_quarto.yml</code>: <a href="https://github.com/Openscapes/events/blob/237acd5144d810cb5465cc5616ee453f2e261fbc/_quarto.yml#L3"><code>output-dir: docs</code></a></li>
+</ul>
 
 
 </section>

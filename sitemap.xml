@@ -2,38 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-overview.html</loc>
-    <lastmod>2022-04-02T21:12:00.706Z</lastmod>
-  </url>
-  <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/index.html</loc>
-    <lastmod>2022-04-02T21:12:01.822Z</lastmod>
-  </url>
-  <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/transition-from-rmarkdown.html</loc>
-    <lastmod>2022-04-02T21:12:02.126Z</lastmod>
-  </url>
-  <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/render-vs-preview.html</loc>
-    <lastmod>2022-04-02T21:12:02.418Z</lastmod>
-  </url>
-  <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/basic-workflows/jupyter.html</loc>
-    <lastmod>2022-04-02T21:12:02.830Z</lastmod>
-  </url>
-  <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/basic-workflows/rstudio.html</loc>
-    <lastmod>2022-04-02T21:12:03.178Z</lastmod>
-  </url>
-  <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/basic-workflows/browser.html</loc>
-    <lastmod>2022-04-02T21:12:03.482Z</lastmod>
-  </url>
-  <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/basic-workflows/getting-sophisticated.html</loc>
-    <lastmod>2022-04-02T21:12:03.790Z</lastmod>
+    <lastmod>2022-05-10T22:15:11.472Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/quarto-website-tutorial/first-observations.html</loc>
-    <lastmod>2022-04-02T21:12:04.186Z</lastmod>
+    <lastmod>2022-05-10T22:15:12.568Z</lastmod>
+  </url>
+  <url>
+    <loc>https://openscapes.github.io/quarto-website-tutorial/transition-from-rmarkdown.html</loc>
+    <lastmod>2022-05-10T22:15:12.884Z</lastmod>
+  </url>
+  <url>
+    <loc>https://openscapes.github.io/quarto-website-tutorial/basic-workflows/browser.html</loc>
+    <lastmod>2022-05-10T22:15:13.168Z</lastmod>
+  </url>
+  <url>
+    <loc>https://openscapes.github.io/quarto-website-tutorial/basic-workflows/getting-sophisticated.html</loc>
+    <lastmod>2022-05-10T22:15:13.460Z</lastmod>
+  </url>
+  <url>
+    <loc>https://openscapes.github.io/quarto-website-tutorial/basic-workflows/rstudio.html</loc>
+    <lastmod>2022-05-10T22:15:13.772Z</lastmod>
+  </url>
+  <url>
+    <loc>https://openscapes.github.io/quarto-website-tutorial/basic-workflows/jupyter.html</loc>
+    <lastmod>2022-05-10T22:15:14.120Z</lastmod>
+  </url>
+  <url>
+    <loc>https://openscapes.github.io/quarto-website-tutorial/index.html</loc>
+    <lastmod>2022-05-10T22:15:14.456Z</lastmod>
+  </url>
+  <url>
+    <loc>https://openscapes.github.io/quarto-website-tutorial/render-vs-preview.html</loc>
+    <lastmod>2022-05-10T22:15:14.712Z</lastmod>
   </url>
 </urlset>
