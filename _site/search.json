@@ -7,6 +7,13 @@
     "text": "With this tutorial, we have a working example website that we will explore together. We’ll learn a few rules and look for patterns to get an understanding of what things do to help you start customizing and making it your own. And you can continue to use this website as a reference after the tutorial, along with Quarto documentation. (Sidenote: this is actually a Quarto website that looks like a book - books are better for cross-referencing chapters, figures, equations, and references so that might be an option for you to explore too.)\nWe’ll start our exploration online looking at the website architecture and GitHub repository. Then we’ll copy and set it up so that any modifications (commits) will automatically be republished via GitHub Actions. Subsequent chapters will describe how to modify your repo using different tools (browser, RStudio, Jupyter)."
   },
   {
+    "objectID": "first-observations.html#install-quarto",
+    "href": "first-observations.html#install-quarto",
+    "title": "First Observations & Setup",
+    "section": "Install Quarto",
+    "text": "Install Quarto\nHow do I install Quarto? This will depend on your tooling and operating system. We’ll do this together in the Basic Workflows sections, following instruction from https://quarto.org/docs/get-started."
+  },
+  {
     "objectID": "first-observations.html#exploring-online",
     "href": "first-observations.html#exploring-online",
     "title": "First Observations & Setup",
@@ -88,14 +95,7 @@
     "href": "transition-from-rmarkdown.html#distill-to-quarto",
     "title": "Transition from RMarkdown",
     "section": "Distill to quarto",
-    "text": "Distill to quarto\nUpcoming"
-  },
-  {
-    "objectID": "Untitled.html",
-    "href": "Untitled.html",
-    "title": "Untitled",
-    "section": "",
-    "text": "zjvlckzjx"
+    "text": "Distill to quarto\nWe transitioned our events site from distill to quarto in May 2022 (github view before and after). We followed excellent notes and examples from Nick Tierney and Danielle Navarro.\nA few notes:\n\nOur distill site was set up to output to a docs folder, and had GitHub Settings > Pages set to look there rather gh-pages branch. (Julie note: this was a new-to-me capability when we set up the events distill site in Spring 2021 so I had forgotten that was an option). We’ve kept this same set-up for now with our events page in _quarto.yml: output-dir: docs"
   },
   {
     "objectID": "index.html",

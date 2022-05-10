@@ -33,10 +33,10 @@ website:
     contents:
       - href: index.md
         text: Welcome
-      - href: first-observations.md
-        text: First Observations        
       - href: quarto-overview.md
         text: Quarto Overview
+      - href: first-observations.md
+        text: Getting Started        
       - section: Basic Workflows
         contents: 
           - basic-workflows/browser.md

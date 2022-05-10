@@ -6,6 +6,10 @@ With this tutorial, we have a working example website that we will explore toget
 
 We'll start our exploration online looking at the website architecture and GitHub repository. Then we'll copy and set it up so that any modifications (commits) will automatically be republished via GitHub Actions. Subsequent chapters will describe how to modify your repo using different tools (browser, RStudio, Jupyter).
 
+## Install Quarto
+
+How do I install Quarto? This will depend on your tooling and operating system. We'll do this together in the Basic Workflows sections, following instruction from <https://quarto.org/docs/get-started>.
+
 ## Exploring online
 
 ### The website itself
