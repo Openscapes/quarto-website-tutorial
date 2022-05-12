@@ -1,19 +1,5 @@
 [
   {
-    "objectID": "quarto-overview.html#why-am-i-here",
-    "href": "quarto-overview.html#why-am-i-here",
-    "title": "Quarto Overview",
-    "section": "Why am I here?",
-    "text": "Why am I here?"
-  },
-  {
-    "objectID": "quarto-overview.html#stuff-from-alison-hill-chat",
-    "href": "quarto-overview.html#stuff-from-alison-hill-chat",
-    "title": "Quarto Overview",
-    "section": "Stuff from Alison Hill chat",
-    "text": "Stuff from Alison Hill chat\n\nwhat do code chunks look like,\n\n\nCan you open slide decks within here\nQuarto.org has great documentation, including and tutorials that can help you get started using Jupyter, RStudio, VSCode and Editor. Here, we’ll introduce Quarto using our copy of this tutorial, and then show basic workflows using different tools: from the GitHub browser, RStudio, and Jupyter."
-  },
-  {
     "objectID": "quarto-overview.html#quarto-basic-workflow",
     "href": "quarto-overview.html#quarto-basic-workflow",
     "title": "Quarto Overview",
