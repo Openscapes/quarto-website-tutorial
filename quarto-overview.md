@@ -2,7 +2,16 @@
 title: Quarto Overview
 ---
 
+## Why am I here?
+
+## Stuff from Alison Hill chat
+
+### what do code chunks look like,
+
+### Can you open slide decks within here
+
 [Quarto.org](https://quarto.org) has great documentation, including and [tutorials](https://quarto.org/docs/get-started/hello/jupyter.html) that can help you get started using Jupyter, RStudio, VSCode and Editor. Here, we'll introduce Quarto using our copy of this tutorial, and then show basic workflows using different tools: from the GitHub browser, RStudio, and Jupyter.
+
 
 ## Quarto basic workflow
 
