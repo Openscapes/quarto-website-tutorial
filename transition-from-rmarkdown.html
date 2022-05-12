@@ -259,6 +259,7 @@
 <p><strong>Background</strong>: Our distill site had been set up to output to a <code>docs</code> folder, and had GitHub Settings &gt; Pages set to look there rather <code>gh-pages</code> branch. (Julie note: this was a new-to-me capability when we set up the events distill site in Spring 2021 so I had forgotten that was an option). We’ve inititally kept this same set-up for now with our events page in <code>_quarto.yml</code>: <a href="https://github.com/Openscapes/events/blob/237acd5144d810cb5465cc5616ee453f2e261fbc/_quarto.yml#L3"><code>output-dir: docs</code></a>. However, this is sub-optimal; better to not have to commit and push these files but to instead have a GitHub Action generate them upon a commit. So the following is what we did -</p>
 </blockquote>
 <p><strong>Don’t specify <code>output-dir</code> in <code>_quarto.yml</code></strong>. The output directory default is <code>_site/</code>, which is what we’d like.</p>
+<p>If you currently have a <code>docs/</code> folder (like we did as we were experimenting), delete it.</p>
 <p><strong>Update <code>.gitignore</code> to ignore <code>_site/</code></strong>. At the same time, we have it ignore caches and a .quarto file:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">/.quarto/</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">*_cache/</span></span>
