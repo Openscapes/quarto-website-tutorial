@@ -40,6 +40,8 @@ After we had changed all the files, the Build tab in the RStudio IDE still showe
 
 **Don't specify `output-dir` in `_quarto.yml`**. The output directory default is `_site/`, which is what we'd like.
 
+If you currently have a `docs/` folder (like we did as we were experimenting), delete it.
+
 **Update `.gitignore` to ignore `_site/`**. At the same time, we have it ignore caches and a .quarto file: 
 
 ```{.bash}
