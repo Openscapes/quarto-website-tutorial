@@ -1,0 +1,37 @@
+---
+title: "Making shareable documents with Quarto"
+subtitle: "Create open-source tutorials, onboarding docs, and much more" 
+date: "May, 2022"
+author: "Openscapes"
+citation_url: https://openscapes.github.io/series
+slug: index
+---
+
+## Welcome {#welcome}
+
+It's possible to create beautiful documentation to share online with [Quarto](https://quarto.org) that auto-updates with [Github](http://github.com). This is very new and incredibly cool. This tutorial is an example of a quarto website --- it is a really powerful way to create and share your work. You can communicate about science using the same reproducible workflow you and/or your colleagues use for analyses, whether or not you write code.
+
+Creating websites with Quarto can be done without knowing R, Python or HTML, CSS, etc, and that's where we'll start. However, Quarto integrates with these tools so you can make your websites as complex and beautiful as you like as you see examples and reuse and remix from others in the open community. This tutorial borrows heavily from a lot of great tutorials and resources you should check out too -- there are links throughout.
+
+## What is Quarto?
+
+**Quarto is for people who love RMarkdown, and it's for people who have never used RMarkdown.** 
+
+Quarto helps you have your ideas and your code in one place, and present it in a beautiful way. If that sounds familiar to RMarkdown, it’s because it is. Quarto is the next generation of RMarkdown, providing a common way for RMarkdown files to be combined as books, as websites, and blogs. It’s beautiful. For an RMarkdown user, it will be very familiar and comforting. 
+
+Quarto extends these features to the Python ecosystem. It's been so cool for our [NASA Openscapes](https://nasa-openscapes.github.io/) project because it's been a common place place to collaborate - across languages and coding expertise. 
+NASA Earthdata Cloud Cookbook - our first quarto site. It looks familiar to an RMarkdown user but there’s an amazing twist - these are a combination of .Jupyter Notebooks and md files, and the new .qmd file. (We can also add RMarkdown files here but haven’t been developing in R)
+
+## What is this tutorial?
+
+Here, we'll introduce Quarto by exploring this tutorial website, and practicing the basic Quarto workflow using different tools (GitHub browser, RStudio, and Jupyter) for editing your website.
+
+We'll start off from the browser so you don't need to install any additional software, however this approach is very limited and you will soon outgrow its capabilities. If you don't already have a workflow and to edit files and sync to GitHub from your computer, I recommend RStudio. You don't need to know R to use RStudio, and it has powerful editor features that make for happy workflows.
+
+[Quarto.org](https://quarto.org) also has great tutorials and documentation, which this draws heavily from. 
+
+## About
+
+[Openscapes](https://openscapes.org) is about better science for future us. We help researchers reimagine data analysis, develop modern skills that are of immediate value to them, and cultivate collaborative and inclusive research teams as part of the broader global open movement.
+
+We're developing this tutorial to help folks of different technical skills use [Quarto](https://quarto.org) for documentation and tutorial building. This tutorial was originally created for several different audiences: [NASA-Openscapes](https://nasa-openscapes.github.io) researcher support engineers using Python, communications directors at organizations promoting open science who do not identify as coders, and fisheries scientists curious about transitioning from RMarkdown. We're hoping it's useful to folks with backgrounds as wide as these; if you find it useful or have suggestions for improvement, please let us know by clicking "Edit this page" or "Report an issue" at the upper right side of any page.

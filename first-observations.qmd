@@ -1,27 +1,22 @@
 ---
-title: First Observations & Setup
+title: Exploring our website
 ---
 
-With this tutorial, we have a working example website that we will explore together. We'll learn a few rules and look for patterns to get an understanding of what things do to help you start customizing and making it your own. And you can continue to use this website as a reference after the tutorial, along with [**Quarto**](https://quarto.org) documentation. (Sidenote: this is actually a Quarto website that looks like a book - books are better for cross-referencing chapters, figures, equations, and references so that might be an option for you to explore too.)
+With this tutorial, we have a working example website that we will explore together. We'll learn a few rules and look for patterns to get an understanding of what things do to help you start customizing and making it your own. And you can continue to use this website as a reference after the tutorial, along with [Quarto](https://quarto.org) documentation.
 
 We'll start our exploration online looking at the website architecture and GitHub repository. Then we'll copy and set it up so that any modifications (commits) will automatically be republished via GitHub Actions. Subsequent chapters will describe how to modify your repo using different tools (browser, RStudio, Jupyter).
-
-## Install Quarto
-
-How do I install Quarto? This will depend on your tooling and operating system. We'll do this together in the Basic Workflows sections, following instruction from <https://quarto.org/docs/get-started>.
 
 ## Exploring online
 
 ### The website itself
 
-[This website](https://openscapes.github.io/quarto-website-tutorial/) has 6 things you can see on the left sidebar:
+[This website](https://openscapes.github.io/quarto-website-tutorial/) has 5 things you can see on the left sidebar:
 
 -   Welcome
--   First Observations
--   Quarto Overview
--   Basic Workflows
--   Render vs. Preview
--   Transition from RMarkdown
+-   Exploring our website
+-   Quarto workflows
+-   Learning more
+-   Transition from Rmd
 
 Most of these are pages, but you'll see that "Basic Workflows" has an arrow; it is a folder with additional pages inside.
 

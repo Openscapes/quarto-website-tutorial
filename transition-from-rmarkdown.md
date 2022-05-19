@@ -2,15 +2,13 @@
 title: Transition from RMarkdown
 ---
 
-*TODO: develop*
-
 You may already have workflows in RMarkdown and are interested in transitioning to Quarto. 
 
 There's no hurry to migrate to Quarto. Keep using Rmarkdown and when you're ready the migration will be fine.
 
+Here are some notes as we migrate RMarkdown sites. 
 
-
-- translating R code chunks
+*TODO: translating R code chunks*
 
 ## Bookdown to quarto
 

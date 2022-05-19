@@ -1,5 +1,5 @@
 ---
-title: From GitHub.com
+title: From the Browser
 ---
 
 A workflow from the browser if good for getting started (since you do not need to install additional software) and for making small contributions, but is definitely limited. Once you feel comfortable here, you can move to a different setup.

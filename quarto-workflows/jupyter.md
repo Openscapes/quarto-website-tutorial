@@ -21,9 +21,9 @@ git clone https://github.com/openscapes/quarto-website-tutorial
 cd quarto-website-tutorial
 ```
 
-### Quarto
+### Install Quarto
 
-Quarto is already installed on the NASA-Openscapes JupyterHub!
+Not needed - Quarto is already installed on the NASA-Openscapes JupyterHub! Otherwise you would do so from <https://quarto.org/docs/get-started/>.
 
 ## Quarto preview
 

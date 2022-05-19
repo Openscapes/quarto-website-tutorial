@@ -1,0 +1,19 @@
+---
+title: Learning more
+---
+
+## Learn more
+
+An excellent overview: **Reproducible authoring with Quarto** - Mine Çetinkaya-Rundel, Feb 2022
+    -   [slides](https://mine-cetinkaya-rundel.github.io/2022-repro-toronto/#/title-slide), [youtube](https://www.youtube.com/watch?v=6p4vOKS6Xls)
+
+### Examples in the wild: 
+-   [Openscapes Champions Lessons Series](https://openscapes.github.io/series)
+-   [Openscapes Approach Guide](https://openscapes.github.io/approach-guide/)\
+-   [NASA Earthdata Cloud Cookbook](https://nasa-openscapes.github.io/earthdata-cloud-cookbook/)
+
+See many more examples at the [quarto gallery](https://quarto.org/docs/gallery/)!
+
+### Inspiration
+
+Are you making onboarding documentation? Check out [The Fay Lab Manual](https://thefaylab.github.io/lab-manual/) for inspiration on structure - you could also start there and make it your own.

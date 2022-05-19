@@ -1,5 +1,5 @@
 ---
-title: Quarto Overview
+title: Basic Workflow
 ---
 
 <!---
@@ -11,12 +11,11 @@ title: Quarto Overview
 
 ### Can you open slide decks within here
 
+
+## What's Freeze?
+
+JJ: You can put it in the project root or at a a file level, OR at a directory level (if there is a _metadata.yml file in a directory then documents within it will merge that metadata -- this applies to docs in subdirectories as well). So if you have mostly frozen stuff you can set it at the project level then disable on a per-file or per-directory basis. If frozen stuff is more the exception then you can use directory or file level enablement
 --->
-
-[Quarto.org](https://quarto.org) has great documentation, including and [tutorials](https://quarto.org/docs/get-started/hello/jupyter.html) that can help you get started using Jupyter, RStudio, VSCode and Editor. Here, we'll introduce Quarto using our copy of this tutorial, and then show basic workflows using different tools: from the GitHub browser, RStudio, and Jupyter.
-
-
-## Quarto basic workflow
 
 Developing your quarto site will have the same basic workflow, no matter which tool you use to edit. It is very iterative.
 
@@ -51,14 +50,6 @@ title: My title
 
 You're able to add more features to individual pages by including it in the YAML, which for the most part here only includes a title. See [Quarto excecution options](https://quarto.org/docs/computations/execution-options.html) for more information of what you can include in the YAML.
 
-## Learn more about Quarto
+## Install Quarto
 
--   **Reproducible authoring with Quarto** - Mine Çetinkaya-Rundel, Feb 2022
-
-    -   [slides](https://mine-cetinkaya-rundel.github.io/2022-repro-toronto/#/title-slide), [youtube](https://www.youtube.com/watch?v=6p4vOKS6Xls)
-
-## Next up: workflows
-
-In the next sections we'll see what this workflow looks like using different tools for editing your files. We'll start off from the browser so you don't need to install any additional software, however this approach is very limited and you will soon outgrow its capabilities. See all the tools that are supported at <https://quarto.org/docs/get-started/>.
-
-**If you don't already have a workflow and to edit files and sync to GitHub from your computer, I recommend RStudio.** You don't need to know R to use RStudio, and it has powerful editor features that make for happy workflows.
+Installing Quarto will depend on your tooling and operating system. See tutorials for the tools that are supported at <https://quarto.org/docs/get-started/>. We'll walk through the appropriate way for each tool in the next chapters.

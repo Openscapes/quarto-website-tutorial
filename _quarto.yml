@@ -3,7 +3,7 @@ project:
   
 website: 
   page-navigation: true
-  title: "Making open-source documents with Quarto" 
+  title: "Making sharable documents with Quarto" 
   site-url: "https://openscapes.github.io/quarto-website-tutorial" 
   repo-url: https://github.com/openscapes/quarto-website-tutorial 
   repo-actions: [edit, issue]
@@ -31,20 +31,16 @@ website:
     search: true
     collapse-level: 1
     contents:
-      - href: index.md
+      - href: index.qmd
         text: Welcome
-      - href: quarto-overview.md
-        text: Quarto Overview
-      - href: first-observations.md
-        text: Getting Started        
-      - section: Basic Workflows
+      - first-observations.qmd
+      - section: Quarto workflows
         contents: 
-          - basic-workflows/browser.md
-          - basic-workflows/rstudio.md
-          - basic-workflows/jupyter.md 
-          - basic-workflows/getting-sophisticated.md
-      - href: render-vs-preview.md
-        text: Render vs Preview
+          - quarto-workflows/index.qmd
+          - quarto-workflows/browser.md
+          - quarto-workflows/rstudio.md
+          - quarto-workflows/jupyter.md 
+      - learning-more.qmd
       - href: transition-from-rmarkdown.md
         text: Transition from Rmd
 
