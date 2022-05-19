@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="quarto-0.9.105">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>Making open-source documents with Quarto - Quarto Overview</title>
+  <title>Making sharable documents with Quarto - Basic Workflow</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -76,25 +76,25 @@
     code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
 
-  <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-  <script src="site_libs/clipboard/clipboard.min.js"></script>
-  <meta name="quarto:offset" content="./">
-  <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-  <script src="site_libs/quarto-search/fuse.min.js"></script>
-  <script src="site_libs/quarto-search/quarto-search.js"></script>
-  <link href="./first-observations.html" rel="next">
-  <link href="./index.html" rel="prev">
-  <script src="site_libs/quarto-html/quarto.js"></script>
-  <script src="site_libs/quarto-html/popper.min.js"></script>
-  <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-  <script src="site_libs/quarto-html/anchor.min.js"></script>
-  <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-  <link class="quarto-color-scheme" href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
-  <link class="quarto-color-scheme quarto-color-alternate" rel="prefetch" href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css">
-  <script src="site_libs/bootstrap/bootstrap.min.js"></script>
-  <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-  <link class="quarto-color-scheme" href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
-  <link class="quarto-color-scheme quarto-color-alternate" rel="prefetch" href="site_libs/bootstrap/bootstrap-dark.min.css">
+  <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+  <script src="../site_libs/clipboard/clipboard.min.js"></script>
+  <meta name="quarto:offset" content="../">
+  <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+  <script src="../site_libs/quarto-search/fuse.min.js"></script>
+  <script src="../site_libs/quarto-search/quarto-search.js"></script>
+  <link href="../quarto-workflows/browser.html" rel="next">
+  <link href="../first-observations.html" rel="prev">
+  <script src="../site_libs/quarto-html/quarto.js"></script>
+  <script src="../site_libs/quarto-html/popper.min.js"></script>
+  <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+  <script src="../site_libs/quarto-html/anchor.min.js"></script>
+  <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+  <link class="quarto-color-scheme" href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
+  <link class="quarto-color-scheme quarto-color-alternate" rel="prefetch" href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css">
+  <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+  <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+  <link class="quarto-color-scheme" href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link class="quarto-color-scheme quarto-color-alternate" rel="prefetch" href="../site_libs/bootstrap/bootstrap-dark.min.css">
   <script id="quarto-search-options" type="application/json">{
     "location": "sidebar",
     "copy-button": false,
@@ -123,7 +123,7 @@
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Quarto Overview</h1>
+      <h1 class="quarto-secondary-nav-title">Basic Workflow</h1>
       <button type="button" class="quarto-btn-toggle btn">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -135,8 +135,8 @@
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
-      <a href="./">
-      <img src="./images/openscapes_hex.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <a href="../">
+      <img src="../images/openscapes_hex.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main tools-wide">
     <a href="https://openscapes.org" title="Openscapes.org" class="sidebar-tool px-1"><i class="bi bi-globe"></i></a>
@@ -154,57 +154,52 @@
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Welcome</a>
+  <a href="../index.html" class="sidebar-item-text sidebar-link">Welcome</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./quarto-overview.html" class="sidebar-item-text sidebar-link active">Quarto Overview</a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./first-observations.html" class="sidebar-item-text sidebar-link">Getting Started</a>
+  <a href="../first-observations.html" class="sidebar-item-text sidebar-link">Exploring our website</a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
     <div class="sidebar-item-container"> 
-        <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-basic-workflows" aria-expanded="false">Basic Workflows</a>
-      <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-basic-workflows" aria-expanded="false">
+        <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-quarto-workflows" aria-expanded="true">Quarto workflows</a>
+      <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-quarto-workflows" aria-expanded="true">
         <i class="bi bi-chevron-right ms-2"></i>
       </a>
     </div>
-    <ul id="quarto-sidebar-section-basic-workflows" class="collapse list-unstyled sidebar-section depth1 ">  
+    <ul id="quarto-sidebar-section-quarto-workflows" class="collapse list-unstyled sidebar-section depth1 show">  
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./basic-workflows/browser.html" class="sidebar-item-text sidebar-link">From GitHub.com</a>
+  <a href="../quarto-workflows/index.html" class="sidebar-item-text sidebar-link active">Basic Workflow</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./basic-workflows/rstudio.html" class="sidebar-item-text sidebar-link">From RStudio</a>
+  <a href="../quarto-workflows/browser.html" class="sidebar-item-text sidebar-link">From the Browser</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./basic-workflows/jupyter.html" class="sidebar-item-text sidebar-link">From Jupyter</a>
+  <a href="../quarto-workflows/rstudio.html" class="sidebar-item-text sidebar-link">From RStudio</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./basic-workflows/getting-sophisticated.html" class="sidebar-item-text sidebar-link">Getting Sophisticated</a>
+  <a href="../quarto-workflows/jupyter.html" class="sidebar-item-text sidebar-link">From Jupyter</a>
   </div>
 </li>
     </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./render-vs-preview.html" class="sidebar-item-text sidebar-link">Render vs Preview</a>
+  <a href="../learning-more.html" class="sidebar-item-text sidebar-link">Learning more</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./transition-from-rmarkdown.html" class="sidebar-item-text sidebar-link">Transition from Rmd</a>
+  <a href="../transition-from-rmarkdown.html" class="sidebar-item-text sidebar-link">Transition from Rmd</a>
   </div>
 </li>
     </ul>
@@ -215,19 +210,17 @@
         <nav id="TOC" role="doc-toc">
 <h2 id="toc-title">On this page</h2>
 <ul>
-<li><a href="#quarto-basic-workflow" class="nav-link active" data-scroll-target="#quarto-basic-workflow">Quarto basic workflow</a></li>
-<li><a href="#quarto.yml" class="nav-link" data-scroll-target="#quarto.yml"><code>_quarto.yml</code></a></li>
+<li><a href="#quarto.yml" class="nav-link active" data-scroll-target="#quarto.yml"><code>_quarto.yml</code></a></li>
 <li><a href="#authoring" class="nav-link" data-scroll-target="#authoring">Authoring</a></li>
-<li><a href="#learn-more-about-quarto" class="nav-link" data-scroll-target="#learn-more-about-quarto">Learn more about Quarto</a></li>
-<li><a href="#next-up-workflows" class="nav-link" data-scroll-target="#next-up-workflows">Next up: workflows</a></li>
+<li><a href="#install-quarto" class="nav-link" data-scroll-target="#install-quarto">Install Quarto</a></li>
 </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/quarto-website-tutorial/edit/main/quarto-overview.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/quarto-website-tutorial/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/quarto-website-tutorial/edit/main/quarto-workflows/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/quarto-website-tutorial/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 <header id="title-block-header" class="quarto-title-block default">
 
-<div class="quarto-title"><h1 class="title d-none d-lg-block display-7">Quarto Overview</h1></div></header>
+<div class="quarto-title"><h1 class="title d-none d-lg-block display-7">Basic Workflow</h1></div></header>
 
 <!---
 ## Why am I here?
@@ -238,10 +231,11 @@
 
 ### Can you open slide decks within here
 
+
+## What's Freeze?
+
+JJ: You can put it in the project root or at a a file level, OR at a directory level (if there is a _metadata.yml file in a directory then documents within it will merge that metadata -- this applies to docs in subdirectories as well). So if you have mostly frozen stuff you can set it at the project level then disable on a per-file or per-directory basis. If frozen stuff is more the exception then you can use directory or file level enablement
 --->
-<p><a href="https://quarto.org">Quarto.org</a> has great documentation, including and <a href="https://quarto.org/docs/get-started/hello/jupyter.html">tutorials</a> that can help you get started using Jupyter, RStudio, VSCode and Editor. Here, we’ll introduce Quarto using our copy of this tutorial, and then show basic workflows using different tools: from the GitHub browser, RStudio, and Jupyter.</p>
-<section id="quarto-basic-workflow" class="level2">
-<h2 class="anchored" data-anchor-id="quarto-basic-workflow">Quarto basic workflow</h2>
 <p>Developing your quarto site will have the same basic workflow, no matter which tool you use to edit. It is very iterative.</p>
 <ol type="1">
 <li>Create content (text, code, images, etc) in a file. Supported files include <code>.md</code>, <code>.Rmd</code>, <code>.qmd</code>, <code>.ipynb</code>…</li>
@@ -251,7 +245,6 @@
 <li>Commit and push your website to GitHub, your updates will publish automatically! (if editing from the brower, only commit - no need to push)</li>
 <li>Repeat all of the above</li>
 </ol>
-</section>
 <section id="quarto.yml" class="level2">
 <h2 class="anchored" data-anchor-id="quarto.yml"><code>_quarto.yml</code></h2>
 <p>Let’s have a closer look at the <code>_quarto.yml</code> file.</p>
@@ -273,19 +266,9 @@
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>You’re able to add more features to individual pages by including it in the YAML, which for the most part here only includes a title. See <a href="https://quarto.org/docs/computations/execution-options.html">Quarto excecution options</a> for more information of what you can include in the YAML.</p>
 </section>
-<section id="learn-more-about-quarto" class="level2">
-<h2 class="anchored" data-anchor-id="learn-more-about-quarto">Learn more about Quarto</h2>
-<ul>
-<li><p><strong>Reproducible authoring with Quarto</strong> - Mine Çetinkaya-Rundel, Feb 2022</p>
-<ul>
-<li><a href="https://mine-cetinkaya-rundel.github.io/2022-repro-toronto/#/title-slide">slides</a>, <a href="https://www.youtube.com/watch?v=6p4vOKS6Xls">youtube</a></li>
-</ul></li>
-</ul>
-</section>
-<section id="next-up-workflows" class="level2">
-<h2 class="anchored" data-anchor-id="next-up-workflows">Next up: workflows</h2>
-<p>In the next sections we’ll see what this workflow looks like using different tools for editing your files. We’ll start off from the browser so you don’t need to install any additional software, however this approach is very limited and you will soon outgrow its capabilities. See all the tools that are supported at <a href="https://quarto.org/docs/get-started/" class="uri">https://quarto.org/docs/get-started/</a>.</p>
-<p><strong>If you don’t already have a workflow and to edit files and sync to GitHub from your computer, I recommend RStudio.</strong> You don’t need to know R to use RStudio, and it has powerful editor features that make for happy workflows.</p>
+<section id="install-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="install-quarto">Install Quarto</h2>
+<p>Installing Quarto will depend on your tooling and operating system. See tutorials for the tools that are supported at <a href="https://quarto.org/docs/get-started/" class="uri">https://quarto.org/docs/get-started/</a>. We’ll walk through the appropriate way for each tool in the next chapters.</p>
 
 
 </section>
@@ -465,13 +448,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Welcome</span>
+      <a href="../first-observations.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Exploring our website</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./first-observations.html" class="pagination-link">
-        <span class="nav-page-text">Getting Started</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../quarto-workflows/browser.html" class="pagination-link">
+        <span class="nav-page-text">From the Browser</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

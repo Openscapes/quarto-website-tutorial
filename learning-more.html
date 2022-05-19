@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="quarto-0.9.105">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>Making open-source documents with Quarto - Render vs.&nbsp;Preview</title>
+  <title>Making sharable documents with Quarto - Learning more</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,7 @@
   <script src="site_libs/quarto-search/fuse.min.js"></script>
   <script src="site_libs/quarto-search/quarto-search.js"></script>
   <link href="./transition-from-rmarkdown.html" rel="next">
-  <link href="./basic-workflows/getting-sophisticated.html" rel="prev">
+  <link href="./quarto-workflows/jupyter.html" rel="prev">
   <script src="site_libs/quarto-html/quarto.js"></script>
   <script src="site_libs/quarto-html/popper.min.js"></script>
   <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -60,7 +60,7 @@
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Render vs.&nbsp;Preview</h1>
+      <h1 class="quarto-secondary-nav-title">Learning more</h1>
       <button type="button" class="quarto-btn-toggle btn">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -96,47 +96,42 @@
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./quarto-overview.html" class="sidebar-item-text sidebar-link">Quarto Overview</a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./first-observations.html" class="sidebar-item-text sidebar-link">Getting Started</a>
+  <a href="./first-observations.html" class="sidebar-item-text sidebar-link">Exploring our website</a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
     <div class="sidebar-item-container"> 
-        <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-basic-workflows" aria-expanded="false">Basic Workflows</a>
-      <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-basic-workflows" aria-expanded="false">
+        <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-quarto-workflows" aria-expanded="false">Quarto workflows</a>
+      <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-quarto-workflows" aria-expanded="false">
         <i class="bi bi-chevron-right ms-2"></i>
       </a>
     </div>
-    <ul id="quarto-sidebar-section-basic-workflows" class="collapse list-unstyled sidebar-section depth1 ">  
+    <ul id="quarto-sidebar-section-quarto-workflows" class="collapse list-unstyled sidebar-section depth1 ">  
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./basic-workflows/browser.html" class="sidebar-item-text sidebar-link">From GitHub.com</a>
+  <a href="./quarto-workflows/index.html" class="sidebar-item-text sidebar-link">Basic Workflow</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./basic-workflows/rstudio.html" class="sidebar-item-text sidebar-link">From RStudio</a>
+  <a href="./quarto-workflows/browser.html" class="sidebar-item-text sidebar-link">From the Browser</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./basic-workflows/jupyter.html" class="sidebar-item-text sidebar-link">From Jupyter</a>
+  <a href="./quarto-workflows/rstudio.html" class="sidebar-item-text sidebar-link">From RStudio</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./basic-workflows/getting-sophisticated.html" class="sidebar-item-text sidebar-link">Getting Sophisticated</a>
+  <a href="./quarto-workflows/jupyter.html" class="sidebar-item-text sidebar-link">From Jupyter</a>
   </div>
 </li>
     </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./render-vs-preview.html" class="sidebar-item-text sidebar-link active">Render vs Preview</a>
+  <a href="./learning-more.html" class="sidebar-item-text sidebar-link active">Learning more</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -152,35 +147,39 @@
         <nav id="TOC" role="doc-toc">
 <h2 id="toc-title">On this page</h2>
 <ul>
-<li><a href="#render" class="nav-link active" data-scroll-target="#render">Render</a></li>
-<li><a href="#preview" class="nav-link" data-scroll-target="#preview">Preview</a></li>
-<li><a href="#when-do-i-want-render-vs-preview" class="nav-link" data-scroll-target="#when-do-i-want-render-vs-preview">When do I want Render vs Preview?</a></li>
+<li><a href="#learn-more" class="nav-link active" data-scroll-target="#learn-more">Learn more</a>
+<ul class="collapse">
+<li><a href="#examples-in-the-wild" class="nav-link" data-scroll-target="#examples-in-the-wild">Examples in the wild:</a></li>
+<li><a href="#inspiration" class="nav-link" data-scroll-target="#inspiration">Inspiration</a></li>
+</ul></li>
 </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/quarto-website-tutorial/edit/main/render-vs-preview.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/quarto-website-tutorial/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/quarto-website-tutorial/edit/main/learning-more.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/quarto-website-tutorial/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 <header id="title-block-header" class="quarto-title-block default">
 
-<div class="quarto-title"><h1 class="title d-none d-lg-block display-7">Render vs.&nbsp;Preview</h1></div></header>
+<div class="quarto-title"><h1 class="title d-none d-lg-block display-7">Learning more</h1></div></header>
 
-<p>Making quarto websites involves terminology that might be unfamiliar. This is a light explainer to help you get going.</p>
-<p>As you work locally, you will save your files as you normally do. Saving writes your work to disk.</p>
-<section id="render" class="level2">
-<h2 class="anchored" data-anchor-id="render">Render</h2>
-<p>Rendering is when Quarto formats your document into something different (e.g.&nbsp;.html or .docx).</p>
+<section id="learn-more" class="level2">
+<h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
+<p>An excellent overview: <strong>Reproducible authoring with Quarto</strong> - Mine Çetinkaya-Rundel, Feb 2022 - <a href="https://mine-cetinkaya-rundel.github.io/2022-repro-toronto/#/title-slide">slides</a>, <a href="https://www.youtube.com/watch?v=6p4vOKS6Xls">youtube</a></p>
+<section id="examples-in-the-wild" class="level3">
+<h3 class="anchored" data-anchor-id="examples-in-the-wild">Examples in the wild:</h3>
+<ul>
+<li><a href="https://openscapes.github.io/series">Openscapes Champions Lessons Series</a></li>
+<li><a href="https://openscapes.github.io/approach-guide/">Openscapes Approach Guide</a><br>
+</li>
+<li><a href="https://nasa-openscapes.github.io/earthdata-cloud-cookbook/">NASA Earthdata Cloud Cookbook</a></li>
+</ul>
+<p>See many more examples at the <a href="https://quarto.org/docs/gallery/">quarto gallery</a>!</p>
 </section>
-<section id="preview" class="level2">
-<h2 class="anchored" data-anchor-id="preview">Preview</h2>
-<p>Preview is when Quarto displays the rendered files. It’s like saying “show me”.</p>
+<section id="inspiration" class="level3">
+<h3 class="anchored" data-anchor-id="inspiration">Inspiration</h3>
+<p>Are you making onboarding documentation? Check out <a href="https://thefaylab.github.io/lab-manual/">The Fay Lab Manual</a> for inspiration on structure - you could also start there and make it your own.</p>
+
+
 </section>
-<section id="when-do-i-want-render-vs-preview" class="level2">
-<h2 class="anchored" data-anchor-id="when-do-i-want-render-vs-preview">When do I want Render vs Preview?</h2>
-<p>From the RStudio IDE, the “Render” button does both Render + Preview together.</p>
-<p>From Jupyter, you’ll need to do these in two steps, render to make the formatted document, and preview to view it.</p>
-<p>From GitHub.com, Quarto will only be able to render when published (through a GitHub Action). This means you cannot preview before publishing online.</p>
-
-
 </section>
 </main> <!-- /main -->
 <script type="application/javascript">
@@ -358,8 +357,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./basic-workflows/getting-sophisticated.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Getting Sophisticated</span>
+      <a href="./quarto-workflows/jupyter.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">From Jupyter</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="quarto-0.9.105">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>Making open-source documents with Quarto - From RStudio</title>
+  <title>Making sharable documents with Quarto - From RStudio</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -19,8 +19,8 @@
   <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
   <script src="../site_libs/quarto-search/fuse.min.js"></script>
   <script src="../site_libs/quarto-search/quarto-search.js"></script>
-  <link href="../basic-workflows/jupyter.html" rel="next">
-  <link href="../basic-workflows/browser.html" rel="prev">
+  <link href="../quarto-workflows/jupyter.html" rel="next">
+  <link href="../quarto-workflows/browser.html" rel="prev">
   <script src="../site_libs/quarto-html/quarto.js"></script>
   <script src="../site_libs/quarto-html/popper.min.js"></script>
   <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -96,47 +96,42 @@
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../quarto-overview.html" class="sidebar-item-text sidebar-link">Quarto Overview</a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../first-observations.html" class="sidebar-item-text sidebar-link">Getting Started</a>
+  <a href="../first-observations.html" class="sidebar-item-text sidebar-link">Exploring our website</a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
     <div class="sidebar-item-container"> 
-        <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-basic-workflows" aria-expanded="true">Basic Workflows</a>
-      <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-basic-workflows" aria-expanded="true">
+        <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-quarto-workflows" aria-expanded="true">Quarto workflows</a>
+      <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-quarto-workflows" aria-expanded="true">
         <i class="bi bi-chevron-right ms-2"></i>
       </a>
     </div>
-    <ul id="quarto-sidebar-section-basic-workflows" class="collapse list-unstyled sidebar-section depth1 show">  
+    <ul id="quarto-sidebar-section-quarto-workflows" class="collapse list-unstyled sidebar-section depth1 show">  
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../basic-workflows/browser.html" class="sidebar-item-text sidebar-link">From GitHub.com</a>
+  <a href="../quarto-workflows/index.html" class="sidebar-item-text sidebar-link">Basic Workflow</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../basic-workflows/rstudio.html" class="sidebar-item-text sidebar-link active">From RStudio</a>
+  <a href="../quarto-workflows/browser.html" class="sidebar-item-text sidebar-link">From the Browser</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../basic-workflows/jupyter.html" class="sidebar-item-text sidebar-link">From Jupyter</a>
+  <a href="../quarto-workflows/rstudio.html" class="sidebar-item-text sidebar-link active">From RStudio</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../basic-workflows/getting-sophisticated.html" class="sidebar-item-text sidebar-link">Getting Sophisticated</a>
+  <a href="../quarto-workflows/jupyter.html" class="sidebar-item-text sidebar-link">From Jupyter</a>
   </div>
 </li>
     </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../render-vs-preview.html" class="sidebar-item-text sidebar-link">Render vs Preview</a>
+  <a href="../learning-more.html" class="sidebar-item-text sidebar-link">Learning more</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -169,7 +164,7 @@
 <li><a href="#section" class="nav-link" data-scroll-target="#section"></a></li>
 <li><a href="#authoring" class="nav-link" data-scroll-target="#authoring">Authoring</a></li>
 </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/quarto-website-tutorial/edit/main/basic-workflows/rstudio.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/quarto-website-tutorial/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/quarto-website-tutorial/edit/main/quarto-workflows/rstudio.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/quarto-website-tutorial/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -426,12 +421,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../basic-workflows/browser.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">From GitHub.com</span>
+      <a href="../quarto-workflows/browser.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">From the Browser</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../basic-workflows/jupyter.html" class="pagination-link">
+      <a href="../quarto-workflows/jupyter.html" class="pagination-link">
         <span class="nav-page-text">From Jupyter</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
