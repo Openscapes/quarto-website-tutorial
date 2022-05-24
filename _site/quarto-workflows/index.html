@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-0.9.399">
+<meta name="generator" content="quarto-0.9.442">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Making sharable documents with Quarto - Basic Workflow</title>
+<title>Making sharable documents with Quarto - Quarto Workflows</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -128,7 +128,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Basic Workflow</h1>
+      <h1 class="quarto-secondary-nav-title">Quarto Workflows</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -169,17 +169,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
         <li class="sidebar-item sidebar-item-section">
     <div class="sidebar-item-container"> 
-        <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Quarto workflows</a>
+        <a href="../quarto-workflows/index.html" class="sidebar-item-text sidebar-link active">Quarto Workflows</a>
       <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
         <i class="bi bi-chevron-right ms-2"></i>
       </a>
     </div>
     <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../quarto-workflows/index.html" class="sidebar-item-text sidebar-link active">Basic Workflow</a>
-  </div>
-</li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quarto-workflows/browser.html" class="sidebar-item-text sidebar-link">From the Browser</a>
@@ -216,7 +211,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#quarto.yml" id="toc-quarto.yml" class="nav-link active" data-scroll-target="#quarto.yml"><code>_quarto.yml</code></a></li>
+  <li><a href="#basic-workflow" id="toc-basic-workflow" class="nav-link active" data-scroll-target="#basic-workflow">Basic Workflow</a></li>
+  <li><a href="#quarto.yml" id="toc-quarto.yml" class="nav-link" data-scroll-target="#quarto.yml"><code>_quarto.yml</code></a></li>
   <li><a href="#authoring" id="toc-authoring" class="nav-link" data-scroll-target="#authoring">Authoring</a></li>
   <li><a href="#install-quarto" id="toc-install-quarto" class="nav-link" data-scroll-target="#install-quarto">Install Quarto</a></li>
   </ul>
@@ -227,10 +223,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Basic Workflow</h1>
+<h1 class="title d-none d-lg-block">Quarto Workflows</h1>
 </div>
-
-
 
 
 
@@ -257,6 +251,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 JJ: You can put it in the project root or at a a file level, OR at a directory level (if there is a _metadata.yml file in a directory then documents within it will merge that metadata -- this applies to docs in subdirectories as well). So if you have mostly frozen stuff you can set it at the project level then disable on a per-file or per-directory basis. If frozen stuff is more the exception then you can use directory or file level enablement
 --->
+<section id="basic-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="basic-workflow">Basic Workflow</h2>
 <p>Developing your quarto site will have the same basic workflow, no matter which tool you use to edit. It is very iterative.</p>
 <ol type="1">
 <li>Create content (text, code, images, etc) in a file. Supported files include <code>.md</code>, <code>.Rmd</code>, <code>.qmd</code>, <code>.ipynb</code>…</li>
@@ -266,6 +262,7 @@ JJ: You can put it in the project root or at a a file level, OR at a directory l
 <li>Commit and push your website to GitHub, your updates will publish automatically! (if editing from the brower, only commit - no need to push)</li>
 <li>Repeat all of the above</li>
 </ol>
+</section>
 <section id="quarto.yml" class="level2">
 <h2 class="anchored" data-anchor-id="quarto.yml"><code>_quarto.yml</code></h2>
 <p>Let’s have a closer look at the <code>_quarto.yml</code> file.</p>

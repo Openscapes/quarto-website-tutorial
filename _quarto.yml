@@ -34,9 +34,8 @@ website:
       - href: index.qmd
         text: Welcome
       - first-observations.qmd
-      - section: Quarto workflows
+      - section: quarto-workflows/index.qmd
         contents: 
-          - quarto-workflows/index.qmd
           - quarto-workflows/browser.md
           - quarto-workflows/rstudio.md
           - quarto-workflows/jupyter.md 
