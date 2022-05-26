@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-0.9.442">
+<meta name="generator" content="quarto-0.9.446">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -218,6 +218,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <ul class="collapse">
   <li><a href="#publishing-notes" id="toc-publishing-notes" class="nav-link" data-scroll-target="#publishing-notes">Publishing notes</a></li>
   </ul></li>
+  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a>
+  <ul class="collapse">
+  <li><a href="#github-action-fails-says-you-need-rmarkdown-but-you-dont-have-r-code" id="toc-github-action-fails-says-you-need-rmarkdown-but-you-dont-have-r-code" class="nav-link" data-scroll-target="#github-action-fails-says-you-need-rmarkdown-but-you-dont-have-r-code">GitHub Action fails, says you need RMarkdown but you don’t have R code!</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/quarto-website-tutorial/edit/main/transition-from-rmarkdown.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/quarto-website-tutorial/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -275,6 +279,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><strong>Push these changes, merge into main.</strong></p>
 <p><strong>On GitHub.com, in your repo, set up GitHub publishing</strong></p>
 <p>Follow instructions from the <a href="https://openscapes.github.io/quarto-website-tutorial/first-observations.md#set-up-github-publishing">getting started chapter</a>.</p>
+</section>
+</section>
+<section id="troubleshooting" class="level2">
+<h2 class="anchored" data-anchor-id="troubleshooting">Troubleshooting</h2>
+<section id="github-action-fails-says-you-need-rmarkdown-but-you-dont-have-r-code" class="level3">
+<h3 class="anchored" data-anchor-id="github-action-fails-says-you-need-rmarkdown-but-you-dont-have-r-code">GitHub Action fails, says you need RMarkdown but you don’t have R code!</h3>
+<p>And you changed all .Rmds to .qmds!</p>
+<p>You likely have a few <code>setup</code> code chunks from RMarkdown, that look like this:</p>
+<p><code>{r setup, include=FALSE}</code></p>
+<p><code>knitr::opts_chunk$set(echo = FALSE)</code></p>
+<p>You can find them by opening each of your files and having a look, or use GitHub’s search for the keyword <code>knitr</code></p>
 
 
 </section>

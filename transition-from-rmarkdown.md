@@ -55,3 +55,17 @@ _site/
 **On GitHub.com, in your repo, set up GitHub publishing**
 
 Follow instructions from the [getting started chapter](https://openscapes.github.io/quarto-website-tutorial/first-observations.md#set-up-github-publishing). 
+
+## Troubleshooting
+
+### GitHub Action fails, says you need RMarkdown but you don't have R code!
+
+And you changed all .Rmds to .qmds!
+
+You likely have a few `setup` code chunks from RMarkdown, that look like this:
+
+`{r setup, include=FALSE}`
+
+`knitr::opts_chunk$set(echo = FALSE)`
+
+You can find them by opening each of your files and having a look, or use GitHub's search for the keyword `knitr`
