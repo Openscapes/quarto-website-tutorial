@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Making sharable documents with Quarto - Exploring our website</title>
+<title>Making sharable documents with Quarto - Explore and setup</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -128,7 +128,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Exploring our website</h1>
+      <h1 class="quarto-secondary-nav-title">Explore and setup</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -164,12 +164,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./first-observations.html" class="sidebar-item-text sidebar-link active">Exploring our website</a>
+  <a href="./explore.html" class="sidebar-item-text sidebar-link active">Explore and setup</a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
     <div class="sidebar-item-container"> 
-        <a href="./quarto-workflows/index.html" class="sidebar-item-text sidebar-link">Quarto Workflows</a>
+        <a href="./quarto-workflows/index.html" class="sidebar-item-text sidebar-link">Quarto workflows</a>
       <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
         <i class="bi bi-chevron-right ms-2"></i>
       </a>
@@ -223,15 +223,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </ul></li>
   <li><a href="#confirm" id="toc-confirm" class="nav-link" data-scroll-target="#confirm">Confirm your website is published</a></li>
   <li><a href="#renaming-your-repo" id="toc-renaming-your-repo" class="nav-link" data-scroll-target="#renaming-your-repo">Renaming your repo</a></li>
+  <li><a href="#onward" id="toc-onward" class="nav-link" data-scroll-target="#onward">Onward!</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/quarto-website-tutorial/edit/main/first-observations.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/quarto-website-tutorial/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/quarto-website-tutorial/edit/main/explore.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/quarto-website-tutorial/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Exploring our website</h1>
+<h1 class="title d-none d-lg-block">Explore and setup</h1>
 </div>
 
 
@@ -246,7 +247,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </header>
 
 <p>With this tutorial, we have a working example website that we will explore together. We’ll learn a few rules and look for patterns to get an understanding of what things do to help you start customizing and making it your own. And you can continue to use this website as a reference after the tutorial, along with <a href="https://quarto.org">Quarto</a> documentation.</p>
-<p>We’ll start our exploration online looking at the website architecture and GitHub repository. Then we’ll copy and set it up so that any modifications (commits) will automatically be republished via GitHub Actions. Subsequent chapters will describe how to modify your repo using different tools (browser, RStudio, Jupyter).</p>
+<p>We’ll start our exploration online looking at the website architecture and GitHub repository. Then we’ll setup a copy for ourselves so that we can modify from a working example, which is a great way to learn something new. We’ll set it up so that any modifications (commits) will automatically be republished via GitHub Actions. Subsequent chapters will describe how to modify your repo using different tools (browser, RStudio, Jupyter).</p>
 <section id="exploring-online" class="level2">
 <h2 class="anchored" data-anchor-id="exploring-online">Exploring online</h2>
 <section id="the-website-itself" class="level3">
@@ -259,31 +260,31 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Learning more</li>
 <li>Transition from Rmd</li>
 </ul>
-<p>Most of these are pages, but you’ll see that “Basic Workflows” has an arrow; it is a folder with additional pages inside.</p>
+<p>Most of these are pages, but you’ll see that “Quarto Workflows” has an arrow; it is a folder with additional pages inside.</p>
 </section>
 <section id="the-websites-repo" class="level3">
 <h3 class="anchored" data-anchor-id="the-websites-repo">The website’s repo</h3>
-<p>Let’s go to this website’s GitHub repository (also called a “repo”), <a href="https://github.com/openscapes/quarto-website-tutorial" class="uri"><strong>https://github.com/openscapes/quarto-website-tutorial</strong></a>. From this website, you can get to the repo by clicking the GitHub octocat icon underneath the Openscapes logo (click it holding command on Mac, or control on a PC to open it in a different tab in your browser).</p>
-<p><strong>Have a look at the filenames.</strong> We can recognize the names of the webpages we’ve seen above, and they have red arrows marking them in the image below. You’ll see the “basic-workflows” folder and the rest in this site are <code>.md</code> files, which are plain Markdown files. <code>index.md</code> is the home page.</p>
+<p>Let’s go to this website’s GitHub repository (also called a “repo”), <a href="https://github.com/openscapes/quarto-website-tutorial" class="uri"><strong>https://github.com/openscapes/quarto-website-tutorial</strong></a>. You can also click there from this page this tutorial website by clicking the GitHub octocat icon underneath the Openscapes logo in the left navbar (click it holding command on Mac, or control on a PC to open it in a different tab in your browser).</p>
+<p><strong>Have a look at the filenames.</strong> We can recognize the names of the webpages we’ve seen above, and they have red arrows marking them in the image below. You’ll see the “quarto-workflows” folder and the rest in this site are <code>.qmd</code> files, which are plain text Quarto files that can combine Markdown text with code. <code>index.qmd</code> is the home page. If you click inside “quarto-workflows” you’ll see a mix of filetypes!</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/quarto-files-github.png" class="img-fluid figure-img" alt="Screenshot of files on GitHub with red arrows identifying the files that we saw in the left sidebar" style="width:80.0%"></p>
 <p></p><figcaption aria-hidden="true" class="figure-caption">quarto-website-tutorial GitHub repository with files for webpages marked with red arrows</figcaption><p></p>
 </figure>
 </div>
-<p><strong>The <code>_site</code> folder</strong> has html files with names that should be familiar: they match the <code>.md</code> files we were just exploring. ; this is where Quarto stores files to build the website and</p>
+<p><strong>The <code>_site</code> folder</strong> has html files with names that should be familiar: they match the <code>.    md</code> files we were just exploring. This folder is where Quarto stores files to build the website.</p>
 </section>
 </section>
 <section id="quarto.yml-intro" class="level2">
 <h2 class="anchored" data-anchor-id="quarto.yml-intro"><code>_quarto.yml</code> intro</h2>
-<p>There is also a <code>_quarto.yml</code> file, which is the website’s configuration file. It is a directory of the order that the pages/chapters will be in. This is where you update the organization of your website. If we compare side-by-side, you’ll see that the pages that appear on our website are listed there.</p>
+<p>There is also a <code>_quarto.yml</code> file, which is the website’s configuration file. It is essentially metadata for the website that includes the order that the pages/chapters will be in. This is where you update the organization of your website: which page comes before another. If we compare side-by-side, you’ll see that the pages that appear on our website are listed there.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/quarto-yml-site-side-by-side2.png" class="img-fluid figure-img" alt="_quarto.yml and website side-by-side"></p>
 <p></p><figcaption aria-hidden="true" class="figure-caption"><code>_quarto.yml</code> and website side-by-side</figcaption><p></p>
 </figure>
 </div>
-<p>We’ll learn more about how to interact with <code>_quarto.yml</code> in the <a href="quarto-overview.md">Quarto Overview</a>.</p>
+<p>We’ll learn more about how to interact with <code>_quarto.yml</code> in <a href="./quarto-workflows/index.html">Quarto Workflows</a>.</p>
 </section>
 <section id="fork-to-your-account" class="level2">
 <h2 class="anchored" data-anchor-id="fork-to-your-account">Fork to your account</h2>
@@ -309,8 +310,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h4 class="anchored" data-anchor-id="create-a-new-github-repo">Create a new GitHub repo</h4>
 <p>Navigate to your GitHub account or organization, and create a new repository, naming it what you’d like. You’ll need a free GitHub account that you create at <a href="https://github.com">github.com</a> (follow <a href="https://happygitwithr.com/github-acct.html">this advice</a> about choosing your username). When you’re logged in, <a href="https://github.com">github.com</a> will show a green button that says “New” which you’ll also see as you navigate to your username’s repository page.</p>
 </section>
-<section id="add-template-site-files" class="level4">
-<h4 class="anchored" data-anchor-id="add-template-site-files">Add template site files</h4>
+<section id="add-original-site-files" class="level4">
+<h4 class="anchored" data-anchor-id="add-original-site-files">Add original site files</h4>
 <p>To use the GitHub file uploader, click the button next to the green “Code” button that says “Add file”. Add file &gt; Upload files. Then, on your computer, select all the files in unzipped folder (command-A or control-A), and drag them to the GitHub uploader page. Scroll down to write a commit message, which effectively saves your files when you’re working in the browser.</p>
 <p>Note: if you’re comfortable cloning the new repository and copying files into it locally before committing and pushing back to GitHub, that can be preferable to the uploader, which does have limitations with complex repos (although the uploader works fine with this tutorial repo).</p>
 </section>
@@ -385,7 +386,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="renaming-your-repo" class="level2">
 <h2 class="anchored" data-anchor-id="renaming-your-repo">Renaming your repo</h2>
 <p>If you’d like to rename your repo, go to Settings and the option to rename is on the top of the main settings page.</p>
-<hr>
+</section>
+<section id="onward" class="level2">
+<h2 class="anchored" data-anchor-id="onward">Onward!</h2>
 <p>Now you are ready to start editing and publishing! The next chapter describes how starting off from the browser, using Markdown.</p>
 
 
@@ -576,7 +579,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
   <div class="nav-page nav-page-next">
       <a href="./quarto-workflows/index.html" class="pagination-link">
-        <span class="nav-page-text">Quarto Workflows</span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text">Quarto workflows</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
