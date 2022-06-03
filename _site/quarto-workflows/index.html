@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Making sharable documents with Quarto - Quarto Workflows</title>
+<title>Making sharable documents with Quarto - Quarto workflows</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -87,7 +87,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <link href="../quarto-workflows/browser.html" rel="next">
-<link href="../first-observations.html" rel="prev">
+<link href="../explore.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -128,7 +128,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Quarto Workflows</h1>
+      <h1 class="quarto-secondary-nav-title">Quarto workflows</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -164,12 +164,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../first-observations.html" class="sidebar-item-text sidebar-link">Exploring our website</a>
+  <a href="../explore.html" class="sidebar-item-text sidebar-link">Explore and setup</a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
     <div class="sidebar-item-container"> 
-        <a href="../quarto-workflows/index.html" class="sidebar-item-text sidebar-link active">Quarto Workflows</a>
+        <a href="../quarto-workflows/index.html" class="sidebar-item-text sidebar-link active">Quarto workflows</a>
       <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
         <i class="bi bi-chevron-right ms-2"></i>
       </a>
@@ -212,8 +212,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
    
   <ul>
   <li><a href="#basic-workflow" id="toc-basic-workflow" class="nav-link active" data-scroll-target="#basic-workflow">Basic Workflow</a></li>
-  <li><a href="#quarto.yml" id="toc-quarto.yml" class="nav-link" data-scroll-target="#quarto.yml"><code>_quarto.yml</code></a></li>
   <li><a href="#authoring" id="toc-authoring" class="nav-link" data-scroll-target="#authoring">Authoring</a></li>
+  <li><a href="#update-_quarto.yml" id="toc-update-_quarto.yml" class="nav-link" data-scroll-target="#update-_quarto.yml">Update <code>_quarto.yml</code></a></li>
   <li><a href="#install-quarto" id="toc-install-quarto" class="nav-link" data-scroll-target="#install-quarto">Install Quarto</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/quarto-website-tutorial/edit/main/quarto-workflows/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/quarto-website-tutorial/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
@@ -223,7 +223,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Quarto Workflows</h1>
+<h1 class="title d-none d-lg-block">Quarto workflows</h1>
 </div>
 
 
@@ -253,18 +253,28 @@ JJ: You can put it in the project root or at a a file level, OR at a directory l
 --->
 <section id="basic-workflow" class="level2">
 <h2 class="anchored" data-anchor-id="basic-workflow">Basic Workflow</h2>
-<p>Developing your quarto site will have the same basic workflow, no matter which tool you use to edit. It is very iterative.</p>
+<p>How do you work in Quarto? You can use whichever tool you’re comfortable with (RStudio, Jupyter, GitHub, VS Code, etc). Developing your quarto site will have the same basic workflow, no matter which tool you use. It is very iterative, and each is explored more below.</p>
 <ol type="1">
-<li>Create content (text, code, images, etc) in a file. Supported files include <code>.md</code>, <code>.Rmd</code>, <code>.qmd</code>, <code>.ipynb</code>…</li>
+<li>Authoring: write text, code, images, etc in a file. Supported files include <code>.md</code>, <code>.Rmd</code>, <code>.qmd</code>, <code>.ipynb</code>…</li>
 <li>Update <code>_quarto.yml</code> as needed (for example, if you’ve created a new file you’d like included in your site)</li>
-<li>Quarto Render individual files and/or the whole website (if editing from the browser this step will not be separate but combined with Step 5)</li>
+<li>Render individual files and/or the whole website</li>
 <li>Repeat, repeat, repeat</li>
-<li>Commit and push your website to GitHub, your updates will publish automatically! (if editing from the brower, only commit - no need to push)</li>
-<li>Repeat all of the above</li>
+<li>Commit and push your website to GitHub, your updates will publish automatically!</li>
+<li>Repeat all of the above to make the website as you’d like!</li>
 </ol>
+<p>Note: if editing from your internet Browser we won’t render in Step 3 will not be separate but combined with Step 5, which will only require a commit, not a push)</p>
 </section>
-<section id="quarto.yml" class="level2">
-<h2 class="anchored" data-anchor-id="quarto.yml"><code>_quarto.yml</code></h2>
+<section id="authoring" class="level2">
+<h2 class="anchored" data-anchor-id="authoring">Authoring</h2>
+<p>As an author, you have a lot of options of how your text will be formatted, arranged, and interlinked. You will be writing in Markdown, which is a lightweight text formatting language. The Quarto documentation about authoring introduces <a href="https://quarto.org/docs/authoring/markdown-basics.html">markdown-basics</a> that will get you started.</p>
+<p>Each page of our site has a similar first few lines - this YAML, like we saw in our <code>_quarto.yml</code> and it is indicated by two sets of 3 dashes <code>---</code> :</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">title:</span> My title</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>You’re able to add more features to individual pages by including it in the YAML, which for the most part here only includes a title. See <a href="https://quarto.org/docs/computations/execution-options.html">Quarto excecution options</a> for more information of what you can include in the YAML.</p>
+</section>
+<section id="update-_quarto.yml" class="level2">
+<h2 class="anchored" data-anchor-id="update-_quarto.yml">Update <code>_quarto.yml</code></h2>
 <p>Let’s have a closer look at the <code>_quarto.yml</code> file.</p>
 <p>This type of file (<code>.yml</code> or <code>.yaml</code>) is written in YAML (“Yet Another Markup Language”). You’ll be able to shift the arrangement of webpages by reordering/adding/deleting them in the <code>_quarto.yml</code> file following the patterns you see in this example. As you modify <code>_quarto.yml</code>, the most important thing to know is that <strong>spacing matters</strong>. Pay attention to whether text is indented by one, two, four, or other spaces, and make sure you follow it; if your site is not looking as expected it is likely a silent error in your YAML. Some text editors like RStudio provide debugging support for YAML and are highly recommended to save you time and heartache.</p>
 <div class="quarto-figure quarto-figure-center">
@@ -274,15 +284,6 @@ JJ: You can put it in the project root or at a a file level, OR at a directory l
 </figure>
 </div>
 <p>Notice that there are multiple ways in the <code>_quarto.yml</code> for you to include a file in your website. For example, in the above image, the “First Observations” we see in the left sidebar of the published website (right image) is represented in <code>_quarto.yml</code> (left image) over two lines, with line 36 indicating the file reference and line 37 indicating the text to show up in the left sidebar. However, “From RStudio” is only represented in one line of <code>_quarto.yml</code>, on line 43. This represents two strategies for including a file in your website. By default, the title of a specified file will show up in the website’s sidebar, which is what is happening with the “From RStudio” example. If you would like more control over what is written in the sidebar vs the title of your files, then the approach we took with “First Observations” is what you’ll want to do: you’ll see that only “First Observations” shows up in the sidebar as we specified in <code>_quarto.yml</code>, but the page’s title says “First Observations &amp; Setup” (which in our preference was too long for the sidebar).</p>
-</section>
-<section id="authoring" class="level2">
-<h2 class="anchored" data-anchor-id="authoring">Authoring</h2>
-<p>As an author, you have a lot of options of how your text will be formatted, arranged, and interlinked. Check out the Quarto documentation about authoring, starting out with <a href="https://quarto.org/docs/authoring/markdown-basics.htmlhttps://quarto.org/docs/authoring/markdown-basics.html">https://quarto.org/docs/authoring/markdown-basics</a>, to learn more.</p>
-<p>Each page of our site - currently all <code>.md</code> files - has a similar first couple of lines - this also YAML, and it is indicated by two sets of 3 dashes <code>---</code> :</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">title:</span> My title</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>You’re able to add more features to individual pages by including it in the YAML, which for the most part here only includes a title. See <a href="https://quarto.org/docs/computations/execution-options.html">Quarto excecution options</a> for more information of what you can include in the YAML.</p>
 </section>
 <section id="install-quarto" class="level2">
 <h2 class="anchored" data-anchor-id="install-quarto">Install Quarto</h2>
@@ -470,8 +471,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../first-observations.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Exploring our website</span>
+      <a href="../explore.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Explore and setup</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

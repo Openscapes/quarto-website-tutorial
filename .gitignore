@@ -5,6 +5,5 @@
 
 /.quarto/
 .DS_Store
-basic-workflows/.DS_Store
 
-/_site/
+_site/

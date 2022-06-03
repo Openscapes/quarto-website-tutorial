@@ -1,10 +1,10 @@
 ---
-title: Exploring our website
+title: Explore and setup
 ---
 
 With this tutorial, we have a working example website that we will explore together. We'll learn a few rules and look for patterns to get an understanding of what things do to help you start customizing and making it your own. And you can continue to use this website as a reference after the tutorial, along with [Quarto](https://quarto.org) documentation.
 
-We'll start our exploration online looking at the website architecture and GitHub repository. Then we'll copy and set it up so that any modifications (commits) will automatically be republished via GitHub Actions. Subsequent chapters will describe how to modify your repo using different tools (browser, RStudio, Jupyter).
+We'll start our exploration online looking at the website architecture and GitHub repository. Then we'll setup a copy for ourselves so that we can modify from a working example, which is a great way to learn something new. We'll set it up so that any modifications (commits) will automatically be republished via GitHub Actions. Subsequent chapters will describe how to modify your repo using different tools (browser, RStudio, Jupyter).
 
 ## Exploring online
 
@@ -18,25 +18,25 @@ We'll start our exploration online looking at the website architecture and GitHu
 -   Learning more
 -   Transition from Rmd
 
-Most of these are pages, but you'll see that "Basic Workflows" has an arrow; it is a folder with additional pages inside.
+Most of these are pages, but you'll see that "Quarto Workflows" has an arrow; it is a folder with additional pages inside.
 
 ### The website's repo
 
-Let's go to this website's GitHub repository (also called a "repo"), [**https://github.com/openscapes/quarto-website-tutorial**](https://github.com/openscapes/quarto-website-tutorial){.uri}. From this website, you can get to the repo by clicking the GitHub octocat icon underneath the Openscapes logo (click it holding command on Mac, or control on a PC to open it in a different tab in your browser).
+Let's go to this website's GitHub repository (also called a "repo"), [**https://github.com/openscapes/quarto-website-tutorial**](https://github.com/openscapes/quarto-website-tutorial){.uri}. You can also click there from this page this tutorial website by clicking the GitHub octocat icon underneath the Openscapes logo in the left navbar (click it holding command on Mac, or control on a PC to open it in a different tab in your browser).
 
-**Have a look at the filenames.** We can recognize the names of the webpages we've seen above, and they have red arrows marking them in the image below. You'll see the "basic-workflows" folder and the rest in this site are `.md` files, which are plain Markdown files. `index.md` is the home page.
+**Have a look at the filenames.** We can recognize the names of the webpages we've seen above, and they have red arrows marking them in the image below. You'll see the "quarto-workflows" folder and the rest in this site are `.qmd` files, which are plain text Quarto files that can combine Markdown text with code. `index.qmd` is the home page. If you click inside "quarto-workflows" you'll see a mix of filetypes!
 
 ![quarto-website-tutorial GitHub repository with files for webpages marked with red arrows](images/quarto-files-github.png){fig-alt="Screenshot of files on GitHub with red arrows identifying the files that we saw in the left sidebar" fig-align="center" width="80%"}
 
-**The `_site` folder** has html files with names that should be familiar: they match the `.md` files we were just exploring. ; this is where Quarto stores files to build the website and
+**The `_site` folder** has html files with names that should be familiar: they match the `.    md` files we were just exploring. This folder is where Quarto stores files to build the website.
 
 ## `_quarto.yml` intro
 
-There is also a `_quarto.yml` file, which is the website's configuration file. It is a directory of the order that the pages/chapters will be in. This is where you update the organization of your website. If we compare side-by-side, you'll see that the pages that appear on our website are listed there.
+There is also a `_quarto.yml` file, which is the website's configuration file. It is essentially metadata for the website that includes the order that the pages/chapters will be in. This is where you update the organization of your website: which page comes before another. If we compare side-by-side, you'll see that the pages that appear on our website are listed there.
 
 ![`_quarto.yml` and website side-by-side](images/quarto-yml-site-side-by-side2.png){alt="_quarto.yml and website side-by-side" fig-align="center"}
 
-We'll learn more about how to interact with `_quarto.yml` in the [Quarto Overview](quarto-overview.md).
+We'll learn more about how to interact with `_quarto.yml` in [Quarto Workflows](quarto-workflows/index.qmd).
 
 ## Fork to your account
 
@@ -68,7 +68,7 @@ Navigate to <https://github.com/openscapes/quarto-website-tutorial> (or any othe
 
 Navigate to your GitHub account or organization, and create a new repository, naming it what you'd like. You'll need a free GitHub account that you create at [github.com](https://github.com) (follow [this advice](https://happygitwithr.com/github-acct.html) about choosing your username). When you're logged in, [github.com](https://github.com) will show a green button that says "New" which you'll also see as you navigate to your username's repository page.
 
-#### Add template site files
+#### Add original site files
 
 To use the GitHub file uploader, click the button next to the green "Code" button that says "Add file". Add file \> Upload files. Then, on your computer, select all the files in unzipped folder (command-A or control-A), and drag them to the GitHub uploader page. Scroll down to write a commit message, which effectively saves your files when you're working in the browser.
 
@@ -142,6 +142,6 @@ When your orange do becomes a green check, you can go inspect your published sit
 
 If you'd like to rename your repo, go to Settings and the option to rename is on the top of the main settings page.
 
-------------------------------------------------------------------------
+## Onward!
 
 Now you are ready to start editing and publishing! The next chapter describes how starting off from the browser, using Markdown.

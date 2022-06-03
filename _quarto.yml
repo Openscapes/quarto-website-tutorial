@@ -33,15 +33,16 @@ website:
     contents:
       - href: index.qmd
         text: Welcome
-      - first-observations.qmd
+      - explore.qmd
       - section: quarto-workflows/index.qmd
         contents: 
           - quarto-workflows/browser.md
           - quarto-workflows/rstudio.md
           - quarto-workflows/jupyter.md 
       - learning-more.qmd
-      - href: transition-from-rmarkdown.md
+      - href: transition-from-rmarkdown.qmd
         text: Transition from Rmd
+
 
 format:
   html:
