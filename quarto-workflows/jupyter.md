@@ -148,7 +148,7 @@ cd quarto-website-tutorial
 quarto render python-example.ipynb --execute
 ```
 
-## Authoring
+## Authoring tips
 
 [Quarto.org](https://quarto.org) has details about authoring, including specific instructions about authoring in Jupyter: [quarto.org/docs/reference/cells/cells-jupyter](https://quarto.org/docs/reference/cells/cells-jupyter.html).
 

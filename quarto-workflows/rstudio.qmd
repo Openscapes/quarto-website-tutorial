@@ -15,7 +15,7 @@ For a workflow with RStudio and GitHub on your local computer, you will need fou
 3.  Git
 4.  GitHub
 
-Follow the [UCSB MEDS Installation Guide](https://ucsb-meds.github.io/meds-install-guide.html) for detailed instructions on how to create accounts, download, install, and configure on Mac and Windows. This takes about 20 minutes. (For an even more detailed walk-through, see [Allison Horst's ESM 206 Google Doc](https://docs.google.com/document/d/1zx2upJJqFZe94O3BQSMI56Z76s3haLXC0otKSpcZaJQ/edit)). Thanks for sharing Allison!
+Follow the [UCSB MEDS Installation Guide](https://ucsb-meds.github.io/meds-install-guide.html) for detailed instructions on how to create accounts, download, install, and configure on Mac and Windows. This takes about 20 minutes. (For an even more detailed walk-through, see [Allison Horst's ESM 206 Google Doc](https://docs.google.com/document/d/1zx2upJJqFZe94O3BQSMI56Z76s3haLXC0otKSpcZaJQ/edit)). 
 
 ### Clone your repo
 
@@ -27,7 +27,7 @@ File \> New Project \> Version Control \> Git \> paste your repository name.
 
 ### Install Quarto
 
-Next, you'll install Quarto. Download Quarto from <https://quarto.org/docs/get-started/>. Follow the installation wizard on your computer. When it is complete, you won't see an application or any new software, but it is now available to RStudio (as well as other applications, including the command line).
+Next, you'll install Quarto: <https://quarto.org/docs/get-started/>. After downloading, follow the installation wizard on your computer. When it is complete, you won't see an application or any new software, but it is now available to RStudio (as well as all other applications on your computer, including the command line).
 
 ### RStudio orientation
 
@@ -42,6 +42,11 @@ The RStudio Visual Editor is quite new and has features that improve your writin
 -   Visual editor makes a familiar experience
 
 -   copy-paste formatting from Google Doc
+
+
+- click the image to insert an image (screenshot)
+- click the table to insert a table
+- keyboard shortcuts work for bolding, italics, and also headers! On a Mac, option-command-2 will make a level 2 header. Try it with option-command-1 and option-command-0 for normal text!
 
 ## Quarto render
 
@@ -59,18 +64,18 @@ Then, render this file: press "Render" which is to the right of the disc icon th
 
 ## Create a new `.Rmd` page
 
-Example:
+New > RMarkdown document > save
 
-load packages and data
-
-explore
-
-tidy
-
-plot
+The starter RMarkdown document has some R code inside: it displays a summary of the cars dataset that is pre-loaded into R (`summary(cars)`) and plots the pressure data that is also pre-loaded (`plot(pressure)`).
 
 ## Update `_quarto.yml`
 
-## 
+## Render website: Build tab
 
-## Authoring
+## Authoring tips
+
+## Commit and push!
+
+## Troubleshooting
+
+If you have trouble rendering your website after for example changing the extenstion of a file from `.md` to `.qmd`, refreshing your RStudio often helps. Do this by clicking the project name at the upper right of the RStudio window (in this case, `quarto-website-tutorial`), and underneath the "close project" section, click the same name of your project: `quarto-website-tutorial`. This will relaunch your whole project afresh. 

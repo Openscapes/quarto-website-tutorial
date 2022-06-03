@@ -26,6 +26,14 @@ We'll start off from the browser so you don't need to install any additional sof
 
 [Quarto.org](https://quarto.org) is the go-to place for full documentation and more tutorials! 
 
+## Example Quarto sites
+
+A few Quarto websites from Openscapes - wo far we have been using Quarto for documentation using Quarto and Markdown files and Jupyter Notebooks.
+
+-   [Champions Lessons Series](https://openscapes.github.io/series)
+-   [Openscapes Approach Guide](https://openscapes.github.io/approach-guide/)\
+-   [2021 NASA Cloud Hackathon](https://nasa-openscapes.github.io/2021-Cloud-Hackathon/)
+
 ## About
 
 [Openscapes](https://openscapes.org) is about better science for future us. We help researchers reimagine data analysis, develop modern skills that are of immediate value to them, and cultivate collaborative and inclusive research teams as part of the broader global open movement.

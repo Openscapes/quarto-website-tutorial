@@ -37,7 +37,7 @@ website:
       - section: quarto-workflows/index.qmd
         contents: 
           - quarto-workflows/browser.md
-          - quarto-workflows/rstudio.md
+          - quarto-workflows/rstudio.qmd
           - quarto-workflows/jupyter.md 
       - learning-more.qmd
       - href: transition-from-rmarkdown.qmd
