@@ -42,18 +42,28 @@ The RStudio Visual Editor is quite new and has features that improve your writin
 Here's an example showing the same file in the original Source Editor with content in markdown format and in the Visual Editor with content that looks more like it will appear in a live site. You can switch freely between these modes.
 
 ::: {layout-ncol="2"}
-![RStudio IDE highlighting the Source Editor](images/rstudio-source-editor.png)
+![RStudio IDE highlighting the Source Editor](images/rstudio-source-editor.png){fig-alt="Screenshot of the RStudio IDE with red oval highlighting the Source button."}
 
-![RStudio IDE highlighting the Visual Editor](images/rstudio-visual-editor.png)
+![RStudio IDE highlighting the Visual Editor](images/rstudio-visual-editor.png){fig-alt="Screenshot of the RStudio IDE with red oval highlighting the Visual button."}
 :::
 
--   copy-paste formatting from Google Doc
+The Visual Editor lets you use many keyboard shortcuts that might be familiar for adding boldface, italics, or headers. On a Mac, option-command-2 will make a level 2 header. Try it with option-command-1, or option-command-0 for normal text!
 
--   click the image to insert an image (screenshot)
+Already have some content formatted in a Google Doc? You can copy-paste it in the Visual Editor and most formatting will be retained.
+
+#### Troubleshooting formatting
+
+If your formatting doesn't look quite right you can switch to Source Editor mode to make changes.
+
+TODO
+
+-   note familiar looking bar for bold, ital, lists, (screenshot)
+
+-   click the image to insert an image (screenshot); can resize image dynamically
 
 -   click the table to insert a table
 
--   keyboard shortcuts work for bolding, italics, and also headers! On a Mac, option-command-2 will make a level 2 header. Try it with option-command-1 and option-command-0 for normal text!
+-   add emoji's
 
 ## Quarto render
 
