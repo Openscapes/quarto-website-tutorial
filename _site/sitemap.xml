@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/index.html</loc>
-    <lastmod>2022-06-03T13:13:25.408Z</lastmod>
+    <loc>https://openscapes.github.io/quarto-website-tutorial/transition-from-rmarkdown.html</loc>
+    <lastmod>2022-06-08T20:17:28.639Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/transition-from-rmarkdown.html</loc>
-    <lastmod>2022-06-02T19:27:03.320Z</lastmod>
+    <loc>https://openscapes.github.io/quarto-website-tutorial/index.html</loc>
+    <lastmod>2022-06-08T20:17:29.126Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/quarto-website-tutorial/learning-more.html</loc>
-    <lastmod>2022-06-02T19:27:03.677Z</lastmod>
+    <lastmod>2022-06-08T20:17:29.484Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/quarto-website-tutorial/explore.html</loc>
-    <lastmod>2022-06-03T13:22:59.615Z</lastmod>
+    <lastmod>2022-06-08T20:17:29.945Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/browser.html</loc>
-    <lastmod>2022-06-03T13:17:57.422Z</lastmod>
-  </url>
-  <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/rstudio.html</loc>
-    <lastmod>2022-06-03T13:36:26.735Z</lastmod>
+    <lastmod>2022-06-08T20:17:30.248Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/jupyter.html</loc>
-    <lastmod>2022-06-03T13:32:09.341Z</lastmod>
+    <lastmod>2022-06-08T20:17:30.653Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/index.html</loc>
-    <lastmod>2022-06-03T13:23:07.688Z</lastmod>
+    <lastmod>2022-06-08T20:17:31.053Z</lastmod>
+  </url>
+  <url>
+    <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/rstudio.html</loc>
+    <lastmod>2022-06-08T20:17:31.405Z</lastmod>
   </url>
 </urlset>
