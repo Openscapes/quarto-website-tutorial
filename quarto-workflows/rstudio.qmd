@@ -49,7 +49,7 @@ Here's an example showing the same file in the original Source Editor with conte
 
 The Visual Editor lets you use many keyboard shortcuts that might be familiar for adding boldface, italics, or headers. On a Mac, option-command-2 will make a level 2 header. Try it with option-command-1, or option-command-0 for normal text!
 
-Already have some content formatted in a Google Doc? You can copy-paste it in the Visual Editor and most formatting will be retained.
+Already have some content formatted in a Google Doc? You can copy-paste it into the Visual Editor and most formatting will be retained.
 
 #### Troubleshooting formatting
 
