@@ -39,7 +39,7 @@ Now let's take a moment to get oriented. This is an RStudio project, which is in
 
 The RStudio Visual Editor is quite new and has features that improve your writing experience. Working in the Visual Editor feels a bit like working in a Google Doc.
 
-Here's an example showing the same file in the original Source Editor with content in markdown format and in the Visual Editor with content that looks more like it will appear in a live site. You can switch freely between them.
+Here's an example showing the same file in the original Source Editor with content in markdown format and in the Visual Editor with content that looks more like it will appear in a live site. You can switch freely between these modes.
 
 ::: {layout-ncol="2"}
 ![RStudio IDE highlighting the Source Editor](images/rstudio-source-editor.png)
