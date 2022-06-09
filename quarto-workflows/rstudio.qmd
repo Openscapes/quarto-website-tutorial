@@ -109,6 +109,8 @@ Checking "Render on Save" is really helpful when iterating quickly on a document
 
 If the document is very code-heavy, consider using [`freeze`](https://quarto.org/docs/projects/code-execution.html#freeze) that will not run the code each time.
 
+[Quarto.org](https://quarto.org/) has details about authoring, including specific instructions about [authoring in RStudio](https://quarto.org/docs/get-started/authoring/rstudio.html).
+
 ## Commit and push!
 
 Committing and pushing will make the changes you see locally live on your website (using the [GitHub Action we set up earlier](/explore.qmd#setup-github-action)).
