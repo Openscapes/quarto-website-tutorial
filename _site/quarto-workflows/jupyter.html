@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-0.9.550">
+<meta name="generator" content="quarto-0.9.446">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -80,13 +80,12 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
-
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
+<meta name="quarto:offset" content="../">
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
 <link href="../learning-more.html" rel="next">
 <link href="../quarto-workflows/rstudio.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
@@ -94,12 +93,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link class="quarto-color-scheme" id="quarto-text-highlighting-styles" href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
+<link class="quarto-color-scheme quarto-color-alternate" rel="prefetch" id="quarto-text-highlighting-styles" href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate">
+<link class="quarto-color-scheme" href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+<link class="quarto-color-scheme quarto-color-alternate" rel="prefetch" href="../site_libs/bootstrap/bootstrap-dark.min.css">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -235,6 +234,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#render-whole-notebook" id="toc-render-whole-notebook" class="nav-link" data-scroll-target="#render-whole-notebook">Render whole notebook</a></li>
   </ul></li>
   <li><a href="#authoring-tips" id="toc-authoring-tips" class="nav-link" data-scroll-target="#authoring-tips">Authoring tips</a></li>
+  <li><a href="#commit-and-push" id="toc-commit-and-push" class="nav-link" data-scroll-target="#commit-and-push">Commit and push!</a></li>
   <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a>
   <ul class="collapse">
   <li><a href="#my-changes-dont-show-up-in-preview" id="toc-my-changes-dont-show-up-in-preview" class="nav-link" data-scroll-target="#my-changes-dont-show-up-in-preview">My changes don’t show up in preview</a></li>
@@ -373,7 +373,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="quarto-render" class="level2">
 <h2 class="anchored" data-anchor-id="quarto-render">Quarto render</h2>
 <p>So far we have used <strong>Quarto preview</strong> view our website as we develop it. <strong>Quarto render</strong> will build the html elements of the website that we can see when we preview. Rendering will format the markdown text and code nicely as a website (or however is indicated in the <code>_quarto.yml</code>).</p>
-<p>By default, Quarto render does not execute code. Since files can get big and complicated with code, Quarto does not execute code by default. It will never run .ipynb files unless you tell it to.</p>
+<p>By default, Quarto render does not execute code in a Jupyter notebook. It will never run .ipynb files unless you tell it to.</p>
 <section id="render-whole-notebook" class="level3">
 <h3 class="anchored" data-anchor-id="render-whole-notebook">Render whole notebook</h3>
 <p>If you would like it to specifically execute code in a Jupyter notebook, you can do so in Terminal.</p>
@@ -386,6 +386,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="authoring-tips" class="level2">
 <h2 class="anchored" data-anchor-id="authoring-tips">Authoring tips</h2>
 <p><a href="https://quarto.org">Quarto.org</a> has details about authoring, including specific instructions about authoring in Jupyter: <a href="https://quarto.org/docs/reference/cells/cells-jupyter.html">quarto.org/docs/reference/cells/cells-jupyter</a>.</p>
+</section>
+<section id="commit-and-push" class="level2">
+<h2 class="anchored" data-anchor-id="commit-and-push">Commit and push!</h2>
+<p>Committing and pushing will make the changes you see locally live on your website (using the <a href="../explore.html#setup-github-action">GitHub Action we set up earlier</a>).</p>
 </section>
 <section id="troubleshooting" class="level2">
 <h2 class="anchored" data-anchor-id="troubleshooting">Troubleshooting</h2>

@@ -51,10 +51,6 @@ The Visual Editor lets you use many keyboard shortcuts that might be familiar fo
 
 Already have some content formatted in a Google Doc? You can copy-paste it into the Visual Editor and most formatting will be retained.
 
-#### Troubleshooting formatting
-
-If your formatting doesn't look quite right you can switch to Source Editor mode to make changes.
-
 TODO
 
 -   note familiar looking bar for bold, ital, lists, (screenshot)
@@ -81,17 +77,33 @@ Then, render this file: press "Render" which is to the right of the disc icon th
 
 ## Create a new `.Rmd` page
 
-New \> RMarkdown document \> save
+New \> RMarkdown document \> OK
 
 The starter RMarkdown document has some R code inside: it displays a summary of the cars dataset that is pre-loaded into R (`summary(cars)`) and plots the pressure data that is also pre-loaded (`plot(pressure)`).
 
+Save this document as `r-example.rmd`.
+
 ## Update `_quarto.yml`
 
-## Render website: Build tab
+Now we'll add `r`-example.rmd` to our `_quarto.yml` file; this is where we register of all files to include in our site. Let's add it after the section called "Quarto Workflows".
+
+Open `_quarto.yml` by clicking on it from the file directory.
+
+Scroll down to review the current contents in the `sidebar:` section. It's there we see all the file arrangement that we see in the previewed site.
+
+Add `- r-example.rmd` in its own line, making sure that your indentation aligns with the other pages.
+
+From the Build tab, clicking Preview Website will recreate your website!
 
 ## Authoring tips
 
+Checking "Render on Save" is really helpful when iterating quickly on a document. 
+
+If the document is very code-heavy, consider using [`freeze`](https://quarto.org/docs/projects/code-execution.html#freeze) that will not run the code each time. 
+
 ## Commit and push!
+
+Committing and pushing will make the changes you see locally live on your website (using the [GitHub Action we set up earlier](/explore.qmd#setup-github-action)).
 
 ## Troubleshooting
 
