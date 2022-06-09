@@ -54,7 +54,7 @@ _site/
 
 **On GitHub.com, in your repo, set up GitHub publishing**
 
-Follow instructions from the [getting started chapter](https://openscapes.github.io/quarto-website-tutorial/first-observations.md#set-up-github-publishing). 
+Follow instructions from the [explore and setup chapter](https://openscapes.github.io/quarto-website-tutorial/explore.html#set-up-github-publishing). 
 
 ## Troubleshooting
 
