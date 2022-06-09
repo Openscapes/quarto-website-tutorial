@@ -133,7 +133,7 @@ So, your normal workflow for creating and running code blocks in your Jupyter No
 
 So far we have used **Quarto preview** view our website as we develop it. **Quarto render** will build the html elements of the website that we can see when we preview. Rendering will format the markdown text and code nicely as a website (or however is indicated in the `_quarto.yml`).
 
-By default, Quarto render does not execute code. Since files can get big and complicated with code, Quarto does not execute code by default. It will never run .ipynb files unless you tell it to.
+By default, Quarto render does not execute code in a Jupyter notebook. It will never run .ipynb files unless you tell it to.
 
 ### Render whole notebook
 
@@ -151,6 +151,10 @@ quarto render python-example.ipynb --execute
 ## Authoring tips
 
 [Quarto.org](https://quarto.org) has details about authoring, including specific instructions about authoring in Jupyter: [quarto.org/docs/reference/cells/cells-jupyter](https://quarto.org/docs/reference/cells/cells-jupyter.html).
+
+## Commit and push!
+
+Committing and pushing will make the changes you see locally live on your website (using the [GitHub Action we set up earlier](/explore.qmd#setup-github-action)).
 
 ## Troubleshooting
 

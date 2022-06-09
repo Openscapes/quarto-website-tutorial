@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-0.9.550">
+<meta name="generator" content="quarto-0.9.446">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,13 +17,12 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 </style>
 
-
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
+<meta name="quarto:offset" content="../">
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
 <link href="../quarto-workflows/jupyter.html" rel="next">
 <link href="../quarto-workflows/browser.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
@@ -31,12 +30,12 @@ ul.task-list{list-style: none;}
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link class="quarto-color-scheme" id="quarto-text-highlighting-styles" href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
+<link class="quarto-color-scheme quarto-color-alternate" rel="prefetch" id="quarto-text-highlighting-styles" href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate">
+<link class="quarto-color-scheme" href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+<link class="quarto-color-scheme quarto-color-alternate" rel="prefetch" href="../site_libs/bootstrap/bootstrap-dark.min.css">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -163,7 +162,6 @@ ul.task-list{list-style: none;}
   </ul></li>
   <li><a href="#create-a-new-.rmd-page" id="toc-create-a-new-.rmd-page" class="nav-link" data-scroll-target="#create-a-new-.rmd-page">Create a new <code>.Rmd</code> page</a></li>
   <li><a href="#update-_quarto.yml" id="toc-update-_quarto.yml" class="nav-link" data-scroll-target="#update-_quarto.yml">Update <code>_quarto.yml</code></a></li>
-  <li><a href="#render-website-build-tab" id="toc-render-website-build-tab" class="nav-link" data-scroll-target="#render-website-build-tab">Render website: Build tab</a></li>
   <li><a href="#authoring-tips" id="toc-authoring-tips" class="nav-link" data-scroll-target="#authoring-tips">Authoring tips</a></li>
   <li><a href="#commit-and-push" id="toc-commit-and-push" class="nav-link" data-scroll-target="#commit-and-push">Commit and push!</a></li>
   <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a></li>
@@ -249,9 +247,6 @@ ul.task-list{list-style: none;}
 </div>
 <p>The Visual Editor lets you use many keyboard shortcuts that might be familiar for adding boldface, italics, or headers. On a Mac, option-command-2 will make a level 2 header. Try it with option-command-1, or option-command-0 for normal text!</p>
 <p>Already have some content formatted in a Google Doc? You can copy-paste it into the Visual Editor and most formatting will be retained.</p>
-<section id="troubleshooting-formatting" class="level4">
-<h4 class="anchored" data-anchor-id="troubleshooting-formatting">Troubleshooting formatting</h4>
-<p>If your formatting doesn’t look quite right you can switch to Source Editor mode to make changes.</p>
 <p>TODO</p>
 <ul>
 <li><p>note familiar looking bar for bold, ital, lists, (screenshot)</p></li>
@@ -259,7 +254,6 @@ ul.task-list{list-style: none;}
 <li><p>click the table to insert a table</p></li>
 <li><p>add emoji’s</p></li>
 </ul>
-</section>
 </section>
 </section>
 <section id="quarto-render" class="level2">
@@ -275,20 +269,26 @@ ul.task-list{list-style: none;}
 </section>
 <section id="create-a-new-.rmd-page" class="level2">
 <h2 class="anchored" data-anchor-id="create-a-new-.rmd-page">Create a new <code>.Rmd</code> page</h2>
-<p>New &gt; RMarkdown document &gt; save</p>
+<p>New &gt; RMarkdown document &gt; OK</p>
 <p>The starter RMarkdown document has some R code inside: it displays a summary of the cars dataset that is pre-loaded into R (<code>summary(cars)</code>) and plots the pressure data that is also pre-loaded (<code>plot(pressure)</code>).</p>
+<p>Save this document as <code>r-example.rmd</code>.</p>
 </section>
 <section id="update-_quarto.yml" class="level2">
 <h2 class="anchored" data-anchor-id="update-_quarto.yml">Update <code>_quarto.yml</code></h2>
-</section>
-<section id="render-website-build-tab" class="level2">
-<h2 class="anchored" data-anchor-id="render-website-build-tab">Render website: Build tab</h2>
+<p>Now we’ll add <code>r</code>-example.rmd<code>to our</code>_quarto.yml` file; this is where we register of all files to include in our site. Let’s add it after the section called “Quarto Workflows”.</p>
+<p>Open <code>_quarto.yml</code> by clicking on it from the file directory.</p>
+<p>Scroll down to review the current contents in the <code>sidebar:</code> section. It’s there we see all the file arrangement that we see in the previewed site.</p>
+<p>Add <code>- r-example.rmd</code> in its own line, making sure that your indentation aligns with the other pages.</p>
+<p>From the Build tab, clicking Preview Website will recreate your website!</p>
 </section>
 <section id="authoring-tips" class="level2">
 <h2 class="anchored" data-anchor-id="authoring-tips">Authoring tips</h2>
+<p>Checking “Render on Save” is really helpful when iterating quickly on a document.</p>
+<p>If the document is very code-heavy, consider using <a href="https://quarto.org/docs/projects/code-execution.html#freeze"><code>freeze</code></a> that will not run the code each time.</p>
 </section>
 <section id="commit-and-push" class="level2">
 <h2 class="anchored" data-anchor-id="commit-and-push">Commit and push!</h2>
+<p>Committing and pushing will make the changes you see locally live on your website (using the <a href="../explore.html#setup-github-action">GitHub Action we set up earlier</a>).</p>
 </section>
 <section id="troubleshooting" class="level2">
 <h2 class="anchored" data-anchor-id="troubleshooting">Troubleshooting</h2>
