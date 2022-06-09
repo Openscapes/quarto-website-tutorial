@@ -188,7 +188,8 @@ ul.task-list{list-style: none;}
 
 </header>
 
-<p>The RStudio software (called an IDE, integrated development environment) is an excellent way to edit files and interface with GitHub. Plus, as it is made by the same folks who make Quarto, it has many integrated features for streamlining your workflow with Quarto, including how it previews your edits and provides debugging support for yaml! Here is what you’ll need to do to set up and use RStudio.</p>
+<p>The RStudio software (called an IDE, integrated development environment) is an excellent way to edit files and interface with GitHub. Plus, as it is made by the same folks who make Quarto, it has many integrated features for streamlining your workflow with Quarto, including how it previews your edits and provides debugging support for yaml! <a href="https://quarto.org/docs/get-started/hello/rstudio.html">Quarto's RStudio tutorials</a> has great instructions on getting started with JupyterLab, including computations and authoring.</p>
+<p>Here is what you’ll need to do to set up and use RStudio with Quarto.</p>
 <section id="setup" class="level2">
 <h2 class="anchored" data-anchor-id="setup">Setup</h2>
 <section id="rstudio-and-github" class="level3">
@@ -296,7 +297,7 @@ ul.task-list{list-style: none;}
 <h2 class="anchored" data-anchor-id="update-_quarto.yml">Update <code>_quarto.yml</code></h2>
 <p>Now we’ll add <code>r-example.rmd</code> to our <code>_quarto.yml</code> file; this is where we register all files to include in our site. Let’s add it after the section called “Quarto Workflows”.</p>
 <p>Open <code>_quarto.yml</code> by clicking on it from the file directory.</p>
-<p>Scroll down to review the current contents in the <code>sidebar:</code> section. It’s there we see all the file arrangement that we see in the previewed site.</p>
+<p>Scroll down to review the current contents in the <code>sidebar:</code> section under <code>contents:</code>. It’s there we see all the file arrangement that we see in the previewed site.</p>
 <p>Add <code>- r-example.rmd</code> in its own line, making sure that your indentation aligns with the other pages.</p>
 <p>From the Build tab, clicking Preview Website will recreate your website!</p>
 </section>
@@ -304,6 +305,7 @@ ul.task-list{list-style: none;}
 <h2 class="anchored" data-anchor-id="authoring-tips">Authoring tips</h2>
 <p>Checking “Render on Save” is really helpful when iterating quickly on a document.</p>
 <p>If the document is very code-heavy, consider using <a href="https://quarto.org/docs/projects/code-execution.html#freeze"><code>freeze</code></a> that will not run the code each time.</p>
+<p><a href="https://quarto.org/">Quarto.org</a> has details about authoring, including specific instructions about <a href="https://quarto.org/docs/get-started/authoring/rstudio.html">authoring in RStudio</a>.</p>
 </section>
 <section id="commit-and-push" class="level2">
 <h2 class="anchored" data-anchor-id="commit-and-push">Commit and push!</h2>
