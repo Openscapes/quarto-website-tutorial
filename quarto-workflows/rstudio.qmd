@@ -97,7 +97,7 @@ Now we'll add `r-example.rmd` to our `_quarto.yml` file; this is where we regist
 
 Open `_quarto.yml` by clicking on it from the file directory.
 
-Scroll down to review the current contents in the `sidebar:` section. It's there we see all the file arrangement that we see in the previewed site.
+Scroll down to review the current contents in the `sidebar:` section under `contents:`. It's there we see all the file arrangement that we see in the previewed site.
 
 Add `- r-example.rmd` in its own line, making sure that your indentation aligns with the other pages.
 

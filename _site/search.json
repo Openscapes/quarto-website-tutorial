@@ -263,7 +263,7 @@
     "href": "quarto-workflows/rstudio.html#update-_quarto.yml",
     "title": "From RStudio",
     "section": "Update _quarto.yml",
-    "text": "Update _quarto.yml\nNow we’ll add r-example.rmdto our_quarto.yml` file; this is where we register of all files to include in our site. Let’s add it after the section called “Quarto Workflows”.\nOpen _quarto.yml by clicking on it from the file directory.\nScroll down to review the current contents in the sidebar: section. It’s there we see all the file arrangement that we see in the previewed site.\nAdd - r-example.rmd in its own line, making sure that your indentation aligns with the other pages.\nFrom the Build tab, clicking Preview Website will recreate your website!"
+    "text": "Update _quarto.yml\nNow we’ll add r-example.rmd to our _quarto.yml file; this is where we register all files to include in our site. Let’s add it after the section called “Quarto Workflows”.\nOpen _quarto.yml by clicking on it from the file directory.\nScroll down to review the current contents in the sidebar: section. It’s there we see all the file arrangement that we see in the previewed site.\nAdd - r-example.rmd in its own line, making sure that your indentation aligns with the other pages.\nFrom the Build tab, clicking Preview Website will recreate your website!"
   },
   {
     "objectID": "quarto-workflows/rstudio.html#render-website-build-tab",
