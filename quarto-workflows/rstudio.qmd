@@ -93,7 +93,7 @@ Save this document as `r-example.rmd`.
 
 ## Update `_quarto.yml`
 
-Now we'll add `r`-example.rmd`to our`\_quarto.yml\` file; this is where we register of all files to include in our site. Let's add it after the section called "Quarto Workflows".
+Now we'll add `r-example.rmd` to our `_quarto.yml` file; this is where we register all files to include in our site. Let's add it after the section called "Quarto Workflows".
 
 Open `_quarto.yml` by clicking on it from the file directory.
 
