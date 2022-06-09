@@ -47,19 +47,27 @@ Here's an example showing the same file in the original Source Editor with conte
 ![RStudio IDE highlighting the Visual Editor](images/rstudio-visual-editor.png){fig-alt="Screenshot of the RStudio IDE with red oval highlighting the Visual button."}
 :::
 
-The Visual Editor lets you use many keyboard shortcuts that might be familiar for adding boldface, italics, or headers. On a Mac, option-command-2 will make a level 2 header. Try it with option-command-1, or option-command-0 for normal text!
-
 Already have some content formatted in a Google Doc? You can copy-paste it into the Visual Editor and most formatting will be retained.
 
-TODO
+The editing bar provides familiar point and click access to text formatting options like bulleted or numbered lists.
 
--   note familiar looking bar for bold, ital, lists, (screenshot)
+![RStudio IDE highlighting the point and click editing bar](images/rstudio-visual-edit-bar.png){fig-alt="RStudio IDE Visual Editor editing bar is highlighted by a red rectangle"}
 
--   click the image to insert an image (screenshot); can resize image dynamically
+#### Keyboard shortcuts
 
--   click the table to insert a table
+The Visual Editor also lets you use many keyboard shortcuts that might be familiar for adding boldface (command-b), italics (command-i), or headers. On a Mac, option-command-2 will make a level 2 header. Try it with option-command-1, or option-command-0 for normal text!
 
--   add emoji's
+#### Insert an image or figure
+
+To insert an image (called a figure in Quarto), click the image icon. This brings up a window in which we can select the image, set its alignment, give it a caption and alt text, hyperlink it, or edit other metadata.
+
+![Insert image or figure using the Visual Editor](images/rstudio-insert-image.png){fig-alt="Pop-up window appears when image icon is clicked"}
+
+Once an image is added, clicking on that image gives us editing options. We can resize it dynamically by clicking in the image and dragging a corner or side to resize. When an image is selected, its dimensions are displayed for editing. Clicking on the gray ellipsis to the right of the dimensions opens the pop-up window to access more metadata edits.
+
+#### Insert a table
+
+Similar to adding an image, to insert a table, we click the Table dropdown.
 
 ## Quarto render
 
@@ -85,7 +93,7 @@ Save this document as `r-example.rmd`.
 
 ## Update `_quarto.yml`
 
-Now we'll add `r`-example.rmd` to our `_quarto.yml` file; this is where we register of all files to include in our site. Let's add it after the section called "Quarto Workflows".
+Now we'll add `r`-example.rmd`to our`\_quarto.yml\` file; this is where we register of all files to include in our site. Let's add it after the section called "Quarto Workflows".
 
 Open `_quarto.yml` by clicking on it from the file directory.
 
@@ -97,9 +105,9 @@ From the Build tab, clicking Preview Website will recreate your website!
 
 ## Authoring tips
 
-Checking "Render on Save" is really helpful when iterating quickly on a document. 
+Checking "Render on Save" is really helpful when iterating quickly on a document.
 
-If the document is very code-heavy, consider using [`freeze`](https://quarto.org/docs/projects/code-execution.html#freeze) that will not run the code each time. 
+If the document is very code-heavy, consider using [`freeze`](https://quarto.org/docs/projects/code-execution.html#freeze) that will not run the code each time.
 
 ## Commit and push!
 
