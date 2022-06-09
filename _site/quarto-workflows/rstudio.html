@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-0.9.446">
+<meta name="generator" content="quarto-0.9.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,12 +17,13 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 </style>
 
+
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
-<meta name="quarto:offset" content="../">
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
 <link href="../quarto-workflows/jupyter.html" rel="next">
 <link href="../quarto-workflows/browser.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
@@ -30,12 +31,12 @@ ul.task-list{list-style: none;}
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link class="quarto-color-scheme" id="quarto-text-highlighting-styles" href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
-<link class="quarto-color-scheme quarto-color-alternate" rel="prefetch" id="quarto-text-highlighting-styles" href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link class="quarto-color-scheme" href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
-<link class="quarto-color-scheme quarto-color-alternate" rel="prefetch" href="../site_libs/bootstrap/bootstrap-dark.min.css">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -245,15 +246,33 @@ ul.task-list{list-style: none;}
 </div>
 </div>
 </div>
-<p>The Visual Editor lets you use many keyboard shortcuts that might be familiar for adding boldface, italics, or headers. On a Mac, option-command-2 will make a level 2 header. Try it with option-command-1, or option-command-0 for normal text!</p>
 <p>Already have some content formatted in a Google Doc? You can copy-paste it into the Visual Editor and most formatting will be retained.</p>
-<p>TODO</p>
-<ul>
-<li><p>note familiar looking bar for bold, ital, lists, (screenshot)</p></li>
-<li><p>click the image to insert an image (screenshot); can resize image dynamically</p></li>
-<li><p>click the table to insert a table</p></li>
-<li><p>add emoji’s</p></li>
-</ul>
+<p>The editing bar provides familiar point and click access to text formatting options like bulleted or numbered lists.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/rstudio-visual-edit-bar.png" class="img-fluid figure-img" alt="RStudio IDE Visual Editor editing bar is highlighted by a red rectangle"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">RStudio IDE highlighting the point and click editing bar</figcaption><p></p>
+</figure>
+</div>
+<section id="keyboard-shortcuts" class="level4">
+<h4 class="anchored" data-anchor-id="keyboard-shortcuts">Keyboard shortcuts</h4>
+<p>The Visual Editor also lets you use many keyboard shortcuts that might be familiar for adding boldface (command-b), italics (command-i), or headers. On a Mac, option-command-2 will make a level 2 header. Try it with option-command-1, or option-command-0 for normal text!</p>
+</section>
+<section id="insert-an-image-or-figure" class="level4">
+<h4 class="anchored" data-anchor-id="insert-an-image-or-figure">Insert an image or figure</h4>
+<p>To insert an image (called a figure in Quarto), click the image icon. This brings up a window in which we can select the image, set its alignment, give it a caption and alt text, hyperlink it, or edit other metadata.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/rstudio-insert-image.png" class="img-fluid figure-img" alt="Pop-up window appears when image icon is clicked"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Insert image or figure using the Visual Editor</figcaption><p></p>
+</figure>
+</div>
+<p>Once an image is added, clicking on that image gives us editing options. We can resize it dynamically by clicking in the image and dragging a corner or side to resize. When an image is selected, its dimensions are displayed for editing. Clicking on the gray ellipsis to the right of the dimensions opens the pop-up window to access more metadata edits.</p>
+</section>
+<section id="insert-a-table" class="level4">
+<h4 class="anchored" data-anchor-id="insert-a-table">Insert a table</h4>
+<p>Similar to adding an image, to insert a table, we click the Table dropdown.</p>
+</section>
 </section>
 </section>
 <section id="quarto-render" class="level2">
