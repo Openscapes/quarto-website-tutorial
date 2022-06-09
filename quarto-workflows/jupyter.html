@@ -234,6 +234,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#render-whole-notebook" id="toc-render-whole-notebook" class="nav-link" data-scroll-target="#render-whole-notebook">Render whole notebook</a></li>
   </ul></li>
   <li><a href="#authoring-tips" id="toc-authoring-tips" class="nav-link" data-scroll-target="#authoring-tips">Authoring tips</a></li>
+  <li><a href="#commit-and-push" id="toc-commit-and-push" class="nav-link" data-scroll-target="#commit-and-push">Commit and push!</a></li>
   <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a>
   <ul class="collapse">
   <li><a href="#my-changes-dont-show-up-in-preview" id="toc-my-changes-dont-show-up-in-preview" class="nav-link" data-scroll-target="#my-changes-dont-show-up-in-preview">My changes don’t show up in preview</a></li>
@@ -372,7 +373,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="quarto-render" class="level2">
 <h2 class="anchored" data-anchor-id="quarto-render">Quarto render</h2>
 <p>So far we have used <strong>Quarto preview</strong> view our website as we develop it. <strong>Quarto render</strong> will build the html elements of the website that we can see when we preview. Rendering will format the markdown text and code nicely as a website (or however is indicated in the <code>_quarto.yml</code>).</p>
-<p>By default, Quarto render does not execute code. Since files can get big and complicated with code, Quarto does not execute code by default. It will never run .ipynb files unless you tell it to.</p>
+<p>By default, Quarto render does not execute code in a Jupyter notebook. It will never run .ipynb files unless you tell it to.</p>
 <section id="render-whole-notebook" class="level3">
 <h3 class="anchored" data-anchor-id="render-whole-notebook">Render whole notebook</h3>
 <p>If you would like it to specifically execute code in a Jupyter notebook, you can do so in Terminal.</p>
@@ -385,6 +386,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="authoring-tips" class="level2">
 <h2 class="anchored" data-anchor-id="authoring-tips">Authoring tips</h2>
 <p><a href="https://quarto.org">Quarto.org</a> has details about authoring, including specific instructions about authoring in Jupyter: <a href="https://quarto.org/docs/reference/cells/cells-jupyter.html">quarto.org/docs/reference/cells/cells-jupyter</a>.</p>
+</section>
+<section id="commit-and-push" class="level2">
+<h2 class="anchored" data-anchor-id="commit-and-push">Commit and push!</h2>
+<p>Committing and pushing will make the changes you see locally live on your website (using the <a href="../explore.html#setup-github-action">GitHub Action we set up earlier</a>).</p>
 </section>
 <section id="troubleshooting" class="level2">
 <h2 class="anchored" data-anchor-id="troubleshooting">Troubleshooting</h2>
