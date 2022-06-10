@@ -28,7 +28,7 @@ Commit your changes by scrolling to the bottom of the page and writing a commit 
 
 ![](images/github-commit.png){fig-align="center"}
 
-Now, click back to the main page of your GitHub repository. You should see the orange dot [confirming your website is published](first-observations.md#confirm). You'll have to wait for the GitHub Action to tell quarto to build your site for you to see the update, but it will be there!
+Now, click back to the main page of your GitHub repository. You should see the orange dot [confirming your website is published](explore.qmd#confirm). You'll have to wait for the GitHub Action to tell quarto to build your site for you to see the update, but it will be there!
 
 ## Limitations
 
