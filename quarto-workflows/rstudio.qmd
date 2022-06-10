@@ -31,7 +31,7 @@ Next, you'll install Quarto: <https://quarto.org/docs/get-started/>. After downl
 
 ### RStudio orientation
 
-Now let's take a moment to get oriented. This is an RStudio project, which is indicated in the top-left. The bottom right pane shows all the files in your project; everything we've cloned from GitHub.
+Now let's take a moment to get oriented. This is an RStudio project, which is indicated in the top-right. The bottom right pane shows all the files in your project; everything we've cloned from GitHub. We can open any RStudio project by opening its `.Rproj` file, or from RStudio File \> Open Project ....
 
 ![RStudio IDE highlighting the project name and files pane](images/rstudio-orientation.png){fig-alt="Screenshot of the RStudio IDE highlighting the project name and files pane" fig-align="center"}
 
