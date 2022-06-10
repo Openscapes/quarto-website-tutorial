@@ -2,7 +2,9 @@
 title: From RStudio
 ---
 
-The RStudio software (called an IDE, integrated development environment) is an excellent way to edit files and interface with GitHub. Plus, as it is made by the same folks who make Quarto, it has many integrated features for streamlining your workflow with Quarto, including how it previews your edits and provides debugging support for yaml! Here is what you'll need to do to set up and use RStudio.
+The RStudio software (called an IDE, integrated development environment) is an excellent way to edit files and interface with GitHub. Plus, as it is made by the same folks who make Quarto, it has many integrated features for streamlining your workflow with Quarto, including how it previews your edits and provides debugging support for yaml! [Quarto\'s RStudio tutorials](https://quarto.org/docs/get-started/hello/rstudio.html) has great instructions on getting started with JupyterLab, including computations and authoring.
+
+Here is what you'll need to do to set up and use RStudio with Quarto.
 
 ## Setup
 
@@ -93,11 +95,11 @@ Save this document as `r-example.rmd`.
 
 ## Update `_quarto.yml`
 
-Now we'll add `r`-example.rmd`to our`\_quarto.yml\` file; this is where we register of all files to include in our site. Let's add it after the section called "Quarto Workflows".
+Now we'll add `r-example.rmd` to our `_quarto.yml` file; this is where we register all files to include in our site. Let's add it after the section called "Quarto Workflows".
 
 Open `_quarto.yml` by clicking on it from the file directory.
 
-Scroll down to review the current contents in the `sidebar:` section. It's there we see all the file arrangement that we see in the previewed site.
+Scroll down to review the current contents in the `sidebar:` section under `contents:`. It's there we see all the file arrangement that we see in the previewed site.
 
 Add `- r-example.rmd` in its own line, making sure that your indentation aligns with the other pages.
 
@@ -108,6 +110,8 @@ From the Build tab, clicking Preview Website will recreate your website!
 Checking "Render on Save" is really helpful when iterating quickly on a document.
 
 If the document is very code-heavy, consider using [`freeze`](https://quarto.org/docs/projects/code-execution.html#freeze) that will not run the code each time.
+
+[Quarto.org](https://quarto.org/) has details about authoring, including specific instructions about [authoring in RStudio](https://quarto.org/docs/get-started/authoring/rstudio.html).
 
 ## Commit and push!
 
