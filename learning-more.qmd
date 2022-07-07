@@ -5,9 +5,13 @@ title: Learning more
 ## Learn more
 
 An excellent overview: **Reproducible authoring with Quarto** - Mine Çetinkaya-Rundel, Feb 2022
-    -   [slides](https://mine-cetinkaya-rundel.github.io/2022-repro-toronto/#/title-slide), [youtube](https://www.youtube.com/watch?v=6p4vOKS6Xls)
 
-### Examples in the wild: 
+-   [slides](https://mine-cetinkaya-rundel.github.io/2022-repro-toronto/#/title-slide), [youtube](https://www.youtube.com/watch?v=6p4vOKS6Xls).
+
+We have been early external users and testers as Quarto has been developed; learn more about this in our [Hello Quarto Community Call](https://www.openscapes.org/blog/2022/06/22/hello-quarto/) and in our RStudio::conf keynote (upcoming).
+
+### Examples in the wild:
+
 -   [Openscapes Champions Lessons Series](https://openscapes.github.io/series)
 -   [Openscapes Approach Guide](https://openscapes.github.io/approach-guide/)\
 -   [NASA Earthdata Cloud Cookbook](https://nasa-openscapes.github.io/earthdata-cloud-cookbook/)
