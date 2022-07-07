@@ -80,9 +80,7 @@ If you've used the GitHub uploader, you'll need to set up GitHub publishing sepa
 
 First, the GitHub Action. Go back to your main view of your GitHub repository by clicking on the name of your repository in blue at the top-left (the url in your browser window should say https://github.com/username/repo-name).
 
-Next to the green code button, click Add file \> Create new file. Name it exactly this: `.github/workflows/quarto-render.yml`
-
-Start by typing the `.` with `github` and when you type the `/` it will give you a new text box to type `workflows` (plural!), then another `/`, and finally, `quarto-render.yml`.
+Next to the green code button, click Add file \> Create new file. Name it exactly this: `.github/workflows/quarto-publish.yml` . In detail: start by typing the `.` with `github` and when you type the `/` it will give you a new text box to type `workflows` (plural!), then another `/`, and finally, `quarto-publish.yml`.
 
 Now you'll have an empty new file. Paste the following in this empty file - you can click on the top-right of this box to copy all the code inside this code box:
 
@@ -118,11 +116,11 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions
 ```
 
-Commit this to save your new `quarto-render.yml` file. This is your GitHub Action.
+Commit this to save your new `quarto-publish.yml` file. This is your GitHub Action.
 
 Next, we'll create a new `gh-pages` branch. Go back to the main view of your GitHub repository. On the far left from the green "Code" button, click the button that says "main". In the pull-down menu, type `gh-pages` - all lowercase, with a hyphen. Click the bold text that says "Create branch: gh-pages from main".
 
-Now click on the Settings tab in the top right of your repository. On the left sidebar, click Pages. At the top of Pages under "Source", select `gh-pages` root, and press Save. You'll then see a green highlighted text saying that your site is published at a "github.io" url .
+Now click on the Settings tab in the top right of your repository. On the left sidebar, click Pages. At the top of Pages under "Source", select `gh-pages` root, and press Save. You'll then see a green highlighted text saying that your site is published at a "github.io" url.
 
 ![](images/github-source-gh-pages.png){fig-align="center" width="95%"}
 
