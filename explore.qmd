@@ -74,9 +74,9 @@ To use the GitHub file uploader, click the button next to the green "Code" butto
 
 Note: if you're comfortable cloning the new repository and copying files into it locally before committing and pushing back to GitHub, that can be preferable to the uploader, which does have limitations with complex repos (although the uploader works fine with this tutorial repo).
 
-#### Set up GitHub publishing {#setup-github-action}
+## Set up GitHub publishing {#setup-github-action}
 
-If you've used the GitHub uploader, you are not quite set up for publishing. We'll do this in a few steps: we'll set up a GitHub Action within your repo, and create a `gh-pages` branch.
+If you've used the GitHub uploader, you'll need to set up GitHub publishing separately. We'll do this in a few steps: we'll set up a GitHub Action within your repo, and create a `gh-pages` branch.
 
 First, the GitHub Action. Go back to your main view of your GitHub repository by clicking on the name of your repository in blue at the top-left (the url in your browser window should say https://github.com/username/repo-name).
 
@@ -87,33 +87,35 @@ Start by typing the `.` with `github` and when you type the `/` it will give you
 Now you'll have an empty new file. Paste the following in this empty file - you can click on the top-right of this box to copy all the code inside this code box:
 
 ``` yaml
-name: Render and deploy quarto files
-on: 
+on:
   push:
-  pull_request:
+    branches: main
+
+name: Render and Publish
 
 jobs:
-  quarto-render-and-deploy:
+  build-deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-
-    - name: "Install Quarto"
-      uses: quarto-dev/quarto-actions/install-quarto@main
-      with:
-        version: 0.9.105
-      
-    - name: "Quarto render"
-      shell: bash
-      run: |
-        quarto render --execute-debug      
+      - name: Check out repository
+        uses: actions/checkout@v2 
         
-    - name: "Deploy to gh-pages"
-      uses: peaceiris/actions-gh-pages@v3
-      if: github.ref == 'refs/heads/main'
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_site
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          # To install LaTeX to build PDF book 
+          tinytex: true 
+          # uncomment below and fill to pin a version
+          # version: 0.9.600
+      
+      # add software dependencies here
+
+      - name: Publish to GitHub Pages (and render)
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions
 ```
 
 Commit this to save your new `quarto-render.yml` file. This is your GitHub Action.
