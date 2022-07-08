@@ -23,7 +23,106 @@ cd quarto-website-tutorial
 
 ### Install Quarto
 
-Not needed - Quarto is already installed on the NASA-Openscapes JupyterHub! Otherwise you would do so from <https://quarto.org/docs/get-started/>.
+Not needed - Quarto is already installed on the NASA-Openscapes JupyterHub! But to install elsewhere you would do so from <https://quarto.org/docs/get-started/>.
+
+Quarto is a Command Line Interface (CLI), like git. Once download is complete, follow the installation prompts on your computer like you do for other software. You won't see an application to click on when it is installed. 
+
+*Note for Mac users: If you do not have administrative privileges, please select "Install for me only" during the Destination Selection installation step (you will first click on "Change Install Location" at the Installation Type step).*
+
+You can check to confirm that Quarto is installed properly from the command line: 
+
+``` bash
+quarto check install
+```
+
+::: {.callout-note collapse="true"}
+## Additional checks
+
+You can also run:
+
+-   `quarto check knitr` to locate R, verify we have the rmarkdown package, and do a basic render
+-   `quarto check jupyter` to locate Python, verify we have Jupyter, and do a basic render
+-   `quarto check` to run all of these checks together
+:::
+
+::: {.callout-tip collapse="true"}
+## Historical aside: Install Quarto in a docker container
+
+In Summer 2021 some NASA Mentors trying to install quarto locally was not an option, but they were able to install it inside a container using the following `Dockerfile`:
+
+``` bash
+#| fold: true
+#| summary: "Show the Dockerfile"
+
+##############################
+# This Dockerfile installs quarto and then runs quarto serve against the
+# internal /home/quarto/to_serve.
+#
+# BUILD
+# -----
+# To build this container, run
+#
+#     docker build -t quarto_serve .
+#
+# Add the --no-cache option to force docker to build fresh and get the most
+# recent version of quarto.
+#
+#
+# RUN
+# ---
+# 1. Find the directory you want quarto to serve. Let's call this /PATH/TO/earthdata-cloud-cookbook.
+# 2. Run docker:
+#
+#     docker run --rm -it -p 4848:4848 -v /PATH/TO/earthdata-cloud-cookbook:/home/quarto/to_serve quarto_serve
+#
+# 3. Open your browser and go to http://127.0.0.1:4848/
+#
+##############################
+
+FROM ubuntu:hirsute
+
+######
+# Install some command line tools we'll need
+######
+RUN apt-get update
+RUN apt-get -y install wget
+RUN apt-get -y install gdebi-core
+RUN apt-get -y install git
+
+
+######
+# Install quarto (https://quarto.org/)
+######
+
+# This is a quick and dirty way of getting the newest version number from
+# https://github.com/quarto-dev/quarto-cli/releases/latest. What's happening is
+# we're pulling the version number out of the redirect URL. This will end up
+# with QVER set to something like 0.2.11.
+RUN QVER=`wget --max-redirect 0 https://github.com/quarto-dev/quarto-cli/releases/latest 2>&1 | grep "Location" | sed 's/L.*tag\/v//' | sed 's/ .*//'` \
+    && wget -O quarto.deb "https://github.com/quarto-dev/quarto-cli/releases/download/v$QVER/quarto-$QVER-amd64.deb"
+RUN gdebi -n quarto.deb
+
+# Run this to make sure quarto installed correctly
+RUN quarto check install
+
+
+######
+# Create a non-root user called quarto
+######
+RUN useradd -ms /bin/bash quarto
+USER quarto
+RUN mkdir /home/quarto/to_serve
+WORKDIR /home/quarto/to_serve
+
+
+######
+# Start quarto serve
+######
+
+CMD quarto serve --no-browse --host 0.0.0.0 --port 4848
+```
+
+:::
 
 ## Quarto preview
 
