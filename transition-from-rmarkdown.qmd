@@ -2,15 +2,18 @@
 title: Transition from RMarkdown
 ---
 
-You may already have workflows in RMarkdown and are interested in transitioning to Quarto. 
+You may already have workflows in RMarkdown and are interested in transitioning to Quarto. There's no hurry to migrate to Quarto. Keep using Rmarkdown and when you're ready the migration will be fine.
 
-There's no hurry to migrate to Quarto. Keep using Rmarkdown and when you're ready the migration will be fine.
-
-Here are some notes as we migrate RMarkdown sites. 
+Here are some notes as we migrate RMarkdown sites and books. 
 
 *TODO: translating R code chunks*
 
-## Bookdown to quarto
+## Bookdown to Quarto
+
+We got some practice converting from Bookdown to Quarto by helping Gavin Fay convert his lab's fantastic onboarding documentation, the [Faylab Lab Manual](https://thefaylab.github.io/lab-manual/). Here's the GitHub view [before](https://github.com/thefaylab/lab-manual/tree/4ebe9614d4fcab9d782073057ef6e56e9213c167) and [after](https://github.com/thefaylab/lab-manual/tree/3ce2418ed7bd65936a130a42a7f975f55fb9b734).
+
+Our best first reference material for this was Nick Tierney's [Notes on Changing from Rmarkdown/Bookdown to Quarto](https://www.njtierney.com/post/2022/04/11/rmd-to-qmd/). Nick shares some scripts in that post to automate some changes. In our case, the book was small enough that we made all changes manually. 
+
 
 create `_quarto.yml`
 
@@ -22,7 +25,7 @@ Don't need to delete anything immediately, but look at `output.yml`, purge after
 
 Bookdown might be most challenging because of citations and cross-refs but still not that hard
 
-### GitHub actions
+### GitHub Actions
 
 R
 
