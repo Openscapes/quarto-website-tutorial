@@ -20,7 +20,9 @@ The ability for Quarto to streamline collaboration has been so cool and importan
 
 ## What is this tutorial?
 
-Here, we'll introduce Quarto by exploring this tutorial website, and practicing the basic Quarto workflow using different tools (GitHub browser, RStudio, and Jupyter) for editing your website.
+This is meant to be a 1-hour tutorial that can be used to teach or as self-paced learning. 
+
+We introduce Quarto by exploring this tutorial website, and practicing the basic Quarto workflow using different tools (GitHub browser, RStudio, and Jupyter) for editing your website.
 
 We'll start off from the browser so you don't need to install any additional software, however this approach is very limited and you will soon outgrow its capabilities. If you don't already have a workflow and to edit files and sync to GitHub from your computer, I recommend RStudio. You don't need to know R to use RStudio, and it has powerful editor features that make for happy workflows.
 
