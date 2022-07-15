@@ -28,7 +28,7 @@ How do you work in Quarto? You can use whichever tool you're comfortable with (R
 5.  Commit and push your website to GitHub, your updates will publish automatically! 
 6.  Repeat all of the above to make the website as you'd like!
 
-Note: if editing from your internet Browser we won't render in Step 3 will not be separate but combined with Step 5, which will only require a commit, not a push)
+Note: if editing from your internet browser we won't render in Step 3. That step will not be separate, but combined with Step 5, which will only require a commit, not a push.
 
 ## Authoring
 
