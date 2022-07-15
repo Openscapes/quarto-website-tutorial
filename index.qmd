@@ -20,7 +20,7 @@ The ability for Quarto to streamline collaboration has been so cool and importan
 
 ## What is this tutorial?
 
-This is meant to be a 1-hour tutorial that can be used to teach or as self-paced learning. 
+This is a 1-hour tutorial that can be used to teach or as self-paced learning. 
 
 We introduce Quarto by exploring this tutorial website, and practicing the basic Quarto workflow using different tools (GitHub browser, RStudio, and Jupyter) for editing your website.
 
