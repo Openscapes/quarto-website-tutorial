@@ -1,5 +1,131 @@
 [
   {
+    "objectID": "transition-from-rmarkdown.html",
+    "href": "transition-from-rmarkdown.html",
+    "title": "Transition from RMarkdown",
+    "section": "",
+    "text": "You may already have workflows in RMarkdown and are interested in transitioning to Quarto.\nThere’s no hurry to migrate to Quarto. Keep using Rmarkdown and when you’re ready the migration will be fine.\nHere are some notes as we migrate RMarkdown sites.\nTODO: translating R code chunks"
+  },
+  {
+    "objectID": "transition-from-rmarkdown.html#bookdown-to-quarto",
+    "href": "transition-from-rmarkdown.html#bookdown-to-quarto",
+    "title": "Transition from RMarkdown",
+    "section": "Bookdown to quarto",
+    "text": "Bookdown to quarto\ncreate _quarto.yml\nProject options > build tools > project build tools > none\nReload project\nDon’t need to delete anything immediately, but look at output.yml, purge afterbody.\nBookdown might be most challenging because of citations and cross-refs but still not that hard\n\nGitHub actions\nR"
+  },
+  {
+    "objectID": "transition-from-rmarkdown.html#distill-to-quarto",
+    "href": "transition-from-rmarkdown.html#distill-to-quarto",
+    "title": "Transition from RMarkdown",
+    "section": "Distill to quarto",
+    "text": "Distill to quarto\nWe transitioned our events site from distill to quarto in May 2022 (github view before and after). We followed excellent notes and examples from Nick Tierney and Danielle Navarro.\nAfter we had changed all the files, the Build tab in the RStudio IDE still showed “Build website” rather then “Render Website” and “Preview Website”, and would error when we pushed them (because that button was expecting a distill site, not a quarto site). To fix this, we updated the .Rproj file. Clicking on the .Rproj file in the RStudio IDE will open a dialog box where you can click things you want (you can also open these in a text editor or from the GitHub website to see the actual text). To fix this situation with the Build tab: Project Options > Build Tools > Project Build Tools > None.\nLooking at files /posts/_metadata.yml and _quarto.yml helps see where things are defined. For example, to make event post citations appear, we added citation: true to /posts/_metadata.yml and in _quarto.yml under the website key we set site-url: https://openscapes.github.io/events. We deleted footer.html used with distill because footer is now defined in quarto.yml.\n\nPublishing notes\n\nBackground: Our distill site had been set up to output to a docs folder, and had GitHub Settings > Pages set to look there rather gh-pages branch. (Julie note: this was a new-to-me capability when we set up the events distill site in Spring 2021 so I had forgotten that was an option). We’ve inititally kept this same set-up for now with our events page in _quarto.yml: output-dir: docs. However, this is sub-optimal; better to not have to commit and push these files but to instead have a GitHub Action generate them upon a commit. So the following is what we did -\n\nDon’t specify output-dir in _quarto.yml. The output directory default is _site/, which is what we’d like.\nIf you currently have a docs/ folder (like we did as we were experimenting), delete it.\nUpdate .gitignore to ignore _site/. At the same time, we have it ignore caches and a .quarto file:\n/.quarto/\n*_cache/\n_site/\nPush these changes, merge into main.\nOn GitHub.com, in your repo, set up GitHub publishing\nFollow instructions from the explore and setup chapter."
+  },
+  {
+    "objectID": "transition-from-rmarkdown.html#troubleshooting",
+    "href": "transition-from-rmarkdown.html#troubleshooting",
+    "title": "Transition from RMarkdown",
+    "section": "Troubleshooting",
+    "text": "Troubleshooting\n\nGitHub Action fails, says you need RMarkdown but you don’t have R code!\nAnd you changed all .Rmds to .qmds!\nYou likely have a few setup code chunks from RMarkdown, that look like this:\n{r setup, include=FALSE}\nknitr::opts_chunk$set(echo = FALSE)\nYou can find them by opening each of your files and having a look, or use GitHub’s search for the keyword knitr"
+  },
+  {
+    "objectID": "learning-more.html",
+    "href": "learning-more.html",
+    "title": "Learning more",
+    "section": "",
+    "text": "An excellent overview: Reproducible authoring with Quarto - Mine Çetinkaya-Rundel, Feb 2022 - slides, youtube\n\n\n\nOpenscapes Champions Lessons Series\nOpenscapes Approach Guide\n\nNASA Earthdata Cloud Cookbook\n\nSee many more examples at the quarto gallery!\n\n\n\nAre you making onboarding documentation? Check out The Fay Lab Manual for inspiration on structure - you could also start there and make it your own."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Making shareable documents with Quarto",
+    "section": "",
+    "text": "It’s possible to create beautiful documentation to share online with Quarto that auto-updates with Github. This is very new and incredibly cool. This tutorial is an example of a quarto website — it is a really powerful way to create and share your work. You can communicate about science using the same reproducible workflow you and/or your colleagues use for analyses, whether or not you write code.\nCreating websites with Quarto can be done without knowing R, Python or HTML, CSS, etc, and that’s where we’ll start. However, Quarto integrates with these tools so you can make your websites as complex and beautiful as you like as you see examples and reuse and remix from others in the open community. This tutorial borrows heavily from a lot of great tutorials and resources you should check out too – there are links throughout."
+  },
+  {
+    "objectID": "index.html#what-is-quarto",
+    "href": "index.html#what-is-quarto",
+    "title": "Making shareable documents with Quarto",
+    "section": "What is Quarto?",
+    "text": "What is Quarto?\nQuarto helps you have your ideas and your code in one place, and present it in a beautiful way.\nQuarto unifies and extends the RMarkdown ecosystem - it unifies by combining the functionality of R Markdown, bookdown, distill, xaringian, etc into a single consistent system. And it extends in several ways: all features are possible beyond R too, including Python and Javascript. It also has more “guardrails”: accessibility and inclusion are centered in the design. Quarto is for people who love RMarkdown, and it’s for people who have never used RMarkdown.\nThe ability for Quarto to streamline collaboration has been so cool and important for our NASA Openscapes project. Quarto has been a common place for us to collaborate - across R and Pyahon languages and coding expertise."
+  },
+  {
+    "objectID": "index.html#what-is-this-tutorial",
+    "href": "index.html#what-is-this-tutorial",
+    "title": "Making shareable documents with Quarto",
+    "section": "What is this tutorial?",
+    "text": "What is this tutorial?\nThis is meant to be a 1-hour tutorial that can be used to teach or as self-paced learning.\nWe introduce Quarto by exploring this tutorial website, and practicing the basic Quarto workflow using different tools (GitHub browser, RStudio, and Jupyter) for editing your website.\nWe’ll start off from the browser so you don’t need to install any additional software, however this approach is very limited and you will soon outgrow its capabilities. If you don’t already have a workflow and to edit files and sync to GitHub from your computer, I recommend RStudio. You don’t need to know R to use RStudio, and it has powerful editor features that make for happy workflows.\nQuarto.org is the go-to place for full documentation and more tutorials!"
+  },
+  {
+    "objectID": "index.html#example-quarto-sites",
+    "href": "index.html#example-quarto-sites",
+    "title": "Making shareable documents with Quarto",
+    "section": "Example Quarto sites",
+    "text": "Example Quarto sites\nA few Quarto websites from Openscapes - wo far we have been using Quarto for documentation using Quarto and Markdown files and Jupyter Notebooks.\n\nChampions Lessons Series\nOpenscapes Approach Guide\n\n2021 NASA Cloud Hackathon"
+  },
+  {
+    "objectID": "index.html#about",
+    "href": "index.html#about",
+    "title": "Making shareable documents with Quarto",
+    "section": "About",
+    "text": "About\nOpenscapes is about better science for future us. We help researchers reimagine data analysis, develop modern skills that are of immediate value to them, and cultivate collaborative and inclusive research teams as part of the broader global open movement.\nWe’re developing this tutorial to help folks of different technical skills use Quarto for documentation and tutorial building. This tutorial was originally created for several different audiences: NASA-Openscapes researcher support engineers using Python, communications directors at organizations promoting open science who do not identify as coders, and fisheries scientists curious about transitioning from RMarkdown. We’re hoping it’s useful to folks with backgrounds as wide as these; if you find it useful or have suggestions for improvement, please let us know by clicking “Edit this page” or “Report an issue” at the upper right side of any page."
+  },
+  {
+    "objectID": "explore.html",
+    "href": "explore.html",
+    "title": "Explore and setup",
+    "section": "",
+    "text": "With this tutorial, we have a working example website that we will explore together. We’ll learn a few rules and look for patterns to get an understanding of what things do to help you start customizing and making it your own. And you can continue to use this website as a reference after the tutorial, along with Quarto documentation.\nWe’ll start our exploration online looking at the website architecture and GitHub repository. Then we’ll setup a copy for ourselves so that we can modify from a working example, which is a great way to learn something new. We’ll set it up so that any modifications (commits) will automatically be republished via GitHub Actions. Subsequent chapters will describe how to modify your repo using different tools (browser, RStudio, Jupyter)."
+  },
+  {
+    "objectID": "explore.html#exploring-online",
+    "href": "explore.html#exploring-online",
+    "title": "Explore and setup",
+    "section": "Exploring online",
+    "text": "Exploring online\n\nThe website itself\nThis website has 5 things you can see on the left sidebar:\n\nWelcome\nExploring our website\nQuarto workflows\nLearning more\nTransition from Rmd\n\nMost of these are pages, but you’ll see that “Quarto Workflows” has an arrow; it is a folder with additional pages inside.\n\n\nThe website’s repo\nLet’s go to this website’s GitHub repository (also called a “repo”), https://github.com/openscapes/quarto-website-tutorial. You can also click there from this page this tutorial website by clicking the GitHub octocat icon underneath the Openscapes logo in the left navbar (click it holding command on Mac, or control on a PC to open it in a different tab in your browser).\nHave a look at the filenames. We can recognize the names of the webpages we’ve seen above, and they have red arrows marking them in the image below. You’ll see the “quarto-workflows” folder and the rest in this site are .qmd files, which are plain text Quarto files that can combine Markdown text with code. index.qmd is the home page. If you click inside “quarto-workflows” you’ll see a mix of filetypes!\n\n\n\nquarto-website-tutorial GitHub repository with files for webpages marked with red arrows\n\n\nThe _site folder has html files with names that should be familiar: they match the .    md files we were just exploring. This folder is where Quarto stores files to build the website."
+  },
+  {
+    "objectID": "explore.html#quarto.yml-intro",
+    "href": "explore.html#quarto.yml-intro",
+    "title": "Explore and setup",
+    "section": "_quarto.yml intro",
+    "text": "_quarto.yml intro\nThere is also a _quarto.yml file, which is the website’s configuration file. It is essentially metadata for the website that includes the order that the pages/chapters will be in. This is where you update the organization of your website: which page comes before another. If we compare side-by-side, you’ll see that the pages that appear on our website are listed there.\n\n\n\n_quarto.yml and website side-by-side\n\n\nWe’ll learn more about how to interact with _quarto.yml in Quarto Workflows."
+  },
+  {
+    "objectID": "explore.html#fork-to-your-account",
+    "href": "explore.html#fork-to-your-account",
+    "title": "Explore and setup",
+    "section": "Fork to your account",
+    "text": "Fork to your account\nLet’s start with an existing Quarto site and copy it into your space to edit. You’ll need a free GitHub account that you create at github.com (follow this advice about choosing your username).\nFirst, choose an existing website to copy. The simplest option is to start with this site: quarto-website-tutorial.\nOther options of potential interest:\n\n2021-Cloud-Hackathon\n2022-SWOT-Ocean-Cloud-Workshop\nApproach-Guide\n\nNext, follow these steps to fork and setup your repo with GitHub Actions from Gavin Fay, using the repo you chose. These instructions will take ~5 minutes.\nNow you’ve got a copy of your repo of choice in your own GitHub account, and you’re set to start making your own edits. Your GitHub repo is set up with a GitHub Action that will use Quarto to rebuild and republish your site anytime you make a commit: committing will trigger the GitHub Action to rebuild and republish the book.\nNote that the GitHub Action for this book does not include R or Python so those will need to be added if your website relies on code. See https://github.com/r-lib/actions for more details and examples.\n\nDownload instead of fork\nForking might not always be the way to go - you can’t fork into the same GitHub user account or organization so if for example you want to make a copy of 2021-Cloud-Hackathon repo within the same NASA-Openscapes GitHub Organization, you’ll need to download instead of fork. In this case, follow these steps to download and copy into a new repository, and set up the GitHub Action separately.\n\nDownload github repo files\nNavigate to https://github.com/openscapes/quarto-website-tutorial (or any other quarto site repo of choice). Click the green “Code” button and select “Download ZIP”. When it downloads on your computer, unzip the files.\n\n\nCreate a new GitHub repo\nNavigate to your GitHub account or organization, and create a new repository, naming it what you’d like. You’ll need a free GitHub account that you create at github.com (follow this advice about choosing your username). When you’re logged in, github.com will show a green button that says “New” which you’ll also see as you navigate to your username’s repository page.\n\n\nAdd original site files\nTo use the GitHub file uploader, click the button next to the green “Code” button that says “Add file”. Add file > Upload files. Then, on your computer, select all the files in unzipped folder (command-A or control-A), and drag them to the GitHub uploader page. Scroll down to write a commit message, which effectively saves your files when you’re working in the browser.\nNote: if you’re comfortable cloning the new repository and copying files into it locally before committing and pushing back to GitHub, that can be preferable to the uploader, which does have limitations with complex repos (although the uploader works fine with this tutorial repo)."
+  },
+  {
+    "objectID": "explore.html#setup-github-action",
+    "href": "explore.html#setup-github-action",
+    "title": "Explore and setup",
+    "section": "Set up GitHub publishing",
+    "text": "Set up GitHub publishing\nIf you’ve used the GitHub uploader, you’ll need to set up GitHub publishing separately. We’ll do this in a few steps: we’ll set up a GitHub Action within your repo, and create a gh-pages branch.\nFirst, the GitHub Action. Go back to your main view of your GitHub repository by clicking on the name of your repository in blue at the top-left (the url in your browser window should say https://github.com/username/repo-name).\nNext to the green code button, click Add file > Create new file. Name it exactly this: .github/workflows/quarto-publish.yml . In detail: start by typing the . with github and when you type the / it will give you a new text box to type workflows (plural!), then another /, and finally, quarto-publish.yml.\nNow you’ll have an empty new file. Paste the following in this empty file - you can click on the top-right of this box to copy all the code inside this code box:\non:\n  push:\n    branches: main\n\nname: Render and Publish\n\njobs:\n  build-deploy:\n    runs-on: ubuntu-latest\n    steps:\n      - name: Check out repository\n        uses: actions/checkout@v2 \n        \n      - name: Set up Quarto\n        uses: quarto-dev/quarto-actions/setup@v2\n        with:\n          # To install LaTeX to build PDF book \n          tinytex: true \n          # uncomment below and fill to pin a version\n          # version: 0.9.600\n      \n      # add software dependencies here\n\n      - name: Publish to GitHub Pages (and render)\n        uses: quarto-dev/quarto-actions/publish@v2\n        with:\n          target: gh-pages\n        env:\n          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions\nCommit this to save your new quarto-publish.yml file. This is your GitHub Action.\nNext, we’ll create a new gh-pages branch. Go back to the main view of your GitHub repository. On the far left from the green “Code” button, click the button that says “main”. In the pull-down menu, type gh-pages - all lowercase, with a hyphen. Click the bold text that says “Create branch: gh-pages from main”.\nNow click on the Settings tab in the top right of your repository. On the left sidebar, click Pages. At the top of Pages under “Source”, select gh-pages root, and press Save. You’ll then see a green highlighted text saying that your site is published at a “github.io” url."
+  },
+  {
+    "objectID": "explore.html#confirm",
+    "href": "explore.html#confirm",
+    "title": "Explore and setup",
+    "section": "Confirm your website is published",
+    "text": "Confirm your website is published\nTo confirm that your website is published, go back to your main repository page. You’ll now see an orange dot showing that the GitHub Action is beginning to publish the page.\n\n\n\nOur repo with orange dot indicating in-progress GitHub Action build\n\n\nIf you do not see this orange dot, you might need to make a small commit to trigger the GitHub Actions build. If this is the case, click the pencil on the top-right of the README.md file as circled in the image below, add some small edit (like a space after a period), and scroll down to click commit. Now you should see the orange dot.\n\n\n\n\n\nWhen your orange do becomes a green check, you can go inspect your published site at “https://username.github.io/your-repo). For example: https://openscapes.github.io/quarto-website-tutorial.\n\n\n\nOur repo with green check indicating successful GitHub Action build"
+  },
+  {
+    "objectID": "explore.html#renaming-your-repo",
+    "href": "explore.html#renaming-your-repo",
+    "title": "Explore and setup",
+    "section": "Renaming your repo",
+    "text": "Renaming your repo\nIf you’d like to rename your repo, go to Settings and the option to rename is on the top of the main settings page."
+  },
+  {
+    "objectID": "explore.html#onward",
+    "href": "explore.html#onward",
+    "title": "Explore and setup",
+    "section": "Onward!",
+    "text": "Onward!\nNow you are ready to start editing and publishing! The next chapter describes how starting off from the browser, using Markdown."
+  },
+  {
     "objectID": "quarto-workflows/rstudio.html",
     "href": "quarto-workflows/rstudio.html",
     "title": "From RStudio",
@@ -54,6 +180,34 @@
     "title": "From RStudio",
     "section": "Troubleshooting",
     "text": "Troubleshooting\nIf you have trouble rendering your website after for example changing the extenstion of a file from .md to .qmd, refreshing your RStudio often helps. Do this by clicking the project name at the upper right of the RStudio window (in this case, quarto-website-tutorial), and underneath the “close project” section, click the same name of your project: quarto-website-tutorial. This will relaunch your whole project afresh."
+  },
+  {
+    "objectID": "quarto-workflows/index.html",
+    "href": "quarto-workflows/index.html",
+    "title": "Quarto workflows",
+    "section": "",
+    "text": "How do you work in Quarto? You can use whichever tool you’re comfortable with (RStudio, Jupyter, GitHub, VS Code, etc). Developing your quarto site will have the same basic workflow, no matter which tool you use. It is very iterative, and each is explored more below.\n\nAuthoring: write text, code, images, etc in a file. Supported files include .md, .Rmd, .qmd, .ipynb…\nUpdate _quarto.yml as needed (for example, if you’ve created a new file you’d like included in your site)\nRender individual files and/or the whole website\nRepeat, repeat, repeat\nCommit and push your website to GitHub, your updates will publish automatically!\nRepeat all of the above to make the website as you’d like!\n\nNote: if editing from your internet Browser we won’t render in Step 3 will not be separate but combined with Step 5, which will only require a commit, not a push)"
+  },
+  {
+    "objectID": "quarto-workflows/index.html#authoring",
+    "href": "quarto-workflows/index.html#authoring",
+    "title": "Quarto workflows",
+    "section": "Authoring",
+    "text": "Authoring\nAs an author, you have a lot of options of how your text will be formatted, arranged, and interlinked. You will be writing in Markdown, which is a lightweight text formatting language. The Quarto documentation about authoring introduces markdown-basics that will get you started.\nEach page of our site has a similar first few lines - this YAML, like we saw in our _quarto.yml and it is indicated by two sets of 3 dashes --- :\n---\ntitle: My title\n---\nYou’re able to add more features to individual pages by including it in the YAML, which for the most part here only includes a title. See Quarto excecution options for more information of what you can include in the YAML."
+  },
+  {
+    "objectID": "quarto-workflows/index.html#update-_quarto.yml",
+    "href": "quarto-workflows/index.html#update-_quarto.yml",
+    "title": "Quarto workflows",
+    "section": "Update _quarto.yml",
+    "text": "Update _quarto.yml\nLet’s have a closer look at the _quarto.yml file.\nThis type of file (.yml or .yaml) is written in YAML (“Yet Another Markup Language”). You’ll be able to shift the arrangement of webpages by reordering/adding/deleting them in the _quarto.yml file following the patterns you see in this example.\n\n\n\n_quarto.yml and website side-by-side\n\n\nNotice that there are multiple ways in the _quarto.yml for you to include a file in your website. For example, in the above image, the “First Observations” we see in the left sidebar of the published website (right image) is represented in _quarto.yml (left image) over two lines, with line 36 indicating the file reference and line 37 indicating the text to show up in the left sidebar. However, “From RStudio” is only represented in one line of _quarto.yml, on line 43. This represents two strategies for including a file in your website. By default, the title of a specified file will show up in the website’s sidebar, which is what is happening with the “From RStudio” example. If you would like more control over what is written in the sidebar vs the title of your files, then the approach we took with “First Observations” is what you’ll want to do: you’ll see that only “First Observations” shows up in the sidebar as we specified in _quarto.yml, but the page’s title says “First Observations & Setup” (which in our preference was too long for the sidebar).\n\n\n\n\n\n\nNote\n\n\n\nAs you modify _quarto.yml, the most important thing to know is that spacing matters. Pay attention to whether text is indented by one, two, four, or other spaces, and make sure you follow it; if your site is not looking as expected it is likely a silent error in your YAML. Some text editors like RStudio provide debugging support for YAML and are highly recommended to save you time and heartache."
+  },
+  {
+    "objectID": "quarto-workflows/index.html#install-quarto",
+    "href": "quarto-workflows/index.html#install-quarto",
+    "title": "Quarto workflows",
+    "section": "Install Quarto",
+    "text": "Install Quarto\nhttps://quarto.org/docs/get-started/ describes how to install Quarto, which will depend on your operating system. We’ll walk through installation for each tool in the next chapters."
   },
   {
     "objectID": "quarto-workflows/jupyter.html",
@@ -119,34 +273,6 @@
     "text": "Troubleshooting\n\nMy changes don’t show up in preview\nMake sure you’ve saved your file! There might be a slight delay depending on your JupyterHub/Lab setup.\n\n\nQuarto render hangs / does not complete\nCheck the specific notebook, are there any `—` throughout to denote line breaks rather than yaml? They might be causing the issue; consider deleting those.\nAlso check how long the first raw cell is. Are there level-1 headers (#)? Try removing them."
   },
   {
-    "objectID": "quarto-workflows/index.html",
-    "href": "quarto-workflows/index.html",
-    "title": "Quarto workflows",
-    "section": "",
-    "text": "How do you work in Quarto? You can use whichever tool you’re comfortable with (RStudio, Jupyter, GitHub, VS Code, etc). Developing your quarto site will have the same basic workflow, no matter which tool you use. It is very iterative, and each is explored more below.\n\nAuthoring: write text, code, images, etc in a file. Supported files include .md, .Rmd, .qmd, .ipynb…\nUpdate _quarto.yml as needed (for example, if you’ve created a new file you’d like included in your site)\nRender individual files and/or the whole website\nRepeat, repeat, repeat\nCommit and push your website to GitHub, your updates will publish automatically!\nRepeat all of the above to make the website as you’d like!\n\nNote: if editing from your internet Browser we won’t render in Step 3 will not be separate but combined with Step 5, which will only require a commit, not a push)"
-  },
-  {
-    "objectID": "quarto-workflows/index.html#authoring",
-    "href": "quarto-workflows/index.html#authoring",
-    "title": "Quarto workflows",
-    "section": "Authoring",
-    "text": "Authoring\nAs an author, you have a lot of options of how your text will be formatted, arranged, and interlinked. You will be writing in Markdown, which is a lightweight text formatting language. The Quarto documentation about authoring introduces markdown-basics that will get you started.\nEach page of our site has a similar first few lines - this YAML, like we saw in our _quarto.yml and it is indicated by two sets of 3 dashes --- :\n---\ntitle: My title\n---\nYou’re able to add more features to individual pages by including it in the YAML, which for the most part here only includes a title. See Quarto excecution options for more information of what you can include in the YAML."
-  },
-  {
-    "objectID": "quarto-workflows/index.html#update-_quarto.yml",
-    "href": "quarto-workflows/index.html#update-_quarto.yml",
-    "title": "Quarto workflows",
-    "section": "Update _quarto.yml",
-    "text": "Update _quarto.yml\nLet’s have a closer look at the _quarto.yml file.\nThis type of file (.yml or .yaml) is written in YAML (“Yet Another Markup Language”). You’ll be able to shift the arrangement of webpages by reordering/adding/deleting them in the _quarto.yml file following the patterns you see in this example.\n\n\n\n_quarto.yml and website side-by-side\n\n\nNotice that there are multiple ways in the _quarto.yml for you to include a file in your website. For example, in the above image, the “First Observations” we see in the left sidebar of the published website (right image) is represented in _quarto.yml (left image) over two lines, with line 36 indicating the file reference and line 37 indicating the text to show up in the left sidebar. However, “From RStudio” is only represented in one line of _quarto.yml, on line 43. This represents two strategies for including a file in your website. By default, the title of a specified file will show up in the website’s sidebar, which is what is happening with the “From RStudio” example. If you would like more control over what is written in the sidebar vs the title of your files, then the approach we took with “First Observations” is what you’ll want to do: you’ll see that only “First Observations” shows up in the sidebar as we specified in _quarto.yml, but the page’s title says “First Observations & Setup” (which in our preference was too long for the sidebar).\n\n\n\n\n\n\nNote\n\n\n\nAs you modify _quarto.yml, the most important thing to know is that spacing matters. Pay attention to whether text is indented by one, two, four, or other spaces, and make sure you follow it; if your site is not looking as expected it is likely a silent error in your YAML. Some text editors like RStudio provide debugging support for YAML and are highly recommended to save you time and heartache."
-  },
-  {
-    "objectID": "quarto-workflows/index.html#install-quarto",
-    "href": "quarto-workflows/index.html#install-quarto",
-    "title": "Quarto workflows",
-    "section": "Install Quarto",
-    "text": "Install Quarto\nhttps://quarto.org/docs/get-started/ describes how to install Quarto, which will depend on your operating system. We’ll walk through installation for each tool in the next chapters."
-  },
-  {
     "objectID": "quarto-workflows/browser.html",
     "href": "quarto-workflows/browser.html",
     "title": "From the Browser",
@@ -173,131 +299,5 @@
     "title": "From the Browser",
     "section": "Limitations",
     "text": "Limitations\nWhile awesome that we can edit using GitHub directly from the browser, there are obvious limitations. One is that to see your edits show up in your book, you have to publish using the GitHub Action. This is slow. Another limitation is that we can only work on one file at a time and commit them each separately, which also is slow. Using additional software can make things much better, as we explore in subsequent chapters."
-  },
-  {
-    "objectID": "explore.html",
-    "href": "explore.html",
-    "title": "Explore and setup",
-    "section": "",
-    "text": "With this tutorial, we have a working example website that we will explore together. We’ll learn a few rules and look for patterns to get an understanding of what things do to help you start customizing and making it your own. And you can continue to use this website as a reference after the tutorial, along with Quarto documentation.\nWe’ll start our exploration online looking at the website architecture and GitHub repository. Then we’ll setup a copy for ourselves so that we can modify from a working example, which is a great way to learn something new. We’ll set it up so that any modifications (commits) will automatically be republished via GitHub Actions. Subsequent chapters will describe how to modify your repo using different tools (browser, RStudio, Jupyter)."
-  },
-  {
-    "objectID": "explore.html#exploring-online",
-    "href": "explore.html#exploring-online",
-    "title": "Explore and setup",
-    "section": "Exploring online",
-    "text": "Exploring online\n\nThe website itself\nThis website has 5 things you can see on the left sidebar:\n\nWelcome\nExploring our website\nQuarto workflows\nLearning more\nTransition from Rmd\n\nMost of these are pages, but you’ll see that “Quarto Workflows” has an arrow; it is a folder with additional pages inside.\n\n\nThe website’s repo\nLet’s go to this website’s GitHub repository (also called a “repo”), https://github.com/openscapes/quarto-website-tutorial. You can also click there from this page this tutorial website by clicking the GitHub octocat icon underneath the Openscapes logo in the left navbar (click it holding command on Mac, or control on a PC to open it in a different tab in your browser).\nHave a look at the filenames. We can recognize the names of the webpages we’ve seen above, and they have red arrows marking them in the image below. You’ll see the “quarto-workflows” folder and the rest in this site are .qmd files, which are plain text Quarto files that can combine Markdown text with code. index.qmd is the home page. If you click inside “quarto-workflows” you’ll see a mix of filetypes!\n\n\n\nquarto-website-tutorial GitHub repository with files for webpages marked with red arrows\n\n\nThe _site folder has html files with names that should be familiar: they match the .    md files we were just exploring. This folder is where Quarto stores files to build the website."
-  },
-  {
-    "objectID": "explore.html#quarto.yml-intro",
-    "href": "explore.html#quarto.yml-intro",
-    "title": "Explore and setup",
-    "section": "_quarto.yml intro",
-    "text": "_quarto.yml intro\nThere is also a _quarto.yml file, which is the website’s configuration file. It is essentially metadata for the website that includes the order that the pages/chapters will be in. This is where you update the organization of your website: which page comes before another. If we compare side-by-side, you’ll see that the pages that appear on our website are listed there.\n\n\n\n_quarto.yml and website side-by-side\n\n\nWe’ll learn more about how to interact with _quarto.yml in Quarto Workflows."
-  },
-  {
-    "objectID": "explore.html#fork-to-your-account",
-    "href": "explore.html#fork-to-your-account",
-    "title": "Explore and setup",
-    "section": "Fork to your account",
-    "text": "Fork to your account\nLet’s start with an existing Quarto site and copy it into your space to edit. You’ll need a free GitHub account that you create at github.com (follow this advice about choosing your username).\nFirst, choose an existing website to copy. The simplest option is to start with this site: quarto-website-tutorial.\nOther options of potential interest:\n\n2021-Cloud-Hackathon\n2022-SWOT-Ocean-Cloud-Workshop\nApproach-Guide\n\nNext, follow these steps to fork and setup your repo with GitHub Actions from Gavin Fay, using the repo you chose. These instructions will take ~5 minutes.\nNow you’ve got a copy of your repo of choice in your own GitHub account, and you’re set to start making your own edits. Your GitHub repo is set up with a GitHub Action that will use Quarto to rebuild and republish your site anytime you make a commit: committing will trigger the GitHub Action to rebuild and republish the book.\nNote that the GitHub Action for this book does not include R or Python so those will need to be added if your website relies on code. See https://github.com/r-lib/actions for more details and examples.\n\nDownload instead of fork\nForking might not always be the way to go - you can’t fork into the same GitHub user account or organization so if for example you want to make a copy of 2021-Cloud-Hackathon repo within the same NASA-Openscapes GitHub Organization, you’ll need to download instead of fork. In this case, follow these steps to download and copy into a new repository, and set up the GitHub Action separately.\n\nDownload github repo files\nNavigate to https://github.com/openscapes/quarto-website-tutorial (or any other quarto site repo of choice). Click the green “Code” button and select “Download ZIP”. When it downloads on your computer, unzip the files.\n\n\nCreate a new GitHub repo\nNavigate to your GitHub account or organization, and create a new repository, naming it what you’d like. You’ll need a free GitHub account that you create at github.com (follow this advice about choosing your username). When you’re logged in, github.com will show a green button that says “New” which you’ll also see as you navigate to your username’s repository page.\n\n\nAdd original site files\nTo use the GitHub file uploader, click the button next to the green “Code” button that says “Add file”. Add file > Upload files. Then, on your computer, select all the files in unzipped folder (command-A or control-A), and drag them to the GitHub uploader page. Scroll down to write a commit message, which effectively saves your files when you’re working in the browser.\nNote: if you’re comfortable cloning the new repository and copying files into it locally before committing and pushing back to GitHub, that can be preferable to the uploader, which does have limitations with complex repos (although the uploader works fine with this tutorial repo)."
-  },
-  {
-    "objectID": "explore.html#setup-github-action",
-    "href": "explore.html#setup-github-action",
-    "title": "Explore and setup",
-    "section": "Set up GitHub publishing",
-    "text": "Set up GitHub publishing\nIf you’ve used the GitHub uploader, you’ll need to set up GitHub publishing separately. We’ll do this in a few steps: we’ll set up a GitHub Action within your repo, and create a gh-pages branch.\nFirst, the GitHub Action. Go back to your main view of your GitHub repository by clicking on the name of your repository in blue at the top-left (the url in your browser window should say https://github.com/username/repo-name).\nNext to the green code button, click Add file > Create new file. Name it exactly this: .github/workflows/quarto-publish.yml . In detail: start by typing the . with github and when you type the / it will give you a new text box to type workflows (plural!), then another /, and finally, quarto-publish.yml.\nNow you’ll have an empty new file. Paste the following in this empty file - you can click on the top-right of this box to copy all the code inside this code box:\non:\n  push:\n    branches: main\n\nname: Render and Publish\n\njobs:\n  build-deploy:\n    runs-on: ubuntu-latest\n    steps:\n      - name: Check out repository\n        uses: actions/checkout@v2 \n        \n      - name: Set up Quarto\n        uses: quarto-dev/quarto-actions/setup@v2\n        with:\n          # To install LaTeX to build PDF book \n          tinytex: true \n          # uncomment below and fill to pin a version\n          # version: 0.9.600\n      \n      # add software dependencies here\n\n      - name: Publish to GitHub Pages (and render)\n        uses: quarto-dev/quarto-actions/publish@v2\n        with:\n          target: gh-pages\n        env:\n          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions\nCommit this to save your new quarto-publish.yml file. This is your GitHub Action.\nNext, we’ll create a new gh-pages branch. Go back to the main view of your GitHub repository. On the far left from the green “Code” button, click the button that says “main”. In the pull-down menu, type gh-pages - all lowercase, with a hyphen. Click the bold text that says “Create branch: gh-pages from main”.\nNow click on the Settings tab in the top right of your repository. On the left sidebar, click Pages. At the top of Pages under “Source”, select gh-pages root, and press Save. You’ll then see a green highlighted text saying that your site is published at a “github.io” url."
-  },
-  {
-    "objectID": "explore.html#confirm",
-    "href": "explore.html#confirm",
-    "title": "Explore and setup",
-    "section": "Confirm your website is published",
-    "text": "Confirm your website is published\nTo confirm that your website is published, go back to your main repository page. You’ll now see an orange dot showing that the GitHub Action is beginning to publish the page.\n\n\n\nOur repo with orange dot indicating in-progress GitHub Action build\n\n\nIf you do not see this orange dot, you might need to make a small commit to trigger the GitHub Actions build. If this is the case, click the pencil on the top-right of the README.md file as circled in the image below, add some small edit (like a space after a period), and scroll down to click commit. Now you should see the orange dot.\n\n\n\n\n\nWhen your orange do becomes a green check, you can go inspect your published site at “https://username.github.io/your-repo). For example: https://openscapes.github.io/quarto-website-tutorial.\n\n\n\nOur repo with green check indicating successful GitHub Action build"
-  },
-  {
-    "objectID": "explore.html#renaming-your-repo",
-    "href": "explore.html#renaming-your-repo",
-    "title": "Explore and setup",
-    "section": "Renaming your repo",
-    "text": "Renaming your repo\nIf you’d like to rename your repo, go to Settings and the option to rename is on the top of the main settings page."
-  },
-  {
-    "objectID": "explore.html#onward",
-    "href": "explore.html#onward",
-    "title": "Explore and setup",
-    "section": "Onward!",
-    "text": "Onward!\nNow you are ready to start editing and publishing! The next chapter describes how starting off from the browser, using Markdown."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Making shareable documents with Quarto",
-    "section": "",
-    "text": "It’s possible to create beautiful documentation to share online with Quarto that auto-updates with Github. This is very new and incredibly cool. This tutorial is an example of a quarto website — it is a really powerful way to create and share your work. You can communicate about science using the same reproducible workflow you and/or your colleagues use for analyses, whether or not you write code.\nCreating websites with Quarto can be done without knowing R, Python or HTML, CSS, etc, and that’s where we’ll start. However, Quarto integrates with these tools so you can make your websites as complex and beautiful as you like as you see examples and reuse and remix from others in the open community. This tutorial borrows heavily from a lot of great tutorials and resources you should check out too – there are links throughout."
-  },
-  {
-    "objectID": "index.html#what-is-quarto",
-    "href": "index.html#what-is-quarto",
-    "title": "Making shareable documents with Quarto",
-    "section": "What is Quarto?",
-    "text": "What is Quarto?\nQuarto helps you have your ideas and your code in one place, and present it in a beautiful way.\nQuarto unifies and extends the RMarkdown ecosystem - it unifies by combining the functionality of R Markdown, bookdown, distill, xaringian, etc into a single consistent system. And it extends in several ways: all features are possible beyond R too, including Python and Javascript. It also has more “guardrails”: accessibility and inclusion are centered in the design. Quarto is for people who love RMarkdown, and it’s for people who have never used RMarkdown.\nThe ability for Quarto to streamline collaboration has been so cool and important for our NASA Openscapes project. Quarto has been a common place for us to collaborate - across R and Pyahon languages and coding expertise."
-  },
-  {
-    "objectID": "index.html#what-is-this-tutorial",
-    "href": "index.html#what-is-this-tutorial",
-    "title": "Making shareable documents with Quarto",
-    "section": "What is this tutorial?",
-    "text": "What is this tutorial?\nHere, we’ll introduce Quarto by exploring this tutorial website, and practicing the basic Quarto workflow using different tools (GitHub browser, RStudio, and Jupyter) for editing your website.\nWe’ll start off from the browser so you don’t need to install any additional software, however this approach is very limited and you will soon outgrow its capabilities. If you don’t already have a workflow and to edit files and sync to GitHub from your computer, I recommend RStudio. You don’t need to know R to use RStudio, and it has powerful editor features that make for happy workflows.\nQuarto.org is the go-to place for full documentation and more tutorials!"
-  },
-  {
-    "objectID": "index.html#example-quarto-sites",
-    "href": "index.html#example-quarto-sites",
-    "title": "Making shareable documents with Quarto",
-    "section": "Example Quarto sites",
-    "text": "Example Quarto sites\nA few Quarto websites from Openscapes - wo far we have been using Quarto for documentation using Quarto and Markdown files and Jupyter Notebooks.\n\nChampions Lessons Series\nOpenscapes Approach Guide\n\n2021 NASA Cloud Hackathon"
-  },
-  {
-    "objectID": "index.html#about",
-    "href": "index.html#about",
-    "title": "Making shareable documents with Quarto",
-    "section": "About",
-    "text": "About\nOpenscapes is about better science for future us. We help researchers reimagine data analysis, develop modern skills that are of immediate value to them, and cultivate collaborative and inclusive research teams as part of the broader global open movement.\nWe’re developing this tutorial to help folks of different technical skills use Quarto for documentation and tutorial building. This tutorial was originally created for several different audiences: NASA-Openscapes researcher support engineers using Python, communications directors at organizations promoting open science who do not identify as coders, and fisheries scientists curious about transitioning from RMarkdown. We’re hoping it’s useful to folks with backgrounds as wide as these; if you find it useful or have suggestions for improvement, please let us know by clicking “Edit this page” or “Report an issue” at the upper right side of any page."
-  },
-  {
-    "objectID": "learning-more.html",
-    "href": "learning-more.html",
-    "title": "Learning more",
-    "section": "",
-    "text": "An excellent overview: Reproducible authoring with Quarto - Mine Çetinkaya-Rundel, Feb 2022 - slides, youtube\n\n\n\nOpenscapes Champions Lessons Series\nOpenscapes Approach Guide\n\nNASA Earthdata Cloud Cookbook\n\nSee many more examples at the quarto gallery!\n\n\n\nAre you making onboarding documentation? Check out The Fay Lab Manual for inspiration on structure - you could also start there and make it your own."
-  },
-  {
-    "objectID": "transition-from-rmarkdown.html",
-    "href": "transition-from-rmarkdown.html",
-    "title": "Transition from RMarkdown",
-    "section": "",
-    "text": "You may already have workflows in RMarkdown and are interested in transitioning to Quarto.\nThere’s no hurry to migrate to Quarto. Keep using Rmarkdown and when you’re ready the migration will be fine.\nHere are some notes as we migrate RMarkdown sites.\nTODO: translating R code chunks"
-  },
-  {
-    "objectID": "transition-from-rmarkdown.html#bookdown-to-quarto",
-    "href": "transition-from-rmarkdown.html#bookdown-to-quarto",
-    "title": "Transition from RMarkdown",
-    "section": "Bookdown to quarto",
-    "text": "Bookdown to quarto\ncreate _quarto.yml\nProject options > build tools > project build tools > none\nReload project\nDon’t need to delete anything immediately, but look at output.yml, purge afterbody.\nBookdown might be most challenging because of citations and cross-refs but still not that hard\n\nGitHub actions\nR"
-  },
-  {
-    "objectID": "transition-from-rmarkdown.html#distill-to-quarto",
-    "href": "transition-from-rmarkdown.html#distill-to-quarto",
-    "title": "Transition from RMarkdown",
-    "section": "Distill to quarto",
-    "text": "Distill to quarto\nWe transitioned our events site from distill to quarto in May 2022 (github view before and after). We followed excellent notes and examples from Nick Tierney and Danielle Navarro.\nAfter we had changed all the files, the Build tab in the RStudio IDE still showed “Build website” rather then “Render Website” and “Preview Website”, and would error when we pushed them (because that button was expecting a distill site, not a quarto site). To fix this, we updated the .Rproj file. Clicking on the .Rproj file in the RStudio IDE will open a dialog box where you can click things you want (you can also open these in a text editor or from the GitHub website to see the actual text). To fix this situation with the Build tab: Project Options > Build Tools > Project Build Tools > None.\nLooking at files /posts/_metadata.yml and _quarto.yml helps see where things are defined. For example, to make event post citations appear, we added citation: true to /posts/_metadata.yml and in _quarto.yml under the website key we set site-url: https://openscapes.github.io/events. We deleted footer.html used with distill because footer is now defined in quarto.yml.\n\nPublishing notes\n\nBackground: Our distill site had been set up to output to a docs folder, and had GitHub Settings > Pages set to look there rather gh-pages branch. (Julie note: this was a new-to-me capability when we set up the events distill site in Spring 2021 so I had forgotten that was an option). We’ve inititally kept this same set-up for now with our events page in _quarto.yml: output-dir: docs. However, this is sub-optimal; better to not have to commit and push these files but to instead have a GitHub Action generate them upon a commit. So the following is what we did -\n\nDon’t specify output-dir in _quarto.yml. The output directory default is _site/, which is what we’d like.\nIf you currently have a docs/ folder (like we did as we were experimenting), delete it.\nUpdate .gitignore to ignore _site/. At the same time, we have it ignore caches and a .quarto file:\n/.quarto/\n*_cache/\n_site/\nPush these changes, merge into main.\nOn GitHub.com, in your repo, set up GitHub publishing\nFollow instructions from the explore and setup chapter."
-  },
-  {
-    "objectID": "transition-from-rmarkdown.html#troubleshooting",
-    "href": "transition-from-rmarkdown.html#troubleshooting",
-    "title": "Transition from RMarkdown",
-    "section": "Troubleshooting",
-    "text": "Troubleshooting\n\nGitHub Action fails, says you need RMarkdown but you don’t have R code!\nAnd you changed all .Rmds to .qmds!\nYou likely have a few setup code chunks from RMarkdown, that look like this:\n{r setup, include=FALSE}\nknitr::opts_chunk$set(echo = FALSE)\nYou can find them by opening each of your files and having a look, or use GitHub’s search for the keyword knitr"
   }
 ]
