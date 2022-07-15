@@ -2,7 +2,7 @@
 title: Explore and setup
 ---
 
-With this tutorial, we have a working example website that we will explore together. We'll learn a few rules and look for patterns to get an understanding of what things do to help you start customizing and making it your own. And you can continue to use this website as a reference after the tutorial, along with [Quarto](https://quarto.org) documentation.
+With this tutorial, we have a working example website that we will explore together. We'll learn a few rules and look for patterns to get an understanding of what things to do to help you start customizing and making it your own. And you can continue to use this website as a reference after the tutorial, along with [Quarto](https://quarto.org) documentation.
 
 We'll start our exploration online looking at the website architecture and GitHub repository. Then we'll setup a copy for ourselves so that we can modify from a working example, which is a great way to learn something new. We'll set it up so that any modifications (commits) will automatically be republished via GitHub Actions. Subsequent chapters will describe how to modify your repo using different tools (browser, RStudio, Jupyter).
 
@@ -13,7 +13,7 @@ We'll start our exploration online looking at the website architecture and GitHu
 [This website](https://openscapes.github.io/quarto-website-tutorial/) has 5 things you can see on the left sidebar:
 
 -   Welcome
--   Exploring our website
+-   Exploring and setup
 -   Quarto workflows
 -   Learning more
 -   Transition from Rmd
@@ -22,13 +22,13 @@ Most of these are pages, but you'll see that "Quarto Workflows" has an arrow; it
 
 ### The website's repo
 
-Let's go to this website's GitHub repository (also called a "repo"), [**https://github.com/openscapes/quarto-website-tutorial**](https://github.com/openscapes/quarto-website-tutorial){.uri}. You can also click there from this page this tutorial website by clicking the GitHub octocat icon underneath the Openscapes logo in the left navbar (click it holding command on Mac, or control on a PC to open it in a different tab in your browser).
+Let's go to this website's GitHub repository (also called a "repo"), [**https://github.com/openscapes/quarto-website-tutorial**](https://github.com/openscapes/quarto-website-tutorial){.uri}. You can also click there from any page in this tutorial website by clicking the GitHub octocat icon underneath the Openscapes logo in the left navbar (click it holding command on Mac, or control on a PC to open it in a different tab in your browser).
 
 **Have a look at the filenames.** We can recognize the names of the webpages we've seen above, and they have red arrows marking them in the image below. You'll see the "quarto-workflows" folder and the rest in this site are `.qmd` files, which are plain text Quarto files that can combine Markdown text with code. `index.qmd` is the home page. If you click inside "quarto-workflows" you'll see a mix of filetypes!
 
 ![quarto-website-tutorial GitHub repository with files for webpages marked with red arrows](images/quarto-files-github.png){fig-alt="Screenshot of files on GitHub with red arrows identifying the files that we saw in the left sidebar" fig-align="center" width="80%"}
 
-**The `_site` folder** has html files with names that should be familiar: they match the `.    md` files we were just exploring. This folder is where Quarto stores files to build the website.
+**The `_site` folder** has html files with names that should be familiar: they match the `.md` files we were just exploring. This folder is where Quarto stores files to build the website.
 
 ## `_quarto.yml` intro
 
@@ -48,7 +48,7 @@ Other options of potential interest:
 
 -   [2021-Cloud-Hackathon](https://github.com/NASA-Openscapes/2021-Cloud-Hackathon)
 -   [2022-SWOT-Ocean-Cloud-Workshop](https://github.com/podaac/2022-SWOT-Ocean-Cloud-Workshop)
--   [Approach-Guide](https://openscapes.github.io/approach-guide)
+-   [Openscapes Approach-Guide](https://openscapes.github.io/approach-guide)
 
 Next, follow [these steps to fork and setup your repo with GitHub Actions](https://github.com/thefaylab/lab-manual/wiki/Quick-steps-to-making-a-copy-of-the-lab-manual-&-publishing-it) from Gavin Fay, using the repo you chose. These instructions will take \~5 minutes.
 
@@ -78,7 +78,7 @@ Note: if you're comfortable cloning the new repository and copying files into it
 
 If you've used the GitHub uploader, you'll need to set up GitHub publishing separately. We'll do this in a few steps: we'll set up a GitHub Action within your repo, and create a `gh-pages` branch.
 
-First, the GitHub Action. Go back to your main view of your GitHub repository by clicking on the name of your repository in blue at the top-left (the url in your browser window should say https://github.com/username/repo-name).
+**First, the GitHub Action**. Go back to your main view of your GitHub repository by clicking on the name of your repository in blue at the top-left (the url in your browser window should say https://github.com/username/repo-name).
 
 Next to the green code button, click Add file \> Create new file. Name it exactly this: `.github/workflows/quarto-publish.yml` . In detail: start by typing the `.` with `github` and when you type the `/` it will give you a new text box to type `workflows` (plural!), then another `/`, and finally, `quarto-publish.yml`.
 
@@ -118,7 +118,7 @@ jobs:
 
 Commit this to save your new `quarto-publish.yml` file. This is your GitHub Action.
 
-Next, we'll create a new `gh-pages` branch. Go back to the main view of your GitHub repository. On the far left from the green "Code" button, click the button that says "main". In the pull-down menu, type `gh-pages` - all lowercase, with a hyphen. Click the bold text that says "Create branch: gh-pages from main".
+**Next, we'll create a new `gh-pages` branch**. Go back to the main view of your GitHub repository. On the far left from the green "Code" button, click the button that says "main". In the pull-down menu, type `gh-pages` - all lowercase, with a hyphen. Click the bold text that says "Create branch: gh-pages from main".
 
 Now click on the Settings tab in the top right of your repository. On the left sidebar, click Pages. At the top of Pages under "Source", select `gh-pages` root, and press Save. You'll then see a green highlighted text saying that your site is published at a "github.io" url.
 
