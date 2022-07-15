@@ -230,7 +230,7 @@ So, your normal workflow for creating and running code blocks in your Jupyter No
 
 ## Quarto render
 
-So far we have used **Quarto preview** view our website as we develop it. **Quarto render** will build the html elements of the website that we can see when we preview. Rendering will format the markdown text and code nicely as a website (or however is indicated in the `_quarto.yml`).
+So far we have used **Quarto preview** to view our website as we develop it. **Quarto render** will build the html elements of the website that we can see when we preview. Rendering will format the markdown text and code nicely as a website (or however is indicated in the `_quarto.yml`).
 
 By default, Quarto render does not execute code in a Jupyter notebook. It will never run .ipynb files unless you tell it to.
 
