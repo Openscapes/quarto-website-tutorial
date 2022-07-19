@@ -35,6 +35,8 @@ A few Quarto websites from Openscapes - so far we have been using Quarto for doc
 -   [Champions Lessons Series](https://openscapes.github.io/series)
 -   [Openscapes Approach Guide](https://openscapes.github.io/approach-guide/)\
 -   [2021 NASA Cloud Hackathon](https://nasa-openscapes.github.io/2021-Cloud-Hackathon/)
+-   [Faylab Lab Manual](https://thefaylab.github.io/lab-manual/)
+-   [A Quarto tip a day](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/), by Mine Çetinkaya-Rundel
 
 ## About
 
