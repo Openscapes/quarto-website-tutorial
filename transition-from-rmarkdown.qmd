@@ -14,7 +14,7 @@ Converting a Bookdown book to Quarto is slightly more involved than converting a
 
 We got some practice converting from Bookdown to Quarto by helping Gavin Fay convert his lab's fantastic onboarding documentation, the [Faylab Lab Manual](https://thefaylab.github.io/lab-manual/). Here's the GitHub view [before](https://github.com/thefaylab/lab-manual/tree/4ebe9614d4fcab9d782073057ef6e56e9213c167) and [after](https://github.com/thefaylab/lab-manual/tree/3ce2418ed7bd65936a130a42a7f975f55fb9b734).
 
-Our best first reference material for this was Nick Tierney's [Notes on Changing from Rmarkdown/Bookdown to Quarto](https://www.njtierney.com/post/2022/04/11/rmd-to-qmd/). Nick shares some scripts in that post to automate some changes. In our case, the book was small enough that we made all changes manually. [Quarto documentation](https://quarto.org/) was indispensible.
+Our best first reference material for this was Nick Tierney's [Notes on Changing from Rmarkdown/Bookdown to Quarto](https://www.njtierney.com/post/2022/04/11/rmd-to-qmd/). Nick shares some scripts in that post to automate some changes. In our case, the book was small enough that we made all changes manually. [Quarto documentation](https://quarto.org/) was indispensable.
 
 ### Experimenting in a low-risk environment
 
@@ -24,19 +24,17 @@ We forked a copy of the Faylab Lab manual to the Openscapes organization, and wo
 
 Here are the main steps to convert the Faylab Lab manual from Bookdown to Quarto.
 
-Change all filename extensions `.Rmd` -\> `.qmd` (you could Preview after this change and see that the book looks the same).
-
-Create new empty file called `_quarto.yml` and add book metadata there. 
+Create new empty file called `_quarto.yml` and add book metadata there. The screenshots below
 
 Set project type as `book`.
 
-Move metadata out of `index.qmd` and into `_quarto.yml`. Title, author, and publication date were in `index.qmd` with date set using `date: "Last updated:`r Sys.Date()`"`. Now these are in `_quarto.yml` with date set using `date: last-modified`.
+Move metadata out of `index.qmd` and into `_quarto.yml`. Title, author, and publication date were in `index.qmd` with date set using `date: "Last updated:`r Sys.Date()`"`. Now these are in `_quarto.yml` with date set using `date: last-modified`. Note that having R code would require you to adjust code chunk options in the Quarto style (`#|`). This tripped us up a bit; see [GitHub Actions](#github-actions).
 
 Move chapters listing out of `_bookdown.yml` and into `_quarto.yml`.
 
 Add page footer to `_quarto.yml`.
 
-Here's what ours looked like when we finished the steps above. [`_quarto.yml`](https://github.com/thefaylab/lab-manual/blob/main/_quarto.yml).
+Here's what ours looked like when we finished the steps above ([`_quarto.yml`](https://github.com/thefaylab/lab-manual/blob/main/_quarto.yml)).
 
 ::: {layout-ncol="2"}
 ![\_quarto.yml contents](images/faylab-manual-quarto-yml.png){fig-alt="_quarto.yml file contents" width=45%}
@@ -50,14 +48,9 @@ Change insertion of images from html style to Quarto style. (Note Quarto calls t
 ![](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png){fig-align="left" width="35px"}
 ```
 
-```{=html}
-<!---
-This not necessary with current RStudio I think:
-Project options > build tools > project build tools > none
+Change all filename extensions `.Rmd` -\> `.qmd` (you could Preview after this change and see that the book looks the same). Note that Quarto works with `.Rmd` files just as well as it does `.qmd`, so this change is not urgent. In fact, if you have a lot of R code in your .Rmds (unlike the Faylab Lab Manual), there will be additional tinkering needed to make the code chunks happy.
 
-Reload project
---->
-```
+
 ### Citations
 
 The Faylab Lab Manual cited two papers, presenting us with an opportunity to see how easy it is to add references to a Quarto book. Briefly, in the Visual Editor, Insert \> Citation \> DOI. Pasting the DOI or its full URL, we can insert the citation. This automatically creates a `references.bib` file and adds the full citations at the bottom of the chapter page. In July 2022, we had to manually add a `## References` heading, but this may not be necessary in future Quarto updates.
@@ -70,7 +63,7 @@ The Faylab Lab Manual cited two papers, presenting us with an opportunity to see
 
 ### Publishing notes
 
-Don't specify `output-dir` in `_quarto.yml`. The output directory default is `_book/`, which is what we'd like.
+If the book's output is strictly html, there's no need to specify `output-dir` in `_quarto.yml`. The output directory default is `_book/`, which is what we'd like. If we wanted other types of output like like PDF or EPUB, etc. those single file outputs are also written to the output-dir ([Quarto docs](https://quarto.org/docs/books/book-output.html#output-path)).
 
 If you currently have a `docs/` folder, delete it.
 
@@ -86,9 +79,9 @@ Once all is settled, delete `_output.yml`.
 
 Once the Openscapes fork was fully reviewed, we made a pull request from that to the main branch of the book's repo. Once that was merged, we set up GitHub Actions to render the book. (TODO: instructions for GitHub Actions)
 
-### GitHub Actions
+### GitHub Actions {#github-actions}
 
-R
+This book was mostly prose and screenshots without any R code. This made the conversion from RMarkdown to Quarto likely more straightforward than if you also needed to adjust code chunk options in the quarto style (#|). Our initial GitHub Action to render the converted Faylab Lab Manual failed because we had a piece of R code - even though the code was commented out! This was resolved when we deleted the line. 
 
 ## Distill to quarto
 
