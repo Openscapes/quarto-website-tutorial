@@ -26,7 +26,7 @@ Here are the main steps to convert the Faylab Lab manual from Bookdown to Quarto
 
 Change all filename extensions `.Rmd` -\> `.qmd` (you could Preview after this change and see that the book looks the same).
 
-Create new empty file called `_quarto.yml` and add book metadata there. Here's what ours looked like when we finished the steps below: [`_quarto.yml`](https://github.com/thefaylab/lab-manual/blob/main/_quarto.yml).
+Create new empty file called `_quarto.yml` and add book metadata there. 
 
 Set project type as `book`.
 
@@ -35,6 +35,14 @@ Move metadata out of `index.qmd` and into `_quarto.yml`. Title, author, and publ
 Move chapters listing out of `_bookdown.yml` and into `_quarto.yml`.
 
 Add page footer to `_quarto.yml`.
+
+Here's what ours looked like when we finished the steps above. [`_quarto.yml`](https://github.com/thefaylab/lab-manual/blob/main/_quarto.yml).
+
+::: {layout-ncol="2"}
+![\_quarto.yml contents](images/faylab-manual-quarto-yml.png){fig-alt="_quarto.yml file contents" width=45%}
+
+![Faylab Lab Manual](images/faylab-manual.png){fig-alt="screenshot of Lab Manual book" width=45%}
+:::
 
 Change insertion of images from html style to Quarto style. (Note Quarto calls them "figures", not "images".) The following snippet will insert the GitHub octocat logo in a page:
 
@@ -54,7 +62,7 @@ Reload project
 
 The Faylab Lab Manual cited two papers, presenting us with an opportunity to see how easy it is to add references to a Quarto book. Briefly, in the Visual Editor, Insert \> Citation \> DOI. Pasting the DOI or its full URL, we can insert the citation. This automatically creates a `references.bib` file and adds the full citations at the bottom of the chapter page. In July 2022, we had to manually add a `## References` heading, but this may not be necessary in future Quarto updates.
 
-::: {layout-ncol=2}
+::: {layout-ncol="2"}
 ![Insert citation via its DOI using RStudio Visual Editor](images/rstudio-insert-citation.png){fig-alt="RStudio Visual Editor Insert dropdown menu with Citation highlighted"}
 
 ![](images/rstudio-insert-citation-doi.png)
