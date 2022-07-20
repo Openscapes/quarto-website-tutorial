@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.27">
+<meta name="generator" content="quarto-1.0.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -248,7 +248,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<p>With this tutorial, we have a working example website that we will explore together. We’ll learn a few rules and look for patterns to get an understanding of what things do to help you start customizing and making it your own. And you can continue to use this website as a reference after the tutorial, along with <a href="https://quarto.org">Quarto</a> documentation.</p>
+<p>With this tutorial, we have a working example website that we will explore together. We’ll learn a few rules and look for patterns to get an understanding of what things to do to help you start customizing and making it your own. And you can continue to use this website as a reference after the tutorial, along with <a href="https://quarto.org">Quarto</a> documentation.</p>
 <p>We’ll start our exploration online looking at the website architecture and GitHub repository. Then we’ll setup a copy for ourselves so that we can modify from a working example, which is a great way to learn something new. We’ll set it up so that any modifications (commits) will automatically be republished via GitHub Actions. Subsequent chapters will describe how to modify your repo using different tools (browser, RStudio, Jupyter).</p>
 <section id="exploring-online" class="level2">
 <h2 class="anchored" data-anchor-id="exploring-online">Exploring online</h2>
@@ -257,7 +257,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><a href="https://openscapes.github.io/quarto-website-tutorial/">This website</a> has 5 things you can see on the left sidebar:</p>
 <ul>
 <li>Welcome</li>
-<li>Exploring our website</li>
+<li>Exploring and setup</li>
 <li>Quarto workflows</li>
 <li>Learning more</li>
 <li>Transition from Rmd</li>
@@ -266,7 +266,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 <section id="the-websites-repo" class="level3">
 <h3 class="anchored" data-anchor-id="the-websites-repo">The website’s repo</h3>
-<p>Let’s go to this website’s GitHub repository (also called a “repo”), <a href="https://github.com/openscapes/quarto-website-tutorial" class="uri"><strong>https://github.com/openscapes/quarto-website-tutorial</strong></a>. You can also click there from this page this tutorial website by clicking the GitHub octocat icon underneath the Openscapes logo in the left navbar (click it holding command on Mac, or control on a PC to open it in a different tab in your browser).</p>
+<p>Let’s go to this website’s GitHub repository (also called a “repo”), <a href="https://github.com/openscapes/quarto-website-tutorial" class="uri"><strong>https://github.com/openscapes/quarto-website-tutorial</strong></a>. You can also click there from any page in this tutorial website by clicking the GitHub octocat icon underneath the Openscapes logo in the left navbar (click it holding command on Mac, or control on a PC to open it in a different tab in your browser).</p>
 <p><strong>Have a look at the filenames.</strong> We can recognize the names of the webpages we’ve seen above, and they have red arrows marking them in the image below. You’ll see the “quarto-workflows” folder and the rest in this site are <code>.qmd</code> files, which are plain text Quarto files that can combine Markdown text with code. <code>index.qmd</code> is the home page. If you click inside “quarto-workflows” you’ll see a mix of filetypes!</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -274,7 +274,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p></p><figcaption class="figure-caption">quarto-website-tutorial GitHub repository with files for webpages marked with red arrows</figcaption><p></p>
 </figure>
 </div>
-<p><strong>The <code>_site</code> folder</strong> has html files with names that should be familiar: they match the <code>.    md</code> files we were just exploring. This folder is where Quarto stores files to build the website.</p>
+<p><strong>The <code>_site</code> folder</strong> has html files with names that should be familiar: they match the <code>.md</code> files we were just exploring. This folder is where Quarto stores files to build the website.</p>
 </section>
 </section>
 <section id="quarto.yml-intro" class="level2">
@@ -296,7 +296,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li><a href="https://github.com/NASA-Openscapes/2021-Cloud-Hackathon">2021-Cloud-Hackathon</a></li>
 <li><a href="https://github.com/podaac/2022-SWOT-Ocean-Cloud-Workshop">2022-SWOT-Ocean-Cloud-Workshop</a></li>
-<li><a href="https://openscapes.github.io/approach-guide">Approach-Guide</a></li>
+<li><a href="https://openscapes.github.io/approach-guide">Openscapes Approach-Guide</a></li>
 </ul>
 <p>Next, follow <a href="https://github.com/thefaylab/lab-manual/wiki/Quick-steps-to-making-a-copy-of-the-lab-manual-&amp;-publishing-it">these steps to fork and setup your repo with GitHub Actions</a> from Gavin Fay, using the repo you chose. These instructions will take ~5 minutes.</p>
 <p>Now you’ve got a copy of your repo of choice in your own GitHub account, and you’re set to start making your own edits. Your GitHub repo is set up with a GitHub Action that will use Quarto to rebuild and republish your site anytime you make a commit: committing will trigger the GitHub Action to rebuild and republish the book.</p>
@@ -322,7 +322,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="setup-github-action" class="level2">
 <h2 class="anchored" data-anchor-id="setup-github-action">Set up GitHub publishing</h2>
 <p>If you’ve used the GitHub uploader, you’ll need to set up GitHub publishing separately. We’ll do this in a few steps: we’ll set up a GitHub Action within your repo, and create a <code>gh-pages</code> branch.</p>
-<p>First, the GitHub Action. Go back to your main view of your GitHub repository by clicking on the name of your repository in blue at the top-left (the url in your browser window should say https://github.com/username/repo-name).</p>
+<p><strong>First, the GitHub Action</strong>. Go back to your main view of your GitHub repository by clicking on the name of your repository in blue at the top-left (the url in your browser window should say https://github.com/username/repo-name).</p>
 <p>Next to the green code button, click Add file &gt; Create new file. Name it exactly this: <code>.github/workflows/quarto-publish.yml</code> . In detail: start by typing the <code>.</code> with <code>github</code> and when you type the <code>/</code> it will give you a new text box to type <code>workflows</code> (plural!), then another <code>/</code>, and finally, <code>quarto-publish.yml</code>.</p>
 <p>Now you’ll have an empty new file. Paste the following in this empty file - you can click on the top-right of this box to copy all the code inside this code box:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">on</span><span class="kw">:</span></span>
@@ -355,7 +355,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">env</span><span class="kw">:</span></span>
 <span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">GITHUB_TOKEN</span><span class="kw">:</span><span class="at"> ${{ secrets.GITHUB_TOKEN }}</span><span class="co"> # this secret is always available for github actions</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Commit this to save your new <code>quarto-publish.yml</code> file. This is your GitHub Action.</p>
-<p>Next, we’ll create a new <code>gh-pages</code> branch. Go back to the main view of your GitHub repository. On the far left from the green “Code” button, click the button that says “main”. In the pull-down menu, type <code>gh-pages</code> - all lowercase, with a hyphen. Click the bold text that says “Create branch: gh-pages from main”.</p>
+<p><strong>Next, we’ll create a new <code>gh-pages</code> branch</strong>. Go back to the main view of your GitHub repository. On the far left from the green “Code” button, click the button that says “main”. In the pull-down menu, type <code>gh-pages</code> - all lowercase, with a hyphen. Click the bold text that says “Create branch: gh-pages from main”.</p>
 <p>Now click on the Settings tab in the top right of your repository. On the left sidebar, click Pages. At the top of Pages under “Source”, select <code>gh-pages</code> root, and press Save. You’ll then see a green highlighted text saying that your site is published at a “github.io” url.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
