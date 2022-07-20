@@ -28,7 +28,7 @@ Create new empty file called `_quarto.yml` and add book metadata there. The scre
 
 Set project type as `book`.
 
-Move metadata out of `index.qmd` and into `_quarto.yml`. Title, author, and publication date were in `index.qmd` with date set using `date: "Last updated:`r Sys.Date()`"`. Now these are in `_quarto.yml` with date set using `date: last-modified`. Note that having R code would require you to adjust code chunk options in the Quarto style (`#|`). This tripped us up a bit; see [GitHub Actions](#github-actions).
+Move metadata out of `index.qmd` and into `_quarto.yml`. Title, author, and publication date were in `index.qmd` with date set using `date: "Last updated:r Sys.Date()"`. Now these are in `_quarto.yml` with date set using `date: last-modified`. Note that having R code would require you to adjust code chunk options in the Quarto style (`#|`). This tripped us up a bit; see [GitHub Actions](#github-actions).
 
 Move chapters listing out of `_bookdown.yml` and into `_quarto.yml`.
 
