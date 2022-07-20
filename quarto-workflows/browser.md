@@ -10,7 +10,7 @@ Here's an example of editing content on an existing page.
 
 Let's change the date on the home page of this website.
 
-In your repository, navigate to `index.md`. Then, click the pencil icon in the top left to edit directly.
+In your repository, navigate to `index.md`. Then, click the pencil icon in the top right to edit directly.
 
 ![](images/github-edit-index.png){fig-align="center" width="95%"}
 
@@ -24,11 +24,11 @@ Our `index.md` file is written in Markdown, which enables you to make simple tex
 
 ## Commit and publish
 
-Commit your changes by scrolling to the bottom of the page and writing a commit message - a note to yourself and others about what happened. Write your commit message and then click the green "Commit changes" button.
+Commit your changes by scrolling to the bottom of the page and writing a commit message - a note to yourself and others about what changes you made. Write your commit message and then click the green "Commit changes" button.
 
 ![](images/github-commit.png){fig-align="center"}
 
-Now, click back to the main page of your GitHub repository. You should see the orange dot [confirming your website is published](explore.qmd#confirm). You'll have to wait for the GitHub Action to tell quarto to build your site for you to see the update, but it will be there!
+Now, click back to the main page of your GitHub repository. You should see the orange dot [confirming your website is published](../explore.qmd#confirm). You'll have to wait for the GitHub Action to tell quarto to build your site for you to see the update, but it will be there!
 
 ## Limitations
 

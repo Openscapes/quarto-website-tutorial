@@ -28,11 +28,11 @@ How do you work in Quarto? You can use whichever tool you're comfortable with (R
 5.  Commit and push your website to GitHub, your updates will publish automatically! 
 6.  Repeat all of the above to make the website as you'd like!
 
-Note: if editing from your internet Browser we won't render in Step 3 will not be separate but combined with Step 5, which will only require a commit, not a push)
+Note: if editing from your internet browser we won't render in Step 3. That step will not be separate, but combined with Step 5, which will only require a commit, not a push.
 
 ## Authoring
 
-As an author, you have a lot of options of how your text will be formatted, arranged, and interlinked. You will be writing in Markdown, which is a lightweight text formatting language. The Quarto documentation about authoring introduces [markdown-basics](https://quarto.org/docs/authoring/markdown-basics.html) that will get you started.
+As an author, you have a lot of options of how your text will be formatted, arranged, and interlinked. You will be writing in Markdown, which is a lightweight text formatting language. The Quarto documentation about authoring introduces [markdown-basics](https://quarto.org/docs/authoring/markdown-basics.html) that will get you started. Also see Mine Çetinkaya-Rundel's [A Quarto tip a day](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/).
 
 Each page of our site has a similar first few lines - this YAML, like we saw in our `_quarto.yml` and it is indicated by two sets of 3 dashes `---` :
 
