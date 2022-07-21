@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://Openscapes.github.io/quarto-website-tutorial/transition-from-rmarkdown.html</loc>
-    <lastmod>2022-07-20T20:11:20.653Z</lastmod>
+    <loc>https://github.com/Openscapes/quarto-website-tutorial/explore.html</loc>
+    <lastmod>2022-07-21T17:39:56.328Z</lastmod>
   </url>
   <url>
-    <loc>https://Openscapes.github.io/quarto-website-tutorial/index.html</loc>
-    <lastmod>2022-07-20T20:11:21.061Z</lastmod>
+    <loc>https://github.com/Openscapes/quarto-website-tutorial/learning-more.html</loc>
+    <lastmod>2022-07-21T17:39:57.524Z</lastmod>
   </url>
   <url>
-    <loc>https://Openscapes.github.io/quarto-website-tutorial/learning-more.html</loc>
-    <lastmod>2022-07-20T20:11:21.405Z</lastmod>
+    <loc>https://github.com/Openscapes/quarto-website-tutorial/index.html</loc>
+    <lastmod>2022-07-21T17:39:57.924Z</lastmod>
   </url>
   <url>
-    <loc>https://Openscapes.github.io/quarto-website-tutorial/explore.html</loc>
-    <lastmod>2022-07-20T20:11:21.822Z</lastmod>
+    <loc>https://github.com/Openscapes/quarto-website-tutorial/transition-from-rmarkdown.html</loc>
+    <lastmod>2022-07-21T17:39:58.360Z</lastmod>
   </url>
   <url>
-    <loc>https://Openscapes.github.io/quarto-website-tutorial/quarto-workflows/browser.html</loc>
-    <lastmod>2022-07-20T20:11:22.162Z</lastmod>
+    <loc>https://github.com/Openscapes/quarto-website-tutorial/quarto-workflows/jupyter.html</loc>
+    <lastmod>2022-07-21T17:39:58.876Z</lastmod>
   </url>
   <url>
-    <loc>https://Openscapes.github.io/quarto-website-tutorial/quarto-workflows/jupyter.html</loc>
-    <lastmod>2022-07-20T20:11:22.661Z</lastmod>
+    <loc>https://github.com/Openscapes/quarto-website-tutorial/quarto-workflows/rstudio.html</loc>
+    <lastmod>2022-07-21T17:39:59.340Z</lastmod>
   </url>
   <url>
-    <loc>https://Openscapes.github.io/quarto-website-tutorial/quarto-workflows/index.html</loc>
-    <lastmod>2022-07-20T20:11:23.001Z</lastmod>
+    <loc>https://github.com/Openscapes/quarto-website-tutorial/quarto-workflows/index.html</loc>
+    <lastmod>2022-07-21T17:39:59.728Z</lastmod>
   </url>
   <url>
-    <loc>https://Openscapes.github.io/quarto-website-tutorial/quarto-workflows/rstudio.html</loc>
-    <lastmod>2022-07-20T20:11:23.377Z</lastmod>
+    <loc>https://github.com/Openscapes/quarto-website-tutorial/quarto-workflows/browser.html</loc>
+    <lastmod>2022-07-21T17:40:00.088Z</lastmod>
   </url>
 </urlset>

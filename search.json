@@ -1,75 +1,5 @@
 [
   {
-    "objectID": "transition-from-rmarkdown.html",
-    "href": "transition-from-rmarkdown.html",
-    "title": "Transition from RMarkdown",
-    "section": "",
-    "text": "You may already have workflows in RMarkdown and are interested in transitioning to Quarto. There’s no hurry to migrate to Quarto. Keep using Rmarkdown and when you’re ready the migration will be fine.\nHere are some notes as we migrate RMarkdown sites and books.\nTODO: translating R code chunks"
-  },
-  {
-    "objectID": "transition-from-rmarkdown.html#bookdown-to-quarto",
-    "href": "transition-from-rmarkdown.html#bookdown-to-quarto",
-    "title": "Transition from RMarkdown",
-    "section": "Bookdown to Quarto",
-    "text": "Bookdown to Quarto\nConverting a Bookdown book to Quarto is slightly more involved than converting a website. A book has chapters whose order must be defined, and likely has citations and cross-refs. Still, conversion is not that hard.\nWe got some practice converting from Bookdown to Quarto by helping Gavin Fay convert his lab’s fantastic onboarding documentation, the Faylab Lab Manual. Here’s the GitHub view before and after.\nOur best first reference material for this was Nick Tierney’s Notes on Changing from Rmarkdown/Bookdown to Quarto. Nick shares some scripts in that post to automate some changes. In our case, the book was small enough that we made all changes manually. Quarto documentation was indispensable.\n\nExperimenting in a low-risk environment\nWe forked a copy of the Faylab Lab manual to the Openscapes organization, and worked in a branch so we could make changes relatively risk-free. We could always fork a new copy of the original if we “broke” something. (Caution: the default when making a pull request from a fork is to push changes to the original upstream repo, not your fork and it does this without warning if you have write-access to that repo.) With local previews it’s easy to test / play with settings to see what they do. We tended to make a change, Preview, then compare the look and functionality of the book to the original. It was helpful to comment out some elements of the configuration file _output.yml after their counterparts had been added to the Quarto configuration file _quarto.yml, or to confirm they were no longer needed, before making the drastic move of deleting them.\n\n\nThe conversion\nHere are the main steps to convert the Faylab Lab manual from Bookdown to Quarto.\nCreate new empty file called _quarto.yml and add book metadata there. The screenshots below\nSet project type as book.\nMove metadata out of index.qmd and into _quarto.yml. Title, author, and publication date were in index.qmd with date set using date: \"Last updated:r Sys.Date()\". Now these are in _quarto.yml with date set using date: last-modified. Note that having R code would require you to adjust code chunk options in the Quarto style (#|). This tripped us up a bit; see GitHub Actions.\nMove chapters listing out of _bookdown.yml and into _quarto.yml.\nAdd page footer to _quarto.yml.\nHere’s what ours looked like when we finished the steps above (_quarto.yml).\n\n\n\n\n\n\n_quarto.yml contents\n\n\n\n\n\n\n\nFaylab Lab Manual\n\n\n\n\n\nChange insertion of images from html style to Quarto style. (Note Quarto calls them “figures”, not “images”.) The following snippet will insert the GitHub octocat logo in a page:\n![](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png){fig-align=\"left\" width=\"35px\"}\nChange all filename extensions .Rmd -> .qmd (you could Preview after this change and see that the book looks the same). Note that Quarto works with .Rmd files just as well as it does .qmd, so this change is not urgent. In fact, if you have a lot of R code in your .Rmds (unlike the Faylab Lab Manual), there will be additional tinkering needed to make the code chunks happy.\n\n\nCitations\nThe Faylab Lab Manual cited two papers, presenting us with an opportunity to see how easy it is to add references to a Quarto book. Briefly, in the Visual Editor, Insert > Citation > DOI. Pasting the DOI or its full URL, we can insert the citation. This automatically creates a references.bib file and adds the full citations at the bottom of the chapter page. In July 2022, we had to manually add a ## References heading, but this may not be necessary in future Quarto updates.\n\n\n\n\n\n\nInsert citation via its DOI using RStudio Visual Editor\n\n\n\n\n\n\n\n\n\n\nPublishing notes\nIf the book’s output is strictly html, there’s no need to specify output-dir in _quarto.yml. The output directory default is _book/, which is what we’d like. If we wanted other types of output like like PDF or EPUB, etc. those single file outputs are also written to the output-dir (Quarto docs).\nIf you currently have a docs/ folder, delete it.\nUpdate .gitignore to ignore _book/. At the same time, we have it ignore caches and a .quarto file:\n/.quarto/\n*_cache/\n_book/\nOnce all is settled, delete _output.yml.\nOnce the Openscapes fork was fully reviewed, we made a pull request from that to the main branch of the book’s repo. Once that was merged, we set up GitHub Actions to render the book. (TODO: instructions for GitHub Actions)\n\n\nGitHub Actions\nThis book was mostly prose and screenshots without any R code. This made the conversion from RMarkdown to Quarto likely more straightforward than if you also needed to adjust code chunk options in the quarto style (#|). Our initial GitHub Action to render the converted Faylab Lab Manual failed because we had a piece of R code - even though the code was commented out! This was resolved when we deleted the line."
-  },
-  {
-    "objectID": "transition-from-rmarkdown.html#distill-to-quarto",
-    "href": "transition-from-rmarkdown.html#distill-to-quarto",
-    "title": "Transition from RMarkdown",
-    "section": "Distill to quarto",
-    "text": "Distill to quarto\nWe transitioned our events site from distill to quarto in May 2022 (github view before and after). We followed excellent notes and examples from Nick Tierney and Danielle Navarro.\nAfter we had changed all the files, the Build tab in the RStudio IDE still showed “Build website” rather then “Render Website” and “Preview Website”, and would error when we pushed them (because that button was expecting a distill site, not a quarto site). To fix this, we updated the .Rproj file. Clicking on the .Rproj file in the RStudio IDE will open a dialog box where you can click things you want (you can also open these in a text editor or from the GitHub website to see the actual text). To fix this situation with the Build tab: Project Options > Build Tools > Project Build Tools > None.\nLooking at files /posts/_metadata.yml and _quarto.yml helps see where things are defined. For example, to make event post citations appear, we added citation: true to /posts/_metadata.yml and in _quarto.yml under the website key we set site-url: https://openscapes.github.io/events. We deleted footer.html used with distill because footer is now defined in quarto.yml.\n\nPublishing notes\n\nBackground: Our distill site had been set up to output to a docs folder, and had GitHub Settings > Pages set to look there rather gh-pages branch. (Julie note: this was a new-to-me capability when we set up the events distill site in Spring 2021 so I had forgotten that was an option). We’ve inititally kept this same set-up for now with our events page in _quarto.yml: output-dir: docs. However, this is sub-optimal; better to not have to commit and push these files but to instead have a GitHub Action generate them upon a commit. So the following is what we did -\n\nDon’t specify output-dir in _quarto.yml. The output directory default is _site/, which is what we’d like.\nIf you currently have a docs/ folder (like we did as we were experimenting), delete it.\nUpdate .gitignore to ignore _site/. At the same time, we have it ignore caches and a .quarto file:\n/.quarto/\n*_cache/\n_site/\nPush these changes, merge into main.\nOn GitHub.com, in your repo, set up GitHub publishing\nFollow instructions from the explore and setup chapter."
-  },
-  {
-    "objectID": "transition-from-rmarkdown.html#troubleshooting",
-    "href": "transition-from-rmarkdown.html#troubleshooting",
-    "title": "Transition from RMarkdown",
-    "section": "Troubleshooting",
-    "text": "Troubleshooting\n\nGitHub Action fails, says you need RMarkdown but you don’t have R code!\nAnd you changed all .Rmds to .qmds!\nYou likely have a few setup code chunks from RMarkdown, that look like this:\n{r setup, include=FALSE}\nknitr::opts_chunk$set(echo = FALSE)\nYou can find them by opening each of your files and having a look, or use GitHub’s search for the keyword knitr"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Making shareable documents with Quarto",
-    "section": "",
-    "text": "It’s possible to create beautiful documentation to share online with Quarto that auto-updates with GitHub. This is very new and incredibly cool. This tutorial is an example of a quarto website — it is a really powerful way to create and share your work. You can communicate about science using the same reproducible workflow you and/or your colleagues use for analyses, whether or not you write code.\nCreating websites with Quarto can be done without knowing R, Python or HTML, CSS, etc, and that’s where we’ll start. However, Quarto integrates with these tools so you can make your websites as complex and beautiful as you like as you see examples and reuse and remix from others in the open community. This tutorial borrows heavily from a lot of great tutorials and resources you should check out too – there are links throughout."
-  },
-  {
-    "objectID": "index.html#what-is-quarto",
-    "href": "index.html#what-is-quarto",
-    "title": "Making shareable documents with Quarto",
-    "section": "What is Quarto?",
-    "text": "What is Quarto?\nQuarto helps you have your ideas and your code in one place, and present it in a beautiful way.\nQuarto unifies and extends the RMarkdown ecosystem - it unifies by combining the functionality of R Markdown, bookdown, distill, xaringian, etc into a single consistent system. And it extends in several ways: all features are possible beyond R too, including Python and Javascript. It also has more “guardrails”: accessibility and inclusion are centered in the design. Quarto is for people who love RMarkdown, and it’s for people who have never used RMarkdown.\nThe ability for Quarto to streamline collaboration has been so cool and important for our NASA Openscapes project. Quarto has been a common place for us to collaborate - across R and Python languages and coding expertise."
-  },
-  {
-    "objectID": "index.html#what-is-this-tutorial",
-    "href": "index.html#what-is-this-tutorial",
-    "title": "Making shareable documents with Quarto",
-    "section": "What is this tutorial?",
-    "text": "What is this tutorial?\nThis is a 1-hour tutorial that can be used to teach or as self-paced learning.\nWe introduce Quarto by exploring this tutorial website, and practicing the basic Quarto workflow using different tools (GitHub browser, RStudio, and Jupyter) for editing your website.\nWe’ll start off from the browser so you don’t need to install any additional software, however this approach is very limited and you will soon outgrow its capabilities. If you don’t already have a workflow to edit files and sync to GitHub from your computer, I recommend RStudio. You don’t need to know R to use RStudio, and it has powerful editor features that make for happy workflows.\nQuarto.org is the go-to place for full documentation and more tutorials!"
-  },
-  {
-    "objectID": "index.html#example-quarto-sites",
-    "href": "index.html#example-quarto-sites",
-    "title": "Making shareable documents with Quarto",
-    "section": "Example Quarto sites",
-    "text": "Example Quarto sites\nA few Quarto websites from Openscapes - so far we have been using Quarto for documentation using Quarto and Markdown files and Jupyter Notebooks.\n\nChampions Lessons Series\nOpenscapes Approach Guide\n\n2021 NASA Cloud Hackathon\nFaylab Lab Manual\nA Quarto tip a day, by Mine Çetinkaya-Rundel"
-  },
-  {
-    "objectID": "index.html#about",
-    "href": "index.html#about",
-    "title": "Making shareable documents with Quarto",
-    "section": "About",
-    "text": "About\nOpenscapes is about better science for future us. We help researchers reimagine data analysis, develop modern skills that are of immediate value to them, and cultivate collaborative and inclusive research teams as part of the broader global open movement.\nWe’re developing this tutorial to help folks with different levels of technical skills use Quarto for documentation and tutorial building. This tutorial was originally created for several different audiences: NASA-Openscapes researcher support engineers using Python, communications directors at organizations promoting open science who do not identify as coders, and fisheries scientists curious about transitioning from RMarkdown. We’re hoping it’s useful to folks with backgrounds as wide as these; if you find it useful or have suggestions for improvement, please let us know by clicking “Edit this page” or “Report an issue” at the upper right side of any page."
-  },
-  {
-    "objectID": "learning-more.html",
-    "href": "learning-more.html",
-    "title": "Learning more",
-    "section": "",
-    "text": "An excellent overview: Reproducible authoring with Quarto - Mine Çetinkaya-Rundel, Feb 2022 - slides, youtube\nA Quarto tip a day in June 2022, from Mine Çetinkaya-Rundel.\n\n\n\nOpenscapes Champions Lessons Series\nOpenscapes Approach Guide\n\nNASA Earthdata Cloud Cookbook\n\nSee many more examples at the quarto gallery!\n\n\n\nAre you making onboarding documentation? Check out The Fay Lab Manual (now in Quarto!) for inspiration on structure - you could also start there and make it your own."
-  },
-  {
     "objectID": "explore.html",
     "href": "explore.html",
     "title": "Explore and setup",
@@ -126,32 +56,74 @@
     "text": "Onward!\nNow you are ready to start editing and publishing! The next chapter describes how starting off from the browser, using Markdown."
   },
   {
-    "objectID": "quarto-workflows/browser.html",
-    "href": "quarto-workflows/browser.html",
-    "title": "From the Browser",
+    "objectID": "learning-more.html",
+    "href": "learning-more.html",
+    "title": "Learning more",
     "section": "",
-    "text": "A workflow from the browser if good for getting started (since you do not need to install additional software) and for making small contributions, but is definitely limited. Once you feel comfortable here, you can move to a different setup.\nHere’s an example of editing content on an existing page."
+    "text": "An excellent overview: Reproducible authoring with Quarto - Mine Çetinkaya-Rundel, Feb 2022 - slides, youtube\nA Quarto tip a day in June 2022, from Mine Çetinkaya-Rundel.\n\n\n\nOpenscapes Champions Lessons Series\nOpenscapes Approach Guide\n\nNASA Earthdata Cloud Cookbook\n\nSee many more examples at the quarto gallery!\n\n\n\nAre you making onboarding documentation? Check out The Fay Lab Manual (now in Quarto!) for inspiration on structure - you could also start there and make it your own."
   },
   {
-    "objectID": "quarto-workflows/browser.html#edit-content-on-an-existing-page",
-    "href": "quarto-workflows/browser.html#edit-content-on-an-existing-page",
-    "title": "From the Browser",
-    "section": "Edit content on an existing page",
-    "text": "Edit content on an existing page\nLet’s change the date on the home page of this website.\nIn your repository, navigate to index.md. Then, click the pencil icon in the top right to edit directly.\n\n\n\n\n\nWe are now in the “Edit file” tab of the editor, where we can make modifications. Let’s change the date to today’s date. Click the “Preview” tab to see your changes. You can even check the “Show diff” box on the right side to see the changes you’ve made.\n\n\n\n\n\nWhile you’re here, see if there are additional changes to the text you’d like to make. Maybe changing the title or author at the top, or for the main text on the home page of the website.\nOur index.md file is written in Markdown, which enables you to make simple text formatting. As you go back and forth from “Edit file” to “Preview”, notice the patterns of how the Markdown text looks when it is as source (“Edit file”) and when it is formatted (“Preview”). For example, in Markdown, you can make text as a header with # symbols, bold or italic with * symbols, and hyperlinks with [](). Notice that spacing is important: for example, there are carriage returns (when you hit the “return” key) before any bullet points. You can learn the short list of Markdown rules here: https://quarto.org/docs/authoring/markdown-basics."
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Making shareable documents with Quarto",
+    "section": "",
+    "text": "It’s possible to create beautiful documentation to share online with Quarto that auto-updates with GitHub. This is very new and incredibly cool. This tutorial is an example of a quarto website — it is a really powerful way to create and share your work. You can communicate about science using the same reproducible workflow you and/or your colleagues use for analyses, whether or not you write code.\nCreating websites with Quarto can be done without knowing R, Python or HTML, CSS, etc, and that’s where we’ll start. However, Quarto integrates with these tools so you can make your websites as complex and beautiful as you like as you see examples and reuse and remix from others in the open community. This tutorial borrows heavily from a lot of great tutorials and resources you should check out too – there are links throughout."
   },
   {
-    "objectID": "quarto-workflows/browser.html#commit-and-publish",
-    "href": "quarto-workflows/browser.html#commit-and-publish",
-    "title": "From the Browser",
-    "section": "Commit and publish",
-    "text": "Commit and publish\nCommit your changes by scrolling to the bottom of the page and writing a commit message - a note to yourself and others about what changes you made. Write your commit message and then click the green “Commit changes” button.\n\n\n\n\n\nNow, click back to the main page of your GitHub repository. You should see the orange dot confirming your website is published. You’ll have to wait for the GitHub Action to tell quarto to build your site for you to see the update, but it will be there!"
+    "objectID": "index.html#what-is-quarto",
+    "href": "index.html#what-is-quarto",
+    "title": "Making shareable documents with Quarto",
+    "section": "What is Quarto?",
+    "text": "What is Quarto?\nQuarto helps you have your ideas and your code in one place, and present it in a beautiful way.\nQuarto unifies and extends the RMarkdown ecosystem - it unifies by combining the functionality of R Markdown, bookdown, distill, xaringian, etc into a single consistent system. And it extends in several ways: all features are possible beyond R too, including Python and Javascript. It also has more “guardrails”: accessibility and inclusion are centered in the design. Quarto is for people who love RMarkdown, and it’s for people who have never used RMarkdown.\nThe ability for Quarto to streamline collaboration has been so cool and important for our NASA Openscapes project. Quarto has been a common place for us to collaborate - across R and Python languages and coding expertise."
   },
   {
-    "objectID": "quarto-workflows/browser.html#limitations",
-    "href": "quarto-workflows/browser.html#limitations",
-    "title": "From the Browser",
-    "section": "Limitations",
-    "text": "Limitations\nWhile awesome that we can edit using GitHub directly from the browser, there are obvious limitations. One is that to see your edits show up in your book, you have to publish using the GitHub Action. This is slow. Another limitation is that we can only work on one file at a time and commit them each separately, which also is slow. Using additional software can make things much better, as we explore in subsequent chapters."
+    "objectID": "index.html#what-is-this-tutorial",
+    "href": "index.html#what-is-this-tutorial",
+    "title": "Making shareable documents with Quarto",
+    "section": "What is this tutorial?",
+    "text": "What is this tutorial?\nThis is a 1-hour tutorial that can be used to teach or as self-paced learning.\nWe introduce Quarto by exploring this tutorial website, and practicing the basic Quarto workflow using different tools (GitHub browser, RStudio, and Jupyter) for editing your website.\nWe’ll start off from the browser so you don’t need to install any additional software, however this approach is very limited and you will soon outgrow its capabilities. If you don’t already have a workflow to edit files and sync to GitHub from your computer, I recommend RStudio. You don’t need to know R to use RStudio, and it has powerful editor features that make for happy workflows.\nQuarto.org is the go-to place for full documentation and more tutorials!"
+  },
+  {
+    "objectID": "index.html#example-quarto-sites",
+    "href": "index.html#example-quarto-sites",
+    "title": "Making shareable documents with Quarto",
+    "section": "Example Quarto sites",
+    "text": "Example Quarto sites\nA few Quarto websites from Openscapes - so far we have been using Quarto for documentation using Quarto and Markdown files and Jupyter Notebooks.\n\nChampions Lessons Series\nOpenscapes Approach Guide\n\n2021 NASA Cloud Hackathon\nFaylab Lab Manual\nA Quarto tip a day, by Mine Çetinkaya-Rundel"
+  },
+  {
+    "objectID": "index.html#about",
+    "href": "index.html#about",
+    "title": "Making shareable documents with Quarto",
+    "section": "About",
+    "text": "About\nOpenscapes is about better science for future us. We help researchers reimagine data analysis, develop modern skills that are of immediate value to them, and cultivate collaborative and inclusive research teams as part of the broader global open movement.\nWe’re developing this tutorial to help folks with different levels of technical skills use Quarto for documentation and tutorial building. This tutorial was originally created for several different audiences: NASA-Openscapes researcher support engineers using Python, communications directors at organizations promoting open science who do not identify as coders, and fisheries scientists curious about transitioning from RMarkdown. We’re hoping it’s useful to folks with backgrounds as wide as these; if you find it useful or have suggestions for improvement, please let us know by clicking “Edit this page” or “Report an issue” at the upper right side of any page."
+  },
+  {
+    "objectID": "transition-from-rmarkdown.html",
+    "href": "transition-from-rmarkdown.html",
+    "title": "Transition from RMarkdown",
+    "section": "",
+    "text": "You may already have workflows in RMarkdown and are interested in transitioning to Quarto. There’s no hurry to migrate to Quarto. Keep using Rmarkdown and when you’re ready the migration will be fine.\nHere are some notes as we migrate RMarkdown sites and books.\nTODO: translating R code chunks"
+  },
+  {
+    "objectID": "transition-from-rmarkdown.html#bookdown-to-quarto",
+    "href": "transition-from-rmarkdown.html#bookdown-to-quarto",
+    "title": "Transition from RMarkdown",
+    "section": "Bookdown to Quarto",
+    "text": "Bookdown to Quarto\nConverting a Bookdown book to Quarto is slightly more involved than converting a website. A book has chapters whose order must be defined, and likely has citations and cross-refs. Still, conversion is not that hard.\nWe got some practice converting from Bookdown to Quarto by helping Gavin Fay convert his lab’s fantastic onboarding documentation, the Faylab Lab Manual. Here’s the GitHub view before and after.\nOur best first reference material for this was Nick Tierney’s Notes on Changing from Rmarkdown/Bookdown to Quarto. Nick shares some scripts in that post to automate some changes. In our case, the book was small enough that we made all changes manually. Quarto documentation was indispensable.\n\nExperimenting in a low-risk environment\nWe forked a copy of the Faylab Lab manual to the Openscapes organization, and worked in a branch so we could make changes relatively risk-free. We could always fork a new copy of the original if we “broke” something. (Caution: the default when making a pull request from a fork is to push changes to the original upstream repo, not your fork and it does this without warning if you have write-access to that repo.) With local previews it’s easy to test / play with settings to see what they do. We tended to make a change, Preview, then compare the look and functionality of the book to the original. It was helpful to comment out some elements of the configuration file _output.yml after their counterparts had been added to the Quarto configuration file _quarto.yml, or to confirm they were no longer needed, before making the drastic move of deleting them.\n\n\nThe conversion\nHere are the main steps to convert the Faylab Lab manual from Bookdown to Quarto.\nCreate new empty file called _quarto.yml and add book metadata there. The screenshots below\nSet project type as book.\nMove metadata out of index.qmd and into _quarto.yml. Title, author, and publication date were in index.qmd with date set using date: \"Last updated:r Sys.Date()\". Now these are in _quarto.yml with date set using date: last-modified. Note that having R code would require you to adjust code chunk options in the Quarto style (#|). This tripped us up a bit; see GitHub Actions.\nMove chapters listing out of _bookdown.yml and into _quarto.yml.\nAdd page footer to _quarto.yml.\nHere’s what ours looked like when we finished the steps above (_quarto.yml).\n\n\n\n\n\n\n_quarto.yml contents\n\n\n\n\n\n\n\nFaylab Lab Manual\n\n\n\n\n\nChange insertion of images from html style to Quarto style. (Note Quarto calls them “figures”, not “images”.) The following snippet will insert the GitHub octocat logo in a page:\n![](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png){fig-align=\"left\" width=\"35px\"}\nChange all filename extensions .Rmd -> .qmd (you could Preview after this change and see that the book looks the same). Note that Quarto works with .Rmd files just as well as it does .qmd, so this change is not urgent. In fact, if you have a lot of R code in your .Rmds (unlike the Faylab Lab Manual), there will be additional tinkering needed to make the code chunks happy.\n\n\nCitations\nThe Faylab Lab Manual cited two papers, presenting us with an opportunity to see how easy it is to add references to a Quarto book. Briefly, in the Visual Editor, Insert > Citation > DOI. Pasting the DOI or its full URL, we can insert the citation. This automatically creates a references.bib file and adds the full citations at the bottom of the chapter page (watch demo). In July 2022, we had to manually add a ## References heading, but this may not be necessary in future Quarto updates.\n\n\n\n\n\n\nInsert citation via its DOI using RStudio Visual Editor\n\n\n\n\n\n\n\n\n\n\nPublishing notes\nIf the book’s output is strictly html, there’s no need to specify output-dir in _quarto.yml. The output directory default is _book/, which is what we’d like. If we wanted other types of output like like PDF or EPUB, etc. those single file outputs are also written to the output-dir (Quarto docs).\nIf you currently have a docs/ folder, delete it.\nUpdate .gitignore to ignore _book/. At the same time, we have it ignore caches and a .quarto file:\n/.quarto/\n*_cache/\n_book/\nOnce all is settled, delete _output.yml.\nOnce the Openscapes fork was fully reviewed, we made a pull request from that to the main branch of the book’s repo. Once that was merged, we set up GitHub Actions to render the book. (TODO: instructions for GitHub Actions)\n\n\nGitHub Actions\nThis book was mostly prose and screenshots without any R code. This made the conversion from RMarkdown to Quarto likely more straightforward than if you also needed to adjust code chunk options in the quarto style (#|). Our initial GitHub Action to render the converted Faylab Lab Manual failed because we had a piece of R code - even though the code was commented out! This was resolved when we deleted the line."
+  },
+  {
+    "objectID": "transition-from-rmarkdown.html#distill-to-quarto",
+    "href": "transition-from-rmarkdown.html#distill-to-quarto",
+    "title": "Transition from RMarkdown",
+    "section": "Distill to quarto",
+    "text": "Distill to quarto\nWe transitioned our events site from distill to quarto in May 2022 (github view before and after). We followed excellent notes and examples from Nick Tierney and Danielle Navarro.\nAfter we had changed all the files, the Build tab in the RStudio IDE still showed “Build website” rather then “Render Website” and “Preview Website”, and would error when we pushed them (because that button was expecting a distill site, not a quarto site). To fix this, we updated the .Rproj file. Clicking on the .Rproj file in the RStudio IDE will open a dialog box where you can click things you want (you can also open these in a text editor or from the GitHub website to see the actual text). To fix this situation with the Build tab: Project Options > Build Tools > Project Build Tools > None.\nLooking at files /posts/_metadata.yml and _quarto.yml helps see where things are defined. For example, to make event post citations appear, we added citation: true to /posts/_metadata.yml and in _quarto.yml under the website key we set site-url: https://openscapes.github.io/events. We deleted footer.html used with distill because footer is now defined in quarto.yml.\n\nPublishing notes\n\nBackground: Our distill site had been set up to output to a docs folder, and had GitHub Settings > Pages set to look there rather gh-pages branch. (Julie note: this was a new-to-me capability when we set up the events distill site in Spring 2021 so I had forgotten that was an option). We’ve inititally kept this same set-up for now with our events page in _quarto.yml: output-dir: docs. However, this is sub-optimal; better to not have to commit and push these files but to instead have a GitHub Action generate them upon a commit. So the following is what we did -\n\nDon’t specify output-dir in _quarto.yml. The output directory default is _site/, which is what we’d like.\nIf you currently have a docs/ folder (like we did as we were experimenting), delete it.\nUpdate .gitignore to ignore _site/. At the same time, we have it ignore caches and a .quarto file:\n/.quarto/\n*_cache/\n_site/\nPush these changes, merge into main.\nOn GitHub.com, in your repo, set up GitHub publishing\nFollow instructions from the explore and setup chapter."
+  },
+  {
+    "objectID": "transition-from-rmarkdown.html#troubleshooting",
+    "href": "transition-from-rmarkdown.html#troubleshooting",
+    "title": "Transition from RMarkdown",
+    "section": "Troubleshooting",
+    "text": "Troubleshooting\n\nGitHub Action fails, says you need RMarkdown but you don’t have R code!\nAnd you changed all .Rmds to .qmds!\nYou likely have a few setup code chunks from RMarkdown, that look like this:\n{r setup, include=FALSE}\nknitr::opts_chunk$set(echo = FALSE)\nYou can find them by opening each of your files and having a look, or use GitHub’s search for the keyword knitr"
   },
   {
     "objectID": "quarto-workflows/jupyter.html",
@@ -217,34 +189,6 @@
     "text": "Troubleshooting\n\nMy changes don’t show up in preview\nMake sure you’ve saved your file! There might be a slight delay depending on your JupyterHub/Lab setup.\n\n\nQuarto render hangs / does not complete\nCheck the specific notebook, are there any `—` throughout to denote line breaks rather than yaml? They might be causing the issue; consider deleting those.\nAlso check how long the first raw cell is. Are there level-1 headers (#)? Try removing them."
   },
   {
-    "objectID": "quarto-workflows/index.html",
-    "href": "quarto-workflows/index.html",
-    "title": "Quarto workflows",
-    "section": "",
-    "text": "How do you work in Quarto? You can use whichever tool you’re comfortable with (RStudio, Jupyter, GitHub, VS Code, etc). Developing your quarto site will have the same basic workflow, no matter which tool you use. It is very iterative, and each is explored more below.\n\nAuthoring: write text, code, images, etc in a file. Supported files include .md, .Rmd, .qmd, .ipynb…\nUpdate _quarto.yml as needed (for example, if you’ve created a new file you’d like included in your site)\nRender individual files and/or the whole website\nRepeat, repeat, repeat\nCommit and push your website to GitHub, your updates will publish automatically!\nRepeat all of the above to make the website as you’d like!\n\nNote: if editing from your internet browser we won’t render in Step 3. That step will not be separate, but combined with Step 5, which will only require a commit, not a push."
-  },
-  {
-    "objectID": "quarto-workflows/index.html#authoring",
-    "href": "quarto-workflows/index.html#authoring",
-    "title": "Quarto workflows",
-    "section": "Authoring",
-    "text": "Authoring\nAs an author, you have a lot of options of how your text will be formatted, arranged, and interlinked. You will be writing in Markdown, which is a lightweight text formatting language. The Quarto documentation about authoring introduces markdown-basics that will get you started. Also see Mine Çetinkaya-Rundel’s A Quarto tip a day.\nEach page of our site has a similar first few lines - this YAML, like we saw in our _quarto.yml and it is indicated by two sets of 3 dashes --- :\n---\ntitle: My title\n---\nYou’re able to add more features to individual pages by including it in the YAML, which for the most part here only includes a title. See Quarto excecution options for more information of what you can include in the YAML."
-  },
-  {
-    "objectID": "quarto-workflows/index.html#update-_quarto.yml",
-    "href": "quarto-workflows/index.html#update-_quarto.yml",
-    "title": "Quarto workflows",
-    "section": "Update _quarto.yml",
-    "text": "Update _quarto.yml\nLet’s have a closer look at the _quarto.yml file.\nThis type of file (.yml or .yaml) is written in YAML (“Yet Another Markup Language”). You’ll be able to shift the arrangement of webpages by reordering/adding/deleting them in the _quarto.yml file following the patterns you see in this example.\n\n\n\n_quarto.yml and website side-by-side\n\n\nNotice that there are multiple ways in the _quarto.yml for you to include a file in your website. For example, in the above image, the “First Observations” we see in the left sidebar of the published website (right image) is represented in _quarto.yml (left image) over two lines, with line 36 indicating the file reference and line 37 indicating the text to show up in the left sidebar. However, “From RStudio” is only represented in one line of _quarto.yml, on line 43. This represents two strategies for including a file in your website. By default, the title of a specified file will show up in the website’s sidebar, which is what is happening with the “From RStudio” example. If you would like more control over what is written in the sidebar vs the title of your files, then the approach we took with “First Observations” is what you’ll want to do: you’ll see that only “First Observations” shows up in the sidebar as we specified in _quarto.yml, but the page’s title says “First Observations & Setup” (which in our preference was too long for the sidebar).\n\n\n\n\n\n\nNote\n\n\n\nAs you modify _quarto.yml, the most important thing to know is that spacing matters. Pay attention to whether text is indented by one, two, four, or other spaces, and make sure you follow it; if your site is not looking as expected it is likely a silent error in your YAML. Some text editors like RStudio provide debugging support for YAML and are highly recommended to save you time and heartache."
-  },
-  {
-    "objectID": "quarto-workflows/index.html#install-quarto",
-    "href": "quarto-workflows/index.html#install-quarto",
-    "title": "Quarto workflows",
-    "section": "Install Quarto",
-    "text": "Install Quarto\nhttps://quarto.org/docs/get-started/ describes how to install Quarto, which will depend on your operating system. We’ll walk through installation for each tool in the next chapters."
-  },
-  {
     "objectID": "quarto-workflows/rstudio.html",
     "href": "quarto-workflows/rstudio.html",
     "title": "From RStudio",
@@ -299,5 +243,61 @@
     "title": "From RStudio",
     "section": "Troubleshooting",
     "text": "Troubleshooting\nIf you have trouble rendering your website after for example changing the extenstion of a file from .md to .qmd, refreshing your RStudio often helps. Do this by clicking the project name at the upper right of the RStudio window (in this case, quarto-website-tutorial), and underneath the “close project” section, click the same name of your project: quarto-website-tutorial. This will relaunch your whole project afresh."
+  },
+  {
+    "objectID": "quarto-workflows/index.html",
+    "href": "quarto-workflows/index.html",
+    "title": "Quarto workflows",
+    "section": "",
+    "text": "How do you work in Quarto? You can use whichever tool you’re comfortable with (RStudio, Jupyter, GitHub, VS Code, etc). Developing your quarto site will have the same basic workflow, no matter which tool you use. It is very iterative, and each is explored more below.\n\nAuthoring: write text, code, images, etc in a file. Supported files include .md, .Rmd, .qmd, .ipynb…\nUpdate _quarto.yml as needed (for example, if you’ve created a new file you’d like included in your site)\nRender individual files and/or the whole website\nRepeat, repeat, repeat\nCommit and push your website to GitHub, your updates will publish automatically!\nRepeat all of the above to make the website as you’d like!\n\nNote: if editing from your internet browser we won’t render in Step 3. That step will not be separate, but combined with Step 5, which will only require a commit, not a push."
+  },
+  {
+    "objectID": "quarto-workflows/index.html#authoring",
+    "href": "quarto-workflows/index.html#authoring",
+    "title": "Quarto workflows",
+    "section": "Authoring",
+    "text": "Authoring\nAs an author, you have a lot of options of how your text will be formatted, arranged, and interlinked. You will be writing in Markdown, which is a lightweight text formatting language. The Quarto documentation about authoring introduces markdown-basics that will get you started. Also see Mine Çetinkaya-Rundel’s A Quarto tip a day.\nEach page of our site has a similar first few lines - this YAML, like we saw in our _quarto.yml and it is indicated by two sets of 3 dashes --- :\n---\ntitle: My title\n---\nYou’re able to add more features to individual pages by including it in the YAML, which for the most part here only includes a title. See Quarto excecution options for more information of what you can include in the YAML."
+  },
+  {
+    "objectID": "quarto-workflows/index.html#update-_quarto.yml",
+    "href": "quarto-workflows/index.html#update-_quarto.yml",
+    "title": "Quarto workflows",
+    "section": "Update _quarto.yml",
+    "text": "Update _quarto.yml\nLet’s have a closer look at the _quarto.yml file.\nThis type of file (.yml or .yaml) is written in YAML (“Yet Another Markup Language”). You’ll be able to shift the arrangement of webpages by reordering/adding/deleting them in the _quarto.yml file following the patterns you see in this example.\n\n\n\n_quarto.yml and website side-by-side\n\n\nNotice that there are multiple ways in the _quarto.yml for you to include a file in your website. For example, in the above image, the “First Observations” we see in the left sidebar of the published website (right image) is represented in _quarto.yml (left image) over two lines, with line 36 indicating the file reference and line 37 indicating the text to show up in the left sidebar. However, “From RStudio” is only represented in one line of _quarto.yml, on line 43. This represents two strategies for including a file in your website. By default, the title of a specified file will show up in the website’s sidebar, which is what is happening with the “From RStudio” example. If you would like more control over what is written in the sidebar vs the title of your files, then the approach we took with “First Observations” is what you’ll want to do: you’ll see that only “First Observations” shows up in the sidebar as we specified in _quarto.yml, but the page’s title says “First Observations & Setup” (which in our preference was too long for the sidebar).\n\n\n\n\n\n\nNote\n\n\n\nAs you modify _quarto.yml, the most important thing to know is that spacing matters. Pay attention to whether text is indented by one, two, four, or other spaces, and make sure you follow it; if your site is not looking as expected it is likely a silent error in your YAML. Some text editors like RStudio provide debugging support for YAML and are highly recommended to save you time and heartache."
+  },
+  {
+    "objectID": "quarto-workflows/index.html#install-quarto",
+    "href": "quarto-workflows/index.html#install-quarto",
+    "title": "Quarto workflows",
+    "section": "Install Quarto",
+    "text": "Install Quarto\nhttps://quarto.org/docs/get-started/ describes how to install Quarto, which will depend on your operating system. We’ll walk through installation for each tool in the next chapters."
+  },
+  {
+    "objectID": "quarto-workflows/browser.html",
+    "href": "quarto-workflows/browser.html",
+    "title": "From the Browser",
+    "section": "",
+    "text": "A workflow from the browser if good for getting started (since you do not need to install additional software) and for making small contributions, but is definitely limited. Once you feel comfortable here, you can move to a different setup.\nHere’s an example of editing content on an existing page."
+  },
+  {
+    "objectID": "quarto-workflows/browser.html#edit-content-on-an-existing-page",
+    "href": "quarto-workflows/browser.html#edit-content-on-an-existing-page",
+    "title": "From the Browser",
+    "section": "Edit content on an existing page",
+    "text": "Edit content on an existing page\nLet’s change the date on the home page of this website.\nIn your repository, navigate to index.md. Then, click the pencil icon in the top right to edit directly.\n\n\n\n\n\nWe are now in the “Edit file” tab of the editor, where we can make modifications. Let’s change the date to today’s date. Click the “Preview” tab to see your changes. You can even check the “Show diff” box on the right side to see the changes you’ve made.\n\n\n\n\n\nWhile you’re here, see if there are additional changes to the text you’d like to make. Maybe changing the title or author at the top, or for the main text on the home page of the website.\nOur index.md file is written in Markdown, which enables you to make simple text formatting. As you go back and forth from “Edit file” to “Preview”, notice the patterns of how the Markdown text looks when it is as source (“Edit file”) and when it is formatted (“Preview”). For example, in Markdown, you can make text as a header with # symbols, bold or italic with * symbols, and hyperlinks with [](). Notice that spacing is important: for example, there are carriage returns (when you hit the “return” key) before any bullet points. You can learn the short list of Markdown rules here: https://quarto.org/docs/authoring/markdown-basics."
+  },
+  {
+    "objectID": "quarto-workflows/browser.html#commit-and-publish",
+    "href": "quarto-workflows/browser.html#commit-and-publish",
+    "title": "From the Browser",
+    "section": "Commit and publish",
+    "text": "Commit and publish\nCommit your changes by scrolling to the bottom of the page and writing a commit message - a note to yourself and others about what changes you made. Write your commit message and then click the green “Commit changes” button.\n\n\n\n\n\nNow, click back to the main page of your GitHub repository. You should see the orange dot confirming your website is published. You’ll have to wait for the GitHub Action to tell quarto to build your site for you to see the update, but it will be there!"
+  },
+  {
+    "objectID": "quarto-workflows/browser.html#limitations",
+    "href": "quarto-workflows/browser.html#limitations",
+    "title": "From the Browser",
+    "section": "Limitations",
+    "text": "Limitations\nWhile awesome that we can edit using GitHub directly from the browser, there are obvious limitations. One is that to see your edits show up in your book, you have to publish using the GitHub Action. This is slow. Another limitation is that we can only work on one file at a time and commit them each separately, which also is slow. Using additional software can make things much better, as we explore in subsequent chapters."
   }
 ]
