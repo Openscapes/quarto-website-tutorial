@@ -53,7 +53,7 @@ Change all filename extensions `.Rmd` -\> `.qmd` (you could Preview after this c
 
 ### Citations
 
-The Faylab Lab Manual cited two papers, presenting us with an opportunity to see how easy it is to add references to a Quarto book. Briefly, in the Visual Editor, Insert \> Citation \> DOI. Pasting the DOI or its full URL, we can insert the citation. This automatically creates a `references.bib` file and adds the full citations at the bottom of the chapter page. In July 2022, we had to manually add a `## References` heading, but this may not be necessary in future Quarto updates.
+The Faylab Lab Manual cited two papers, presenting us with an opportunity to see how easy it is to add references to a Quarto book. Briefly, in the Visual Editor, Insert \> Citation \> DOI. Pasting the DOI or its full URL, we can insert the citation. This automatically creates a `references.bib` file and adds the full citations at the bottom of the chapter page ([watch demo](https://youtu.be/azVAl343CIU?t=2923)). In July 2022, we had to manually add a `## References` heading, but this may not be necessary in future Quarto updates.
 
 ::: {layout-ncol="2"}
 ![Insert citation via its DOI using RStudio Visual Editor](images/rstudio-insert-citation.png){fig-alt="RStudio Visual Editor Insert dropdown menu with Citation highlighted"}
