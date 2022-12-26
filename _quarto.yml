@@ -3,9 +3,9 @@ project:
   
 website: 
   page-navigation: true
-  title: "Making sharable documents with Quarto" 
-  site-url: "https://openscapes.github.io/quarto-website-tutorial" 
-  repo-url: https://github.com/openscapes/quarto-website-tutorial 
+  title: "VEDA Documentation" 
+  site-url: "https://nasa-impact.github.io/veda-docs" 
+  repo-url: https://github.com/nasa-impact/veda-docs 
   repo-actions: [edit, issue]
   
   page-footer:
@@ -17,15 +17,15 @@ website:
     pinned: true
     align: center
     tools: 
-      - icon: globe
-        href: https://openscapes.org
-        text: "Openscapes.org"
+      - icon: info-circle
+        href: https://www.earthdata.nasa.gov/esds/veda
+        text: "earthdata.nasa.gov/esds/veda"
       - icon: github
-        href: https://github.com/openscapes/quarto-website-tutorial
-        text: "Quarto website tutorial"
-      - icon: twitter
-        href: https://twitter.com/openscapes
-        text: "Openscapes Twitter"         
+        href: https://github.com/nasa-impact/veda-docs
+        text: "Repository home"
+      - icon: binoculars
+        href: https://earthdata.nasa.gov/dashboard
+        text: "VEDA Dashboard"         
 
     style: "docked"
     search: true
