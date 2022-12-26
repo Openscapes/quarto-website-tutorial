@@ -1,0 +1,10 @@
+{
+    "mac64_chromedriver_106.0.5249_for_106.0.5249": {
+        "timestamp": "20/10/2022",
+        "binary_path": "./gif_generation_dependencies/.wdm/drivers/chromedriver/mac64/106.0.5249/chromedriver"
+    },
+    "mac64_chromedriver_108.0.5359_for_108.0.5359": {
+        "timestamp": "26/12/2022",
+        "binary_path": "./gif_generation_dependencies/.wdm/drivers/chromedriver/mac64/108.0.5359/chromedriver"
+    }
+}
