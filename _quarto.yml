@@ -13,7 +13,7 @@ website:
     left: "&copy; CC-By Openscapes, 2022"
     
   sidebar:
-    logo: "images/Veda_logo_blue_text_outlines.png"
+    logo: "images/Veda_logo_blue_no_text.png"
     pinned: true
     align: center
     tools: 
