@@ -10,7 +10,7 @@ rioxarray
 pystac_client
 sphinxcontrib-napoleon
 sphinx-rtd-theme
-# stackstac
+stackstac
 folium
 boto3
 hvplot

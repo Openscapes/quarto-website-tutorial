@@ -26,13 +26,11 @@ jobs:
         with:
           python-version: '3.9'
           cache: 'pip'
+
       - run: pip install jupyter
       - run: pip install -r requirements.txt
+      - run: quarto render --execute --to html
 
-      - name: Render
-        uses: quarto-dev/quarto-actions/render@v2
-        with:
-          to: html
 
       - name: Publish to GitHub Pages (and render)
         uses: quarto-dev/quarto-actions/publish@v2

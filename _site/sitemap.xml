@@ -1,51 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://nasa-impact.github.io/veda-docs/transition-from-rmarkdown.html</loc>
-    <lastmod>2022-12-26T17:36:10.460Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nasa-impact.github.io/veda-docs/index.html</loc>
-    <lastmod>2022-12-26T18:21:17.354Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nasa-impact.github.io/veda-docs/learning-more.html</loc>
-    <lastmod>2022-12-26T17:36:11.801Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nasa-impact.github.io/veda-docs/explore.html</loc>
-    <lastmod>2022-12-26T17:36:12.218Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nasa-impact.github.io/veda-docs/quarto-workflows/browser.html</loc>
-    <lastmod>2022-12-26T17:36:12.547Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nasa-impact.github.io/veda-docs/quarto-workflows/jupyter.html</loc>
-    <lastmod>2022-12-26T17:36:12.950Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nasa-impact.github.io/veda-docs/quarto-workflows/index.html</loc>
-    <lastmod>2022-12-26T17:36:13.277Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nasa-impact.github.io/veda-docs/quarto-workflows/rstudio.html</loc>
-    <lastmod>2022-12-26T17:36:13.668Z</lastmod>
-  </url>
-  <url>
     <loc>https://nasa-impact.github.io/veda-docs/veda-apis.html</loc>
-    <lastmod>2022-12-26T18:21:16.351Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nasa-impact.github.io/veda-docs/example-notebooks/index.html</loc>
-    <lastmod>2022-12-26T19:55:21.482Z</lastmod>
+    <lastmod>2022-12-26T21:33:23.506Z</lastmod>
   </url>
   <url>
     <loc>https://nasa-impact.github.io/veda-docs/example-notebooks/list-collections.html</loc>
-    <lastmod>2022-12-26T19:56:16.022Z</lastmod>
+    <lastmod>2022-12-26T21:33:23.976Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nasa-impact.github.io/veda-docs/example-notebooks/index.html</loc>
+    <lastmod>2022-12-26T21:33:24.265Z</lastmod>
   </url>
   <url>
     <loc>https://nasa-impact.github.io/veda-docs/example-notebooks/hls-visualization.html</loc>
-    <lastmod>2022-12-26T19:52:26.258Z</lastmod>
+    <lastmod>2022-12-26T21:33:24.960Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nasa-impact.github.io/veda-docs/index.html</loc>
+    <lastmod>2022-12-26T21:33:25.256Z</lastmod>
   </url>
 </urlset>

@@ -7,6 +7,8 @@ subtitle: "Documentation about VEDA APIs, Datasets and Analytics Platforms"
 
 This website provides documentation and example notebooks for the various APIs, datasets and analytics platforms maintained by NASA VEDA project. The intended audience is anyone who plans to use those backend systems.
 
+This website is based off [https://github.com/Openscapes/quarto-website-tutorial](https://github.com/Openscapes/quarto-website-tutorial).
+
 ## What is VEDA?
 
 VEDA is NASA's Visualization, Exploration, and Data Analysis (VEDA) project. It is an open-source science cyberinfrastructure for data processing, visualization, exploration, and geographic information systems (GIS) capabilities.

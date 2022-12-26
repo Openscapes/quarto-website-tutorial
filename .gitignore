@@ -8,3 +8,5 @@
 _site/
 
 .DS_Store
+_env*
+.ipynb_checkpoints

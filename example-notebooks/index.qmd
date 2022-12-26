@@ -2,9 +2,29 @@
 title: Example Notebooks
 ---
 
-To run the notebooks locally:
+To run the notebooks locally, you can use a virtual environment and jupyter.
+
+Make sure to use underscore for the virtual environment so it's not renderd by `quarto render`
 
 ```bash
+python3 -m venv _env
+source _env/bin/activate
 pip3 install -r requirements
+python3 -m ipykernel install --user --name=_env
 jupyter notebook
 ```
+
+To execute and render html locally:
+
+```bash
+quarto render --execute
+open _site/index.html 
+```
+
+To preview local changes live, you can use preview, however this will not re-run any code cells:
+
+```bash
+quarto preview
+```
+
+
