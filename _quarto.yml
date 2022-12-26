@@ -37,6 +37,7 @@ website:
       - section: example-notebooks/index.qmd
         contents: 
           - example-notebooks/list-collections.ipynb
+          - example-notebooks/hls-visualization.ipynb
 
 format:
   html:

@@ -1,6 +1,8 @@
-# Example Notebooks
+---
+title: Example Notebooks
+---
 
-Run the notebooks locally:
+To run the notebooks locally:
 
 ```bash
 pip3 install -r requirements
