@@ -383,5 +383,12 @@
     "title": "VEDA Documentation",
     "section": "",
     "text": "Run the notebooks locally:\npip3 install -r requirements\njupyter notebook"
+  },
+  {
+    "objectID": "example-notebooks/list-collections.html",
+    "href": "example-notebooks/list-collections.html",
+    "title": "List all collections",
+    "section": "",
+    "text": "STAC_API_URL = 'https://staging-stac.delta-backend.com/'\nclient = Client.open(STAC_API_URL)\n\n\nfor root, subcatalogs, items in client.walk():\n    # subcats represents any catalogs or collections owned by root\n    for cat in subcatalogs:\n        print(cat.id)\n\nnightlights-500m-daily\nsocial-vulnerability-index-household\nnightlights-hd-monthly\ngeoglam\ngrdi-vnl-raster\nsocial-vulnerability-index-housing-nopop\nsocial-vulnerability-index-household-nopop\nsocial-vulnerability-index-socioeconomic\nsocial-vulnerability-index-socioeconomic-nopop\ngrdi-filled-missing-values-count\nOMI_trno2-COG\nsocial-vulnerability-index-overall\nsocial-vulnerability-index-minority-nopop\ngrdi-cdr-raster\nMO_NPP_npp_vgpm\nno2-monthly-diff\nlis-tws-trend\nHLSL30.002\nsocial-vulnerability-index-overall-nopop\ngrdi-v1-raster\nIS2SITMOGR4-cog\nlis-tws-anomaly\nblue-tarp-planetscope\nsocial-vulnerability-index-housing\nblue-tarp-detection\ngrdi-shdi-raster\ngrdi-imr-raster\nhls-l30-002-ej\nno2-monthly\nnightlights-hd-1band\nsocial-vulnerability-index-minority\nnceo_africa_2017\nOMSO2PCA-COG\nHLSS30.002\nhls-s30-002-ej-reprocessed\ngrdi-v1-built\nhls-s30-002-ej\nhls-l30-002-ej-reprocessed\nfacebook_population_density\ngrdi-vnl-slope-raster"
   }
 ]
