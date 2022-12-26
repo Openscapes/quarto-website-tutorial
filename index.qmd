@@ -1,45 +1,28 @@
 ---
-title: "Making shareable documents with Quarto"
-subtitle: "Create open-source tutorials, onboarding docs, and much more"
+title: "VEDA Documentation"
+subtitle: "Documentation about VEDA APIs, Datasets and Analytics Platforms"
 ---
 
 ## Welcome {#welcome}
 
-It's possible to create beautiful documentation to share online with [Quarto](https://quarto.org) that auto-updates with [GitHub](http://github.com). This is very new and incredibly cool. This tutorial is an example of a quarto website --- it is a really powerful way to create and share your work. You can communicate about science using the same reproducible workflow you and/or your colleagues use for analyses, whether or not you write code.
+This website provides documentation and example notebooks for the various APIs, datasets and analytics platforms maintained by NASA VEDA project. The intended audience is anyone who plans to use those backend systems.
 
-Creating websites with Quarto can be done without knowing R, Python or HTML, CSS, etc, and that's where we'll start. However, Quarto integrates with these tools so you can make your websites as complex and beautiful as you like as you see examples and reuse and remix from others in the open community. This tutorial borrows heavily from a lot of great tutorials and resources you should check out too -- there are links throughout.
+## What is VEDA?
 
-## What is Quarto?
+VEDA is NASA's Visualization, Exploration, and Data Analysis (VEDA) project. It is an open-source science cyberinfrastructure for data processing, visualization, exploration, and geographic information systems (GIS) capabilities.
 
-Quarto helps you have your ideas and your code in one place, and present it in a beautiful way. 
+Learn more at [https://www.earthdata.nasa.gov/esds/veda](https://www.earthdata.nasa.gov/esds/veda).
 
-**Quarto unifies and extends the RMarkdown ecosystem** - it unifies by combining the functionality of R Markdown, bookdown, distill, xaringian, etc into a single consistent system. And it extends in several ways: all features are possible beyond R too, including Python and Javascript. It also has more “guardrails”: accessibility and inclusion are centered in the design. Quarto is for people who love RMarkdown, and it's for people who have never used RMarkdown. 
- 
+## What can you do with VEDA?
 
-The ability for Quarto to streamline collaboration has been so cool and important for our [NASA Openscapes](https://nasa-openscapes.github.io/) project. Quarto has been a common place for us to collaborate - across R and Python languages and coding expertise. 
+**Explore:** Available to anyone, you can visit the VEDA dashboard to explore data and stories developed by NASA scientific community at [https://earthdata.nasa.gov/dashboard](https://earthdata.nasa.gov/dashboard).
 
-## What is this tutorial?
+**Analyze:** Coming soon, anyone will be able to explore VEDA datasets and stories using a notebook environment. If you are a scientist affiliated with NASA projects such as [EIS](https://eis.smce.nasa.gov/about.html) and [MAAP](https://ops.maap-project.org) you should have access to a notebook environment associated with those projects.
 
-This is a 1-hour tutorial that can be used to teach or as self-paced learning. 
+## What's here
 
-We introduce Quarto by exploring this tutorial website, and practicing the basic Quarto workflow using different tools (GitHub browser, RStudio, and Jupyter) for editing your website.
+* Documentation on VEDA datasets and APIs.
 
-We'll start off from the browser so you don't need to install any additional software, however this approach is very limited and you will soon outgrow its capabilities. If you don't already have a workflow to edit files and sync to GitHub from your computer, I recommend RStudio. You don't need to know R to use RStudio, and it has powerful editor features that make for happy workflows.
+## What's coming
 
-[Quarto.org](https://quarto.org) is the go-to place for full documentation and more tutorials! 
-
-## Example Quarto sites
-
-A few Quarto websites from Openscapes - so far we have been using Quarto for documentation using Quarto and Markdown files and Jupyter Notebooks.
-
--   [Champions Lessons Series](https://openscapes.github.io/series)
--   [Openscapes Approach Guide](https://openscapes.github.io/approach-guide/)\
--   [2021 NASA Cloud Hackathon](https://nasa-openscapes.github.io/2021-Cloud-Hackathon/)
--   [Faylab Lab Manual](https://thefaylab.github.io/lab-manual/)
--   [A Quarto tip a day](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/), by Mine Çetinkaya-Rundel
-
-## About
-
-[Openscapes](https://openscapes.org) is about better science for future us. We help researchers reimagine data analysis, develop modern skills that are of immediate value to them, and cultivate collaborative and inclusive research teams as part of the broader global open movement.
-
-We're developing this tutorial to help folks with different levels of technical skills use [Quarto](https://quarto.org) for documentation and tutorial building. This tutorial was originally created for several different audiences: [NASA-Openscapes](https://nasa-openscapes.github.io) researcher support engineers using Python, communications directors at organizations promoting open science who do not identify as coders, and fisheries scientists curious about transitioning from RMarkdown. We're hoping it's useful to folks with backgrounds as wide as these; if you find it useful or have suggestions for improvement, please let us know by clicking "Edit this page" or "Report an issue" at the upper right side of any page.
+* Documentation for scientists on how to get started with the analytics platforms.

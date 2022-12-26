@@ -21,6 +21,19 @@ jobs:
       
       # add software dependencies here
 
+      - name: Install Python and Dependencies
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+          cache: 'pip'
+      - run: pip install jupyter
+      - run: pip install -r requirements.txt
+
+      - name: Render
+        uses: quarto-dev/quarto-actions/render@v2
+        with:
+          to: html
+
       - name: Publish to GitHub Pages (and render)
         uses: quarto-dev/quarto-actions/publish@v2
         with:

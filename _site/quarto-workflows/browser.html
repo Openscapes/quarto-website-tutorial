@@ -1,73 +1,67 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="generator" content="quarto-0.9.128">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>VEDA Documentation - From the Browser</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-0.9.653">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-
-<title>Making sharable documents with Quarto - From the Browser</title>
-<style>
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-ul.task-list{list-style: none;}
-</style>
-
-
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../quarto-workflows/rstudio.html" rel="next">
-<link href="../quarto-workflows/index.html" rel="prev">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate">
-<script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
-  "limit": 20,
-  "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
-  }
-}</script>
-
-
+  <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+  <script src="../site_libs/clipboard/clipboard.min.js"></script>
+  <meta name="quarto:offset" content="../">
+  <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+  <script src="../site_libs/quarto-search/fuse.min.js"></script>
+  <script src="../site_libs/quarto-search/quarto-search.js"></script>
+  <link href="../quarto-workflows/rstudio.html" rel="next">
+  <link href="../quarto-workflows/index.html" rel="prev">
+  <script src="../site_libs/quarto-html/quarto.js"></script>
+  <script src="../site_libs/quarto-html/popper.min.js"></script>
+  <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+  <script src="../site_libs/quarto-html/anchor.min.js"></script>
+  <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+  <link class="quarto-color-scheme" href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
+  <link class="quarto-color-scheme quarto-color-alternate" rel="prefetch" href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css">
+  <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+  <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+  <link class="quarto-color-scheme" href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link class="quarto-color-scheme quarto-color-alternate" rel="prefetch" href="../site_libs/bootstrap/bootstrap-dark.min.css">
+  <script id="quarto-search-options" type="application/json">{
+    "location": "sidebar",
+    "copy-button": false,
+    "collapse-after": 3,
+    "panel-placement": "start",
+    "type": "textbox",
+    "limit": 20,
+    "language": {
+      "search-no-results-text": "No results",
+      "search-matching-documents-text": "matching documents",
+      "search-copy-link-title": "Copy link to search",
+      "search-hide-matches-text": "Hide additional matches",
+      "search-more-match-text": "more match in this document",
+      "search-more-matches-text": "more matches in this document",
+      "search-clear-button-title": "Clear",
+      "search-detached-cancel-button-title": "Cancel",
+      "search-submit-button-title": "Submit"
+    }
+  }</script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
 </head>
-
-<body class="nav-sidebar docked">
-
+<body class="docked">
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
       <h1 class="quarto-secondary-nav-title">From the Browser</h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+      <button type="button" class="quarto-btn-toggle btn">
         <i class="bi bi-chevron-right"></i>
       </button>
     </div>
@@ -78,13 +72,13 @@ ul.task-list{list-style: none;}
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
-      <a href="../" class="sidebar-logo-link">
-      <img src="../images/openscapes_hex.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <a href="../">
+      <img src="../images/Veda_logo_blue_no_text.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main tools-wide">
-    <a href="https://openscapes.org" title="Openscapes.org" class="sidebar-tool px-1"><i class="bi bi-globe"></i></a>
-    <a href="https://github.com/openscapes/quarto-website-tutorial" title="Quarto website tutorial" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
-    <a href="https://twitter.com/openscapes" title="Openscapes Twitter" class="sidebar-tool px-1"><i class="bi bi-twitter"></i></a>
+    <a href="https://www.earthdata.nasa.gov/esds/veda" title="earthdata.nasa.gov/esds/veda" class="sidebar-tool px-1"><i class="bi bi-info-circle"></i></a>
+    <a href="https://github.com/nasa-impact/veda-docs" title="Repository home" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+    <a href="https://earthdata.nasa.gov/dashboard" title="VEDA Dashboard" class="sidebar-tool px-1"><i class="bi bi-binoculars"></i></a>
   <a href="" class="quarto-color-scheme-toggle sidebar-tool" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div>
@@ -108,11 +102,11 @@ ul.task-list{list-style: none;}
         <li class="sidebar-item sidebar-item-section">
     <div class="sidebar-item-container"> 
         <a href="../quarto-workflows/index.html" class="sidebar-item-text sidebar-link">Quarto workflows</a>
-      <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+      <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-quarto-workflowsindexqmd" aria-expanded="true">
         <i class="bi bi-chevron-right ms-2"></i>
       </a>
     </div>
-    <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+    <ul id="quarto-sidebar-section-quarto-workflowsindexqmd" class="collapse list-unstyled sidebar-section depth1 show">  
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quarto-workflows/browser.html" class="sidebar-item-text sidebar-link active">From the Browser</a>
@@ -146,40 +140,26 @@ ul.task-list{list-style: none;}
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#edit-content-on-an-existing-page" id="toc-edit-content-on-an-existing-page" class="nav-link active" data-scroll-target="#edit-content-on-an-existing-page">Edit content on an existing page</a></li>
-  <li><a href="#commit-and-publish" id="toc-commit-and-publish" class="nav-link" data-scroll-target="#commit-and-publish">Commit and publish</a></li>
-  <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations">Limitations</a></li>
-  </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/quarto-website-tutorial/edit/main/quarto-workflows/browser.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/quarto-website-tutorial/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<h2 id="toc-title">On this page</h2>
+<ul>
+<li><a href="#edit-content-on-an-existing-page" class="nav-link active" data-scroll-target="#edit-content-on-an-existing-page">Edit content on an existing page</a></li>
+<li><a href="#commit-and-publish" class="nav-link" data-scroll-target="#commit-and-publish">Commit and publish</a></li>
+<li><a href="#limitations" class="nav-link" data-scroll-target="#limitations">Limitations</a></li>
+</ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/nasa-impact/veda-docs/edit/main/quarto-workflows/browser.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/nasa-impact/veda-docs/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
-
 <header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title d-none d-lg-block">From the Browser</h1>
-</div>
 
-
-
-<div class="quarto-title-meta">
-
-    
-    
-  </div>
-  
-
-</header>
+<div class="quarto-title"><h1 class="title d-none d-lg-block display-7">From the Browser</h1></div></header>
 
 <p>A workflow from the browser if good for getting started (since you do not need to install additional software) and for making small contributions, but is definitely limited. Once you feel comfortable here, you can move to a different setup.</p>
 <p>Here’s an example of editing content on an existing page.</p>
 <section id="edit-content-on-an-existing-page" class="level2">
 <h2 class="anchored" data-anchor-id="edit-content-on-an-existing-page">Edit content on an existing page</h2>
 <p>Let’s change the date on the home page of this website.</p>
-<p>In your repository, navigate to <code>index.md</code>. Then, click the pencil icon in the top left to edit directly.</p>
+<p>In your repository, navigate to <code>index.md</code>. Then, click the pencil icon in the top right to edit directly.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/github-edit-index.png" class="img-fluid figure-img" style="width:95.0%"></p>
@@ -196,23 +176,23 @@ ul.task-list{list-style: none;}
 </section>
 <section id="commit-and-publish" class="level2">
 <h2 class="anchored" data-anchor-id="commit-and-publish">Commit and publish</h2>
-<p>Commit your changes by scrolling to the bottom of the page and writing a commit message - a note to yourself and others about what happened. Write your commit message and then click the green “Commit changes” button.</p>
+<p>Commit your changes by scrolling to the bottom of the page and writing a commit message - a note to yourself and others about what changes you made. Write your commit message and then click the green “Commit changes” button.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/github-commit.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
-<p>Now, click back to the main page of your GitHub repository. You should see the orange dot <a href="explore.qmd#confirm">confirming your website is published</a>. You’ll have to wait for the GitHub Action to tell quarto to build your site for you to see the update, but it will be there!</p>
+<p>Now, click back to the main page of your GitHub repository. You should see the orange dot <a href="../explore.html#confirm">confirming your website is published</a>. You’ll have to wait for the GitHub Action to tell quarto to build your site for you to see the update, but it will be there!</p>
 </section>
 <section id="limitations" class="level2">
 <h2 class="anchored" data-anchor-id="limitations">Limitations</h2>
 <p>While awesome that we can edit using GitHub directly from the browser, there are obvious limitations. One is that to see your edits show up in your book, you have to publish using the GitHub Action. This is slow. Another limitation is that we can only work on one file at a time and commit them each separately, which also is slow. Using additional software can make things much better, as we explore in subsequent chapters.</p>
 
 
-</section>
 
+</section>
 </main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+<script type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const disableStylesheet = (stylesheets) => {
     for (let i=0; i < stylesheets.length; i++) {
@@ -330,10 +310,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.blur();
     // flash "checked"
     button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
     setTimeout(function() {
-      button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
     // clear code selection
@@ -407,7 +384,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-right">This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</div>
   </div>
 </footer>
-
 
 
 </body></html>
