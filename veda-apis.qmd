@@ -1,0 +1,46 @@
+# VEDA STAC API and Browser {.unnumbered}
+
+The VEDA API source code is currently stored in a private repository: [veda-backend](https://github.com/NASA-IMPACT/veda-backend), but is based off [eoAPI](https://github.com/developmentseed/eoAPI).
+
+The browser is based off [https://github.com/radiantearth/stac-browser](https://github.com/radiantearth/stac-browser).
+
+## Tools
+
+We recommend the following tools for working with STAC and VEDA datasets.
+
+### Mapping + Visualization
+
+* [folium](https://github.com/python-visualization/folium): folium adds Leaflet.js support to python projects for visualizing data in a map.
+* [holoviz](https://holoviz.org/): High-level tools that make it easier to apply Python plotting libraries to your data.
+* [ipyleaflet](https://ipyleaflet.readthedocs.io/en/latest/): Interactive maps in the Jupyter notebook. ipyleaflet is built on ipywidgets allowing for bidirectional communication between front- and backends (learn more: [Interactive GIS in Jupyter with ipyleaflet](https://blog.jupyter.org/interactive-gis-in-jupyter-with-ipyleaflet-52f9657fa7a)).
+
+### Using STAC for cataloging data
+
+* [pystac](https://pystac.readthedocs.io/): PySTAC is a library for creating SpatioTemporal Asset Catalogs (STAC) in Python 3.
+* [pystac-client](https://github.com/stac-utils/pystac-client): A Python client for working with STAC Catalogs and APIs.
+
+### Analyzing data
+
+* [rioxarray](https://corteva.github.io/rioxarray/stable/): rasterio xarray extension
+* [stackstac](https://stackstac.readthedocs.io/): stackstac.stack turns a STAC collection into a lazy xarray.DataArray, backed by dask.
+
+## Environments
+
+### Production: COMING SOON
+
+### Staging (maintenance will be announced):
+
+* STAC browser (experimental): [delta-staging-stac-browser](http://delta-staging-stac-browser.s3-website-us-east-1.amazonaws.com/)
+* STAC API (metadata): [https://staging-stac.delta-backend.com/docs](https://staging-stac.delta-backend.com/docs)
+* List collections: [https://staging-stac.delta-backend.com/collections](https://staging-stac.delta-backend.com/collections)
+* Raster API (tiling): [https://staging-raster.delta-backend.com/docs](https://staging-raster.delta-backend.com/docs)
+* STAC viewer (experimental): [https://staging-stac.delta-backend.com/index.html](https://staging-stac.delta-backend.com/index.html)
+
+### Development, aka Dev (experimental work, expected downtime)
+
+* STAC browser (experimental): [delta-dev-stac-browser](http://delta-dev-stac-browser.s3-website-us-east-1.amazonaws.com/)
+* STAC API (metadata): [https://dev-stac.delta-backend.com/docs](https://dev-stac.delta-backend.com/docs)
+* List collections: [https://dev-stac.delta-backend.com/collections](https://dev-stac.delta-backend.com/collections)
+* Raster API (tiling): [https://dev-raster.delta-backend.com/docs](https://dev-raster.delta-backend.com/docs)
+* STAC viewer (experimental): [https://dev-stac.delta-backend.com/index.html](https://dev-stac.delta-backend.com/index.html)
+

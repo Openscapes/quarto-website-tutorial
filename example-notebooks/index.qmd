@@ -1,0 +1,8 @@
+# Example Notebooks
+
+Run the notebooks locally:
+
+```bash
+pip3 install -r requirements
+jupyter notebook
+```

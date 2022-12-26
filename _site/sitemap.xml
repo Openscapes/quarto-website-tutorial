@@ -1,35 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/transition-from-rmarkdown.html</loc>
-    <lastmod>2022-07-08T00:04:57.906Z</lastmod>
+    <loc>https://nasa-impact.github.io/veda-docs/transition-from-rmarkdown.html</loc>
+    <lastmod>2022-12-26T17:36:10.460Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/index.html</loc>
-    <lastmod>2022-07-08T00:04:58.299Z</lastmod>
+    <loc>https://nasa-impact.github.io/veda-docs/index.html</loc>
+    <lastmod>2022-12-26T17:53:28.874Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/learning-more.html</loc>
-    <lastmod>2022-07-08T00:04:58.634Z</lastmod>
+    <loc>https://nasa-impact.github.io/veda-docs/learning-more.html</loc>
+    <lastmod>2022-12-26T17:36:11.801Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/explore.html</loc>
-    <lastmod>2022-07-08T00:04:59.049Z</lastmod>
+    <loc>https://nasa-impact.github.io/veda-docs/explore.html</loc>
+    <lastmod>2022-12-26T17:36:12.218Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/browser.html</loc>
-    <lastmod>2022-07-08T00:04:59.372Z</lastmod>
+    <loc>https://nasa-impact.github.io/veda-docs/quarto-workflows/browser.html</loc>
+    <lastmod>2022-12-26T17:36:12.547Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/jupyter.html</loc>
-    <lastmod>2022-07-08T00:04:59.806Z</lastmod>
+    <loc>https://nasa-impact.github.io/veda-docs/quarto-workflows/jupyter.html</loc>
+    <lastmod>2022-12-26T17:36:12.950Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/index.html</loc>
-    <lastmod>2022-07-08T00:05:00.127Z</lastmod>
+    <loc>https://nasa-impact.github.io/veda-docs/quarto-workflows/index.html</loc>
+    <lastmod>2022-12-26T17:36:13.277Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/rstudio.html</loc>
-    <lastmod>2022-07-08T00:05:00.487Z</lastmod>
+    <loc>https://nasa-impact.github.io/veda-docs/quarto-workflows/rstudio.html</loc>
+    <lastmod>2022-12-26T17:36:13.668Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nasa-impact.github.io/veda-docs/veda-apis.html</loc>
+    <lastmod>2022-12-26T18:08:04.891Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nasa-impact.github.io/veda-docs/example-notebooks/index.html</loc>
+    <lastmod>2022-12-26T18:12:47.601Z</lastmod>
   </url>
 </urlset>

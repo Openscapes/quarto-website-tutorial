@@ -1,0 +1,17 @@
+cognito_client
+sphinx>=1.4
+pandoc
+nbconvert
+ipykernel~=6.4.1
+ipyleaflet
+matplotlib
+nbsphinx
+rioxarray
+pystac_client
+sphinxcontrib-napoleon
+sphinx-rtd-theme
+stackstac
+folium
+boto3
+hvplot
+pydantic[dotenv]
