@@ -37,7 +37,7 @@ website:
       - section: example-notebooks/index.qmd
         contents: 
           - example-notebooks/list-collections.ipynb
-          - example-notebooks/timeseries-stac-api.ipyb
+          - example-notebooks/timeseries-stac-api.ipynb
           - example-notebooks/hls-visualization.ipynb
           - example-notebooks/gif-generation.ipynb
 

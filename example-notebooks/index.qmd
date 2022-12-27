@@ -2,9 +2,9 @@
 title: Example Notebooks
 ---
 
-To run the notebooks locally, you can use a virtual environment and jupyter.
+To run the notebooks locally, you can use a python [virtual environment](https://docs.python.org/3/library/venv.html) and [jupyter](https://jupyter.org/).
 
-Make sure to use underscore for the virtual environment so it's not renderd by `quarto render`
+Use an underscore to prefix your virtual environment so quarto doesn't render any contents of the virtual environment directory.
 
 ```bash
 python3 -m venv _env
@@ -14,10 +14,10 @@ python3 -m ipykernel install --user --name=_env
 jupyter notebook
 ```
 
-To execute and render html locally:
+To execute the notebooks, render them in html and then view the result locally:
 
 ```bash
-quarto render --execute
+quarto render --execute --to html
 open _site/index.html 
 ```
 

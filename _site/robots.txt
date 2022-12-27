@@ -1,1 +1,0 @@
-Sitemap: https://nasa-impact.github.io/veda-docs/sitemap.xml

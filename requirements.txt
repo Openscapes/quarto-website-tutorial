@@ -14,3 +14,7 @@ folium
 boto3
 hvplot
 pydantic[dotenv]
+selenium
+webdriver_manager
+scipy
+jupyterlab
