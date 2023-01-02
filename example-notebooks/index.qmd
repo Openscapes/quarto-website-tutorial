@@ -17,7 +17,7 @@ jupyter notebook
 To execute the notebooks, render them in html and then view the result locally:
 
 ```bash
-quarto render --execute --to html
+quarto render --to html
 open _site/index.html 
 ```
 

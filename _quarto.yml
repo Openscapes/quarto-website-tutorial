@@ -40,6 +40,7 @@ website:
           - example-notebooks/timeseries-stac-api.ipynb
           - example-notebooks/hls-visualization.ipynb
           - example-notebooks/gif-generation.ipynb
+          - example-notebooks/visualizing-zarr.ipynb
 
 format:
   html:
