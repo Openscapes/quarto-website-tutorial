@@ -30,7 +30,7 @@ We recommend the following tools for working with STAC and VEDA datasets.
 
 ### Staging (maintenance will be announced):
 
-* STAC browser (experimental): [delta-staging-stac-browser](http://delta-staging-stac-browser.s3-website-us-east-1.amazonaws.com/)
+* STAC browser: [veda-staging-stac-browser](http://veda-staging-stac-browser.s3-website-us-west-2.amazonaws.com/)
 * STAC API (metadata): [https://staging-stac.delta-backend.com/docs](https://staging-stac.delta-backend.com/docs)
 * List collections: [https://staging-stac.delta-backend.com/collections](https://staging-stac.delta-backend.com/collections)
 * Raster API (tiling): [https://staging-raster.delta-backend.com/docs](https://staging-raster.delta-backend.com/docs)
@@ -38,7 +38,7 @@ We recommend the following tools for working with STAC and VEDA datasets.
 
 ### Development, aka Dev (experimental work, expected downtime)
 
-* STAC browser (experimental): [delta-dev-stac-browser](http://delta-dev-stac-browser.s3-website-us-east-1.amazonaws.com/)
+* STAC browser: [veda-dev-stac-browser](http://veda-dev-stac-browser.s3-website-us-west-2.amazonaws.com/)
 * STAC API (metadata): [https://dev-stac.delta-backend.com/docs](https://dev-stac.delta-backend.com/docs)
 * List collections: [https://dev-stac.delta-backend.com/collections](https://dev-stac.delta-backend.com/collections)
 * Raster API (tiling): [https://dev-raster.delta-backend.com/docs](https://dev-raster.delta-backend.com/docs)
