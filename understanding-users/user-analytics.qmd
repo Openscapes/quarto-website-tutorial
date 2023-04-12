@@ -1,0 +1,42 @@
+---
+  title: "EES analytics"
+---
+
+<p class="text-muted">Guidance on understanding how users are interacting with your statistics published via EES</p>
+
+---
+
+We track analytics of users on Explore Education Statistics using Google Analytics as well as other tools. These analytics can be found on our [EES Analytics dashboard](https://rsconnect/rsc/ees-analytics/){target="_blank" rel="noopener noreferrer"}. This tells you a range of things like:
+
+* How many times each accordion has been clicked
+* How long users spend on your page
+* How many times each table has been used in the table builder or downloaded
+
+---
+
+# User-led content improvements
+
+---
+
+The below table gives some pointers on how you can use these stats to improve your release for users:
+
+|Measure	|Guidance|
+|----|---------|
+|Search terms|	For popular search terms, add additional commentary or signposting using subheadings and accordions for to support your user's interests. If you refer to a popular search term by another name, consider changing it so users know what you're talking about.
+|Accordion openings|	Consider removing accordions with low numbers of clicks from your release. You could move them further up the page or group them into existing accordions if this commentary is essential to your release.
+|Downloads|	For files with low numbers of downloads, consider combining information into other files, or consider removing from your publication entirely if users are no longer interested in this data.
+|Tables built|	For tables with low numbers of interactions in the table tool, create featured tables to demonstrate the useful information they hold.
+|Permalinks|	Save popular permalinks as featured tables in future, so users can easily get to the data they want.
+|Traffic sources|	Consider where your users are being routed from and what is being written about your stats - clearly highlight key stories in the Headlines section and make use of the blue key stat tiles to make them easy to digest.|
+
+---
+
+# Guidance for analytics
+
+---
+
+[Performance analysis: GDS starter guide to using Google Analytics](/resources/performance_analysis_ga_guide.pdf)
+
+[Performance analysis: GDS Advanced Analytics Reporting Techniques](/resources/performance_analysis_advance_reporting.pdf)
+
+---

@@ -1,0 +1,132 @@
+---
+title: "Creating embedded visualisations"
+---
+
+```{r include=FALSE}
+require(knitr)
+```
+
+<p class="text-muted">Guidance for creating and embedding R-Shiny visualisations in EES publications</p>
+
+---
+
+# Introduction
+
+---
+
+EES now offers the option to add an embedded block, which allows analysts to present custom R created charts within their publications. This necessitates analysts creating an R-Shiny based app on GitHub containing the required chart that can then be hosted on a shiny server (currently using the DfE's account on shinyapps.io).
+
+**Note that this current combination of GitHub and ShinyApps for publishing Shiny Apps does not offer the appropriate security required for unpublished DfE data. Unpublished uderlying app data should therefore never be uploaded to GitHub/ShinyApps until such time as it has been published (i.e. via EES).** Prior to publication, either dummy data or the already published data should be substituted in for the purposes of uploading to GitHub and deploying to ShinyApps.
+
+If you need a live version of the dashboard with the unpublished data for pre-release reviews and access, the following options are available:
+
+* Demo the chart in R-Studio
+* Create a copy of the chart repository on Dev Ops, deploy this to rsconnect and use the rsconnect link as the embedded URL prior to publication (note this will need updating to the public ShinyApps link before the publication goes live).
+
+We are currently putting in place a case to provide an in ternal shiny server platform, which will allow greater control of security around our data and allow draft Shiny applications to use unpublished data for internal use.
+
+---
+
+## When to use an embedded chart
+
+---
+
+EES provides a wide range of inbuilt chart options and will always be the first preference for static line, bar and geographical charts. This helps us to clearly maintain consistent styling and accessibility levels across the site.
+
+However, there are some instances where you might want to publish something that we can't provide through EES. Example use cases would be:
+
+   - interactive charts controlled by drop-down filters;
+   - chart types not provided by EES, e.g. sankey diagrams, box plots, waffle charts, pie charts, dumbbell charts, etc.
+
+---
+
+## Tools
+
+---
+
+We currently only support custom charts created using R-Shiny. These should be created with ggplot and plotly. We provide a template example of a demo R-Shiny/ggplot chart on the DfE Analytical Services GitHub site, which is described [below](#the-dfe-tiny-shiny-template).
+
+---
+
+## Review and authorisation
+
+---
+
+To get a custom chart approved for embedding within a publication, you'll need to get it reviewed by the [Statistics Development team](mailto:statistics.development@education.gov.uk) (in addition to your standard approval chain).
+
+---
+
+# Creating an embeddable R-Shiny App
+
+---
+
+An embedded chart should take the form of a single chart, with necessary input options and nothing else. Avoid incorporating:
+
+* multiple different charts
+* using navigation elements
+* images and logos
+
+**And definitely don't include unpublished data in any app uploaded to GitHub/ShinyApps prior to publication.**
+
+Other elements such as tables may also be possible if there's a clear use case for them that EES alone can't meet. Get in touch with us if you want to check that what you'd like to include is compatible with the intended use of the embed block.
+
+---
+
+## The DfE Tiny-Shiny template
+
+---
+
+Our [template tiny shiny app repository](https://github.com/dfe-analytical-services/dfe-tiny-shiny) should be used a starting point for all embedded shiny charts.
+
+To get an app set-up for use with EES, you'll need the [Statistics Development Team](mailto:statistics.development@education.gov.uk) team to create a repo for the app within the [DfE Analytical Services area on GitHub](https://github.com/dfe-analytical-services/dfe-tiny-shiny).
+
+---
+
+## What's in the template
+
+---
+
+The template provides code for some basic interactive plots. Each example plot is contained with one of the existing branches below for demonstration purposes:
+
+* demo-interactive-bar
+* demo-interactive-line
+
+---
+
+## Working with data
+
+---
+
+As with the full dashboards, the embedded charts currently require the underlying data to be either included within the app repository on GitHub or uploaded elsewhere publicly accessible such as Google Drive or Dropbox. This currently means that any embedded charts being developed will need to use either dummy data or previously published data until the moment of publication. At the point of the parent release going live, the chart can then be updated with the latest data. Do not upload unpublished data to GitHub, Google Drive or Dropbox.
+
+As described earlier, where you need to use unpublished data in your chart prior to publication, you can either a) run the chart locally in R-Studio (without pushing the unpublished data to GitHub) or b) create a DevOps/rsconnect deploy of your app, which can be temporarily used as the embed block URL. Note, this will need updating to a URL to the public dashboard on ShinyApps ready for publication.
+
+We are currently developing a route to allow charts via R-Shiny apps to be hosted on DfE servers, such that draft publications will be able to incorporate embedded charts with the unpublished data. The data itself will then be accessed either from a SQL database on DfE servers.
+
+---
+
+# Development requirements
+
+---
+
+Many of the same principles that apply to creating a full R-Shiny dashboard apply to creating a custom embeddable charts. These are:
+
+   * [Accessibility](dashboards.html#accessibility-testing);
+   * [Reliability](dashboards.html#testing-r-shiny);
+   * [Performance](dashboards.html#performance-testing);
+   * [Coherent styling](dashboards.html#styling).
+
+---
+
+## Specific design recommendations for embedded plots
+
+---
+
+Example code for producing an embeddable shiny chart is given in the [template tiny shiny app repository](https://github.com/dfe-analytical-services/dfe-tiny-shiny/server.R). The following recommendations should be followed in adapting this code:
+
+* Figures should be produced using plotly/ggplot2
+* Figure lengths and heights should be in the range 6-10cm
+* Text sizes in plots should be no smaller than 12pt
+* Plotly overlays should be turned off
+
+Example code for creating charts using ggplot can be found in the [Using Explore Education Statistics guidance](ees.html#example-ggplot-chart-code)

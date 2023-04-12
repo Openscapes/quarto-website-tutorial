@@ -1,0 +1,81 @@
+---
+title: "Learning and Development"
+---
+
+<p class="text-muted">A collection of useful learning resources, and information on resources to get you started</p>
+
+---
+
+
+As statistics producers we require a variety of tools to be able to process our data. Below are the recommended tools that will give us the most power to do what we need. These have large user communities in DfE, and are already working in our current IT setup.
+
+For best practice when using software and coding in our process, see our [guidance on RAP](rap.html){target="_blank" rel="noopener noreferrer"} the [DfE Good Code Practice guide](https://dfe-analytical-services.github.io/good-code-practice/index.html){target="_blank" rel="noopener noreferrer"}.
+
+
+---
+
+# General resources
+
+---
+
+**Google is the single most powerful learning resource out there**, whether it leads you to a Stack Overflow answer to your problem, or to an online training course, it will have your needs covered. We appreciate that it can be daunting and overwhelming at first though, which is why we're pooling together links to particularly relevant resources on this page. Let us know if there's any you'd like to see added!
+
+- [The DfE Analytics Academy online R training course](https://trello.com/invite/b/QdDx3VmA/96f273b3438db2bb8ee5feae3943c3d4/analytics-academy-an-r-training-course){target="_blank" rel="noopener noreferrer"} - walks you through how to get set up with R, as well as setting tasks using DfE data to learn fundamental skills in R.
+
+- [How to QA](https://dfe-analytical-services.github.io/how-to-qa/index.html){target="_blank" rel="noopener noreferrer"} - a general guide to quality assurance best practice in DfE.
+
+- [DfE Data Science resource tool](https://rsconnect/rsc/DS-Resources/){target="_blank" rel="noopener noreferrer"} - a bank of learning materials, from coffee and coding talks to online guidebooks.
+
+- [ESFA guide to using R and Git](https://rsconnect/rsc/esfa-r-training/){target="_blank" rel="noopener noreferrer"} - take you from the beginning, teaches you how to use RStudio and later on even includes some information on Shiny apps and more complex topics. For more information on RShiny apps, join the [R Shiny Developers teams group](https://teams.microsoft.com/l/channel/19%3A311ec2e4d46b4dd38f0d61f05fb93383%40thread.skype/tab%3A%3A1fc89e11-fa70-473d-b993-df467ca0d459?groupId=b95c605d-8fbc-4e4d-9a76-2f7d1c55e70a&tenantId=fad277c9-c60a-4da1-b5f3-b3b8b34a82f9).
+
+- [Connor Quinn's resources for Data Engineering](https://educationgovuk.sharepoint.com/sites/sarpi/g/SitePages/DataEngineeringResources.aspx){target="_blank" rel="noopener noreferrer"} - for more advanced SQL and database resources this is a fantastic place to go.
+
+- [General data science resources](https://github.com/Chris-Engelhardt/data_sci_guide){target="_blank" rel="noopener noreferrer"} - includes plenty of open-source resources for R and SQL, with Python, Git, and shell included in there too.
+
+- [Awesome lists](https://github.com/sindresorhus/awesome){target="_blank" rel="noopener noreferrer"} and [awesome R](https://github.com/qinwf/awesome-R){target="_blank" rel="noopener noreferrer"} - another great bank of learning resources.
+
+- [Data Science week streams](https://web.microsoftstream.com/group/df01862c-7ad4-4f25-b7f2-df7353af52a9){target="_blank" rel="noopener noreferrer"} - a variety of talks across Data Science within the department.
+
+- [DfE Quality Assurance wiki](https://educationgovuk.sharepoint.com/sites/sarpi/g/SitePages/Quality-Assurance.aspx){target="_blank" rel="noopener noreferrer"} -  much of this is aimed at areas that use modelling, plenty of it is applicable to how we QA our data too.
+
+- [David Sands' Boons of R and Git](https://psysandsy.github.io/boons-r-git.html){target="_blank" rel="noopener noreferrer"} - a helpful guide o why R and Git are worth your time.
+
+---
+
+# Support available
+
+---
+
+The Statistics Development Team invites teams to take part in our partnership programme. The programme can help individuals with:
+
+* Using a relevant project to develop new coding skills and improving current confidence
+* Streamlining data production processes to free up time for secondary analysis
+* Improving the presentation and consistency of statistical products for users
+
+The partnership programme is a great opportunity to work with the Statistics Development Team, using protected time to work on things that are otherwise usually deprioritised. We understand the pressures of BAU work mean that development time is often hard fit in, but this programme offers designated support and clear project planning from our team so that these improvements can be achieved. Putting in the work at these early stages will save more time and resource in the long run, and we are keen to support as many teams as possible to free up time in the future for even more interesting analysis.
+
+**The Ask**
+
+We ask that you/a designated member of your team are given protected time to work on a specific project, with support from us. Some examples of previous projects we have helped support are:
+
+* The automation of the SEN2 release, creating automated QA reports and all EES outputs at the click of a button.
+* The automation of the HoP rolling brief document, removing arduous tasks like copying, pasting, and formatting in Word.
+
+The time commitment of the programme will be dependent on the size of the work and what level of support is required. [Please get in touch with us](mailto:Statistics.DEVELOPMENT@education.gov.uk) if you are interested and would like to discuss further.
+
+---
+
+# Further information
+
+---
+
+For more information on how to use these tools in your production processes, please see the [processes and RAP](rap.html){target="_blank" rel="noopener noreferrer"} page.
+
+
+This is by no means a finite list of resources, we want this to be added to and for it to develop over time - if you have any resources that you think could be added then we'd love to [hear from you](mailto:statistics.development@education.gov.uk). 
+
+
+If you are stuck at all, have any questions, want to find a resource, or even just want a second pair of eyes to double check something, contact us using the envelope in the top right corner and we'll be more than happy to help.
+
+
+---

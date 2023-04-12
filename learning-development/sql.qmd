@@ -1,0 +1,158 @@
+---
+title: "SQL"
+---
+
+<p class="text-muted">Guidance and tips for accessing data via databases with SQL</p>
+
+---
+
+## What is it
+
+---
+
+SQL or Structured Query Language, is a programming language used to talk to relational database management systems.
+
+---
+
+## What is it for
+
+---
+
+SQL servers are where most of DfE's data is held, making it ideal for database management.
+
+SQL provides us with a language primarily for querying databases to extract data, though it is also capable of some basic data processing and analysis.
+
+---
+
+## How to get it
+
+---
+
+Download SSMS from the DfE software center, talk to your team about getting access to the appropriate SQL servers and databases where the data you need to access is held and start writing SQL queries.
+
+There are usually a couple of different versions available for software on the software center, we'd recommend you always go for the latest (newest) version possible.
+
+<!-- gif getting this from the software center -->
+
+---
+
+## Best place to start
+
+---
+
+Andy Brook's excellent Introduction to SQL session, giving a visual overview of the basics of querying with SQL:
+
+<div align="center">
+<iframe width="640" height="360" align="middle" src="https://web.microsoftstream.com/embed/video/2a42789f-5183-4a79-b159-ec4a46e530d7?autoplay=false&amp;showinfo=false" allowfullscreen style="border:none;"></iframe>
+</div>
+
+---
+
+## Best practice
+
+---
+
+Here are some tips to follow best practice in your SQL code, making it easier to read and pick up if another person is running your code. Following best practice guidance will help you to achieve RAP best practice with [clean final code](rap.html#Clean_final_code)
+
+* Avoid any trailing whitespace
+* Always capitalize SQL keywords (e.g., SELECT or AS)
+* Variable names should be in snake case - lower case words separated by underscores (e.g. pupil_age instead of PupilAge)
+* Comments should go near the top of your query, or at least near the closest SELECT
+* Try to only comment on things that aren't obvious about the query (e.g. why hardcoded filters are used, how to update them)
+* Where possible, use [Common Table Expressions (CTEs)](https://www.essentialsql.com/introduction-common-table-expressions-ctes/){target="_blank" rel="noopener noreferrer"} early and often, and name them descriptively (e.g. "pupil_age_table" rather than "p")
+
+---
+
+## How to work with SQL
+
+---
+
+SSMS is the best tool to get started with writing SQL queries and saving SQL scripts that produce your desired outputs. 
+
+Once you have saved SQL scripts or are more familiar with writing SQL queries on the fly, you can look at running your scripts or lines of SQL code [directly in R](rap.html#Connecting_R_to_SQL). This will streamline your process, saving copying and pasting SQL outputs into csvs, and ultimately help with reaching RAP best practice by aiding production of [a single publication production script](rap.html#Single_publication_production_script)
+
+---
+
+## Quick reference lookup
+
+---
+
+- [w3schools.com](https://www.w3schools.com/sql/default.asp){target="_blank" rel="noopener noreferrer"} offers a useful guide through the most common SQL commands.
+
+---
+
+## Other resources
+
+---
+
+- This [tutorial script](https://github.com/TomFranklin/sql-applied-data-tidying/blob/master/data_tidying_l_and_d.sql){target="_blank" rel="noopener noreferrer"} by Tom Franklin is a particularly good starting point as it includes the data you are manipulating, so you don't need to worry about connecting to or getting access to specific databases before you can then run anything. Simply open up Microsoft SQL Server Management Studio and start playing with that query.
+
+- Avision Ho created the this [SQL training course](https://github.com/avisionh/Training-SQL){target="_blank" rel="noopener noreferrer"}.
+
+- The [Khan academy](https://www.khanacademy.org/computing/computer-programming/sql){target="_blank" rel="noopener noreferrer"} offers a great free introduction to the basics of SQL.
+
+- It's also worth taking a look at Jon Holman's presentation on ['good to know' SQL functions](https://educationgovuk.sharepoint.com/sites/sarpi/g/WorkplaceDocuments/Forms/AllItems.aspx?RootFolder=%2Fsites%2Fsarpi%2Fg%2FWorkplaceDocuments%2FInducation%20learning%20and%20career%20development%2FCoffee%20and%20Coding%2F180321%5Fjonathan%5Fsql&FolderCTID=0x012000C61C1076C17C5547A6D6D8C2A27B5D97){target="_blank" rel="noopener noreferrer"}.
+
+- MoJ have produced a [SQL from square one](https://moj-analytical-services.github.io/SQL_from_square_one/CTEs.html){target="_blank" rel="noopener noreferrer"} guide to using CTE's in SQL as well as running SQL from RStudio
+
+Andy's follow up intermediate SQL session, covering more advanced features of SQL:
+
+<div align="center">
+<iframe width="640" height="360" align="middle" src="https://web.microsoftstream.com/embed/video/0b96598e-1d4c-4c5e-807a-4efc264bc1cc?autoplay=false&amp;showinfo=false" allowfullscreen style="border:none;"></iframe>
+</div>
+
+
+---
+
+## Tips for using SQL
+
+---
+
+### Setting up a SQL area
+
+---
+
+Before you set up a SQL database, make sure you have the following information to pass on:
+
+* The name of the database you want to set up - Different servers will have different naming conventions, make sure to check this with the server owner before you confirm the name.
+* Who the database owners should be - This will most likely be yourself, but you can have multiple (e.g. your team leader). It can be helpful to have more than one owner, so one can grant permissions when the other is unavailable.
+* Who should have access, and what their access levels should be - Users can have read or read/write access. Make sure you have a list of users (with their AD names) and their access levels ready.
+* The database structure - Do you need certain schemas setting up? This will help organise your database. Without schemas, all tables will be saved under [dbo]. 
+
+There are a few common servers that statistics producers make use of at DfE. Use the following contacts below to pass on the above information to get your new database set up:
+
+* PDR (T1PRMDRSQL\SQLPROD,55842) - contact the [PDR team](mailto:PupilData.REPOSITORY@education.gov.uk)
+* PDB16 (3DCPRI-PDB16\ACSQLS) - raise a request through the service desk under "non-standard" > "any other request"
+* Analyse & Modelling server (T1PRANMSQL\SQLPROD,60125) - raise a request on the service desk under the following options:
+
+`r knitr::include_graphics("../images/A_M_SQL.PNG")`
+
+---
+
+### Giving/getting access
+
+---
+
+To gain access to a SQL database, you must have written confirmation from the database owner specifying whether your access is read-only or both read and write.
+
+If the area you require access to is in the *T1PRMDRSQL\SQLPROD,55842* SQL server, contact the [PDR team](mailto:PupilData.REPOSITORY@education.gov.uk) with your permission attached, stating the name of the database you want access to.
+
+If the area is in any other server, raise a request through the central IT service portal under "non-standard" > "any other request". In your request make sure you attach the written confirmation and specify:
+
+* The server name
+* The database name
+* Whether it's read or write access you need
+
+
+---
+
+### Moving data to different areas
+
+---
+
+Information on how to do this in R can be found in our [processes and RAP page](rap.html#Moving_data_to_different_areas)
+
+---
+
+
+

@@ -1,7 +1,7 @@
 ---
 title: "Statistics Production Guidance"
 date: "Last updated: `r Sys.Date()`"
-author: "By Cam Race, Laura Selby, Sarah Wong, Richard Bielby and Charlotte Foster"
+author: "By Cam Race, Laura Selby,<br> Sarah Wong, Richard Bielby,<br> Charlotte Foster and Tess Williams"
 site: "_site.yml"
 ---
 
@@ -10,94 +10,79 @@ library(fontawesome)
 
 ```
 
----
+
 
 This website is a guide aimed at anyone producing official statistics in the Department for Education (DfE). It covers wider best practice and pulls together pieces of guidance that were previously standalone documents. If viewed in its entirety, it provides a walk-through guide from processing to publication, as well as being a single reference point that is easy to navigate if you just need to check on a specific part of the process, link off to other resources, or access specific guidance.
 
 There is already a wealth of resources out there, and therefore this site unashamedly aims to pool the relevant resources for statistics production into one place. There are some things that this site does not yet have, it will develop and change over time. We hope it can prove a useful resource for everyone from the most experienced of producers, right through to those who are working on their very first publication. If you have any feedback, suggested additions, or wish to challenge any of the guidance, please contact us using the envelope button in the top right corner.
 
----
 
 ## Learning and development
 
----
-
-[General resources](l+d.html)
+[General resources](learning-development/learning-development.html)
 A collection of useful learning resources, and information on the recommended tools to get you started
 
-[SQL](sql.html)
+[SQL](learning-development/sql.html)
 Guidance and tips for accessing data via databases with SQL
 
-[R](r.html)
+[R](learning-development/r.html)
 Guidance and tips for using the programming language R
 
-[Git](git.html)
+[Git](learning-development/git.html)
 Guidance and tips for version control with Git
-
----
 
 ## Creating statistics
 
----
-
-[Processes and RAP](rap.html)
+[Processes and RAP](creating-statistics/rap.html)
 Guidance for how to process data, including the principles of Reproducible Analytical Pipelines (RAP)
 
-[RAP information for managers](rap_managers.html)
+[RAP information for managers](creating-statistics/rap_managers.html)
 Guidance for those managing analysts and FAQs on RAP
 
-[Open data standards](ud.html)
+[Open data standards](creating-statistics/ud.html)
 Guidance on how to structure data files
 
-[Writing and visualising](cd.html)
+[Writing and visualising](creating-statistics/cd.html)
 Things to consider when writing statistical commentary
-
----
 
 ## Publishing statistics
 
----
-
-[How to publish](pub.html)
+[How to publish](publishing-statistics/pub.html)
 Guidance for how to publish different types of statistics
 
-[Using EES](ees.html)
+[Using EES](publishing-statistics/ees.html)
 Guidance for how to use the features in the Explore Education Statistics platform
 
-[EES good practice examples](examples.html)
+[EES good practice examples](publishing-statistics/examples.html)
 Examples of good practice in EES across all of our publications
 
-[Dashboards](dashboards.html)
+[Dashboards](publishing-statistics/dashboards.html)
 Guidance for publishing official statistics dashboards
 
-[Creating embedded visualisations](embedded-charts.html)
+[Creating embedded visualisations](publishing-statistics/embedded-charts.html)
 Guidance for creating and embedding R-Shiny charts in EES publications
-
----
 
 ## Understanding users
 
----
-
-[User engagement](user_eng.html)
+[User engagement](understanding-users/user-eng.html)
 Guidance on understanding and engaging with the users of published statistics
 
-[EES analytics](user_an.html)
+[EES analytics](understanding-users/user_analytics.html)
 Guidance on understanding how users are interacting with your statistics published via EES
 
----
+
 
 ## Our resources
 
----
+
 
 We also have a number of other applications for statistics production teams to use to help them in their processes, they can be accessed at the links below when using a DfE device.
 
----
+
 
 ### DfE QA app
 
----
+
 
 This application allows you to screen your data files against the underlying data standards for Official and National statistical publications. If your file passes the checks it also gives you some basic options for exploring the data in the file.
 
@@ -105,11 +90,11 @@ This application allows you to screen your data files against the underlying dat
 
  - Code hosted at [https://github.com/dfe-analytical-services/dfe-published-data-qa](https://github.com/dfe-analytical-services/dfe-published-data-qa){target="_blank" rel="noopener noreferrer"}
 
----
+
 
 ### Explore Education Statistics Analytics
 
----
+
 
 This application provides access to the Google Analytics data for the Explore Education Statistics platform.
 
@@ -117,11 +102,11 @@ This application provides access to the Google Analytics data for the Explore Ed
 
  - Code is not yet publicly available, contact us if you are interested in seeing it or contributing.
 
----
+
 
 ### Publication self-assessment tool
 
----
+
 
 A self assessment tool allowing teams to compare different aspects of their production processes against best practice.
 
@@ -129,29 +114,29 @@ A self assessment tool allowing teams to compare different aspects of their prod
 
  - Code mirrored at [https://github.com/dfe-analytical-services/publication-self-assessment-copy](https://github.com/dfe-analytical-services/publication-self-assessment-copy){target="_blank" rel="noopener noreferrer"}
 
----
+
 
 ### Template QA code
 
----
+
 
 - Template QA code
 [https://github.com/dfe-analytical-services/automated-data-qa](https://github.com/dfe-analytical-services/automated-data-qa){target="_blank" rel="noopener noreferrer"}
 
----
+
 
 ### dfeR package
 
----
+
 
 - [https://github.com/dfe-analytical-services/dfeR](https://github.com/dfe-analytical-services/dfeR){target="_blank" rel="noopener noreferrer"}
 
----
+
 
 ### This guidance website
 
----
+
 
 The code for this guidance website is mirrored at [https://github.com/dfe-analytical-services/stats-production-guidance-copy](https://github.com/dfe-analytical-services/stats-production-guidance-copy){target="_blank" rel="noopener noreferrer"}
 
----
+

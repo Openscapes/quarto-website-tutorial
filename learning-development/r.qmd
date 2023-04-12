@@ -1,0 +1,582 @@
+---
+title: "R"
+---
+
+<p class="text-muted">Guidance and tips for using the programming language R</p>
+
+---
+
+## What is it
+
+---
+
+R is an open-source programming language specifically aimed at statisticians and data analysts.
+
+---
+
+## What is it for
+
+---
+
+R can be used for almost anything you can think of, notably data analysis, data visualisation, and creating reports and dashboards. It can also be used to extract data from SQL databases and run SQL queries.
+
+---
+
+## How to get it
+
+---
+
+Download R (language) and RStudio (IDE) from the DfE software center. We also recommend that you download RTools (a helpful R extension) at the same time.
+
+There are usually a couple of different versions available for software on the software center, we'd recommend you always go for the latest (newest) version possible.
+
+<!-- gif getting this from the software center -->
+
+---
+
+## Best places to start
+
+---
+
+- The DfE Analytics Academy host an [online R training course](https://trello.com/invite/b/QdDx3VmA/96f273b3438db2bb8ee5feae3943c3d4/analytics-academy-an-r-training-course){target="_blank" rel="noopener noreferrer"}. This is a great resource full of reproducible examples using DfE data. The course takes you through initially getting R downloaded, all the way through to developing apps in RShiny.
+
+- There is also the [DfE R training guide](https://dfe-analytical-services.github.io/r-training-course/){target="_blank" rel="noopener noreferrer"}, which is a great starting point and reference to guide you through how to get started using R and RStudio.
+
+
+- As an alternative, with a number of options for beginners to R, [RStudio Education](https://education.rstudio.com/learn/beginner/){target="_blank" rel="noopener noreferrer"} provide a variety of materials to suit different learning styles.
+
+---
+
+## Best practice
+
+---
+
+Tips for reaching best practice in R can be found on our [RAP page](rap.html#Clean_final_code), with guidance on meeting best practice in RAP for clean final code. This makes it easier to read and pick up if another person is running your code. 
+
+
+---
+
+## How to work with R
+
+---
+
+### R Projects
+
+---
+
+Whenever you are using R, you should work in an RProject. This just makes sure you are set up in the correct working directory, so your code is pointing at the right folders and files.
+
+[This guide for using projects in R](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects){target="_blank" rel="noopener noreferrer"} is a really useful article to help you set up a project.
+
+You can check which project you are working in by looking in the top right hand corner of RStudio:
+
+`r knitr::include_graphics("../images/Rproj.png")`
+
+---
+
+### Outlines
+
+---
+
+In RStudio you can greatly increase the navigability of your code by taking advantage of outlines. [More information on folding and navigating outlines in RStudio](https://support.rstudio.com/hc/en-us/articles/200484568-Code-Folding-and-Sections){target="_blank" rel="noopener noreferrer"} can be found online, though when using rmarkdown reports, remember to use names first, such as `## Rows that aren't matching: r nrow(joined %>% filter(matching == FALSE))`, rather than having the R code first, so that they are easy to discern in the outline.
+
+---
+
+### renv
+
+---
+
+You should use the [renv package](https://rstudio.github.io/renv/articles/renv.html){target="_blank" rel="noopener noreferrer"} for package and version control in R.
+
+Packages and versions of R regularly update. Over time, this can cause code to break - e.g. if different dependencies are required for later versions of packages to work. Using renv creates a "snapshot" of your code and packages at the time you created it, which anyone can then recreate when they come to use your code. 
+
+This is really important for reproducibility, and will help you meet elements of great practice with [recyclable code for future use](rap.html#recyclable-code-for-future-use).
+
+---
+
+#### renv::restore()
+
+---
+
+Sometimes renv::restore() can fail, and when in specific renv-controlled projects install.packages() will fail saying that packages aren't available even when they clearly are. There are a couple of workarounds we have found that get around this failure.
+
+1. Configuring the proxy settings by running the below in R - this also helps if you are getting timeout issues when trying to webscrape with R:
+
+```
+Sys.setenv(no_proxy="*") 
+
+```
+
+
+2. Specifying the renv library as the install location. It's a bit of a fudge, though these lines are helpful to get the packages from the renv lockfile installed and you running the project when needed:
+
+```
+myPath <- .libPaths()[1]
+
+forceInstall <- function(pkg, path) {
+missing <- suppressWarnings(eval(parse(text= paste0("!require(",pkg,")"))))
+
+if(missing == FALSE){
+message(pkg, " is already installed.")
+} else{
+install.packages(pkg, lib = path)
+}
+}
+
+forceInstall("jsonlite", myPath)
+
+renvPackages <- names(jsonlite::fromJSON("renv.lock", flatten = TRUE)$Packages)
+
+invisible(lapply(renvPackages, forceInstall, path = myPath))
+```
+
+More manual equivalent to use for specific packages:
+
+```
+.libPaths() # note down output 1, and reuse in the lib argument of install.packages() as below
+
+install.packages("rmarkdown", lib = "C:/Users/swong/OneDrive - Department for Education/Documents/stats-production-guidance/renv/library/R-4.0/x86_64-w64-mingw32")
+
+```
+---
+
+#### Updating packages in renv
+
+---
+
+To update a single package run:
+
+`renv::update("dplyr")`
+
+To update all packages run:
+
+`renv::update()`
+
+
+---
+
+#### Installing old package versions in renv
+
+---
+
+This is surprisingly neat to do. Let's say you wanted to roll back to version 1.0.2 of dplyr, you would run the following:
+
+`renv::install("dplyr@1.0.2")`
+
+---
+
+##  Quick reference lookup
+
+---
+
+- If you want a useful guide for R syntax or functions, then look no further than the [R cheat sheets](https://rstudio.com/resources/cheatsheets/){target="_blank" rel="noopener noreferrer"}, these can be an invaluable point of reference. Below we've included a few particularly relevant ones:
+    + Introduction to the [RStudio environment](https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf){target="_blank" rel="noopener noreferrer"}
+    + [Base R](http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf){target="_blank" rel="noopener noreferrer"}
+    + [Importing data into R](https://github.com/rstudio/cheatsheets/raw/master/data-import.pdf){target="_blank" rel="noopener noreferrer"}
+    + [dplyr](https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf){target="_blank" rel="noopener noreferrer"} for data manipulation
+    + [stringr](https://github.com/rstudio/cheatsheets/raw/master/strings.pdf){target="_blank" rel="noopener noreferrer"} for string manipulation
+    + [Regex](https://github.com/rstudio/cheatsheets/raw/master/regex.pdf){target="_blank" rel="noopener noreferrer"}
+    + [RMarkdown](https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf){target="_blank" rel="noopener noreferrer"}
+    + [RShiny](https://github.com/rstudio/cheatsheets/raw/master/shiny.pdf){target="_blank" rel="noopener noreferrer"}
+    + [ggplot2](https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf){target="_blank" rel="noopener noreferrer"} for data visualisations
+    + [purrr](https://github.com/rstudio/cheatsheets/raw/master/purrr.pdf){target="_blank" rel="noopener noreferrer"} for applying functions
+
+---
+
+## Other resources
+
+---
+
+- Here is another free introduction to R course by [Quantargo](https://www.quantargo.com/courses/course-r-introduction/){target="_blank" rel="noopener noreferrer"}.
+
+- [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/){target="_blank" rel="noopener noreferrer"}, hopefully this one should be relatively self-explanatory!
+
+- [Data science in education](https://datascienceineducation.com/){target="_blank" rel="noopener noreferrer"} provides a heavily detailed guide for beginners in R learning to process data, with some well written out sections that may be of interest.
+
+- Handy guide to [collapsing and sectioning R code](https://support.rstudio.com/hc/en-us/articles/200484568-Code-Folding-and-Sections){target="_blank" rel="noopener noreferrer"} for easy navigation in RStudio.
+
+- Here are [5 handy tidyverse functions](https://towardsdatascience.com/five-tidyverse-tricks-you-may-not-know-about-c5026d5a19da){target="_blank" rel="noopener noreferrer"} that you should know if you're using R to process data. Number two is especially useful for those processing wide data into a tidy format!
+
+- MoJ have produced [guidance on writing functions in R](https://github.com/moj-analytical-services/writing_functions_in_r){target="_blank" rel="noopener noreferrer"}
+
+- If you're wondering how best to make the jump to R from Excel and SQL, take a look at this [coffee and coding presention](https://educationgovuk.sharepoint.com/sites/sarpi/g/WorkplaceDocuments/Forms/AllItems.aspx?FolderCTID=0x012000C61C1076C17C5547A6D6D8C2A27B5D97&View=%7B2B35083D%2D7626%2D48E2%2D9615%2D451544742692%7D&id=%2Fsites%2Fsarpi%2Fg%2FWorkplaceDocuments%2FInducation%20learning%20and%20career%20development%2FCoffee%20and%20Coding%2F181121%5FDavd%5FExceltoR%2FSQL%5FEXCEL%5Fto%5FR%5FHow%5Fto%5FMake%5Fthe%5FJump%2Ehtml&parent=%2Fsites%2Fsarpi%2Fg%2FWorkplaceDocuments%2FInducation%20learning%20and%20career%20development%2FCoffee%20and%20Coding%2F181121%5FDavd%5FExceltoR){target="_blank" rel="noopener noreferrer"} by David Sands.
+
+- Malcolm Barrett has done some slides on [dplyr](https://malco.io/slides/hs_dplyr/#1){target="_blank" rel="noopener noreferrer"}, [ggplot2](https://malco.io/slides/hs_ggplot2/#1){target="_blank" rel="noopener noreferrer"}, and using [purrr](https://lar-purrr.netlify.app/#1){target="_blank" rel="noopener noreferrer"} which may be useful if you're looking at learning more about any of those packages.
+
+- Also check out the [janitor](https://garthtarr.github.io/meatR/janitor.html){target="_blank" rel="noopener noreferrer"} package, it has some particularly powerful functions that are worth a look for tidying and QA'ing data.
+
+---
+
+## Excel functions in R
+
+---
+
+R can do everything you do in excel, but takes out the human error. The reference table below shows how you would carry out popular Excel commands in R.
+
+R comes in with a built-in dataset called "iris". We'll use this for all examples so you can recreate them in your local area.
+
+**REMEMBER:** R is case sensitive, so all references to column names/entries need to be as-is in the dataset you are looking at. [Functions exist](https://www.rdocumentation.org/packages/janitor/versions/1.2.0/topics/clean_names) that can translate all your columns to lower or snake case for ease!
+
+| **Common Excel Task** | **Example with iris ** | **How to do in R with dplyr** |
+|--|-------|--|
+|**Select specific columns**| Select only species and petal length  | `iris %>% select(Species, Petal.Length)`|
+| **List unique entries in field (column)** | Find the unique entries for the "Species" column in iris | ` iris %>% select(Species) %>% distinct()` |
+| **Filter/select based on criteria** | Filter for sepal length >4 and sepal width <2.5, but NOT "versicolor" species | ` iris %>% filter(Sepal.Length > 4 &` <br /> `Sepal.Width <2.5 & Species != "versicolor") ` |
+| **Filter for multiple criteria in same column** | Filter for all "setosa" and "versicolor" species | `iris %>% filter(Species %in% c("setosa", "versicolor")`|
+| **If else with OR** | Create new column called "size_group" based on length or width of petal| ` iris %>% mutate(size_group =`<br />` if_else( Petal.Length > 4 | Petal.Width >1.5, "Large", "Small"))`|
+|**Multiple if else** |  Create new column called "flower_price" based on species and petal length| `iris %>%  mutate(flower_price = case_when(` <br /> `Species == "setosa" & Petal.Length > 1.5 ~"top band", `<br />`Species == "versicolor" & Petal.Length < 4 ~"low_band",`<br /> `TRUE ~ "mid_band"))`
+| **COUNTIF** | Count the number of species if they have a petal length >1.5 | `iris %>% filter(Petal.Length > 1.5 ) %>% `<br />`group_by(Species) %>% count()`|
+| **SUMIF** | Sum petal width of species if sepal width <3| `iris %>% filter(Sepal.Width <3) %>%`<br />` group_by(Species) %>%`<br />` summarise(Petal.Width = sum(Petal.Width))`|
+| **VLOOKUP** | Lookup to a table called "lookup" | `iris %>%  left_join(lookup, by.x="Species", by.y ="plant_species")`|
+| **Order by** | Order dataset by descending petal width | `iris %>% arrange(desc(Petal.Width))` | 
+
+More tips for moving from using Excel to using R can be found in the [excel-to-R wiki](https://github.com/dfe-analytical-services/excel-to-R/wiki/Excel-to-R---how-do-I...).  
+
+
+---
+
+## SQL functions in R
+
+---
+
+R can do a lot of the things that are possible in SQL. The reference table below shows how you would carry out some popular SQL commands in R.
+
+**REMEMBER:** R is case sensitive, so all references to column names/entries need to be as-is in the dataset you are looking at. [Functions exist](https://www.rdocumentation.org/packages/janitor/versions/1.2.0/topics/clean_names) that can translate all your columns to lower or snake case for ease!
+
+| Common SQL Task |	How to do in R (with dplyr)|
+|---------------------|-----------------------|
+| **SELECT * FROM TABLE** |	`table %>% select()` |
+| **SELECT ColA, ColB, ColC FROM TABLE** |	`table %>% select(ColA, ColB, ColC)` |
+| **SELECT DISTINCT ColA FROM TABLE** |	`table %>% select(ColA) %>% distinct()` |
+| **TABLE A LEFT JOIN (TABLE B) ON TABLEA.x = TABLEB.y** |	`tableA %>% left_join(TableB, by = c(x = y))` |
+| **CASE WHEN x = 1 THEN 1, WHEN x =2 THEN 2, ELSE 0 END AS New_column_name** |	`%>% mutate (New_column_name = case_when (x == 1 ~ 1, x == 2 ~ 2, TRUE ~ 0))` |
+| **CONCAT(LEA, ESTAB) AS LAESTAB** |	`%>% mutate(LAESTAB = paste0(LEA, ESTAB))` |
+| **SELECT COUNT(\*) FROM TABLE** |	`table %>% nrow()` |
+| **SELECT COUNT(ColA) FROM TABLE** |	`table %>% count(colA)` |
+| **SELECT Date_column = CONVERT(DATE, Date_column) FROM TABLE** | `table %>% mutate(Date_column = as.Date(Date_column))` |
+| **SELECT Number_column = CONVERT(INT, Number_column ) FROM TABLE** | `table %>% mutate(Number_column = as.numeric(Number_column))` |
+| **SELECT String_column = CONVERT(VARCHAR, String_column ) FROM TABLE** | `table %>% mutate(String_column = as.character(String_column))` |
+| **DROP TableA** |	`rm(TableA)` |
+
+
+More tips for moving from using SQL to using R can be found in the [SQL-to-R wiki](https://github.com/dfe-analytical-services/excel-to-R/wiki/SQL-to-R-how-do-I...).  
+
+
+---
+
+## Tips for using R
+
+---
+
+A selection of handy bits of code and workarounds for common issues. More useful code snippets can also be found in our [github repo](https://github.com/dfe-analytical-services/automated-data-qa){target="_blank" rel="noopener noreferrer"}
+
+---
+
+### Specifying a version of R to use
+
+---
+
+This can be done most easily by navigating in RStudio through `Tools > Global options > General > Basic > R version (change)`. It's likely you'll need to restart RStudio for the changes to take affect. 
+
+
+<!-- We cover this in the excel to R section -->
+<!-- ### Mutating columns -->
+
+<!-- Where you have a simple if else scenario use `mutate(col = if_else(expression, TRUE, FALSE)`, rather than `mutate(col = case_when(expression ~ TRUE, TRUE ~FALSE)` it's both quicker and easier on the eye! -->
+
+---
+
+<!-- This is going into DfER- remove once it's in? -->
+### Rounding
+
+---
+
+The base R function of round() rounds 5's downwards. To round them upwards you can create a custom function like the one below:
+
+```
+roundFiveUp <- function(x, n){ 
+    z = abs(x)*10^n 
+    z = z + 0.5 + sqrt(.Machine$double.eps) 
+    z = trunc(z) 
+    z = z/10^n 
+    positiveNegative = sign(x) 
+    return(z * positiveNegative) 
+}
+```
+
+<!-- covered in SQL to R section -->
+<!-- ### Grouping sets in R -->
+
+<!-- The data.table package has a really neat function that can produce quick pivots and subtotals as you would using grouping sets in SQL. More information can be found at [this R bloggers post](https://www.r-bloggers.com/2019/03/creating-blazing-fast-pivot-tables-from-r-with-data-table-now-with-subtotals-using-grouping-sets/){target="_blank" rel="noopener noreferrer"}, with handy written examples to walk you through.  -->
+
+
+---
+
+### Passing variables as arguments
+
+---
+
+This can be worked around by using a combination of `eval()` and `parse()`, as shown in the below function:
+
+```
+showFilterLevels <- function(data, meta) {
+  filters <- meta %>%
+    filter(col_type == "Filter") %>%
+    pull(col_name)
+
+  levelsTable <- function(filter) {
+    return(eval(parse(text = paste0("data %>% select(", filter, ") %>% distinct()"))))
+  }
+
+  output <- lapply(filters, levelsTable)
+
+  return(output)
+}
+```
+---
+
+### Reverse additive filters
+
+---
+
+You might want to filter your dataset based on multiple negative conditions. Normally to filter on multiple conditions, you would use `filter(condition1 & condition2)`. The "filter" function does not work well with negative conditions (i.e. filtering for cases where condition 1 and condition 2 are not met). Instead, you can use `subset(!(condition1 & condition2)`.
+
+---
+
+### File locations
+
+---
+
+Struggling to get files to talk to one another, or get code to find and use another R script? Use `here::here()` and marvel at it's wondrous ability to magic away issues.
+
+---
+
+### Interweaving vectors
+
+---
+
+There's an easy way to interweave multiple vectors into one single vector using `c(rbind())`. The example below shows two vectors, but you can have even more if you need.
+
+```
+#Two vectors, x and y
+x <- 1:3
+y <- 4:6
+
+#Run code to interweave
+c(rbind(x, y))
+
+#Output below
+# [1] 1 4 2 5 3 6
+```
+
+
+---
+
+### Making charts interactive
+
+---
+
+When pulling ggplot charts into RMarkdown reports, you can consider making them even more user-friendly and interactive with plotly. [Further information on how to make your charts interactive with plotly](https://plotly.com/ggplot2){target="_blank" rel="noopener noreferrer"} can be found online. 
+
+```
+#Simple ggplot chart called "p"
+p <- ggplot(dat, aes(x=xvar, y=yvar)) +
+    geom_point(shape=1)      # Use hollow circles
+
+#Apply ggplotly() to it to make it interactive
+fig <- ggplotly(p)
+
+```
+
+---
+
+### Replace all values with another
+
+---
+
+Have you ever needed to replace every value in your data with another? This can come in handy when you are looking at suppression, e.g. converting all NAs to "z" or all values under a certain threshold to "c".
+
+```
+data %>% mutate_all(~ replace(., . == "Value to replace", "Replacement"))
+
+```
+
+---
+
+### Temporary groups
+
+---
+
+The group_by() function in dplyr is really useful, but can be fiddly if you only want to use it for one operation in a chunk of code. The with_groups() function from [dplyr](https://dplyr.tidyverse.org/reference/with_groups.html){target="_blank" rel="noopener noreferrer"} lets you do this, saving you having to group and ungroup data each time.
+
+```
+data %>% mutate(annual_average = with_groups(time_period, mean))
+
+```
+
+---
+
+### Finding package dependencies
+
+---
+
+Often we'll take chunks of code and reuse them for new projects. This can lead to building up a long list of packages to install, not all of which end up being used in your new code. The **NCmisc** package is a really handy way to check which packages and functions are used in your code.
+
+Firstly, load up all the packages the code has `library()` commands for, then run the following:
+
+```
+list.functions.in.file('your-filename-here.R', alphabetic = TRUE)
+```
+
+---
+
+### Visualise dependencies
+
+---
+
+The [depgraph package](https://github.com/crsh/depgraph){target="_blank" rel="noopener noreferrer"} allows you to plot a graph of all the dependencies in your R project, which can be a useful tool to help you cut down on the number of package dependencies. Briefly, in these graphs you can look for “hot spots” in the network (big bright dots), which represent packages that have many upstream dependencies but are potentially easy to remove because they have few downstream dependencies (that is, only your package depends on them).
+
+```
+plot_dependency_graph(
+  pkg = multibridge_pkg
+  , suggests = FALSE
+  , option = "cividis"
+)
+
+```
+---
+
+### Reproducible random numbers
+
+---
+
+The [set.seed()](https://www.rdocumentation.org/packages/simEd/versions/2.0.0/topics/set.seed){target="_blank" rel="noopener noreferrer"} function generates a sequence of random numbers, starting from the value you define in the brackets. This ensures you get the same sequence of random numbers each time you run set.seed() with the same value, which is helpful to test that your results are reproducible.
+
+```
+# random sampling
+> sample(LETTERS, 5)
+[1] "K" "N" "R" "Z" "G"
+> sample(LETTERS, 5)
+[1] "L" "P" "J" "E" "D"
+
+# reproducible random sampling
+> set.seed(42); sample(LETTERS, 5)
+[1] "Q" "E" "A" "J" "D"
+> set.seed(42); sample(LETTERS, 5)
+[1] "Q" "E" "A" "J" "D"
+
+```
+---
+
+### Automatic logging
+
+---
+
+The [tidylog package](https://cran.r-project.org/web/packages/tidylog/readme/README.html){target="_blank" rel="noopener noreferrer"} is a really useful tool for providing automated feedback on dplyr and tidyr operations.
+
+
+```
+library(tidylog)
+
+filtered <- filter(mtcars, cyl == 4)
+#> filter: removed 21 rows (66%), 11 rows remaining
+mutated <- mutate(mtcars, new_var = wt ** 2)
+#> mutate: new variable 'new_var' (double) with 29 unique values and 0% NA
+```
+
+---
+
+### Running SQL scripts from R
+
+---
+
+R can be used to execute SQL scripts to extract data from a database as well as querying the database directly via R. For using R to execute a SQL script you'll need the SQL script/s to be in your R Project and to make a connection via R to the database.
+
+```
+# Library calls ====
+
+library(odbc)
+library(DBI)
+
+# DB connection ====
+
+con <- DBI::dbConnect(odbc::odbc(),
+                      Driver = "ODBC Driver 17 for SQL Server",
+                      Server = "server_name",
+                      Database = "database_name",
+                      UID = "",
+                      PWD = "",
+                      Trusted_Connection = "Yes"
+)
+
+# Function to read in sql scripts ====
+
+getSQL <- function(filepath){
+  con = file(filepath, "r")
+  sql.string <- ""
+  
+  while (TRUE){
+    line <- readLines(con, n = 1)
+    
+    if ( length(line) == 0 ){
+      break
+    }
+    
+    line <- gsub("\\t", " ", line)
+    
+    if(grepl("--",line) == TRUE){
+      line <- paste(sub("--","/*",line),"*/")
+    }
+    
+    sql.string <- paste(sql.string, line)
+  }
+  
+  close(con)
+  return(sql.string)
+}
+
+# Execute SQL query and pull into R ====
+
+my_table <- dbGetQuery(con, getSQL("my_query_script.sql"))
+
+```
+
+If you're struggling to get your SQL scripts to execute from R, try adding the following two lines to the top of your SQL script to force the formatting required for it to work:
+
+
+```
+SET ANSI_PADDING OFF
+SET NOCOUNT ON;
+```
+
+---
+
+### Can't find make error
+
+---
+
+<!-- [Add later - example screenshot of error] -->
+
+This error is usually due to Rtools not being properly installed, this has become fairly common since it has been dropped from the software centre. There have been several requests to read it, though as of yet none have succeeded. For now there's a workaround to this.
+
+You can [install Rtools as a direct download from CRAN](https://cran.r-project.org/bin/windows/Rtools/). On there, pick the right version of RTools for your version of R, download the file and install.
+
+<div class="alert alert-dismissible alert-info">
+When downloading RTools you may need to confirm that you understand the risks of downloading an .exe file from an unknown source, this is common, as this is a trusted source, you can click accept.
+
+When running the .exe file, Windows Defender may step in and act like it's not going to let you progress any further. If this happens you'll need to click "More info" and only then can you select something like "install anyway".
+</div>
+
+Set the install location to `C:\rtools40` (it is often this by default)
+
+Next you need to add it to the PATH variable. We can't edit this without an admin password, though you can temporarily set it to allow you to restore from renv, by doing it from within the R console.
+
+<div class="alert alert-dismissible alert-info">
+This only sets it temporarily for as long as the R session is running, you'll need to rerun each time you're in an R session and need it.
+</div>
+
+> old_path <- Sys.getenv("PATH")
+> Sys.setenv(PATH = paste(old_path, "C:\\rtools40\\usr\\bin", sep = ";"))
+> Sys.getenv("PATH")
+
+---
