@@ -1,45 +1,157 @@
 ---
-title: "Making shareable documents with Quarto"
-subtitle: "Create open-source tutorials, onboarding docs, and much more"
+title: "Statistics Production Guidance"
+date: "Last updated: `r Sys.Date()`"
+author: "By Cam Race, Laura Selby, Sarah Wong, Richard Bielby and Charlotte Foster"
+site: "_site.yml"
 ---
 
-## Welcome {#welcome}
+```{r include=FALSE}
+library(fontawesome)
 
-It's possible to create beautiful documentation to share online with [Quarto](https://quarto.org) that auto-updates with [GitHub](http://github.com). This is very new and incredibly cool. This tutorial is an example of a quarto website --- it is a really powerful way to create and share your work. You can communicate about science using the same reproducible workflow you and/or your colleagues use for analyses, whether or not you write code.
+```
 
-Creating websites with Quarto can be done without knowing R, Python or HTML, CSS, etc, and that's where we'll start. However, Quarto integrates with these tools so you can make your websites as complex and beautiful as you like as you see examples and reuse and remix from others in the open community. This tutorial borrows heavily from a lot of great tutorials and resources you should check out too -- there are links throughout.
+---
 
-## What is Quarto?
+This website is a guide aimed at anyone producing official statistics in the Department for Education (DfE). It covers wider best practice and pulls together pieces of guidance that were previously standalone documents. If viewed in its entirety, it provides a walk-through guide from processing to publication, as well as being a single reference point that is easy to navigate if you just need to check on a specific part of the process, link off to other resources, or access specific guidance.
 
-Quarto you have your ideas and your code in one place, and present it in a beautiful way. 
+There is already a wealth of resources out there, and therefore this site unashamedly aims to pool the relevant resources for statistics production into one place. There are some things that this site does not yet have, it will develop and change over time. We hope it can prove a useful resource for everyone from the most experienced of producers, right through to those who are working on their very first publication. If you have any feedback, suggested additions, or wish to challenge any of the guidance, please contact us using the envelope button in the top right corner.
 
-**Quarto unifies and extends the RMarkdown ecosystem** - it unifies by combining the functionality of R Markdown, bookdown, distill, xaringian, etc into a single consistent system. And it extends in several ways: all features are possible beyond R too, including Python and Javascript. It also has more “guardrails”: accessibility and inclusion are centered in the design. Quarto is for people who love RMarkdown, and it's for people who have never used RMarkdown. 
- 
+---
 
-The ability for Quarto to streamline collaboration has been so cool and important for our [NASA Openscapes](https://nasa-openscapes.github.io/) project. Quarto has been a common place for us to collaborate - across R and Python languages and coding expertise. 
+## Learning and development
 
-## What is this tutorial?
+---
 
-This is a 1-hour tutorial that can be used to teach or as self-paced learning. 
+[General resources](l+d.html)
+A collection of useful learning resources, and information on the recommended tools to get you started
 
-We introduce Quarto by exploring this tutorial website, and practicing the basic Quarto workflow using different tools (GitHub browser, RStudio, and Jupyter) for editing your website.
+[SQL](sql.html)
+Guidance and tips for accessing data via databases with SQL
 
-We'll start off from the browser so you don't need to install any additional software, however this approach is very limited and you will soon outgrow its capabilities. If you don't already have a workflow to edit files and sync to GitHub from your computer, I recommend RStudio. You don't need to know R to use RStudio, and it has powerful editor features that make for happy workflows.
+[R](r.html)
+Guidance and tips for using the programming language R
 
-[Quarto.org](https://quarto.org) is the go-to place for full documentation and more tutorials! 
+[Git](git.html)
+Guidance and tips for version control with Git
 
-## Example Quarto sites
+---
 
-A few Quarto websites from Openscapes - so far we have been using Quarto for documentation using Quarto and Markdown files and Jupyter Notebooks.
+## Creating statistics
 
--   [Champions Lessons Series](https://openscapes.github.io/series)
--   [Openscapes Approach Guide](https://openscapes.github.io/approach-guide/)\
--   [2021 NASA Cloud Hackathon](https://nasa-openscapes.github.io/2021-Cloud-Hackathon/)
--   [Faylab Lab Manual](https://thefaylab.github.io/lab-manual/)
--   [A Quarto tip a day](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/), by Mine Çetinkaya-Rundel
+---
 
-## About
+[Processes and RAP](rap.html)
+Guidance for how to process data, including the principles of Reproducible Analytical Pipelines (RAP)
 
-[Openscapes](https://openscapes.org) is about better science for future us. We help researchers reimagine data analysis, develop modern skills that are of immediate value to them, and cultivate collaborative and inclusive research teams as part of the broader global open movement.
+[RAP information for managers](rap_managers.html)
+Guidance for those managing analysts and FAQs on RAP
 
-We're developing this tutorial to help folks with different levels of technical skills use [Quarto](https://quarto.org) for documentation and tutorial building. This tutorial was originally created for several different audiences: [NASA-Openscapes](https://nasa-openscapes.github.io) researcher support engineers using Python, communications directors at organizations promoting open science who do not identify as coders, and fisheries scientists curious about transitioning from RMarkdown. We're hoping it's useful to folks with backgrounds as wide as these; if you find it useful or have suggestions for improvement, please let us know by clicking "Edit this page" or "Report an issue" at the upper right side of any page.
+[Open data standards](ud.html)
+Guidance on how to structure data files
+
+[Writing and visualising](cd.html)
+Things to consider when writing statistical commentary
+
+---
+
+## Publishing statistics
+
+---
+
+[How to publish](pub.html)
+Guidance for how to publish different types of statistics
+
+[Using EES](ees.html)
+Guidance for how to use the features in the Explore Education Statistics platform
+
+[EES good practice examples](examples.html)
+Examples of good practice in EES across all of our publications
+
+[Dashboards](dashboards.html)
+Guidance for publishing official statistics dashboards
+
+[Creating embedded visualisations](embedded-charts.html)
+Guidance for creating and embedding R-Shiny charts in EES publications
+
+---
+
+## Understanding users
+
+---
+
+[User engagement](user_eng.html)
+Guidance on understanding and engaging with the users of published statistics
+
+[EES analytics](user_an.html)
+Guidance on understanding how users are interacting with your statistics published via EES
+
+---
+
+## Our resources
+
+---
+
+We also have a number of other applications for statistics production teams to use to help them in their processes, they can be accessed at the links below when using a DfE device.
+
+---
+
+### DfE QA app
+
+---
+
+This application allows you to screen your data files against the underlying data standards for Official and National statistical publications. If your file passes the checks it also gives you some basic options for exploring the data in the file.
+
+ - [https://rsconnect/rsc/dfe-published-data-qa/](https://rsconnect/rsc/dfe-published-data-qa/){target="_blank" rel="noopener noreferrer"}
+
+ - Code hosted at [https://github.com/dfe-analytical-services/dfe-published-data-qa](https://github.com/dfe-analytical-services/dfe-published-data-qa){target="_blank" rel="noopener noreferrer"}
+
+---
+
+### Explore Education Statistics Analytics
+
+---
+
+This application provides access to the Google Analytics data for the Explore Education Statistics platform.
+
+ - [https://rsconnect/rsc/ees-analytics/](https://rsconnect/rsc/ees-analytics/){target="_blank" rel="noopener noreferrer"}
+
+ - Code is not yet publicly available, contact us if you are interested in seeing it or contributing.
+
+---
+
+### Publication self-assessment tool
+
+---
+
+A self assessment tool allowing teams to compare different aspects of their production processes against best practice.
+
+ - [https://rsconnect/rsc/publication-self-assessment/](https://rsconnect/rsc/publication-self-assessment/){target="_blank" rel="noopener noreferrer"}
+
+ - Code mirrored at [https://github.com/dfe-analytical-services/publication-self-assessment-copy](https://github.com/dfe-analytical-services/publication-self-assessment-copy){target="_blank" rel="noopener noreferrer"}
+
+---
+
+### Template QA code
+
+---
+
+- Template QA code
+[https://github.com/dfe-analytical-services/automated-data-qa](https://github.com/dfe-analytical-services/automated-data-qa){target="_blank" rel="noopener noreferrer"}
+
+---
+
+### dfeR package
+
+---
+
+- [https://github.com/dfe-analytical-services/dfeR](https://github.com/dfe-analytical-services/dfeR){target="_blank" rel="noopener noreferrer"}
+
+---
+
+### This guidance website
+
+---
+
+The code for this guidance website is mirrored at [https://github.com/dfe-analytical-services/stats-production-guidance-copy](https://github.com/dfe-analytical-services/stats-production-guidance-copy){target="_blank" rel="noopener noreferrer"}
+
+---
