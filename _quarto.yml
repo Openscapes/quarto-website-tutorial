@@ -18,14 +18,11 @@ website:
     align: center
     tools: 
       - icon: globe
-        href: https://openscapes.org
-        text: "Openscapes.org"
+        href: https://explore-education-statistics.service.gov.uk/
+        text: "Explore Education Statistics"
       - icon: github
-        href: https://github.com/openscapes/quarto-website-tutorial
-        text: "Quarto website tutorial"
-      - icon: twitter
-        href: https://twitter.com/openscapes
-        text: "Openscapes Twitter"         
+        href: https://github.com/dfe-analytical-services
+        text: "DfE Analytical Services"
 
     style: "docked"
     search: true
