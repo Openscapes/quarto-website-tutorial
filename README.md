@@ -40,14 +40,6 @@ https://dfe-analytical-services.github.io/stats-production-guidance-quarto/
 
 Each page of the site is a single quarto document, with index.qmd as the homepage. When the project is opened locally in RStudio you will be able to preview the website byt typing the command `quarto preview` into the terminal.
 
-### Packages
-
-Package control is handled using renv. You may need to run renv::restore() if this is your first time using the project.
-
-### Deployment
-
-Internal deployment is handled via the dfe-gov-uk Azure DevOps instance, using Azure pipelines to deploy to the DfE rsconnect servers. This pipeline then pushes a mirror of the repository to GitHub, where GitHub actions is used to deploy a publicly accessible copy to GitHub pages.
-
 ### Tests
 
 There are currently no automated tests on this project, though we hope to add some soon.
@@ -66,7 +58,7 @@ PRA - https://app.diagrams.net/#G1x1VLZghqCCnmDWHqgjpdU6fSSehms4FL
 
 ## Contribution
 
-If you're interested in contributing to this project, get in touch with us and we can arrange access to the source repository in Azure DevOps. The GitHub repo is only a mirror and any changes made directly to it will be overwritten when the next update is mirrored.
+If you're interested in contributing to this project, get in touch with us and we can arrange access to the source repository in GitHub.
 
 ---
 
