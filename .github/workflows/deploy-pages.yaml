@@ -17,8 +17,7 @@ jobs:
         uses: quarto-dev/quarto-actions/render@v2
         with:
           to: html # If set, it will be equivalent to `quarto render --to html`
-          path: /docs # By default, the current working dir is used i.e `quarto render .`
-          
+
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
