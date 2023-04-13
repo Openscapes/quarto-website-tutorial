@@ -6,26 +6,23 @@ website:
   title: "Making sharable documents with Quarto" 
   site-url: "https://dfe-analytical-services.github.io/stats-production-guidance-quarto/" 
   repo-url: https://github.com/dfe-analytical-services/stats-production-guidance-quarto 
-  repo-actions: [edit, issue]
+  repo-actions: [issue]
   
   page-footer:
     right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
-    left: "&copy; CC-By Openscapes, 2022"
+    left: "&copy; CC-By DfE, 2023"
     
   sidebar:
-    logo: "images/openscapes_hex.png"
+    logo: "images/duck_guidance.png"
     pinned: true
     align: center
     tools: 
       - icon: globe
-        href: https://openscapes.org
-        text: "Openscapes.org"
+        href: https://explore-education-statistics.service.gov.uk/
+        text: "Explore Education Statistics"
       - icon: github
-        href: https://github.com/openscapes/quarto-website-tutorial
-        text: "Quarto website tutorial"
-      - icon: twitter
-        href: https://twitter.com/openscapes
-        text: "Openscapes Twitter"         
+        href: https://github.com/dfe-analytical-services
+        text: "DfE Analytical Services"
 
     style: "docked"
     search: true
@@ -33,16 +30,28 @@ website:
     contents:
       - href: index.qmd
         text: Welcome
-      - explore.qmd
-      - section: quarto-workflows/index.qmd
+      - section: learning-development/learning-development.qmd
+        contents:
+          - learning-development/sql.qmd
+          - learning-development/r.qmd
+          - learning-development/git.qmd
+      - section: "Creating statistics"
         contents: 
-          - quarto-workflows/browser.md
-          - quarto-workflows/rstudio.qmd
-          - quarto-workflows/jupyter.md 
-      - learning-more.qmd
-      - href: transition-from-rmarkdown.qmd
-        text: Transition from Rmd
-
+          - creating-statistics/rap.qmd
+          - creating-statistics/rap-managers.qmd
+          - creating-statistics/ud.qmd
+          - creating-statistics/cd.qmd
+      - section: "Publishing statistics"
+        contents: 
+          - publishing-statistics/pub.qmd
+          - publishing-statistics/ees.qmd
+          - publishing-statistics/examples.qmd
+          - publishing-statistics/dashboards.qmd
+          - publishing-statistics/embedded-charts.qmd
+      - section: "Understanding users"
+        contents: 
+          - understanding-users/user-eng.qmd
+          - understanding-users/user-analytics.qmd
 
 format:
   html:

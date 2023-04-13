@@ -1,0 +1,227 @@
+---
+title: "How to publish"
+---
+
+<p class="text-muted">Guidance for how to publish different types of statistics</p>
+
+
+<!-- Types of releases flowchart to go here - emailed Catherine to see if HoP office still have this somewhere -->
+
+---
+
+# Routes for publishing
+
+---
+
+[Explore Education Statistics](https://explore-education-statistics.service.gov.uk/){target="_blank" rel="noopener noreferrer"} (EES) is the Department's new dissemination platform, designed to make DFE’s published statistics and data easier to find, access, use and understand. 
+
+The platform moved into Public Beta in March 2020 and currently operates in parallel with existing statistics pages on gov.uk as publications are moved to the new platform.
+
+More information on why EES was introduced and the functionality within the platform can be found in these [slides.](https://docs.google.com/presentation/d/1CJMLxEPngGbTZbn1n4M6huGIeizUmjysthLwU3Zxoq4/edit?usp=sharing){target="_blank" rel="noopener noreferrer"}
+
+* All national, official and ad-hoc statistics should be [published on EES](#EES)
+* Management Information should be published on [.gov.uk](#gov.uk)
+* [Interactive dashboards](#Dashboards) built for particular user needs can be published separately
+
+The following table outlines the key differences between publishing via EES and the old method via [gov.uk:](https://www.gov.uk/government/organisations/department-for-education/about/statistics){target="_blank" rel="noopener noreferrer"}
+
+| Statistics collections on gov.uk | Explore Education Statistics |
+|:------|:------|
+| Statisticians request pdf and excel files are uploaded to release pages on gov.uk | Statisticians load csv data files on to the service and use them to build release pages  |
+| Release attachments are reviewed and approved via emails | Releases are reviewed and approved within the service |
+| Release attachments are circulated for pre-release via email 24hours prior to publication date | Pre-release users are invited to preview releases within the service 24 hours prior to publication date | 
+
+
+
+<div class="alert alert-dismissible alert-warning">
+If you are unsure which route to use for publication please contact the [HoP Office](mailto:Hop.STATISTICS@education.gov.uk).
+</div>
+
+---
+
+# EES
+
+---
+
+All national, official and ad-hoc statistics should be published on EES. This section covers how to start publishing on EES and all the things you need to consider before publication. For more detailed guidance on how to use the platform, visit our [EES guidance page](ees.html)
+
+---
+
+## How to publish
+
+---
+
+<html>
+<head>
+<title>EES create release one pager</title>
+<meta charset="utf-8"/>
+</head>
+<body><div class="mxgraph" style="max-width:100%;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;lightbox&quot;:false,&quot;nav&quot;:true,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;app.diagrams.net\&quot; modified=\&quot;2020-10-20T16:33:37.007Z\&quot; agent=\&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36\&quot; etag=\&quot;XjLTQWRV_fxXiArdDqcQ\&quot; version=\&quot;13.8.1\&quot; type=\&quot;google\&quot;&gt;&lt;diagram id=\&quot;7_TV9NCpP6VJrDki679H\&quot; name=\&quot;Page-1\&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
+<script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+</body>
+</html>
+
+
+---
+
+## Publication checklist
+
+---
+
+Before releasing statistics for the first time you may want to discuss the new process with key stakeholders and/or pre-release users to make them aware of the new service. You should also inform the [Explore Statistics Mailbox](mailto:explore.statistics@education.gov.uk) and [HoP Office](mailto:Hop.STATISTICS@education.gov.uk) teams.
+
+Before you start creating a release in the platform you should have: 
+
+* Announced the upcoming release via gov.uk
+* Sent metadata form to HoP
+* Contacted the BAU team so we can support you with your first release
+* Produced your tidy csv data files with appropriate disclosure control
+* Produced metadata files for each csv data file
+* Ran your data and metadata through our [screener checks](https://rsconnect/rsc/dfe-published-data-qa/) 
+
+Before you publish a release you have created in the platform you should have: 
+
+* Checked all the data has loaded successfully
+* Written footnotes
+* Written content (including tables and charts)
+* Created a data guidance document
+* Created a public pre-release access list
+* Ensured methodology information is either linked off to or attached to the release
+* Passed the release for higher review (senior sign-off)
+* Previewed your release
+* Scheduled the release date
+* Invited your PRA list to preview 24 hours before it goes live
+* Raised a web ticket for the associated gov.uk page 
+
+<div class="alert alert-dismissible alert-info">
+Word templates for the data guidance, pra-list, and content can be found on [sharepoint](https://educationgovuk.sharepoint.com/:f:/r/sites/DfEStatisticsCoherence/Shared%20Documents/Templates%20-%20Explore%20Education%20Statistics?csf=1&e=7iJoUy){target="_blank" rel="noopener noreferrer"}.
+</div>
+
+---
+
+## Linking to gov.uk
+
+---
+
+You will need to arrange a gov.uk statistics publication page so that it links to EES. Here is how to do that:
+
+Two days ahead of publication, you’ll need to [raise a ticket with the Digital communications (gov.uk) team](https://dfe.service-now.com/serviceportal?id=sc_cat_item&sys_id=1f40a44ddb50fa005ca2fddabf961922&sysparm_category=611828a6db6c2f403b929334ca9619f6&catalog_id=-1){target="_blank" rel="noopener noreferrer"} and ask them to **create a new gov.uk statistics page with a link to EES, connect it to the announcement and add to any collections.**
+
+In your request, you’ll need to include:
+
+- title, summary sentence and ‘detail’ for the new page – you can include a link to previous releases if you want it to be the same
+
+- the link for your EES release – if you don’t have it you can update the ticket when the link is available
+
+- the link for the announcement
+
+- the link of any gov.uk collections it needs to be added to
+
+- an email with clearance from your deputy director
+
+- an email confirming communications are happy for it to go if it’s for stats that aren’t pre-announced or it’s an update to stats made after publication – so that they can prepare reactive lines
+
+Here are examples of how the page will look like:
+
+- [Primary School Performance Tables 2018](https://www.gov.uk/government/statistics/primary-school-performance-tables-2018){target="_blank" rel="noopener noreferrer"}
+
+- [Higher Education Student Statistics 2018 to 2019](https://www.gov.uk/government/statistics/higher-education-student-statistics-2018-to-2019){target="_blank" rel="noopener noreferrer"}
+
+
+<div class="alert alert-dismissible alert-info">
+You can find what the link to your EES release will be by looking at the 'Sign off' page within the release dashboard on EES.
+</div>
+
+`r knitr::include_graphics("../images/EES-public-url.PNG")`
+
+**Text to update the collection page:**
+
+In addition, you will also need to [raise a ticket with the Digital communications (gov.uk) team](https://dfe.service-now.com/serviceportal?id=sc_cat_item&sys_id=1f40a44ddb50fa005ca2fddabf961922&sysparm_category=611828a6db6c2f403b929334ca9619f6&catalog_id=-1){target="_blank" rel="noopener noreferrer"} to update your collection page/s with the following text:
+
+> From [publication date], the Department for Education will be publishing the [publication title] on a new statistics site, [Explore Education Statistics (EES)](https://explore-education-statistics.service.gov.uk/){target="_blank" rel="noopener noreferrer"}.
+
+When you raise the ticket please ensure that all the documents you submit are in an accessible format as stated in the [accessibility guidance](https://www.gov.uk/guidance/make-your-website-or-app-accessible-and-publish-an-accessibility-statement){target="_blank" rel="noopener noreferrer"}. There is also [guidance on accessibility for Excel workbooks](https://teams.microsoft.com/l/file/FB7C7F72-90E9-496C-A4CB-318C53190BAC?tenantId=fad277c9-c60a-4da1-b5f3-b3b8b34a82f9&fileType=docx&objectUrl=https%3A%2F%2Feducationgovuk.sharepoint.com%2Fsites%2FDAN%2FShared%20Documents%2FGSS%2FAccessibility%20requirements%20for%20Excel%20workbooksstatistics.docx&baseUrl=https%3A%2F%2Feducationgovuk.sharepoint.com%2Fsites%2FDAN&serviceName=teams&threadId=19:3b1d045f4f2d4f8db7038a4c98acb299@thread.skype&groupId=6572094f-43a3-4537-bcf0-fc27dc6557ed){target="_blank" rel="noopener noreferrer"} in Teams.
+
+---
+
+# gov.uk
+
+---
+
+Management information releases can be published directly on gov.uk
+
+
+---
+
+## How to publish
+
+---
+
+Ahead of publication, you’ll need to [raise a ticket with the Digital communications (gov.uk) team](https://dfe.service-now.com/serviceportal?id=sc_cat_item&sys_id=1f40a44ddb50fa005ca2fddabf961922&sysparm_category=611828a6db6c2f403b929334ca9619f6&catalog_id=-1){target="_blank" rel="noopener noreferrer"} and ask them to create a new release (or add to a series if this already exists).
+
+<!-- Needs fleshing out -->
+
+In your request, you’ll need to include:
+
+- title, summary sentence and ‘detail’ for the new page 
+
+- the link for the announcement
+
+- the link of any gov.uk collections it needs to be added to
+
+- an attachment with the accessible data files
+
+- an email with clearance from your deputy director
+
+
+When you raise the ticket please ensure that all the documents you submit are in an accessible format as stated in the [accessibility guidance](https://www.gov.uk/guidance/make-your-website-or-app-accessible-and-publish-an-accessibility-statement){target="_blank" rel="noopener noreferrer"}. There is also [guidance on accessibility for Excel workbooks](https://teams.microsoft.com/l/file/FB7C7F72-90E9-496C-A4CB-318C53190BAC?tenantId=fad277c9-c60a-4da1-b5f3-b3b8b34a82f9&fileType=docx&objectUrl=https%3A%2F%2Feducationgovuk.sharepoint.com%2Fsites%2FDAN%2FShared%20Documents%2FGSS%2FAccessibility%20requirements%20for%20Excel%20workbooksstatistics.docx&baseUrl=https%3A%2F%2Feducationgovuk.sharepoint.com%2Fsites%2FDAN&serviceName=teams&threadId=19:3b1d045f4f2d4f8db7038a4c98acb299@thread.skype&groupId=6572094f-43a3-4537-bcf0-fc27dc6557ed){target="_blank" rel="noopener noreferrer"} in Teams.
+
+---
+
+## Publication checklist
+
+---
+
+<!-- Again needs fleshing out/based on memory and digging through emails atm! -->
+
+Before you start creating your release you should have: 
+
+* Announced the upcoming release via gov.uk
+* Sent metadata form to HoP
+
+Before you publish a release you should have: 
+
+* Checked that the data meets accessibility requirements, ideally as a [.csv file](https://gss.civilservice.gov.uk/policy-store/making-analytical-publications-accessible/#section-8){target="_blank" rel="noopener noreferrer"}, or an [accessible Excel file](https://gss.civilservice.gov.uk/policy-store/releasing-statistics-in-spreadsheets/){target="_blank" rel="noopener noreferrer"} where this is not possible
+* Written footnotes where appropriate
+* Passed the release for higher review (senior sign-off)
+* Sent the final files and sign-off email to the digital communications (gov.uk) team
+
+---
+
+# Dashboards
+
+---
+
+Dashboards built to meet a particular user need can be another helpful tool to help users access and understand your data, and can be hosted outside of EES or gov.uk.
+
+Guidance to follow when creating and publishing dashboards is available via the [dashboards](dashboards.html) page.
+
+---
+
+## How to publish
+
+---
+
+We recommend that teams use R Shiny to build and publish apps. Shiny apps are easily made accessible, and underlying code for Shiny apps can be published alongside for transparency.
+
+
+More information to follow.
+
+
+---
+
+## Publication checklist
+
+---
+
+More information to follow, contact [the Statistics Development team](mailto:Statistics.DEVELOPMENT@education.gov.uk) in the meantime.

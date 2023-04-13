@@ -2,19 +2,26 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-0.9.653">
+<meta name="generator" content="quarto-1.2.335">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="By Cam Race, Laura Selby,  Sarah Wong, Richard Bielby,  Charlotte Foster and Tess Williams">
+<meta name="dcterms.date" content="2023-04-12">
 
-<title>Making sharable documents with Quarto - Making shareable documents with Quarto</title>
+<title>Making sharable documents with Quarto - Statistics Production Guidance</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
 </style>
 
 
@@ -24,7 +31,7 @@ ul.task-list{list-style: none;}
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./explore.html" rel="next">
+<link href="./learning-development/learning-development.html" rel="next">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -34,8 +41,8 @@ ul.task-list{list-style: none;}
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -65,7 +72,7 @@ ul.task-list{list-style: none;}
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Making shareable documents with Quarto</h1>
+      <h1 class="quarto-secondary-nav-title">Statistics Production Guidance</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -77,13 +84,12 @@ ul.task-list{list-style: none;}
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
-      <a href="./" class="sidebar-logo-link">
-      <img src="./images/openscapes_hex.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./images/duck_guidance.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main tools-wide">
-    <a href="https://openscapes.org" title="Openscapes.org" class="sidebar-tool px-1"><i class="bi bi-globe"></i></a>
-    <a href="https://github.com/openscapes/quarto-website-tutorial" title="Quarto website tutorial" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
-    <a href="https://twitter.com/openscapes" title="Openscapes Twitter" class="sidebar-tool px-1"><i class="bi bi-twitter"></i></a>
+    <a href="https://explore-education-statistics.service.gov.uk/" title="Explore Education Statistics" class="sidebar-tool px-1"><i class="bi bi-globe"></i></a>
+    <a href="https://github.com/dfe-analytical-services" title="DfE Analytical Services" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle sidebar-tool" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div>
@@ -99,121 +105,270 @@ ul.task-list{list-style: none;}
   <a href="./index.html" class="sidebar-item-text sidebar-link active">Welcome</a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./explore.html" class="sidebar-item-text sidebar-link">Explore and setup</a>
-  </div>
-</li>
         <li class="sidebar-item sidebar-item-section">
-    <div class="sidebar-item-container"> 
-        <a href="./quarto-workflows/index.html" class="sidebar-item-text sidebar-link">Quarto workflows</a>
-      <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
-        <i class="bi bi-chevron-right ms-2"></i>
-      </a>
-    </div>
-    <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
-        <li class="sidebar-item">
+      <div class="sidebar-item-container"> 
+            <a href="./learning-development/learning-development.html" class="sidebar-item-text sidebar-link">Learning and Development</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./quarto-workflows/browser.html" class="sidebar-item-text sidebar-link">From the Browser</a>
+  <a href="./learning-development/sql.html" class="sidebar-item-text sidebar-link">SQL</a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./quarto-workflows/rstudio.html" class="sidebar-item-text sidebar-link">From RStudio</a>
+  <a href="./learning-development/r.html" class="sidebar-item-text sidebar-link">R</a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./quarto-workflows/jupyter.html" class="sidebar-item-text sidebar-link">From Jupyter</a>
+  <a href="./learning-development/git.html" class="sidebar-item-text sidebar-link">Git</a>
   </div>
 </li>
-    </ul>
+      </ul>
   </li>
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">Creating statistics</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./learning-more.html" class="sidebar-item-text sidebar-link">Learning more</a>
+  <a href="./creating-statistics/rap.html" class="sidebar-item-text sidebar-link">RAP Guidance for Statistics Producers</a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./transition-from-rmarkdown.html" class="sidebar-item-text sidebar-link">Transition from Rmd</a>
+  <a href="./creating-statistics/rap-managers.html" class="sidebar-item-text sidebar-link">RAP information for managers</a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./creating-statistics/ud.html" class="sidebar-item-text sidebar-link">Open Data Standards</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./creating-statistics/cd.html" class="sidebar-item-text sidebar-link">Writing and visualising</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">Publishing statistics</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./publishing-statistics/pub.html" class="sidebar-item-text sidebar-link">How to publish</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./publishing-statistics/ees.html" class="sidebar-item-text sidebar-link">Using Explore Education Statistics</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./publishing-statistics/examples.html" class="sidebar-item-text sidebar-link">EES - good practice examples</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./publishing-statistics/dashboards.html" class="sidebar-item-text sidebar-link">Best practice for publishing dashboards</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./publishing-statistics/embedded-charts.html" class="sidebar-item-text sidebar-link">Creating embedded visualisations</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">Understanding users</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./understanding-users/user-eng.html" class="sidebar-item-text sidebar-link">User engagement</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./understanding-users/user-analytics.html" class="sidebar-item-text sidebar-link">EES analytics</a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome</a></li>
-  <li><a href="#what-is-quarto" id="toc-what-is-quarto" class="nav-link" data-scroll-target="#what-is-quarto">What is Quarto?</a></li>
-  <li><a href="#what-is-this-tutorial" id="toc-what-is-this-tutorial" class="nav-link" data-scroll-target="#what-is-this-tutorial">What is this tutorial?</a></li>
-  <li><a href="#example-quarto-sites" id="toc-example-quarto-sites" class="nav-link" data-scroll-target="#example-quarto-sites">Example Quarto sites</a></li>
-  <li><a href="#about" id="toc-about" class="nav-link" data-scroll-target="#about">About</a></li>
+  <li><a href="#learning-and-development" id="toc-learning-and-development" class="nav-link active" data-scroll-target="#learning-and-development">Learning and development</a></li>
+  <li><a href="#creating-statistics" id="toc-creating-statistics" class="nav-link" data-scroll-target="#creating-statistics">Creating statistics</a></li>
+  <li><a href="#publishing-statistics" id="toc-publishing-statistics" class="nav-link" data-scroll-target="#publishing-statistics">Publishing statistics</a></li>
+  <li><a href="#understanding-users" id="toc-understanding-users" class="nav-link" data-scroll-target="#understanding-users">Understanding users</a></li>
+  <li><a href="#our-resources" id="toc-our-resources" class="nav-link" data-scroll-target="#our-resources">Our resources</a>
+  <ul class="collapse">
+  <li><a href="#dfe-qa-app" id="toc-dfe-qa-app" class="nav-link" data-scroll-target="#dfe-qa-app">DfE QA app</a></li>
+  <li><a href="#explore-education-statistics-analytics" id="toc-explore-education-statistics-analytics" class="nav-link" data-scroll-target="#explore-education-statistics-analytics">Explore Education Statistics Analytics</a></li>
+  <li><a href="#publication-self-assessment-tool" id="toc-publication-self-assessment-tool" class="nav-link" data-scroll-target="#publication-self-assessment-tool">Publication self-assessment tool</a></li>
+  <li><a href="#template-qa-code" id="toc-template-qa-code" class="nav-link" data-scroll-target="#template-qa-code">Template QA code</a></li>
+  <li><a href="#dfer-package" id="toc-dfer-package" class="nav-link" data-scroll-target="#dfer-package">dfeR package</a></li>
+  <li><a href="#this-guidance-website" id="toc-this-guidance-website" class="nav-link" data-scroll-target="#this-guidance-website">This guidance website</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/quarto-website-tutorial/edit/main/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/quarto-website-tutorial/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/dfe-analytical-services/stats-production-guidance-quarto/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Making shareable documents with Quarto</h1>
-<p class="subtitle lead">Create open-source tutorials, onboarding docs, and much more</p>
+<h1 class="title d-none d-lg-block">Statistics Production Guidance</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>By Cam Race, Laura Selby,<br> Sarah Wong, Richard Bielby,<br> Charlotte Foster and Tess Williams </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 12, 2023</p>
+    </div>
+  </div>
+  
     
   </div>
   
 
 </header>
 
-<section id="welcome" class="level2">
-<h2 class="anchored" data-anchor-id="welcome">Welcome</h2>
-<p>It’s possible to create beautiful documentation to share online with <a href="https://quarto.org">Quarto</a> that auto-updates with <a href="http://github.com">Github</a>. This is very new and incredibly cool. This tutorial is an example of a quarto website — it is a really powerful way to create and share your work. You can communicate about science using the same reproducible workflow you and/or your colleagues use for analyses, whether or not you write code.</p>
-<p>Creating websites with Quarto can be done without knowing R, Python or HTML, CSS, etc, and that’s where we’ll start. However, Quarto integrates with these tools so you can make your websites as complex and beautiful as you like as you see examples and reuse and remix from others in the open community. This tutorial borrows heavily from a lot of great tutorials and resources you should check out too – there are links throughout.</p>
+<p>This website is a guide aimed at anyone producing official statistics in the Department for Education (DfE). It covers wider best practice and pulls together pieces of guidance that were previously standalone documents. If viewed in its entirety, it provides a walk-through guide from processing to publication, as well as being a single reference point that is easy to navigate if you just need to check on a specific part of the process, link off to other resources, or access specific guidance.</p>
+<p>There is already a wealth of resources out there, and therefore this site unashamedly aims to pool the relevant resources for statistics production into one place. There are some things that this site does not yet have, it will develop and change over time. We hope it can prove a useful resource for everyone from the most experienced of producers, right through to those who are working on their very first publication. If you have any feedback, suggested additions, or wish to challenge any of the guidance, please contact us using the envelope button in the top right corner.</p>
+<section id="learning-and-development" class="level2">
+<h2 class="anchored" data-anchor-id="learning-and-development">Learning and development</h2>
+<p><a href="learning-development/learning-development.html">General resources</a> A collection of useful learning resources, and information on the recommended tools to get you started</p>
+<p><a href="learning-development/sql.html">SQL</a> Guidance and tips for accessing data via databases with SQL</p>
+<p><a href="learning-development/r.html">R</a> Guidance and tips for using the programming language R</p>
+<p><a href="learning-development/git.html">Git</a> Guidance and tips for version control with Git</p>
 </section>
-<section id="what-is-quarto" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-quarto">What is Quarto?</h2>
-<p>Quarto helps you have your ideas and your code in one place, and present it in a beautiful way.</p>
-<p><strong>Quarto unifies and extends the RMarkdown ecosystem</strong> - it unifies by combining the functionality of R Markdown, bookdown, distill, xaringian, etc into a single consistent system. And it extends in several ways: all features are possible beyond R too, including Python and Javascript. It also has more “guardrails”: accessibility and inclusion are centered in the design. Quarto is for people who love RMarkdown, and it’s for people who have never used RMarkdown.</p>
-<p>The ability for Quarto to streamline collaboration has been so cool and important for our <a href="https://nasa-openscapes.github.io/">NASA Openscapes</a> project. Quarto has been a common place for us to collaborate - across R and Pyahon languages and coding expertise.</p>
+<section id="creating-statistics" class="level2">
+<h2 class="anchored" data-anchor-id="creating-statistics">Creating statistics</h2>
+<p><a href="creating-statistics/rap.html">Processes and RAP</a> Guidance for how to process data, including the principles of Reproducible Analytical Pipelines (RAP)</p>
+<p><a href="creating-statistics/rap_managers.html">RAP information for managers</a> Guidance for those managing analysts and FAQs on RAP</p>
+<p><a href="creating-statistics/ud.html">Open data standards</a> Guidance on how to structure data files</p>
+<p><a href="creating-statistics/cd.html">Writing and visualising</a> Things to consider when writing statistical commentary</p>
 </section>
-<section id="what-is-this-tutorial" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-this-tutorial">What is this tutorial?</h2>
-<p>Here, we’ll introduce Quarto by exploring this tutorial website, and practicing the basic Quarto workflow using different tools (GitHub browser, RStudio, and Jupyter) for editing your website.</p>
-<p>We’ll start off from the browser so you don’t need to install any additional software, however this approach is very limited and you will soon outgrow its capabilities. If you don’t already have a workflow and to edit files and sync to GitHub from your computer, I recommend RStudio. You don’t need to know R to use RStudio, and it has powerful editor features that make for happy workflows.</p>
-<p><a href="https://quarto.org">Quarto.org</a> is the go-to place for full documentation and more tutorials!</p>
+<section id="publishing-statistics" class="level2">
+<h2 class="anchored" data-anchor-id="publishing-statistics">Publishing statistics</h2>
+<p><a href="publishing-statistics/pub.html">How to publish</a> Guidance for how to publish different types of statistics</p>
+<p><a href="publishing-statistics/ees.html">Using EES</a> Guidance for how to use the features in the Explore Education Statistics platform</p>
+<p><a href="publishing-statistics/examples.html">EES good practice examples</a> Examples of good practice in EES across all of our publications</p>
+<p><a href="publishing-statistics/dashboards.html">Dashboards</a> Guidance for publishing official statistics dashboards</p>
+<p><a href="publishing-statistics/embedded-charts.html">Creating embedded visualisations</a> Guidance for creating and embedding R-Shiny charts in EES publications</p>
 </section>
-<section id="example-quarto-sites" class="level2">
-<h2 class="anchored" data-anchor-id="example-quarto-sites">Example Quarto sites</h2>
-<p>A few Quarto websites from Openscapes - wo far we have been using Quarto for documentation using Quarto and Markdown files and Jupyter Notebooks.</p>
+<section id="understanding-users" class="level2">
+<h2 class="anchored" data-anchor-id="understanding-users">Understanding users</h2>
+<p><a href="understanding-users/user-eng.html">User engagement</a> Guidance on understanding and engaging with the users of published statistics</p>
+<p><a href="understanding-users/user_analytics.html">EES analytics</a> Guidance on understanding how users are interacting with your statistics published via EES</p>
+</section>
+<section id="our-resources" class="level2">
+<h2 class="anchored" data-anchor-id="our-resources">Our resources</h2>
+<p>We also have a number of other applications for statistics production teams to use to help them in their processes, they can be accessed at the links below when using a DfE device.</p>
+<section id="dfe-qa-app" class="level3">
+<h3 class="anchored" data-anchor-id="dfe-qa-app">DfE QA app</h3>
+<p>This application allows you to screen your data files against the underlying data standards for Official and National statistical publications. If your file passes the checks it also gives you some basic options for exploring the data in the file.</p>
 <ul>
-<li><a href="https://openscapes.github.io/series">Champions Lessons Series</a></li>
-<li><a href="https://openscapes.github.io/approach-guide/">Openscapes Approach Guide</a><br>
-</li>
-<li><a href="https://nasa-openscapes.github.io/2021-Cloud-Hackathon/">2021 NASA Cloud Hackathon</a></li>
+<li><p><a href="https://rsconnect/rsc/dfe-published-data-qa/" target="_blank" rel="noopener noreferrer">https://rsconnect/rsc/dfe-published-data-qa/</a></p></li>
+<li><p>Code hosted at <a href="https://github.com/dfe-analytical-services/dfe-published-data-qa" target="_blank" rel="noopener noreferrer">https://github.com/dfe-analytical-services/dfe-published-data-qa</a></p></li>
 </ul>
 </section>
-<section id="about" class="level2">
-<h2 class="anchored" data-anchor-id="about">About</h2>
-<p><a href="https://openscapes.org">Openscapes</a> is about better science for future us. We help researchers reimagine data analysis, develop modern skills that are of immediate value to them, and cultivate collaborative and inclusive research teams as part of the broader global open movement.</p>
-<p>We’re developing this tutorial to help folks of different technical skills use <a href="https://quarto.org">Quarto</a> for documentation and tutorial building. This tutorial was originally created for several different audiences: <a href="https://nasa-openscapes.github.io">NASA-Openscapes</a> researcher support engineers using Python, communications directors at organizations promoting open science who do not identify as coders, and fisheries scientists curious about transitioning from RMarkdown. We’re hoping it’s useful to folks with backgrounds as wide as these; if you find it useful or have suggestions for improvement, please let us know by clicking “Edit this page” or “Report an issue” at the upper right side of any page.</p>
+<section id="explore-education-statistics-analytics" class="level3">
+<h3 class="anchored" data-anchor-id="explore-education-statistics-analytics">Explore Education Statistics Analytics</h3>
+<p>This application provides access to the Google Analytics data for the Explore Education Statistics platform.</p>
+<ul>
+<li><p><a href="https://rsconnect/rsc/ees-analytics/" target="_blank" rel="noopener noreferrer">https://rsconnect/rsc/ees-analytics/</a></p></li>
+<li><p>Code is not yet publicly available, contact us if you are interested in seeing it or contributing.</p></li>
+</ul>
+</section>
+<section id="publication-self-assessment-tool" class="level3">
+<h3 class="anchored" data-anchor-id="publication-self-assessment-tool">Publication self-assessment tool</h3>
+<p>A self assessment tool allowing teams to compare different aspects of their production processes against best practice.</p>
+<ul>
+<li><p><a href="https://rsconnect/rsc/publication-self-assessment/" target="_blank" rel="noopener noreferrer">https://rsconnect/rsc/publication-self-assessment/</a></p></li>
+<li><p>Code mirrored at <a href="https://github.com/dfe-analytical-services/publication-self-assessment-copy" target="_blank" rel="noopener noreferrer">https://github.com/dfe-analytical-services/publication-self-assessment-copy</a></p></li>
+</ul>
+</section>
+<section id="template-qa-code" class="level3">
+<h3 class="anchored" data-anchor-id="template-qa-code">Template QA code</h3>
+<ul>
+<li>Template QA code <a href="https://github.com/dfe-analytical-services/automated-data-qa" target="_blank" rel="noopener noreferrer">https://github.com/dfe-analytical-services/automated-data-qa</a></li>
+</ul>
+</section>
+<section id="dfer-package" class="level3">
+<h3 class="anchored" data-anchor-id="dfer-package">dfeR package</h3>
+<ul>
+<li><a href="https://github.com/dfe-analytical-services/dfeR" target="_blank" rel="noopener noreferrer">https://github.com/dfe-analytical-services/dfeR</a></li>
+</ul>
+</section>
+<section id="this-guidance-website" class="level3">
+<h3 class="anchored" data-anchor-id="this-guidance-website">This guidance website</h3>
+<p>The code for this guidance website is mirrored at <a href="https://github.com/dfe-analytical-services/stats-production-guidance-copy" target="_blank" rel="noopener noreferrer">https://github.com/dfe-analytical-services/stats-production-guidance-copy</a></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
   const disableStylesheet = (stylesheets) => {
     for (let i=0; i < stylesheets.length; i++) {
       const stylesheet = stylesheets[i];
@@ -243,8 +398,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     manageTransitions('#quarto-margin-sidebar .nav-link', false);
     if (alternate) {
       enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
     } else {
       disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
     }
     manageTransitions('#quarto-margin-sidebar .nav-link', true);
     // Switch the toggles
@@ -258,6 +419,16 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
           toggle.classList.remove("alternate");
         }
       }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
     }
   }
   const isFileUrl = () => { 
@@ -310,7 +481,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   // Switch to dark mode if need be
   if (hasAlternateSentinel()) {
     toggleColorMode(true);
-  } 
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -332,7 +505,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -360,31 +550,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
     });
   }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>
@@ -392,15 +601,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./explore.html" class="pagination-link">
-        <span class="nav-page-text">Explore and setup</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./learning-development/learning-development.html" class="pagination-link">
+        <span class="nav-page-text">Learning and Development</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">© CC-By Openscapes, 2022</div>   
+    <div class="nav-footer-left">© CC-By DfE, 2023</div>   
     <div class="nav-footer-right">This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</div>
   </div>
 </footer>

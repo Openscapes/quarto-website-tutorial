@@ -1,35 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/transition-from-rmarkdown.html</loc>
-    <lastmod>2022-07-08T00:04:57.906Z</lastmod>
+    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/explore.html</loc>
+    <lastmod>2023-04-12T10:32:28.517Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/index.html</loc>
-    <lastmod>2022-07-08T00:04:58.299Z</lastmod>
+    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/index.html</loc>
+    <lastmod>2023-04-12T11:19:58.166Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/learning-more.html</loc>
-    <lastmod>2022-07-08T00:04:58.634Z</lastmod>
+    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/learning-more.html</loc>
+    <lastmod>2023-04-12T10:32:37.810Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/explore.html</loc>
-    <lastmod>2022-07-08T00:04:59.049Z</lastmod>
+    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/quarto-workflows/browser.html</loc>
+    <lastmod>2023-04-12T10:11:47.284Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/browser.html</loc>
-    <lastmod>2022-07-08T00:04:59.372Z</lastmod>
+    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/quarto-workflows/index.html</loc>
+    <lastmod>2023-04-12T10:11:47.962Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/jupyter.html</loc>
-    <lastmod>2022-07-08T00:04:59.806Z</lastmod>
+    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/quarto-workflows/jupyter.html</loc>
+    <lastmod>2023-04-12T10:11:48.825Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/index.html</loc>
-    <lastmod>2022-07-08T00:05:00.127Z</lastmod>
+    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/quarto-workflows/rstudio.html</loc>
+    <lastmod>2023-04-12T10:11:49.667Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/rstudio.html</loc>
-    <lastmod>2022-07-08T00:05:00.487Z</lastmod>
+    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/transition-from-rmarkdown.html</loc>
+    <lastmod>2023-04-12T10:11:50.375Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/learning-development/git.html</loc>
+    <lastmod>2023-04-12T10:55:28.970Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/learning-development/learning-development.html</loc>
+    <lastmod>2023-04-12T11:16:02.092Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/learning-development/r.html</loc>
+    <lastmod>2023-04-12T10:30:57.890Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/learning-development/sql.html</loc>
+    <lastmod>2023-04-12T10:54:51.233Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/creating-statistics/ud.html</loc>
+    <lastmod>2023-04-12T10:57:25.832Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/publishing-statistics/dashboards.html</loc>
+    <lastmod>2023-04-12T10:46:26.273Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/publishing-statistics/ees.html</loc>
+    <lastmod>2023-04-12T10:46:14.846Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/publishing-statistics/embedded-charts.html</loc>
+    <lastmod>2023-04-12T10:46:17.132Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/publishing-statistics/examples.html</loc>
+    <lastmod>2023-04-12T10:46:19.608Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/publishing-statistics/pub.html</loc>
+    <lastmod>2023-04-12T10:46:21.988Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/understanding-users/user-eng.html</loc>
+    <lastmod>2023-04-12T10:58:08.634Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/creating-statistics/rap-managers.html</loc>
+    <lastmod>2023-04-12T11:16:52.946Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/creating-statistics/rap.html</loc>
+    <lastmod>2023-04-12T11:16:14.907Z</lastmod>
   </url>
 </urlset>

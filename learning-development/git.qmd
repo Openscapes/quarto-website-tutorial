@@ -1,0 +1,366 @@
+---
+title: "Git"
+---
+
+<p class="text-muted">Guidance and tips for version control with Git</p>
+
+---
+
+## What is it
+
+---
+
+It is a version control software. It is by far the best of its kind and is widely used by software developers and data scientists.
+
+---
+
+## What is it for
+
+---
+
+Git is a version control software that tracks changes to files within a folder that you assign Git to track. It works best with plain text files such as flat data files, code scripts and markdown documents. These folders are known as repositories and can be held and managed securely in a central online place such as GitHub (best for public), GitLab (can be good for either public or private) and Azure DevOps (best for private). We can easily mirror our Azure DevOps repositories in the DfE Analytical Services area on [GitHub](https://github.com/dfe-analytical-services){target="_blank" rel="noopener noreferrer"}.
+
+
+It is widely used across DfE and integrates neatly with our use of Azure DevOps, as well as being the current leading version control software in the world of coding with over [87% of 74,298 stack overflow users using it](https://insights.stackoverflow.com/survey/2018#work-_-version-control){target="_blank" rel="noopener noreferrer"}. 
+
+---
+
+## How to get it
+
+---
+
+Download it from the [Git website](https://git-scm.com/downloads){target="_blank" rel="noopener noreferrer"}.
+
+Git doesn't have an IDE, instead it will either integrate with your current IDE such as RStudio or Visual Studio Code, or run in the command line.
+
+When you first try to use Git you may be prompted for a GitHub username and password, if this happens you should generate a [Personal Access Token (PAT)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) and use this as your password. 
+
+---
+
+## Best places to start
+
+---
+
+<!-- worth us linking to how to create a git repo for azure and for github once our dashboard guidance is out? -->
+
+- If you're new to Git and are unsure of what it does, then take a look through these [Git for humans slides](https://speakerdeck.com/alicebartlett/git-for-humans){target="_blank" rel="noopener noreferrer"}
+
+- David Sands' guide to [getting started with Git](https://web.microsoftstream.com/video/cc21863d-a6f8-4b53-b66c-1dfd012b8d79?list=studio){target="_blank" rel="noopener noreferrer"} is a helpful place to start.
+
+- [Gooey Git](https://educationgovuk.sharepoint.com/sites/sarpi/g/WorkplaceDocuments/Forms/AllItems.aspx?id=%2Fsites%2Fsarpi%2Fg%2FWorkplaceDocuments%2FInducation%20learning%20and%20career%20development%2FCoffee%20and%20Coding%2F190220%5Fdavid%5Fgoeeygit%2Fgooey%5Fgit%2Ehtml&parent=%2Fsites%2Fsarpi%2Fg%2FWorkplaceDocuments%2FInducation%20learning%20and%20career%20development%2FCoffee%20and%20Coding%2F190220%5Fdavid%5Fgoeeygit){target="_blank" rel="noopener noreferrer"} by David Sands, provides a very neat overview of using git with R.
+
+---
+
+## How to work with git
+
+---
+
+### Git Bash
+
+---
+
+Git Bash allows you to run git commands without opening another IDE. You'd often need to use Git Bash to set your user settings, amend your proxy settings and clone repositories. 
+
+---
+
+### Git with RStudio
+
+---
+
+Git with R studio is a neat user interface for git. You don't need to use any git bash commands, and everything is done using point and click. This is useful for day-to-day version control, but does not support the full functionality of git.
+
+However, you can still run the full suite of git commands by simply typing them in the "Terminal" of RStudio.
+
+---
+
+##  Quick reference lookup
+
+---
+
+- GitHub have created a [cheat sheet for git commands](https://education.github.com/git-cheat-sheet-education.pdf){target="_blank" rel="noopener noreferrer"}.
+
+---
+
+## Other resources
+
+---
+
+- Avison Ho and Linda Bennett gave this coffee and coding presentation on [version controlling SQL with Git](https://github.com/avisionh/SQL-Titbits/wiki/User-Guide:-SQL-x-Git-Version-Control){target="_blank" rel="noopener noreferrer"}.
+
+- [Happy Git](https://happygitwithr.com/big-picture.html){target="_blank" rel="noopener noreferrer"} is a useful (though detailed) guide to setting up and using git.
+
+- Adam Robinson and Zach Waller have produced [guidance for how to use git in Azure DevOps (formally VSTS)](https://dfe-analytical-services.github.io/vsts-for-analysis/){target="_blank" rel="noopener noreferrer"}, which gives a detailed guide on how to use version control software in DfE analysis.
+
+- While also mentioned above as a resource for learning R, chapter 6 of ESFA's [guide to R and Git](https://rsconnect/rsc/esfa-r-training/git-building-intuition.html){target="_blank" rel="noopener noreferrer"} is also worth looking at for Git alone.
+
+- Microsoft have produced documentation on [using Git](https://docs.microsoft.com/en-us/azure/devops/user-guide/code-with-git?view=azure-devops){target="_blank" rel="noopener noreferrer"} within [AzureDevOps](https://docs.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops?view=azure-devops){target="_blank" rel="noopener noreferrer"}.
+
+- For those wanting to go deeper into understand the variety of git commands and what they do, there is a great [online visual resource](https://dev.to/lydiahallie/cs-visualized-useful-git-commands-37p1){target="_blank" rel="noopener noreferrer"}.
+
+- We also have a number of helpful sections on using git in practice at the end of our [RAP page](rap.html#Build_capability_within_the_team){target="_blank" rel="noopener noreferrer"}.
+
+---
+
+## Tips for using Git
+
+---
+
+### Branches
+
+---
+
+David Sands has produced a very helpful video on how to use branches in git, which also covers how to tackle merge conflicts if and when they arise:
+
+<div align=center>
+<iframe width="640" height="360" src="https://web.microsoftstream.com/embed/video/6b56e063-294c-4103-b8b7-aacc4f1c9169?autoplay=false&amp;showinfo=true" allowfullscreen style="border:none;"></iframe>
+</div>
+
+When you create a git project, it will automatically create a "main" (sometimes "master") branch for you. This is where code that has been QA'd and you are happy with should sit.
+
+- It is good practice to have at least one other branch, we tend to call it "development". This is the branch where you will be doing most of your work. To open a new branch, navigate to "branches" and click on the blue box highlighted below
+
+`r knitr::include_graphics("../images/new_branch_git.png")`
+
+- Having two separate branches means that if anything goes wrong in the "development" branch, the "main" or "master" branch is still unaffected and runs without issue. This lets you test and QA the code more thoroughly before merging into your main branch.
+
+- When working on your project, make sure that you are in the right branch. You can check this by navigating to the "Git" tab in RStudio as demonstrated below.
+
+`r knitr::include_graphics("../images/select_branch.png")`
+
+---
+
+### Commits
+
+---
+
+Once you are happy with changes and want them to be in the latest version of your branch for all of your team to see, you can push "commits" up.
+
+- When you make a change to a file, this will pop up in the "Git" window of your R console. Select the files you want to commit by ticking the "staged" box next to them.
+
+`r knitr::include_graphics("../images/git_stage.png")`
+
+- This will bring up a new window. Add a comment describing your additions/changes, and click commit. You will see all the staged files disappear. Then click “Push” to push the committed files up to the online repository for all to use.
+
+`r knitr::include_graphics("../images/git_push.png")`
+
+- When another member of your team makes a commit and you want to pull this into your local area to check and work off the latest version, click on the blue "pull" button.
+
+`r knitr::include_graphics("../images/pull_git.png")`
+
+Committing regularly is strongly recommended as each commit is a saved point in time that you can easily roll back to if needed. If you want to know more about how to do this, see the [reverting a commit](#reverting-a-commit) section below. 
+
+---
+
+### Pull requests
+
+---
+
+When you have got to a place with the code and your committed changes where you are happy for it to be QA'd, you can open a pull request. This gives your team a chance to QA your changes before merging the branches together.
+
+* Navigate to "Pull Requests" in the "Repos" tab of Azure DevOps and click the blue "New pull request" button.
+
+* This will take you to a new window. Here, you can add:
+   + Title, tell your team what has changed
+   + Description, tell your reviewer what they should check
+   + Reviewers, add multiple if needed.  
+
+* As a reviewer, to approve a pull request, follow the link in your email and click "approve" in the blue box. When all reviewers are happy for this to be the new master branch, click “complete”.
+
+Creating pull requests in GitHub follows a broadly similar process and should be intuitive from the above steps for Azure DevOps.
+ 
+---
+
+### Merging a branch into another one
+
+---
+
+If you want to merge a branch into another without doing a full pull request, you can do this using a terminal.
+
+This may happen if you are working on a feature branch, and want to merge the latest changes to the master branch back into your feature branch before opening a PR to master with your own changes. Often this can let you deal with nasty conflicts up front, or allow you to keep working on your feature but update to have something new that's on master.
+
+Start off by checking out your desired target branch - `git checkout mybranch`. Then merge in the branch you want (e.g. master) - `git merge master`.
+
+---
+
+### Cherry picking
+
+---
+
+If you want to cherry pick specific commits for PR, you can do this by cherry picking the commits you want to use, and creating a new branch that has only those new commits that you want.
+
+To start off you'll need to identify the commits you want. In the terminal, run `git log --oneline` to get a log of commits for your current branch, use `git log --online BRANCHNAME` to specific the branch for the log. This gives a list of commit hashes and messages ([stackoverflow response defining git hashes and commmit ID's](https://stackoverflow.com/questions/43763896/whats-the-difference-between-commit-id-and-sha1-hash-in-git){target="_blank" rel="noopener noreferrer"}). You can press enter to get more commits, or q to quit
+
+Then go to the branch you want the commit to appear on and cherry pick your commits. Often, if this is to hop around something on a development to master pr, you would create a second development branch, cherry pick commits to there, and then PR that to master and delete the branch after merging.
+
+On the branch you want to PR (i.e. your copy of a development branch purely for merging only cherry picked commits) run `git cherry-pick COMMITHASH` to add the specified commit, or `git cherry-pick HASH1^..HASH4` for a specified list of commits (inclusive).
+
+Happy days!
+
+
+---
+
+### Visualising your tree
+
+---
+
+
+You can use `gitk --all` to visualise a tree of all previous commits up to this point.
+
+`r knitr::include_graphics("../images/gitk.png")`
+
+---
+
+### Getting commit IDs
+
+---
+
+Commit IDs are the way Git identifies unique commits. They're really helpful if you ever need to revert back to a previous commit if you've made a mistake.
+
+There are lots of different ways to find out commit IDs:
+
+* Visit the repo in Azure Devops and go to the commit of interest. At the top of the page there is a commit ID you can copy.
+
+*  Navigate to the repo in your file explorer, then open up Git Bash and type
+
+`git log --pretty=format:"%h - %an, %ar : %` 
+
+OR
+
+`git log --pretty=oneline`
+
+There are a number of customisable versions of this, more information is available on the [Git website](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History){target="_blank" rel="noopener noreferrer"}.
+ 
+
+---
+
+### Reverting a commit
+
+---
+
+Made a mistake and need to revert? No problem! Reverting commits in git creates a new commit reversing your accidental commits, bringing you back to an earlier point in your branch. 
+
+For rolling back on a branch, you should revert any changes so that you're not erasing history others might have pulled/cloned. E.g. If you want to revert the last 3 commits on master:
+
+`git revert --no-commit master~3..master`
+
+The no commit argument means that it just makes the reverts locally, and you can then commit them all as a single revert commit. If you don't use `--no-commit` then it will start doing individual revert commits for you for each commit you're reverting.
+
+You can also revert back to a particular commit ID:
+
+1. Navigate to the repo in your file explorer, then open up Git Bash and type :
+
+ `git revert [PASTE COMMIT ID HERE]` 
+ 
+2. This opens up a window that asks you to write a commit message. You can skip this step as it automatically writes a revert message for you. Enter `:wq` which quits the writer window.
+
+3. You can now push these changes to Azure Devops by entering `git push` into the git window
+
+---
+
+### Tagging release versions
+
+---
+
+<!-- future best practice?! -->
+
+It can be useful to tag specific commits or releases at key points in time. For us a common example will be each publication cycle, to tag the version of the code used to process data for a particular release or amendment.
+
+Guidance on how to tag releases using git can be found on the draft version of the [BPI code guidance](https://best-practice-and-impact.github.io/qa-of-code-guidance/version_control.html#releases-tagging){target="_blank" rel="noopener noreferrer"}
+
+---
+
+### Fix: cannot resolve proxy
+
+---
+
+If you get this error when trying to pull / push to a repository from a DfE laptop: 
+
+`fatal: unable to access 'https://dfe-gov-uk.visualstudio.com/stats-development/_git/ees-analytics-new/': Could not resolve proxy: mwg.proxy.ad.hq.dept`
+
+Then try running the following git command to clear the proxy settings in your git config file:
+
+`git config --global --unset http.proxy`
+
+---
+
+### Cleaning up local branches
+
+---
+
+Essentially this finds all merged (old) branches, makes sure to not include master or development (can rename or add more if appropriate) and then runs those branches through the delete command. To be safe, run the first two thirds first, to print out the list of what you'll be deleting:
+
+`git branch --merged | egrep -v "(^\*|master|development)"`
+
+Then if you're happy, run the whole line:
+
+`git branch --merged | egrep -v "(^\*|master|development)" | xargs git branch -d`
+
+That should be all local branches tidied up. Now to complete the job you can prune the tracking branches you have set up, usually this will just be:
+
+`git remote prune origin`
+
+Though you can use `git remote -v` to find other remotes if you have them.
+
+---
+
+### Creating PATs
+
+---
+
+PATs or Personal access tokens, are a preferred way to authenticate into repositories through code. [Creating a PAT in GitHub](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token#creating-a-token){target="_blank" rel="noopener noreferrer"} is relatively intuitive. 
+
+In Azure DevOps, you can do this by following [Microsoft's documentation on creating a PAT in Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=preview-page#create-personal-access-tokens-to-authenticate-access){target="_blank" rel="noopener noreferrer"}.
+
+---
+
+### Storing secure variables
+
+---
+
+#### Azure DevOps
+
+---
+
+In Azure DevOps you can securely store variables that are then used by your pipelines by making use of variable groups. 
+
+First create a variable group by navigating to `Pipelines > Library`. Enter any variables you want to store here and make sure to change the variable type to secret if appropriate (i.e. login credentials or PATs).
+
+`r knitr::include_graphics("../images/createVariableGroup.png")`
+
+Then, in the pipeline you want to use the variables in, go to `Variables > Variable groups` and link the variable group as shown below. You can then call upon the variables as needed in your pipeline.
+
+`r knitr::include_graphics("../images/linkVariableGroup.png")`
+
+---
+
+#### GitHub
+
+---
+
+In GitHub you can store sensitive variables as [encrypted secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets).
+
+---
+
+### Mirroring a repository
+
+---
+
+There may be times when you have a repository in one place, such as Azure DevOps, but want to mirror the code and any changes to it in another place, such as GitHub. This can be for many different reasons, though commonly for us it will be to open up our code across government. Azure DevOps doesn't provide us with easily publicly visible code repositories, however GitHub does.
+
+To mirror a code repository from Azure DevOps, use the [mirror git repository extension](https://github.com/swellaby/vsts-mirror-git-repository){target="_blank" rel="noopener noreferrer"} (already installed on dfe-gov-uk instance), make use of the PAT and secure variables sections above and then add a job to your pipeline and enter your parameters in the fields as per the example below:
+
+`r knitr::include_graphics("../images/mirroringGit.png")`
+
+---
+
+### Fixing the "JSON token 4" error
+
+---
+
+This error can appear when you are trying to push changes to Azure DevOps.
+
+If it appears and you have not changed your password recently, try locking your laptop and seeing if on re-login it prompts you for a password change.
+
+If you have changed changed your password recently, try signing out of Azure and then back in again.
+
+---

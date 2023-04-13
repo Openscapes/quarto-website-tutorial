@@ -1,0 +1,16 @@
+time_period,time_identifier,geographical_level,country_code,country_name,region_code,region_name,gender,school_phase,number_children,percent_children
+202021,Academic year,National,E92000001,England,,,Total,Total,1000,100.000
+202021,Academic year,National,E92000001,England,,,Male,Total,490,49.000
+202021,Academic year,National,E92000001,England,,,Female,Total,510,51.000
+202021,Academic year,National,E92000001,England,,,Total,Primary,250,100.000
+202021,Academic year,National,E92000001,England,,,Male,Primary,131,52.400
+202021,Academic year,National,E92000001,England,,,Female,Primary,119,47.600
+202021,Academic year,Regional,E92000001,England,E12000001,North East,Total,Total,100,100.000
+202021,Academic year,Regional,E92000001,England,E12000001,North East,Male,Total,32,32.000
+202021,Academic year,Regional,E92000001,England,E12000001,North East,Female,Total,64,64.000
+202021,Academic year,Regional,E92000001,England,E12000001,North East,Total,Primary,43,100.000
+202021,Academic year,Regional,E92000001,England,E12000001,North East,Male,Primary,12,27.907
+202021,Academic year,Regional,E92000001,England,E12000001,North East,Female,Primary,31,72.093
+201920,Academic year,National,E92000001,England,,,Total,Total,956,100.000
+201920,Academic year,National,E92000001,England,,,Male,Total,444,46.444
+201920,Academic year,National,E92000001,England,,,Female,Total,512,53.556
