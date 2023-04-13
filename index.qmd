@@ -20,55 +20,55 @@ There is already a wealth of resources out there, and therefore this site unasha
 ## Learning and development
 
 [General resources](learning-development/learning-development.html)
-A collection of useful learning resources, and information on the recommended tools to get you started
+- A collection of useful learning resources, and information on the recommended tools to get you started
 
 [SQL](learning-development/sql.html)
-Guidance and tips for accessing data via databases with SQL
+- Guidance and tips for accessing data via databases with SQL
 
 [R](learning-development/r.html)
-Guidance and tips for using the programming language R
+- Guidance and tips for using the programming language R
 
 [Git](learning-development/git.html)
-Guidance and tips for version control with Git
+- Guidance and tips for version control with Git
 
 ## Creating statistics
 
 [Processes and RAP](creating-statistics/rap.html)
-Guidance for how to process data, including the principles of Reproducible Analytical Pipelines (RAP)
+- Guidance for how to process data, including the principles of Reproducible Analytical Pipelines (RAP)
 
 [RAP information for managers](creating-statistics/rap_managers.html)
-Guidance for those managing analysts and FAQs on RAP
+- Guidance for those managing analysts and FAQs on RAP
 
 [Open data standards](creating-statistics/ud.html)
-Guidance on how to structure data files
+- Guidance on how to structure data files
 
 [Writing and visualising](creating-statistics/cd.html)
-Things to consider when writing statistical commentary
+- Things to consider when writing statistical commentary
 
 ## Publishing statistics
 
 [How to publish](publishing-statistics/pub.html)
-Guidance for how to publish different types of statistics
+- Guidance for how to publish different types of statistics
 
 [Using EES](publishing-statistics/ees.html)
-Guidance for how to use the features in the Explore Education Statistics platform
+- Guidance for how to use the features in the Explore Education Statistics platform
 
 [EES good practice examples](publishing-statistics/examples.html)
-Examples of good practice in EES across all of our publications
+- Examples of good practice in EES across all of our publications
 
 [Dashboards](publishing-statistics/dashboards.html)
-Guidance for publishing official statistics dashboards
+- Guidance for publishing official statistics dashboards
 
 [Creating embedded visualisations](publishing-statistics/embedded-charts.html)
-Guidance for creating and embedding R-Shiny charts in EES publications
+- Guidance for creating and embedding R-Shiny charts in EES publications
 
 ## Understanding users
 
 [User engagement](understanding-users/user-eng.html)
-Guidance on understanding and engaging with the users of published statistics
+- Guidance on understanding and engaging with the users of published statistics
 
 [EES analytics](understanding-users/user_analytics.html)
-Guidance on understanding how users are interacting with your statistics published via EES
+- Guidance on understanding how users are interacting with your statistics published via EES-
 
 
 
