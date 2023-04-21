@@ -62,7 +62,7 @@ There is already a wealth of resources out there, and therefore this site unasha
 - Guidance on understanding and engaging with the users of published statistics
 
 [EES analytics](understanding-users/user_analytics.html)
-- Guidance on understanding how users are interacting with your statistics published via EES-
+- Guidance on understanding how users are interacting with your statistics published via EES
 
 ## RAP
 
