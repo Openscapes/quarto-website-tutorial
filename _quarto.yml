@@ -52,8 +52,8 @@ website:
           - understanding-users/user-analytics.qmd
       - section: "Reproducible Analytical Pipelines (RAP)"
         contents: 
-          - creating-statistics/rap.qmd
-          - creating-statistics/rap-managers.qmd
+          - RAP/rap.qmd
+          - RAP/rap-managers.qmd
 
 format:
   html:
