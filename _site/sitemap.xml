@@ -1,103 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/explore.html</loc>
-    <lastmod>2023-04-21T13:25:54.216Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/index.html</loc>
-    <lastmod>2023-04-21T13:41:48.450Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/learning-more.html</loc>
-    <lastmod>2023-04-12T10:32:37.810Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/quarto-workflows/browser.html</loc>
-    <lastmod>2023-04-12T10:11:47.284Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/quarto-workflows/index.html</loc>
-    <lastmod>2023-04-12T10:11:47.962Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/quarto-workflows/jupyter.html</loc>
-    <lastmod>2023-04-12T10:11:48.825Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/quarto-workflows/rstudio.html</loc>
-    <lastmod>2023-04-12T10:11:49.667Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/transition-from-rmarkdown.html</loc>
-    <lastmod>2023-04-12T10:11:50.375Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/learning-development/git.html</loc>
-    <lastmod>2023-04-21T13:25:56.524Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/learning-development/learning-development.html</loc>
-    <lastmod>2023-04-21T13:37:01.059Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/learning-development/r.html</loc>
-    <lastmod>2023-04-21T13:25:59.549Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/learning-development/sql.html</loc>
-    <lastmod>2023-04-21T13:26:01.494Z</lastmod>
+    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/creating-statistics/cd.html</loc>
+    <lastmod>2023-04-21T14:01:41.375Z</lastmod>
   </url>
   <url>
     <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/creating-statistics/ud.html</loc>
-    <lastmod>2023-04-21T13:25:53.545Z</lastmod>
+    <lastmod>2023-04-21T14:01:45.278Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/explore.html</loc>
+    <lastmod>2023-04-21T14:01:45.945Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/index.html</loc>
+    <lastmod>2023-04-21T14:03:20.565Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/learning-development/git.html</loc>
+    <lastmod>2023-04-21T14:01:50.620Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/learning-development/learning-development.html</loc>
+    <lastmod>2023-04-21T14:03:21.806Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/learning-development/r.html</loc>
+    <lastmod>2023-04-21T14:01:53.972Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/learning-development/sql.html</loc>
+    <lastmod>2023-04-21T14:01:56.183Z</lastmod>
   </url>
   <url>
     <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/publishing-statistics/dashboards.html</loc>
-    <lastmod>2023-04-21T13:26:04.469Z</lastmod>
+    <lastmod>2023-04-21T14:01:59.075Z</lastmod>
   </url>
   <url>
     <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/publishing-statistics/ees.html</loc>
-    <lastmod>2023-04-21T13:26:08.112Z</lastmod>
+    <lastmod>2023-04-21T14:02:03.321Z</lastmod>
   </url>
   <url>
     <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/publishing-statistics/embedded-charts.html</loc>
-    <lastmod>2023-04-21T13:26:10.346Z</lastmod>
+    <lastmod>2023-04-21T14:02:05.317Z</lastmod>
   </url>
   <url>
     <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/publishing-statistics/examples.html</loc>
-    <lastmod>2023-04-21T13:26:12.599Z</lastmod>
+    <lastmod>2023-04-21T14:02:07.652Z</lastmod>
   </url>
   <url>
     <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/publishing-statistics/pub.html</loc>
-    <lastmod>2023-04-21T13:26:14.569Z</lastmod>
+    <lastmod>2023-04-21T14:02:09.757Z</lastmod>
   </url>
   <url>
-    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/understanding-users/user-eng.html</loc>
-    <lastmod>2023-04-21T13:26:17.460Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/creating-statistics/rap-managers.html</loc>
-    <lastmod>2023-04-21T13:25:44.705Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/creating-statistics/rap.html</loc>
-    <lastmod>2023-04-21T13:27:02.524Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/creating-statistics/cd.html</loc>
-    <lastmod>2023-04-21T13:25:43.965Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/understanding-users/user-analytics.html</loc>
-    <lastmod>2023-04-21T13:26:15.159Z</lastmod>
+    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/RAP/rap-faq.html</loc>
+    <lastmod>2023-04-21T14:03:18.120Z</lastmod>
   </url>
   <url>
     <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/RAP/rap-managers.html</loc>
-    <lastmod>2023-04-21T13:28:40.616Z</lastmod>
+    <lastmod>2023-04-21T14:03:19.303Z</lastmod>
   </url>
   <url>
     <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/RAP/rap.html</loc>
-    <lastmod>2023-04-21T13:56:26.530Z</lastmod>
+    <lastmod>2023-04-21T14:03:16.590Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/understanding-users/user-analytics.html</loc>
+    <lastmod>2023-04-21T14:02:15.740Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dfe-analytical-services.github.io/stats-production-guidance-quarto/understanding-users/user-eng.html</loc>
+    <lastmod>2023-04-21T14:02:18.056Z</lastmod>
   </url>
 </urlset>
