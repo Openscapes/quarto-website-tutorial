@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="By Cam Race, Laura Selby,  Sarah Wong, Richard Bielby,  Charlotte Foster and Tess Williams">
-<meta name="dcterms.date" content="2023-04-12">
+<meta name="dcterms.date" content="2023-04-21">
 
 <title>Making sharable documents with Quarto - Statistics Production Guidance</title>
 <style>
@@ -139,15 +139,11 @@ ul.task-list li input[type="checkbox"] {
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./creating-statistics/rap.html" class="sidebar-item-text sidebar-link">RAP Guidance for Statistics Producers</a>
-  </div>
-</li>
+  creating-statistics/rap.qmd
+  </li>
           <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./creating-statistics/rap-managers.html" class="sidebar-item-text sidebar-link">RAP information for managers</a>
-  </div>
-</li>
+  creating-statistics/rap-managers.qmd
+  </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./creating-statistics/ud.html" class="sidebar-item-text sidebar-link">Open Data Standards</a>
@@ -228,6 +224,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#creating-statistics" id="toc-creating-statistics" class="nav-link" data-scroll-target="#creating-statistics">Creating statistics</a></li>
   <li><a href="#publishing-statistics" id="toc-publishing-statistics" class="nav-link" data-scroll-target="#publishing-statistics">Publishing statistics</a></li>
   <li><a href="#understanding-users" id="toc-understanding-users" class="nav-link" data-scroll-target="#understanding-users">Understanding users</a></li>
+  <li><a href="#rap" id="toc-rap" class="nav-link" data-scroll-target="#rap">RAP</a></li>
   <li><a href="#our-resources" id="toc-our-resources" class="nav-link" data-scroll-target="#our-resources">Our resources</a>
   <ul class="collapse">
   <li><a href="#dfe-qa-app" id="toc-dfe-qa-app" class="nav-link" data-scroll-target="#dfe-qa-app">DfE QA app</a></li>
@@ -262,7 +259,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 12, 2023</p>
+      <p class="date">April 21, 2023</p>
     </div>
   </div>
   
@@ -276,30 +273,33 @@ ul.task-list li input[type="checkbox"] {
 <p>There is already a wealth of resources out there, and therefore this site unashamedly aims to pool the relevant resources for statistics production into one place. There are some things that this site does not yet have, it will develop and change over time. We hope it can prove a useful resource for everyone from the most experienced of producers, right through to those who are working on their very first publication. If you have any feedback, suggested additions, or wish to challenge any of the guidance, please contact us using the envelope button in the top right corner.</p>
 <section id="learning-and-development" class="level2">
 <h2 class="anchored" data-anchor-id="learning-and-development">Learning and development</h2>
-<p><a href="learning-development/learning-development.html">General resources</a> A collection of useful learning resources, and information on the recommended tools to get you started</p>
-<p><a href="learning-development/sql.html">SQL</a> Guidance and tips for accessing data via databases with SQL</p>
-<p><a href="learning-development/r.html">R</a> Guidance and tips for using the programming language R</p>
-<p><a href="learning-development/git.html">Git</a> Guidance and tips for version control with Git</p>
+<p><a href="learning-development/learning-development.html">General resources</a> - A collection of useful learning resources, and information on the recommended tools to get you started</p>
+<p><a href="learning-development/sql.html">SQL</a> - Guidance and tips for accessing data via databases with SQL</p>
+<p><a href="learning-development/r.html">R</a> - Guidance and tips for using the programming language R</p>
+<p><a href="learning-development/git.html">Git</a> - Guidance and tips for version control with Git</p>
 </section>
 <section id="creating-statistics" class="level2">
 <h2 class="anchored" data-anchor-id="creating-statistics">Creating statistics</h2>
-<p><a href="creating-statistics/rap.html">Processes and RAP</a> Guidance for how to process data, including the principles of Reproducible Analytical Pipelines (RAP)</p>
-<p><a href="creating-statistics/rap_managers.html">RAP information for managers</a> Guidance for those managing analysts and FAQs on RAP</p>
-<p><a href="creating-statistics/ud.html">Open data standards</a> Guidance on how to structure data files</p>
-<p><a href="creating-statistics/cd.html">Writing and visualising</a> Things to consider when writing statistical commentary</p>
+<p><a href="creating-statistics/ud.html">Open data standards</a> - Guidance on how to structure data files</p>
+<p><a href="creating-statistics/cd.html">Writing and visualising</a> - Things to consider when writing statistical commentary</p>
 </section>
 <section id="publishing-statistics" class="level2">
 <h2 class="anchored" data-anchor-id="publishing-statistics">Publishing statistics</h2>
-<p><a href="publishing-statistics/pub.html">How to publish</a> Guidance for how to publish different types of statistics</p>
-<p><a href="publishing-statistics/ees.html">Using EES</a> Guidance for how to use the features in the Explore Education Statistics platform</p>
-<p><a href="publishing-statistics/examples.html">EES good practice examples</a> Examples of good practice in EES across all of our publications</p>
-<p><a href="publishing-statistics/dashboards.html">Dashboards</a> Guidance for publishing official statistics dashboards</p>
-<p><a href="publishing-statistics/embedded-charts.html">Creating embedded visualisations</a> Guidance for creating and embedding R-Shiny charts in EES publications</p>
+<p><a href="publishing-statistics/pub.html">How to publish</a> - Guidance for how to publish different types of statistics</p>
+<p><a href="publishing-statistics/ees.html">Using EES</a> - Guidance for how to use the features in the Explore Education Statistics platform</p>
+<p><a href="publishing-statistics/examples.html">EES good practice examples</a> - Examples of good practice in EES across all of our publications</p>
+<p><a href="publishing-statistics/dashboards.html">Dashboards</a> - Guidance for publishing official statistics dashboards</p>
+<p><a href="publishing-statistics/embedded-charts.html">Creating embedded visualisations</a> - Guidance for creating and embedding R-Shiny charts in EES publications</p>
 </section>
 <section id="understanding-users" class="level2">
 <h2 class="anchored" data-anchor-id="understanding-users">Understanding users</h2>
-<p><a href="understanding-users/user-eng.html">User engagement</a> Guidance on understanding and engaging with the users of published statistics</p>
-<p><a href="understanding-users/user_analytics.html">EES analytics</a> Guidance on understanding how users are interacting with your statistics published via EES</p>
+<p><a href="understanding-users/user-eng.html">User engagement</a> - Guidance on understanding and engaging with the users of published statistics</p>
+<p><a href="understanding-users/user_analytics.html">EES analytics</a> - Guidance on understanding how users are interacting with your statistics published via EES-</p>
+</section>
+<section id="rap" class="level2">
+<h2 class="anchored" data-anchor-id="rap">RAP</h2>
+<p><a href="RAP/rap.html">Processes and RAP</a> - Guidance for how to process data, including the principles of Reproducible Analytical Pipelines (RAP)</p>
+<p><a href="RAP/rap_managers.html">RAP information for managers</a> - Guidance for those managing analysts and FAQs on RAP</p>
 </section>
 <section id="our-resources" class="level2">
 <h2 class="anchored" data-anchor-id="our-resources">Our resources</h2>

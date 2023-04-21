@@ -33,12 +33,6 @@ There is already a wealth of resources out there, and therefore this site unasha
 
 ## Creating statistics
 
-[Processes and RAP](creating-statistics/rap.html)
-- Guidance for how to process data, including the principles of Reproducible Analytical Pipelines (RAP)
-
-[RAP information for managers](creating-statistics/rap_managers.html)
-- Guidance for those managing analysts and FAQs on RAP
-
 [Open data standards](creating-statistics/ud.html)
 - Guidance on how to structure data files
 
@@ -70,6 +64,13 @@ There is already a wealth of resources out there, and therefore this site unasha
 [EES analytics](understanding-users/user_analytics.html)
 - Guidance on understanding how users are interacting with your statistics published via EES-
 
+## RAP
+
+[Processes and RAP](RAP/rap.html)
+- Guidance for how to process data, including the principles of Reproducible Analytical Pipelines (RAP)
+
+[RAP information for managers](RAP/rap_managers.html)
+- Guidance for those managing analysts and FAQs on RAP
 
 
 ## Our resources

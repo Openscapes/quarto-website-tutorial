@@ -37,8 +37,6 @@ website:
           - learning-development/git.qmd
       - section: "Creating statistics"
         contents: 
-          - creating-statistics/rap.qmd
-          - creating-statistics/rap-managers.qmd
           - creating-statistics/ud.qmd
           - creating-statistics/cd.qmd
       - section: "Publishing statistics"
@@ -52,6 +50,10 @@ website:
         contents: 
           - understanding-users/user-eng.qmd
           - understanding-users/user-analytics.qmd
+      - section: "Reproducible Analytical Pipelines (RAP)"
+        contents: 
+          - creating-statistics/rap.qmd
+          - creating-statistics/rap-managers.qmd
 
 format:
   html:
