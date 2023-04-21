@@ -69,8 +69,11 @@ There is already a wealth of resources out there, and therefore this site unasha
 [Processes and RAP](RAP/rap.html)
 - Guidance for how to process data, including the principles of Reproducible Analytical Pipelines (RAP)
 
-[RAP information for managers](RAP/rap_managers.html)
+[RAP information for managers](RAP/rap-managers.html)
 - Guidance for those managing analysts and FAQs on RAP
+
+[RAP FAQs](RAP/rap-faq.html)
+- Frequently asked questions about Reproducible Analytical Pipelines!
 
 
 ## Our resources

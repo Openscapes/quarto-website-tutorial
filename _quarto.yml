@@ -54,6 +54,7 @@ website:
         contents: 
           - RAP/rap.qmd
           - RAP/rap-managers.qmd
+          - RAP/rap-faq.qmd
 
 format:
   html:
