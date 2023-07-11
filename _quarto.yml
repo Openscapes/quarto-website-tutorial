@@ -4,13 +4,13 @@ project:
 website: 
   page-navigation: true
   title: "Making sharable documents with Quarto" 
-  site-url: "https://openscapes.github.io/quarto-website-tutorial" 
-  repo-url: https://github.com/openscapes/quarto-website-tutorial 
+  site-url: "https://nguyenngocbinh.github.io/documents" 
+  repo-url: https://github.com/nguyenngocbinh/documents 
   repo-actions: [edit, issue]
   
   page-footer:
     right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
-    left: "&copy; CC-By Openscapes, 2022"
+    left: "&copy; CC-By NguyenNgocBinh, 2023"
     
   sidebar:
     logo: "images/openscapes_hex.png"
@@ -21,11 +21,11 @@ website:
         href: https://openscapes.org
         text: "Openscapes.org"
       - icon: github
-        href: https://github.com/openscapes/quarto-website-tutorial
+        href: https://github.com/nguyenngocbinh/documents
         text: "Quarto website tutorial"
       - icon: twitter
-        href: https://twitter.com/openscapes
-        text: "Openscapes Twitter"         
+        href: https://twitter.com/nanabi88
+        text: "nanabi88 Twitter"         
 
     style: "docked"
     search: true
