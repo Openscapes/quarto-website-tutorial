@@ -42,6 +42,9 @@ website:
       - learning-more.qmd
       - href: transition-from-rmarkdown.qmd
         text: Transition from Rmd
+      - section: machine-learning/transformer.md
+        contents:
+          - machine-learning/transformer.md
 
 
 format:
