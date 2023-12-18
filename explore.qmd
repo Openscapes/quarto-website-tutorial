@@ -18,7 +18,7 @@ We'll start our exploration online looking at the website architecture and GitHu
 -   Learning more
 -   Transition from Rmd
 
-Most of these are pages, but you'll see that "Quarto Workflows" has an arrow; it is a folder with additional pages inside.
+Most of these are pages, but you'll see that "Quarto Workflows" has an arrow `>`; it is a folder with additional pages inside.
 
 ### The website's repo
 
@@ -28,13 +28,13 @@ Let's go to this website's GitHub repository (also called a "repo"), [**https://
 
 ![quarto-website-tutorial GitHub repository with files for webpages marked with red arrows](images/quarto-files-github.png){fig-alt="Screenshot of files on GitHub with red arrows identifying the files that we saw in the left sidebar" fig-align="center" width="80%"}
 
-**The `_site` folder** has html files with names that should be familiar: they match the `.md` files we were just exploring. This folder is where Quarto stores files to build the website.
+**The `_site` folder** has html files with names that should be familiar: they match the `.qmd` files we were just exploring. This folder is where Quarto stores files to build the website.
 
 ## `_quarto.yml` intro
 
 There is also a `_quarto.yml` file, which is the website's configuration file. It is essentially metadata for the website that includes the order that the pages/chapters will be in. This is where you update the organization of your website: which page comes before another. If we compare side-by-side, you'll see that the pages that appear on our website are listed there.
 
-![`_quarto.yml` and website side-by-side](images/quarto-yml-site-side-by-side2.png){alt="_quarto.yml and website side-by-side" fig-align="center"}
+![`_quarto.yml` and website side-by-side](images/quarto-yml-site-side-by-side3.png){alt="_quarto.yml and website side-by-side" fig-align="center"}
 
 We'll learn more about how to interact with `_quarto.yml` in [Quarto Workflows](quarto-workflows/index.qmd).
 
