@@ -1,1 +1,1 @@
-Sitemap: https://github.com/Openscapes/quarto-website-tutorial/sitemap.xml
+Sitemap: https://openscapes.github.io/quarto-website-tutorial/sitemap.xml
