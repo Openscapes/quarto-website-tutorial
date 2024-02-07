@@ -1,0 +1,53 @@
+## Doing More with Quarto
+
+Now that you know how to add figures, tables and references, you can go beyond the basics and add more elements to you research article.
+
+1.  Adding Table of Contents
+2.  Adding List of Tables/Figures
+3.  Adding Chapters
+4.  Adding Appendices
+5.  Multiple Outputs
+
+
+#### Adding Table to Contents
+
+You can add Table of Contents to you article by adding the `toc: true` in your YAML.
+
+For Example:
+
+```md
+---
+title: "My Article"
+format: 
+  html: 
+    toc: true
+---
+```
+You can also number the sections and specify the depth of the table of contents by specifying the depth and numbering options.
+
+```md
+---
+title: "My Article"
+format: 
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: TRUE
+---
+```
+
+
+You can also add the List of Tables and List of Figures by adding `lot: true` and `lof: true` in the YAML.
+
+
+```md
+---
+title: "My Article"
+format: 
+  html: 
+    toc: true
+    lot: true
+    lof: true
+---
+
+```

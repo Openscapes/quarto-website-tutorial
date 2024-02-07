@@ -3,29 +3,25 @@ project:
   
 website: 
   page-navigation: true
-  title: "Making sharable documents with Quarto" 
-  site-url: "https://openscapes.github.io/quarto-website-tutorial" 
-  repo-url: https://github.com/openscapes/quarto-website-tutorial 
-  repo-actions: [edit, issue]
+  title: "Communicate Research Effectively with R" 
+  site-url: "https://drarunmitra.github.io/communicating-research-workshop" 
+  repo-url: https://github.com/drarunmitra/communicating-research-workshop 
   
   page-footer:
     right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
-    left: "&copy; CC-By Openscapes, 2024"
+    left: "&copy; CC-By SCTIMST, 2024"
     
   sidebar:
-    logo: "images/openscapes_hex.png"
+    logo: "images/CommRes_Hex.png"
     pinned: true
     align: center
     tools: 
       - icon: globe
-        href: https://openscapes.org
-        text: "Openscapes.org"
+        href: https://quarto.org
+        text: "Quarto.org"
       - icon: github
-        href: https://github.com/openscapes/quarto-website-tutorial
-        text: "Quarto website tutorial"
-      - icon: twitter
-        href: https://twitter.com/openscapes
-        text: "Openscapes Twitter"         
+        href: https://github.com/drarunmitra/communicating-research-workshop
+        text: "Getting Started with Quarto" 
 
     style: "docked"
     search: true
@@ -33,15 +29,14 @@ website:
     contents:
       - href: index.qmd
         text: Welcome
-      - explore.qmd
-      - section: quarto-workflows/index.qmd
+      - section: foundations/index.qmd
         contents: 
-          - quarto-workflows/browser.md
-          - quarto-workflows/rstudio.qmd
-          - quarto-workflows/jupyter.md 
-      - learning-more.qmd
-      - href: transition-from-rmarkdown.qmd
-        text: Transition from Rmd
+          - foundations/chap_rep_research.qmd
+          - foundations/chap_intro_r.qmd
+          - foundations/chap_meet_quarto.qmd 
+      - chap_first_document.qmd
+      - chap_first_article.qmd
+      - chap_adding_more.qmd
 
 
 format:
@@ -59,3 +54,5 @@ filters:
   - quarto
 
   
+execute:
+  cache: true

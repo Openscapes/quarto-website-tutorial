@@ -1,0 +1,51 @@
+
+### Why this workshop? {.unnumbered}
+
+:::{.justify}
+
+Effective communication of research findings has become an essential skill for the next generation of public health professionals, encompassing postgraduate students, senior residents, and faculty members. Recognizing this need, this workshop aims to foster the development of skilled health professionals proficient in the novel techniques and methodologies utilized in research communication. 
+
+Tailored to a diverse audience of postgraduate students, senior residents, and faculty members, the workshop equips participants with valuable skills in organizing the academic writing process, be it a journal article, thesis manuscript or an informal blog for a website. 
+
+Through the workshop, participants will learn to create well-organized manuscripts and deliver across complex ideas through impactful data representations, and convey their research outcomes effectively. 
+:::
+
+### Objectives {.unnumbered}
+
+- To develop core competencies and skills in research communication among next-generation public health professionals, through the principles of reproducible research and providing hands-on experience with case studies and group activities.
+
+### Prerequisites {.unnumbered}
+
+#### Essential: {.unnumbered}                      
+- Participants must bring their own laptops. 
+- It is mandatory that the laptop be in good working condition. 
+- Preferably with 16GB RAM. 
+
+#### Desirable: {.unnumbered}
+- Thorough understanding of core concepts in epidemiology and biostatistics.
+
+
+### Schedule {.unnumbered}
+{{< include schedule.qmd >}} 
+
+
+
+### Instructors {.unnumbered}
+
+::: columns
+::: {.column width="50%"}
+#### Resource Faculty {.unnumbered}
+
+-   Prof. Biju Soman
+-   Dr. Arun Mitra
+-   Dr. Gurpreet Singh
+:::
+
+::: {.column width="50%"}
+#### Facilitators {.unnumbered}
+
+-   Dr. Adrija Roy
+-   Dr. Manikanda Nesan
+-   Dr. Antony Paul
+:::
+:::
