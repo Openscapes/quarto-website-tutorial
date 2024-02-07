@@ -1,0 +1,12 @@
+---
+title: "Foundations"
+---
+
+This section deals with the foundational concepts necessary for the workshop.
+
+They are as follows:
+
+
+1. Principles of Reproducible Research 
+2. Introduction to R and Rstudio
+3. Introduction to Quarto

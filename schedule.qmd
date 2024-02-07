@@ -1,0 +1,39 @@
+<!-- ### Schedule {.unnumbered} -->
+
+```{r}
+#| echo: false
+#| eval: true
+#| message: false
+
+library(tidyverse)
+library(gt)
+
+schedule <- tibble::tribble(
+  ~Time, ~Session,
+  "09:00 - 10:00", "Introduction and IceBreaker",
+  "10:00 - 11:30", "Foundations",
+  "11:30 - 12:15", "Creating your first document",
+  "12:15 - 13:00", "Creating your first article",
+  "13:00 - 14:00", "Lunch",
+  "14:00 - 15:00", "Creating your first book",
+  "15:00 - 15:30", "Group Activity and Presentations",
+  "16:00 - 16:30", "Going Beyond..",
+  "16:30 - 17:00", "Q&A and Feedback Session"
+  )
+
+schedule |> 
+  gt() |> 
+  tab_header(
+    title = "Woskshop Schedule",
+    subtitle = md("Communicating Research Effectively with R <br> IAPSMCON 2024 @ KMC, Mangalore")
+  ) |> 
+  cols_width(
+      Time ~ px(150),
+      Session ~ px(400)
+  ) |> 
+  cols_align(
+    align = "left"
+  )
+
+```
+

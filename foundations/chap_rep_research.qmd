@@ -1,0 +1,82 @@
+## Principles of Reproducible Research
+
+### What is Reproducible Research
+
+Research is considered to be reproducible when the exact results can be reproduced if given access to the original data, software, or code.
+
+-   The same results should be obtained under the same conditions
+-   It should be possible to recreate the same conditions
+
+#### Definition
+
+> Reproducibility refers to the ability of a researcher to duplicate the results of a prior study using the same materials as were used by the original investigator. That is, a second researcher might use the same raw data to build the same analysis files and implement the same statistical analysis in an attempt to yield the same results. Reproducibility is a minimum necessary condition for a finding to be believable and informative.
+
+::: {.column-margin}
+--- U.S. National Science Foundation (NSF) subcommittee on Replicability in Science
+:::
+
+#### Elements of Reproducible Research
+
+There are four key elements of reproducible research:
+
+-   data documentation
+-   data publication
+-   code publication
+-   output publication
+
+## Reproducibility Crisis
+
+
+```{r}
+#| label: fig-reproducibility-crisis
+#| fig-cap: "Reproducibility Crisis in Science. <br> Baker, M. 1,500 scientists lift the lid on reproducibility. Nature 533, 452–454 (2016)"
+#| fig-column: page-right
+#| warning: false
+#| out-width: 100%
+#| echo: false
+
+
+knitr::include_graphics(here::here('images', "reproducibility_crisis.JPG"))
+
+```
+
+#### Factors Contributing to the Reproducibility Crisis
+
+-   Not enough documentation on how experiment is conducted and data is generated
+-   Data used to generate original results unavailable
+-   Software used to generate original results unavailable
+-   Difficult to recreate software environment (libraries, versions) used to generate original results
+-   Difficult to rerun the computational steps
+
+
+
+While reproducibility is the minimum requirement and can be solved with "good enough" computational practices, replicability/ robustness/ generalisability of scientific findings are an even greater concern involving research misconduct, questionable research practices (p-hacking, HARKing, cherry-picking), sloppy methods, and other conscious and unconscious biases.
+
+
+
+```{r}
+#| label: fig-cartoon-miracles
+#| fig-cap: "Cartoon by Sidney Harris (The New Yorker)"
+#| cap-location: margin
+#| out-width: 100%
+#| echo: false
+
+knitr::include_graphics(here::here('images', "miracles.jpg"))
+
+```
+
+
+### What is the Reproducibility Spectrum
+
+```{r}
+#| label: fig-reproducibility-spectrum
+#| fig-cap: "Reproducibility spectrum for published research. <br> Peng, RD Reproducible Research in Computational Science Science (2011)"
+#| fig-column: page-right
+#| warning: false
+#| out-width: 100%
+#| echo: false
+
+
+knitr::include_graphics(here::here('images', "reproducibility_spectrum.jpg"))
+
+```

@@ -1,0 +1,222 @@
+---
+bibliography: references.bib
+---
+
+## Creating your first article in R
+
+Now that you have created your first document in RStudio using Quarto, let us now go ahead and create your first article.
+
+The article should have the following structure:
+
+-   Introduction
+-   Rationale
+-   Objectives
+-   Methodology
+-   Results
+-   Discussion
+-   Conclusion
+-   References
+
+Let us now incorparate what we learned in the previous sessions and apply it here.
+
+You can use the first level and second level headings `##` and `###` for the sections and subsections.
+
+We will also demonstrate how to add a figure, a table and a couple of references to your article also.
+
+### Adding Figures
+
+Quarto includes a number of features aimed at making it easier to work with figures and subfigures, as well as for laying out panels that contain multiple figures, tables, or other content.
+
+You can add a figure more than one ways.
+
+#### Method 1: Using Pandoc
+
+```         
+![IAPSMCON Logo](iapsmcon_logo.png)
+```
+
+![IAPSMCON Logo](images/iapsmcon_logo.png)
+
+#### Method 2: Using R Chunk
+
+```{{r}}
+#| fig-cap: "IAPSMCON Logo"
+knitr::include_graphics(here::here("images", "iapsmcon_logo.png"))
+```
+
+```{r}
+#| fig-cap: "IAPSMCON Logo"
+#| echo: false
+knitr::include_graphics(here::here("images", "iapsmcon_logo.png"))
+```
+
+You can specify the width and alignment of the figure as well.
+
+``` md
+![IAPSMCON Logo](iapsmcon_logo.png){width=50% fig-align="left"}
+```
+
+![](images/iapsmcon_logo.png){width="50%" fig-align="left"}
+
+You can read more about customising figures at the [Quarto's Authoring Figures Documentation](https://quarto.org/docs/authoring/figures.html)
+
+#### Cross References
+
+You can cross-reference figures by adding an ID with the `fig-` prefix to them, and then referencing the figure using the `@` prefix.
+
+For example:
+
+``` md
+![IAPSMCON Logo](elephant.png){#fig-iapsm-logo}
+
+This is illustrated well by @fig-iapsm-logo.
+```
+
+![IAPSMCON Logo](images/iapsmcon_logo.png){#fig-iapsm-logo2}
+
+This is illustrated well by @fig-iapsm-logo2.
+
+For figures produced by executable code chunks, include a label with a `fig-` prefix to make them cross-referenceable.
+
+For example:
+
+For a demonstration of a correlation plot, see @fig-corr-plot.
+
+```{{r}}
+#| label: fig-corr-plot
+#| fig-cap: "A correlation plot"
+
+mtcars |> 
+plot()
+```
+
+```{r}
+#| label: fig-corr-plot
+#| fig-cap: "A correlation plot"
+#| echo: false
+
+mtcars |> 
+plot()
+```
+
+You can also add multiple figures as subfigures.
+
+```{{r}}
+#| label: fig-subfigures
+#| fig-cap: "Subfigures"
+#| fig-subcap: 
+#|   - "IAPSMCON 2024 Logo"
+#|   - "Correlation Plot of the `mtcars` dataset"
+#| layout-ncol: 2
+
+knitr::include_graphics(here::here("images", "iapsmcon_logo.png"))
+mtcars |> plot
+```
+
+```{r}
+#| label: fig-subfigures
+#| fig-cap: "Subfigures"
+#| fig-subcap: 
+#|   - "IAPSMCON 2024 Logo"
+#|   - "Correlation Plot of the `mtcars` dataset"
+#| layout-ncol: 2
+
+knitr::include_graphics(here::here("images", "iapsmcon_logo.png"))
+mtcars |> plot()
+```
+
+### Adding Tables
+
+Quarto includes a number of features aimed at making it easy to to author and customize markdown table output, including:
+
+-   Specifying column alignment and widths.
+-   Providing captions, subcaptions, and cross-references.
+-   Generating tables dynamically from executable code cells.
+
+::: columns
+::: column
+``` md
+| Default | Left | Right | Center |
+|---------|:-----|------:|:------:|
+| 12      | 12   |    12 |   12   |
+| 123     | 123  |   123 |  123   |
+| 1       | 1    |     1 |   1    |
+
+: Demonstration of pipe table syntax
+```
+:::
+
+::: column
+| Default | Left | Right | Center |
+|---------|:-----|------:|:------:|
+| 12      | 12   |    12 |   12   |
+| 123     | 123  |   123 |  123   |
+| 1       | 1    |     1 |   1    |
+
+: Demonstration of pipe table syntax
+:::
+:::
+
+You can generate Markdown tables from this website <https://www.tablesgenerator.com/markdown_tables>
+
+You can also add tables using R Code Chunks
+
+```{{r}}
+#| label: tbl-my-first-table
+#| tbl-cap: "This is my first table"
+
+pressure |> 
+  gtsummary::tbl_summary()
+
+```
+
+```{r}
+#| label: tbl-my-first-table
+#| tbl-cap: "This is my first table"
+#| echo: false
+
+pressure |> 
+  gtsummary::tbl_summary()
+
+```
+
+This is how you can refer to the table `@tbl-my-first-table` i.e. @tbl-my-first-table.
+
+### Adding References
+
+Quarto will use Pandoc to automatically generate citations and a bibliography in a number of styles. To use this capability, you will need:
+
+-   A quarto document formatted with citations.
+
+-   A bibliographic data source, for example a BibLaTeX (`.bib`) or BibTeX (`.bibtex`) file.
+
+-   Optionally, a CSL file which specifies the formatting to use when generating the citations and bibliography.
+
+Quarto uses the standard Pandoc markdown representation for citations (e.g. \[`@citation`\]) — citations go inside square brackets and are separated by semicolons. Each citation must have a key, composed of `@ + the citation identifier` from the database, and may optionally have a prefix, a locator, and a suffix.
+
+For Example:
+
+When you type the following:
+
+```md
+- This is a reference to the famous article by Hadley Wickham on Tidy Data. [@wickham2014jss]
+```
+
+This is what you get:
+
+
+- This is a reference to the famous article by Hadley Wickham on Tidy Data. [@wickham2014jss]
+
+
+### Adding Biblliography
+
+You can add bibliography to your document by specifying it in the YAML as below.
+
+``` md
+---
+title: "My Document"
+bibliography: references.bib
+---
+```
+
+You do not have to worry much about these things as RStudio and Quarto will take care of it for you!
