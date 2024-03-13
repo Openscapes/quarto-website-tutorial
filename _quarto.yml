@@ -37,6 +37,7 @@ website:
       - section: quarto-workflows/index.qmd
         contents: 
           - quarto-workflows/browser.md
+          - r-example.Rmd
           - quarto-workflows/rstudio.qmd
           - quarto-workflows/jupyter.md 
       - learning-more.qmd
