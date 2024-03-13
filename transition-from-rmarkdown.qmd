@@ -37,9 +37,9 @@ Add page footer to `_quarto.yml`.
 Here's what ours looked like when we finished the steps above ([`_quarto.yml`](https://github.com/thefaylab/lab-manual/blob/main/_quarto.yml)).
 
 ::: {layout-ncol="2"}
-![\_quarto.yml contents](images/faylab-manual-quarto-yml.png){fig-alt="_quarto.yml file contents" width=45%}
+![\_quarto.yml contents](images/faylab-manual-quarto-yml.png){fig-alt="_quarto.yml file contents" width="45%"}
 
-![Faylab Lab Manual](images/faylab-manual.png){fig-alt="screenshot of Lab Manual book" width=45%}
+![Faylab Lab Manual](images/faylab-manual.png){fig-alt="screenshot of Lab Manual book" width="45%"}
 :::
 
 Change insertion of images from html style to Quarto style. (Note Quarto calls them "figures", not "images".) The following snippet will insert the GitHub octocat logo in a page:
@@ -48,8 +48,7 @@ Change insertion of images from html style to Quarto style. (Note Quarto calls t
 ![](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png){fig-align="left" width="35px"}
 ```
 
-Change all filename extensions `.Rmd` -\> `.qmd` (you could Preview after this change and see that the book looks the same). Note that Quarto works with `.Rmd` files just as well as it does `.qmd`, so this change is not urgent. In fact, if you have a lot of R code in your .Rmds (unlike the Faylab Lab Manual), there will be additional tinkering needed to make the code chunks happy.
-
+Change all filename extensions `.Rmd` -> `.qmd` (you could Preview after this change and see that the book looks the same). Note that Quarto works with `.Rmd` files just as well as it does `.qmd`, so this change is not urgent. In fact, if you have a lot of R code in your .Rmds (unlike the Faylab Lab Manual), there will be additional tinkering needed to make the code chunks happy.
 
 ### Citations
 
@@ -81,7 +80,7 @@ Once the Openscapes fork was fully reviewed, we made a pull request from that to
 
 ### GitHub Actions {#github-actions}
 
-This book was mostly prose and screenshots without any R code. This made the conversion from RMarkdown to Quarto likely more straightforward than if you also needed to adjust code chunk options in the quarto style (#|). Our initial GitHub Action to render the converted Faylab Lab Manual failed because we had a piece of R code - even though the code was commented out! This was resolved when we deleted the line. 
+This book was mostly prose and screenshots without any R code. This made the conversion from RMarkdown to Quarto likely more straightforward than if you also needed to adjust code chunk options in the quarto style (#\|). Our initial GitHub Action to render the converted Faylab Lab Manual failed because we had a piece of R code - even though the code was commented out! This was resolved when we deleted the line.
 
 ## Distill to quarto
 

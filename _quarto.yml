@@ -40,6 +40,7 @@ website:
           - quarto-workflows/rstudio.qmd
           - quarto-workflows/jupyter.md 
       - learning-more.qmd
+      - r-example.Rmd
       - href: transition-from-rmarkdown.qmd
         text: Transition from Rmd
 
