@@ -13,13 +13,13 @@ title: Quarto workflows
 
 
 ## What's Freeze?
-Je suis ici !
+
 JJ: You can put it in the project root or at a a file level, OR at a directory level (if there is a _metadata.yml file in a directory then documents within it will merge that metadata -- this applies to docs in subdirectories as well). So if you have mostly frozen stuff you can set it at the project level then disable on a per-file or per-directory basis. If frozen stuff is more the exception then you can use directory or file level enablement
 --->
 
 ## Basic Workflow
 
-How do you work in Quarto? You can use whichever tool you're comfortable with (RStudio, Jupyter, GitHub, VS Code, etc). Developing your quarto site will have the same basic workflow, no matter which tool you use. It is very iterative, and each is explored more below. 
+COUCOU ! How do you work in Quarto? You can use whichever tool you're comfortable with (RStudio, Jupyter, GitHub, VS Code, etc). Developing your quarto site will have the same basic workflow, no matter which tool you use. It is very iterative, and each is explored more below. 
 
 1.  Authoring: write text, code, images, etc in a file. Supported files include `.md`, `.Rmd`, `.qmd`, `.ipynb`...
 2.  Update `_quarto.yml` as needed (for example, if you've created a new file you'd like included in your site)
