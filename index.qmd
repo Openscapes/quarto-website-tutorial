@@ -1,5 +1,5 @@
 ---
-title: "Making shareable documents with Quarto"
+title: "ECO5043 - Techniques de laboratoire"
 subtitle: "Create open-source tutorials, onboarding docs, and much more"
 ---
 
