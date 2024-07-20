@@ -10,7 +10,7 @@ website:
   
   page-footer:
     right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
-    left: "&copy; CC-By Openscapes, 2022"
+    left: "&copy; CC-By Saikat, 2022"
     
   sidebar:
     logo: "images/openscapes_hex.png"
