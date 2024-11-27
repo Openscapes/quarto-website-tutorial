@@ -88,18 +88,21 @@ Now you'll have an empty new file. Paste the following in this empty file - you 
 
 ``` yaml
 on:
+  workflow_dispatch:
   push:
     branches: main
 
-name: Render and Publish
+name: Quarto Publish
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Check out repository
-        uses: actions/checkout@v2 
-        
+        uses: actions/checkout@v4
+
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
         with:
@@ -109,8 +112,7 @@ jobs:
           # version: 0.9.600
       
       # add software dependencies here
-
-      - name: Publish to GitHub Pages (and render)
+      - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
@@ -119,8 +121,6 @@ jobs:
 ```
 
 Commit this to save your new `quarto-publish.yml` file. This is your GitHub Action.
-
-Finally, from your main repo page, click Settings > Actions > General. Under 'Workflow permissions', select 'Read and write permissions'. Save.
 
 **Next, we'll create a new `gh-pages` branch**. Go back to the main view of your GitHub repository. On the far left from the green "Code" button, click the button that says "main". In the pull-down menu, type `gh-pages` - all lowercase, with a hyphen. Click the bold text that says "Create branch: gh-pages from main".
 
